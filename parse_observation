@@ -62,7 +62,10 @@ summary = (
     
 {{"""
     + f"iNaturalist|{id}"
-    + "}}"
+    + """}}
+    
+     {{INaturalistreview}}
+    """
     + f"""
 
 [[Category:{upload_params["taxon"]}]]"""
