@@ -3,82 +3,88 @@ import requests
 import urllib.parse
 import sys
 
-try:
-    id = sys.argv[1]
-except:
-    id = input("Enter the iNaturalist observation id:")
+
+def main():
+    try:
+        id = sys.argv[1]
+    except:
+        id = input("Enter the iNaturalist observation id:")
+
+    print(id)
+    base_url = "https://api.inaturalist.org/v1/"
+    observation_url = base_url + f"observations/{id}"
+
+    result = requests.get(observation_url)
+
+    data = result.json()
+    print(data)
+    observation_data = data["results"][0]
+    photo_data_list = observation_data["photos"]
+
+    for i, photo_data in enumerate(photo_data_list):
+        print(f"URL for observation {str(i)} ")
+        print_commons_url(observation_data, photo_data)
+        print("=============== // =============")
 
 
-base_url = "https://api.inaturalist.org/v1/"
-observation_url = base_url + f"observations/{id}"
+def print_commons_url(observation_data, photo_data):
+    upload_params = {}
 
-result = requests.get(observation_url)
+    photo_url = photo_data["url"].replace("square", "original")
 
-data = result.json()
-observation_data = data["results"][0]
+    user_data = observation_data["user"]
+    upload_params["photo_id"] = photo_data["id"]
+    upload_params["photo_license"] = photo_data["license_code"]
+    upload_params["user_id"] = user_data["id"]
+    upload_params["user_name"] = observation_data["user"]["name"]
+    upload_params["date"] = observation_data["observed_on"]
+    upload_params["taxon"] = observation_data["taxon"]["name"]
 
-upload_params = {}
+    switcher = {"cc-by": "cc-by-4.0", "cc-by-sa": "cc-by-sa-4.0", "cc0": "Cc-zero"}
 
-photo_data = observation_data["photos"][0]
-photo_url = photo_data["url"].replace("square", "original")
+    print("https://commons.wikimedia.org/wiki/Special:Upload")
 
-user_data = observation_data["user"]
-upload_params["photo_id"] = photo_data["id"]
-upload_params["photo_license"] = photo_data["license_code"]
-upload_params["user_id"] = user_data["id"]
-upload_params["user_name"] = observation_data["user"]["name"]
-upload_params["date"] = observation_data["observed_on"]
-upload_params["taxon"] = observation_data["taxon"]["name"]
+    print("====== Photo URL =====")
+    print(photo_url)
 
+    title = upload_params["taxon"] + " " + str(upload_params["photo_id"]) + ".jpeg"
 
-switcher = {"cc-by": "cc-by-4.0", "cc-by-sa": "cc-by-sa-4.0", "cc0": "Cc-zero"}
+    print("====== Summary ======")
+    license = switcher[upload_params["photo_license"]]
 
-
-print("https://commons.wikimedia.org/wiki/Special:Upload")
-
-
-print("====== Photo URL =====")
-print(photo_url)
-
-print("====== Title ======")
-title = upload_params["taxon"] + " " + str(upload_params["photo_id"]) + ".jpeg"
-
-print(title)
-
-print("====== Summary ======")
-license = switcher[upload_params["photo_license"]]
-print("License: " + license)
-summary = (
-    """{{Information"""
-    + f"""
-|description={upload_params["taxon"]}
-|date={upload_params["date"]}
-|source=https://www.inaturalist.org/photos/{str(upload_params["photo_id"])}
-|author=[https://www.inaturalist.org/users/{str(upload_params["user_id"])} {upload_params["user_name"]}]
-|permission=
-|other versions=
-"""
-    + """}}
-    
-{{"""
-    + f"iNaturalist|{id}"
-    + """}}
-    
-     {{INaturalistreview}}
+    summary = (
+        """{{Information"""
+        + f"""
+    |description={upload_params["taxon"]}
+    |date={upload_params["date"]}
+    |source=https://www.inaturalist.org/photos/{str(upload_params["photo_id"])}
+    |author=[https://www.inaturalist.org/users/{str(upload_params["user_id"])} {upload_params["user_name"]}]
+    |permission=
+    |other versions=
     """
-    + f"""
+        + """}}
+        
+    {{"""
+        + f"iNaturalist|{id}"
+        + """}}
+        
+        {{INaturalistreview}}
+        """
+        + f"""
 
-[[Category:{upload_params["taxon"]}]]"""
-)
+    [[Category:{upload_params["taxon"]}]]"""
+    )
+
+    upload_page = "https://commons.wikimedia.org/wiki/Special:Upload"
+
+    summary_for_url = urllib.parse.quote(summary)
+    title_for_url = urllib.parse.quote(title)
+    upload_url = (
+        upload_page
+        + f"?wpUploadDescription={summary_for_url}&wpLicense={license}&wpDestFile={title_for_url}&wpSourceType=url&wpUploadFileURL={photo_url}"
+    )
+    print(upload_url)
 
 
-print(summary)
-upload_page = "https://commons.wikimedia.org/wiki/Special:Upload"
-
-summary_for_url = urllib.parse.quote(summary)
-title_for_url = urllib.parse.quote(title)
-upload_url = (
-    upload_page
-    + f"?wpUploadDescription={summary_for_url}&wpLicense={license}&wpDestFile={title_for_url}&wpSourceType=url&wpUploadFileURL={photo_url}"
-)
-print(upload_url)
+if __name__ == "__main__":
+    main()
