@@ -22,7 +22,7 @@ def main():
     photo_data_list = observation_data["photos"]
 
     for i, photo_data in enumerate(photo_data_list):
-        print(f"URL for observation {str(i)} ")
+        print(f"URL for observation {str(i+1)} ")
         print_commons_url(observation_data, photo_data)
         print("=============== // =============")
 
