@@ -28,7 +28,7 @@ def main():
         print(tax_info)
 
         try:
-            inaturalist_taxon_ids.append(tax_info["min_species_taxon_id"])
+            inaturalist_taxon_ids.append(str(tax_info["min_species_taxon_id"]))
 
             obs_id = obs["id"]
             core_information[obs_id] = {
@@ -45,6 +45,28 @@ def main():
 
     with open("candidates.json", "w") as outfile:
         json.dump(core_information, outfile, indent=3)
+
+    formatted_values = '{ "' + '" "'.join(inaturalist_taxon_ids) + '" }'
+
+    query_for_taxa_missing_images = (
+        """
+    
+    SELECT DISTINCT * WHERE{
+
+        VALUES ?id """
+        + formatted_values
+        + """
+
+        ?item wdt:P3151 ?id .
+
+        MINUS {?item wdt:P18 ?image} . 
+  
+        ?item rdfs:label ?itemLabel . 
+        FILTER ( LANG(?itemLabel) = "en" )
+    }
+    """
+    )
+    print(query_for_taxa_missing_images)
 
 
 if __name__ == "__main__":
