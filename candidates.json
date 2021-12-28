@@ -1,4 +1,14 @@
 {
+   "103848971": {
+      "name": "Canis familiaris",
+      "quality": "casual",
+      "taxon_id": 47144
+   },
+   "103839302": {
+      "name": "Microgramma",
+      "quality": "needs_id",
+      "taxon_id": 137311
+   },
    "103760988": {
       "name": "Dichondra",
       "quality": "needs_id",
@@ -983,15 +993,5 @@
       "name": "Mimus gilvus",
       "quality": "research",
       "taxon_id": 14884
-   },
-   "103065404": {
-      "name": "Mimus gilvus",
-      "quality": "research",
-      "taxon_id": 14884
-   },
-   "103065395": {
-      "name": "Egretta caerulea",
-      "quality": "research",
-      "taxon_id": 4937
    }
 }

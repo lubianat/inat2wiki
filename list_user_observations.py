@@ -2,6 +2,7 @@
 import sys
 import requests
 import json
+import urllib.parse
 
 
 def main():
@@ -48,6 +49,7 @@ def main():
 
     formatted_values = '{ "' + '" "'.join(inaturalist_taxon_ids) + '" }'
 
+    print("------------- Query for taxa missing images ---------- ")
     query_for_taxa_missing_images = (
         """
     
@@ -66,7 +68,50 @@ def main():
     }
     """
     )
-    print(query_for_taxa_missing_images)
+    print()
+
+    url_query_for_taxa_missing_images = (
+        "https://query.wikidata.org/#"
+        + urllib.parse.quote(query_for_taxa_missing_images)
+    )
+
+    print(url_query_for_taxa_missing_images)
+
+    print("--------------- Query for observations missing wiki pages -----------")
+    langcode = input("Enter your lang code of interest:")
+    query_for_missing_pt_wiki = (
+        """
+
+        
+    SELECT DISTINCT * WHERE{
+
+        VALUES ?id """
+        + formatted_values
+        + """
+
+    
+            ?item wdt:P3151 ?id .
+
+        ?item rdfs:label ?itemLabel . 
+        FILTER ( LANG(?itemLabel) = "en" )
+
+        MINUS{
+        {?sitelink schema:about ?item .
+        ?sitelink schema:isPartOf ?site.
+        ?sitelink schema:isPartOf/wikibase:wikiGroup "wikipedia" .
+
+        FILTER(CONTAINS(STR(?sitelink), """
+        + f'"{langcode}.wiki"'
+        + """))}
+                 }
+        }    """
+    )
+
+    url_query_for_missing_pt_wiki = "https://query.wikidata.org/#" + urllib.parse.quote(
+        query_for_missing_pt_wiki
+    )
+
+    print(url_query_for_missing_pt_wiki)
 
 
 if __name__ == "__main__":
