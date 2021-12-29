@@ -6,13 +6,13 @@ import sys
 
 def main():
     try:
-        id = sys.argv[1]
+        inaturalist_id = sys.argv[1]
     except:
-        id = input("Enter the iNaturalist observation id:")
+        inaturalist_id = input("Enter the iNaturalist observation id:")
 
-    print(id)
+    print(inaturalist_id)
     base_url = "https://api.inaturalist.org/v1/"
-    observation_url = base_url + f"observations/{id}"
+    observation_url = base_url + f"observations/{inaturalist_id}"
 
     result = requests.get(observation_url)
 
@@ -23,11 +23,11 @@ def main():
 
     for i, photo_data in enumerate(photo_data_list):
         print(f"URL for observation {str(i+1)} ")
-        print_commons_url(observation_data, photo_data)
+        print_commons_url(observation_data, photo_data, inaturalist_id)
         print("=============== // =============")
 
 
-def print_commons_url(observation_data, photo_data):
+def print_commons_url(observation_data, photo_data, inaturalist_id):
     upload_params = {}
 
     photo_url = photo_data["url"].replace("square", "original")
@@ -55,7 +55,7 @@ def print_commons_url(observation_data, photo_data):
     summary = (
         """{{Information"""
         + f"""
-    |description={upload_params["taxon"]}
+    |description={{{{en|Picture of {upload_params["taxon"]} from iNaturalist. }}}}
     |date={upload_params["date"]}
     |source=https://www.inaturalist.org/photos/{str(upload_params["photo_id"])}
     |author=[https://www.inaturalist.org/users/{str(upload_params["user_id"])} {upload_params["user_name"]}]
@@ -65,7 +65,7 @@ def print_commons_url(observation_data, photo_data):
         + """}}
         
     {{"""
-        + f"iNaturalist|{id}"
+        + f"iNaturalist|{inaturalist_id}"
         + """}}
         
         {{INaturalistreview}}
