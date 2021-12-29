@@ -47,7 +47,7 @@ def main():
     with open("candidates.json", "w") as outfile:
         json.dump(core_information, outfile, indent=3)
 
-    formatted_values = '{ "' + '" "'.join(inaturalist_taxon_ids) + '" }'
+    formatted_values = '{ "' + '""'.join(inaturalist_taxon_ids) + '" }'
 
     print("------------- Query for taxa missing images ---------- ")
     query_for_taxa_missing_images = (
@@ -65,6 +65,9 @@ def main():
   
         ?item rdfs:label ?itemLabel . 
         FILTER ( LANG(?itemLabel) = "en" )
+
+                BIND(IRI(CONCAT(CONCAT("https://www.inaturalist.org/taxa/", ?id), "/browse_photos?photo_license=cc0")) AS ?cc0_url)
+        BIND(IRI(CONCAT(CONCAT("https://www.inaturalist.org/taxa/", ?id), "/browse_photos?photo_license=cc-by")) AS ?ccby_url)
     }
     """
     )
