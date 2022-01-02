@@ -1,332 +1,992 @@
 {
-   "103679497": {
-      "name": "Dynastinae",
-      "quality": "needs_id",
-      "taxon_id": 136361
-   },
-   "103625676": {
-      "name": "Dichotomius carolinus",
-      "quality": "needs_id",
-      "taxon_id": 129577
-   },
-   "103530730": {
-      "name": "Coffea",
-      "quality": "needs_id",
-      "taxon_id": 64343
-   },
-   "103463562": {
-      "name": "Bombus",
-      "quality": "needs_id",
-      "taxon_id": 52775
-   },
-   "103463308": {
-      "name": "Paubrasilia echinata",
-      "quality": "needs_id",
-      "taxon_id": 874491
-   },
-   "103463159": {
-      "name": "Trigona",
-      "quality": "needs_id",
-      "taxon_id": 180367
-   },
-   "103373923": {
-      "name": "Alebrini",
-      "quality": "needs_id",
-      "taxon_id": 473948
-   },
-   "103243620": {
-      "name": "Psyllobora lenta",
+   "104132650": {
+      "name": "Turdus rufiventris",
       "quality": "research",
-      "taxon_id": 980669
+      "taxon_id": 12738
    },
-   "103141294": {
+   "104132623": {
+      "name": "Tropidurus torquatus",
+      "quality": "needs_id",
+      "taxon_id": 38961
+   },
+   "104132591": {
+      "name": "Cirripedia",
+      "quality": "needs_id",
+      "taxon_id": 210289
+   },
+   "104132578": {
+      "name": "Callithrix jacchus",
+      "quality": "research",
+      "taxon_id": 43373
+   },
+   "104132568": {
+      "name": "Artocarpus heterophyllus",
+      "quality": "needs_id",
+      "taxon_id": 123003
+   },
+   "104132503": {
+      "name": "Hypselonotus interruptus",
+      "quality": "needs_id",
+      "taxon_id": 512434
+   },
+   "104132491": {
+      "name": "Sida",
+      "quality": "needs_id",
+      "taxon_id": 54996
+   },
+   "104132397": {
       "name": "Trichonephila clavipes",
       "quality": "research",
       "taxon_id": 904336
    },
-   "103089823": {
-      "name": "Tetragona",
-      "quality": "needs_id",
-      "taxon_id": 418527
-   },
-   "102869068": {
-      "name": "Melitoma",
-      "quality": "needs_id",
-      "taxon_id": 252669
-   },
-   "102720820": {
-      "name": "Lyssomanes",
-      "quality": "needs_id",
-      "taxon_id": 68316
-   },
-   "102691083": {
-      "name": "Vanellus chilensis",
+   "104132381": {
+      "name": "Egretta thula",
       "quality": "research",
-      "taxon_id": 4867
+      "taxon_id": 4940
    },
-   "102690982": {
-      "name": "Corythalia",
-      "quality": "needs_id",
-      "taxon_id": 202952
-   },
-   "102414061": {
-      "name": "Tillandsia tricholepis",
+   "104132359": {
+      "name": "Neolema dorsalis",
       "quality": "research",
-      "taxon_id": 706009
+      "taxon_id": 310337
    },
-   "102413891": {
-      "name": "Guira guira",
+   "104132291": {
+      "name": "Commelina diffusa",
       "quality": "research",
-      "taxon_id": 1979
+      "taxon_id": 160818
    },
-   "102405872": {
-      "name": "Pitangus sulphuratus",
-      "quality": "research",
-      "taxon_id": 16956
-   },
-   "102405497": {
-      "name": "Hypercompe",
-      "quality": "needs_id",
-      "taxon_id": 63030
-   },
-   "102270968": {
-      "name": "Colaptes campestris campestris",
-      "quality": "research",
-      "taxon_id": 18262
-   },
-   "102270781": {
-      "name": "Coereba flaveola",
-      "quality": "research",
-      "taxon_id": 10199
-   },
-   "102270644": {
-      "name": "Coragyps atratus",
-      "quality": "research",
-      "taxon_id": 4765
-   },
-   "102076872": {
-      "name": "Castilleja arvensis pastorei",
-      "quality": "research",
-      "taxon_id": 133740
-   },
-   "102076738": {
-      "name": "Synoeca cyanea",
-      "quality": "research",
-      "taxon_id": 512865
-   },
-   "102076610": {
+   "104132271": {
       "name": "Fregata magnificens",
       "quality": "research",
       "taxon_id": 4631
    },
-   "102076579": {
-      "name": "Hylesia",
+   "104132251": {
+      "name": "Mimetidae",
       "quality": "needs_id",
-      "taxon_id": 247580
+      "taxon_id": 60351
    },
-   "102076506": {
-      "name": "Notodontidae",
-      "quality": "needs_id",
-      "taxon_id": 47718
-   },
-   "102076393": {
-      "name": "Mantodea",
-      "quality": "needs_id",
-      "taxon_id": 48112
-   },
-   "102076274": {
-      "name": "Sicalis flaveola",
-      "quality": "research",
-      "taxon_id": 9864
-   },
-   "102076195": {
-      "name": "Euphorbia cotinifolia",
-      "quality": "needs_id",
-      "taxon_id": 275340
-   },
-   "102075927": {
-      "name": "Quesada gigas",
-      "quality": "needs_id",
-      "taxon_id": 244024
-   },
-   "102075850": {
-      "name": "Ardea alba",
-      "quality": "research",
-      "taxon_id": 144455
-   },
-   "102075659": {
-      "name": "Psittacara leucophthalmus",
-      "quality": "research",
-      "taxon_id": 367573
-   },
-   "102075577": {
-      "name": "Cyathea",
-      "quality": "needs_id",
-      "taxon_id": 132631
-   },
-   "102075465": {
+   "104132208": {
       "name": "Angiospermae",
       "quality": "needs_id",
       "taxon_id": 47125
    },
-   "102075333": {
-      "name": "Asteraceae",
+   "104132165": {
+      "name": "Magnoliopsida",
       "quality": "needs_id",
-      "taxon_id": 47604
+      "taxon_id": 47124
    },
-   "102075132": {
-      "name": "Oudemansiella",
+   "104132136": {
+      "name": "Manihot esculenta",
       "quality": "needs_id",
-      "taxon_id": 55965
+      "taxon_id": 165138
    },
-   "102075028": {
-      "name": "Penelope obscura",
-      "quality": "research",
-      "taxon_id": 2060
-   },
-   "102074821": {
-      "name": "Tersina viridis",
-      "quality": "research",
-      "taxon_id": 10607
-   },
-   "102074515": {
-      "name": "Susuacanga octoguttata",
-      "quality": "research",
-      "taxon_id": 800899
-   },
-   "101006271": {
-      "name": "Tersina viridis",
-      "quality": "research",
-      "taxon_id": 10607
-   },
-   "99902655": {
-      "name": "Bombus pauloensis",
+   "104132113": {
+      "name": "Callaeum",
       "quality": "needs_id",
-      "taxon_id": 856068
+      "taxon_id": 156951
    },
-   "97989930": {
-      "name": "Mallodon spinibarbis",
+   "104132058": {
+      "name": "Auricularia americana",
       "quality": "needs_id",
-      "taxon_id": 269859
+      "taxon_id": 356394
    },
-   "97876983": {
-      "name": "Theristicus caudatus",
-      "quality": "research",
-      "taxon_id": 3766
-   },
-   "96667339": {
-      "name": "Brotogeris tirica",
-      "quality": "research",
-      "taxon_id": 19214
-   },
-   "96667202": {
-      "name": "Diopsittaca nobilis",
-      "quality": "research",
-      "taxon_id": 72814
-   },
-   "96667077": {
-      "name": "Campephilus melanoleucos",
+   "104131971": {
+      "name": "Ligia exotica",
       "quality": "needs_id",
-      "taxon_id": 18273
+      "taxon_id": 121743
    },
-   "96103198": {
+   "104131941": {
+      "name": "Sphoeroides testudineus",
+      "quality": "needs_id",
+      "taxon_id": 317382
+   },
+   "104131932": {
+      "name": "Columbina talpacoti",
+      "quality": "research",
+      "taxon_id": 3580
+   },
+   "104131891": {
+      "name": "Pitangus sulphuratus",
+      "quality": "research",
+      "taxon_id": 16956
+   },
+   "104131852": {
+      "name": "Coragyps atratus",
+      "quality": "research",
+      "taxon_id": 4765
+   },
+   "104131828": {
+      "name": "Basidiomycota",
+      "quality": "needs_id",
+      "taxon_id": 47169
+   },
+   "104131498": {
+      "name": "Fungi",
+      "quality": "needs_id",
+      "taxon_id": 47170
+   },
+   "104131444": {
+      "name": "Parmelioideae",
+      "quality": "needs_id",
+      "taxon_id": 1094690
+   },
+   "104131396": {
+      "name": "Mollusca",
+      "quality": "needs_id",
+      "taxon_id": 47115
+   },
+   "104131340": {
+      "name": "Veneridae",
+      "quality": "needs_id",
+      "taxon_id": 50588
+   },
+   "104131262": {
+      "name": "Cerithium atratum",
+      "quality": "research",
+      "taxon_id": 208871
+   },
+   "104131118": {
+      "name": "Stramonita haemastoma",
+      "quality": "needs_id",
+      "taxon_id": 292602
+   },
+   "104129058": {
+      "name": "Lecanoromycetes",
+      "quality": "needs_id",
+      "taxon_id": 54743
+   },
+   "104128740": {
+      "name": "Christella",
+      "quality": "needs_id",
+      "taxon_id": 142180
+   },
+   "104128308": {
+      "name": "Solanum",
+      "quality": "needs_id",
+      "taxon_id": 50641
+   },
+   "104125528": {
+      "name": "Chusquea",
+      "quality": "needs_id",
+      "taxon_id": 142521
+   },
+   "104125527": {
+      "name": "Plantae",
+      "quality": "needs_id",
+      "taxon_id": 47126
+   },
+   "104125524": {
+      "name": "Plantae",
+      "quality": "needs_id",
+      "taxon_id": 47126
+   },
+   "104124032": {
+      "name": "Trametes sanguinea",
+      "quality": "research",
+      "taxon_id": 974664
+   },
+   "104116986": {
+      "name": "Dacnis cayana",
+      "quality": "research",
+      "taxon_id": 10506
+   },
+   "104116261": {
+      "name": "Neoponera villosa",
+      "quality": "needs_id",
+      "taxon_id": 423659
+   },
+   "104056561": {
+      "name": "Carica",
+      "quality": "needs_id",
+      "taxon_id": 62823
+   },
+   "103848971": {
+      "name": "Canis familiaris",
+      "quality": "casual",
+      "taxon_id": 47144
+   },
+   "103839302": {
+      "name": "Microgramma",
+      "quality": "needs_id",
+      "taxon_id": 137311
+   },
+   "103760988": {
+      "name": "Dichondra",
+      "quality": "needs_id",
+      "taxon_id": 61178
+   },
+   "103760953": {
+      "name": "Plantae",
+      "quality": "needs_id",
+      "taxon_id": 47126
+   },
+   "103760904": {
+      "name": "Ardea alba",
+      "quality": "needs_id",
+      "taxon_id": 144455
+   },
+   "103760881": {
+      "name": "Oxalis corniculata",
+      "quality": "needs_id",
+      "taxon_id": 53168
+   },
+   "103714641": {
+      "name": "Selenicereus undatus",
+      "quality": "casual",
+      "taxon_id": 1038928
+   },
+   "103699521": {
+      "name": "Tropidurus torquatus",
+      "quality": "needs_id",
+      "taxon_id": 38961
+   },
+   "103688350": {
+      "name": "Volatinia jacarina",
+      "quality": "casual",
+      "taxon_id": 10288
+   },
+   "103687081": {
+      "name": "Cathartes",
+      "quality": "needs_id",
+      "taxon_id": 4755
+   },
+   "103687023": {
+      "name": "Magnoliopsida",
+      "quality": "needs_id",
+      "taxon_id": 47124
+   },
+   "103687005": {
+      "name": "Cecropia",
+      "quality": "needs_id",
+      "taxon_id": 83989
+   },
+   "103686943": {
+      "name": "Richardia brasiliensis",
+      "quality": "needs_id",
+      "taxon_id": 167940
+   },
+   "103686838": {
+      "name": "Brassolis sophorae",
+      "quality": "needs_id",
+      "taxon_id": 182482
+   },
+   "103686789": {
+      "name": "Vanellus",
+      "quality": "needs_id",
+      "taxon_id": 4853
+   },
+   "103686704": {
+      "name": "Polydesmida",
+      "quality": "needs_id",
+      "taxon_id": 47734
+   },
+   "103686623": {
+      "name": "Cichla temensis",
+      "quality": "needs_id",
+      "taxon_id": 342473
+   },
+   "103686602": {
+      "name": "Cenchrus echinatus",
+      "quality": "research",
+      "taxon_id": 76205
+   },
+   "103686558": {
+      "name": "Rhinodrilus alatus",
+      "quality": "needs_id",
+      "taxon_id": 856646
+   },
+   "103686533": {
+      "name": "Geophagus",
+      "quality": "needs_id",
+      "taxon_id": 88478
+   },
+   "103678608": {
+      "name": "Lycosoidea",
+      "quality": "needs_id",
+      "taxon_id": 367161
+   },
+   "103678567": {
+      "name": "Clogmia albipunctata",
+      "quality": "research",
+      "taxon_id": 258813
+   },
+   "103678561": {
+      "name": "Dythemis",
+      "quality": "needs_id",
+      "taxon_id": 88069
+   },
+   "103678546": {
+      "name": "Columbina squammata",
+      "quality": "research",
+      "taxon_id": 3564
+   },
+   "103678463": {
+      "name": "Guira guira",
+      "quality": "research",
+      "taxon_id": 1979
+   },
+   "103678431": {
+      "name": "Guira guira",
+      "quality": "needs_id",
+      "taxon_id": 1979
+   },
+   "103677861": {
+      "name": "Columbina squammata",
+      "quality": "needs_id",
+      "taxon_id": 3564
+   },
+   "103677844": {
+      "name": "Guira guira",
+      "quality": "needs_id",
+      "taxon_id": 1979
+   },
+   "103635184": {
+      "name": "Leucochrysa",
+      "quality": "needs_id",
+      "taxon_id": 252940
+   },
+   "103632850": {
+      "name": "Lentinus",
+      "quality": "needs_id",
+      "taxon_id": 68311
+   },
+   "103632727": {
+      "name": "Pleurotus",
+      "quality": "casual",
+      "taxon_id": 48496
+   },
+   "103632699": {
+      "name": "Ganoderma",
+      "quality": "needs_id",
+      "taxon_id": 48475
+   },
+   "103626511": {
+      "name": "Turdus rufiventris",
+      "quality": "needs_id",
+      "taxon_id": 12738
+   },
+   "103625608": {
+      "name": "Leucocoprinus fragilissimus",
+      "quality": "research",
+      "taxon_id": 202380
+   },
+   "103625460": {
+      "name": "Troglodytes aedon",
+      "quality": "research",
+      "taxon_id": 7562
+   },
+   "103598538": {
+      "name": "Mestra hersilia",
+      "quality": "needs_id",
+      "taxon_id": 533853
+   },
+   "103597626": {
+      "name": "Amazona",
+      "quality": "needs_id",
+      "taxon_id": 18975
+   },
+   "103596678": {
+      "name": "Piaya cayana",
+      "quality": "research",
+      "taxon_id": 1758
+   },
+   "103596642": {
+      "name": "Marma",
+      "quality": "needs_id",
+      "taxon_id": 420458
+   },
+   "103596601": {
+      "name": "Pyrisitia nise",
+      "quality": "needs_id",
+      "taxon_id": 122377
+   },
+   "103596560": {
+      "name": "Argiope argentata",
+      "quality": "research",
+      "taxon_id": 67706
+   },
+   "103584403": {
+      "name": "Pitangus sulphuratus",
+      "quality": "research",
+      "taxon_id": 16956
+   },
+   "103584296": {
+      "name": "Turdus leucomelas",
+      "quality": "research",
+      "taxon_id": 12737
+   },
+   "103584278": {
+      "name": "Alagoasa",
+      "quality": "needs_id",
+      "taxon_id": 253038
+   },
+   "103582357": {
+      "name": "Coenagrionidae",
+      "quality": "needs_id",
+      "taxon_id": 47925
+   },
+   "103580593": {
+      "name": "Herminiinae",
+      "quality": "needs_id",
+      "taxon_id": 122479
+   },
+   "103580554": {
+      "name": "Anicla infecta",
+      "quality": "needs_id",
+      "taxon_id": 213631
+   },
+   "103580510": {
+      "name": "Euborellia annulipes",
+      "quality": "needs_id",
+      "taxon_id": 196419
+   },
+   "103552903": {
+      "name": "Marasmius haematocephalus",
+      "quality": "research",
+      "taxon_id": 328225
+   },
+   "103545320": {
+      "name": "Nasutitermes",
+      "quality": "needs_id",
+      "taxon_id": 122702
+   },
+   "103537757": {
+      "name": "Cyanthillium cinereum",
+      "quality": "needs_id",
+      "taxon_id": 130374
+   },
+   "103537739": {
+      "name": "Pterygota",
+      "quality": "needs_id",
+      "taxon_id": 184884
+   },
+   "103537719": {
+      "name": "Thraupis sayaca",
+      "quality": "research",
+      "taxon_id": 10293
+   },
+   "103537695": {
+      "name": "Actinosoma pentacanthum",
+      "quality": "research",
+      "taxon_id": 446679
+   },
+   "103537627": {
+      "name": "Thaumasia",
+      "quality": "needs_id",
+      "taxon_id": 250106
+   },
+   "103528989": {
+      "name": "Trigoniulus corallinus",
+      "quality": "needs_id",
+      "taxon_id": 123010
+   },
+   "103528880": {
+      "name": "Arctiini",
+      "quality": "needs_id",
+      "taxon_id": 82089
+   },
+   "103528563": {
+      "name": "Ascia monuste",
+      "quality": "needs_id",
+      "taxon_id": 51536
+   },
+   "103522585": {
+      "name": "Argiope argentata",
+      "quality": "research",
+      "taxon_id": 67706
+   },
+   "103500196": {
+      "name": "Cattleya",
+      "quality": "casual",
+      "taxon_id": 140844
+   },
+   "103500129": {
+      "name": "Adenium obesum",
+      "quality": "casual",
+      "taxon_id": 124839
+   },
+   "103499898": {
+      "name": "Architis",
+      "quality": "needs_id",
+      "taxon_id": 420105
+   },
+   "103499892": {
+      "name": "Didymium",
+      "quality": "needs_id",
+      "taxon_id": 134048
+   },
+   "103499881": {
+      "name": "Plantae",
+      "quality": "needs_id",
+      "taxon_id": 47126
+   },
+   "103499815": {
+      "name": "Plantae",
+      "quality": "needs_id",
+      "taxon_id": 47126
+   },
+   "103499742": {
+      "name": "Magnoliopsida",
+      "quality": "needs_id",
+      "taxon_id": 47124
+   },
+   "103499736": {
+      "name": "Penelope superciliaris",
+      "quality": "research",
+      "taxon_id": 2061
+   },
+   "103499532": {
+      "name": "Mimosoideae",
+      "quality": "needs_id",
+      "taxon_id": 373578
+   },
+   "103499184": {
+      "name": "Fidicinini",
+      "quality": "needs_id",
+      "taxon_id": 605029
+   },
+   "103498573": {
+      "name": "Lampyrinae",
+      "quality": "needs_id",
+      "taxon_id": 460312
+   },
+   "103498326": {
+      "name": "Conocybe",
+      "quality": "needs_id",
+      "taxon_id": 117228
+   },
+   "103498267": {
+      "name": "Actinosoma pentacanthum",
+      "quality": "research",
+      "taxon_id": 446679
+   },
+   "103498151": {
+      "name": "Rupela",
+      "quality": "needs_id",
+      "taxon_id": 417203
+   },
+   "103496160": {
+      "name": "Ctenus",
+      "quality": "needs_id",
+      "taxon_id": 199589
+   },
+   "103496064": {
+      "name": "Anisoptera",
+      "quality": "needs_id",
+      "taxon_id": 47927
+   },
+   "103496029": {
+      "name": "Ranatra",
+      "quality": "needs_id",
+      "taxon_id": 119346
+   },
+   "103495783": {
+      "name": "Caridea",
+      "quality": "needs_id",
+      "taxon_id": 342912
+   },
+   "103495499": {
+      "name": "Zygoptera",
+      "quality": "needs_id",
+      "taxon_id": 47928
+   },
+   "103495387": {
+      "name": "Piaractus mesopotamicus",
+      "quality": "needs_id",
+      "taxon_id": 141754
+   },
+   "103495380": {
+      "name": "Hirudinea",
+      "quality": "casual",
+      "taxon_id": 63081
+   },
+   "103494808": {
+      "name": "Tetragnatha",
+      "quality": "needs_id",
+      "taxon_id": 47550
+   },
+   "103494606": {
+      "name": "Hymenochaetaceae",
+      "quality": "needs_id",
+      "taxon_id": 57518
+   },
+   "103494574": {
+      "name": "Fungi",
+      "quality": "needs_id",
+      "taxon_id": 47170
+   },
+   "103494545": {
+      "name": "Schizophyllum commune",
+      "quality": "needs_id",
+      "taxon_id": 54573
+   },
+   "103494514": {
+      "name": "Hexagonia hydnoides",
+      "quality": "needs_id",
+      "taxon_id": 202438
+   },
+   "103483153": {
+      "name": "Oxytenis",
+      "quality": "needs_id",
+      "taxon_id": 247584
+   },
+   "103482817": {
+      "name": "Melanoides tuberculata",
+      "quality": "research",
+      "taxon_id": 209144
+   },
+   "103475534": {
+      "name": "Ischnura heterosticta",
+      "quality": "needs_id",
+      "taxon_id": 201963
+   },
+   "103436920": {
+      "name": "Portulaca",
+      "quality": "needs_id",
+      "taxon_id": 58992
+   },
+   "103436103": {
+      "name": "Lixus",
+      "quality": "needs_id",
+      "taxon_id": 71157
+   },
+   "103435828": {
+      "name": "Gomphrena",
+      "quality": "needs_id",
+      "taxon_id": 128269
+   },
+   "103435605": {
+      "name": "Pilea microphylla",
+      "quality": "research",
+      "taxon_id": 69172
+   },
+   "103435571": {
+      "name": "Lentinus crinitus",
+      "quality": "needs_id",
+      "taxon_id": 202421
+   },
+   "103435182": {
+      "name": "Thomisus labefactus",
+      "quality": "needs_id",
+      "taxon_id": 332452
+   },
+   "103429751": {
+      "name": "Pompeius verna",
+      "quality": "research",
+      "taxon_id": 58519
+   },
+   "103419155": {
+      "name": "Neurothemis intermedia",
+      "quality": "research",
+      "taxon_id": 107004
+   },
+   "103390417": {
+      "name": "Lycosinae",
+      "quality": "needs_id",
+      "taxon_id": 1235357
+   },
+   "103390178": {
+      "name": "Loxa viridis",
+      "quality": "research",
+      "taxon_id": 296279
+   },
+   "103388971": {
+      "name": "Eumolpini",
+      "quality": "needs_id",
+      "taxon_id": 468345
+   },
+   "103388788": {
+      "name": "Hortensia",
+      "quality": "needs_id",
+      "taxon_id": 479875
+   },
+   "103388439": {
+      "name": "Chironomidae",
+      "quality": "needs_id",
+      "taxon_id": 53275
+   },
+   "103386890": {
+      "name": "Scytodes fusca",
+      "quality": "research",
+      "taxon_id": 126289
+   },
+   "103386862": {
+      "name": "Smicridea",
+      "quality": "needs_id",
+      "taxon_id": 211506
+   },
+   "103386801": {
+      "name": "Mocis frugalis",
+      "quality": "needs_id",
+      "taxon_id": 52031
+   },
+   "103380881": {
+      "name": "Ricinus communis",
+      "quality": "research",
+      "taxon_id": 56739
+   },
+   "103380854": {
+      "name": "Chloris barbata",
+      "quality": "needs_id",
+      "taxon_id": 160519
+   },
+   "103362917": {
+      "name": "Zosis geniculata",
+      "quality": "research",
+      "taxon_id": 172199
+   },
+   "103360426": {
+      "name": "Biblidinae",
+      "quality": "needs_id",
+      "taxon_id": 134159
+   },
+   "103360423": {
+      "name": "Mestra hersilia",
+      "quality": "needs_id",
+      "taxon_id": 533853
+   },
+   "103360419": {
+      "name": "Mechanitis",
+      "quality": "needs_id",
+      "taxon_id": 81743
+   },
+   "103360402": {
+      "name": "Biblis hyperia",
+      "quality": "needs_id",
+      "taxon_id": 141752
+   },
+   "103360127": {
+      "name": "Dynamine",
+      "quality": "needs_id",
+      "taxon_id": 148678
+   },
+   "103339787": {
+      "name": "Falconina",
+      "quality": "needs_id",
+      "taxon_id": 70360
+   },
+   "103332981": {
+      "name": "Dicymolomia",
+      "quality": "needs_id",
+      "taxon_id": 173878
+   },
+   "103330261": {
+      "name": "Dichotomius",
+      "quality": "needs_id",
+      "taxon_id": 129578
+   },
+   "103328077": {
+      "name": "Lepidoptera",
+      "quality": "needs_id",
+      "taxon_id": 47157
+   },
+   "103318803": {
+      "name": "Cathartes",
+      "quality": "needs_id",
+      "taxon_id": 4755
+   },
+   "103318231": {
       "name": "Salvator merianae",
       "quality": "research",
       "taxon_id": 318758
    },
-   "96102961": {
-      "name": "Caracara plancus",
-      "quality": "research",
-      "taxon_id": 4715
-   },
-   "90158786": {
-      "name": "Callithrix penicillata",
-      "quality": "research",
-      "taxon_id": 43374
-   },
-   "89454189": {
-      "name": "Hippeastrum morelianum",
-      "quality": "research",
-      "taxon_id": 464454
-   },
-   "88885694": {
-      "name": "Asclepias curassavica",
-      "quality": "research",
-      "taxon_id": 75602
-   },
-   "88885514": {
-      "name": "Drymoreomys albimaculatus",
+   "103318199": {
+      "name": "Attina",
       "quality": "needs_id",
-      "taxon_id": 935862
+      "taxon_id": 891179
    },
-   "88884998": {
-      "name": "Lonomia",
+   "103318175": {
+      "name": "Lantana horrida",
       "quality": "needs_id",
-      "taxon_id": 85106
+      "taxon_id": 243637
    },
-   "88884473": {
-      "name": "Sparassidae",
+   "103318159": {
+      "name": "Strymon bazochii",
       "quality": "needs_id",
-      "taxon_id": 47867
+      "taxon_id": 196543
    },
-   "88884095": {
-      "name": "Pantherodes",
+   "103317995": {
+      "name": "Hermeuptychia hermes",
       "quality": "needs_id",
-      "taxon_id": 127115
+      "taxon_id": 132134
    },
-   "88883916": {
-      "name": "Astrocaryum aculeatissimum",
+   "103317951": {
+      "name": "Libellulidae",
+      "quality": "needs_id",
+      "taxon_id": 47819
+   },
+   "103317866": {
+      "name": "Apinae",
+      "quality": "needs_id",
+      "taxon_id": 199939
+   },
+   "103317771": {
+      "name": "Spermacoce verticillata",
+      "quality": "needs_id",
+      "taxon_id": 169171
+   },
+   "103316103": {
+      "name": "Sicalis flaveola",
       "quality": "research",
-      "taxon_id": 364270
+      "taxon_id": 9864
    },
-   "87803406": {
-      "name": "Callithrix jacchus \u00d7 penicillata",
+   "103314536": {
+      "name": "Icterus jamacaii",
       "quality": "research",
-      "taxon_id": 855883
+      "taxon_id": 9356
    },
-   "85324705": {
-      "name": "Chironomus",
+   "103309818": {
+      "name": "Fluvicola nengeta",
+      "quality": "research",
+      "taxon_id": 17278
+   },
+   "103309142": {
+      "name": "Hoplias malabaricus",
+      "quality": "needs_id",
+      "taxon_id": 172357
+   },
+   "103307499": {
+      "name": "Lymire",
+      "quality": "needs_id",
+      "taxon_id": 177224
+   },
+   "103307437": {
+      "name": "Galerucini",
+      "quality": "needs_id",
+      "taxon_id": 489098
+   },
+   "103307412": {
+      "name": "Phyllocaulis",
+      "quality": "needs_id",
+      "taxon_id": 85129
+   },
+   "103307381": {
+      "name": "Thaumasia",
+      "quality": "needs_id",
+      "taxon_id": 250106
+   },
+   "103305771": {
+      "name": "Belostoma",
+      "quality": "needs_id",
+      "taxon_id": 81576
+   },
+   "103305752": {
+      "name": "Agriocnemis",
+      "quality": "needs_id",
+      "taxon_id": 86283
+   },
+   "103280142": {
+      "name": "Hemidactylus mabouia",
+      "quality": "research",
+      "taxon_id": 68492
+   },
+   "103279164": {
+      "name": "Coenagrionidae",
+      "quality": "needs_id",
+      "taxon_id": 47925
+   },
+   "103268682": {
+      "name": "Tyrannus melancholicus",
+      "quality": "research",
+      "taxon_id": 16787
+   },
+   "103248086": {
+      "name": "Turdus leucomelas",
+      "quality": "research",
+      "taxon_id": 12737
+   },
+   "103247974": {
+      "name": "Aedes aegypti",
+      "quality": "needs_id",
+      "taxon_id": 155453
+   },
+   "103247964": {
+      "name": "Cacoscelis marginata",
+      "quality": "research",
+      "taxon_id": 860686
+   },
+   "103246496": {
+      "name": "Cacicus haemorrhous",
+      "quality": "research",
+      "taxon_id": 10357
+   },
+   "103246476": {
+      "name": "Tipulidae",
+      "quality": "needs_id",
+      "taxon_id": 51225
+   },
+   "103246209": {
+      "name": "Nephilingis cruentata",
+      "quality": "research",
+      "taxon_id": 425206
+   },
+   "103246092": {
+      "name": "Apoica pallens",
+      "quality": "needs_id",
+      "taxon_id": 244232
+   },
+   "103246050": {
+      "name": "Callithrix geoffroyi",
+      "quality": "research",
+      "taxon_id": 43372
+   },
+   "103246028": {
+      "name": "Uloboridae",
+      "quality": "needs_id",
+      "taxon_id": 121468
+   },
+   "103198528": {
+      "name": "Icterus jamacaii",
+      "quality": "research",
+      "taxon_id": 9356
+   },
+   "103198494": {
+      "name": "Tropidacris collaris",
+      "quality": "needs_id",
+      "taxon_id": 487164
+   },
+   "103198007": {
+      "name": "Iguana iguana",
+      "quality": "research",
+      "taxon_id": 35342
+   },
+   "103197975": {
+      "name": "Crocodylus acutus",
+      "quality": "research",
+      "taxon_id": 26085
+   },
+   "103169761": {
+      "name": "Capra nubiana",
+      "quality": "research",
+      "taxon_id": 42352
+   },
+   "103169696": {
+      "name": "Corvus cornix",
+      "quality": "research",
+      "taxon_id": 144757
+   },
+   "103169663": {
+      "name": "Paepalanthus",
+      "quality": "needs_id",
+      "taxon_id": 82151
+   },
+   "103169639": {
+      "name": "Panthera tigris",
       "quality": "casual",
-      "taxon_id": 129409
+      "taxon_id": 41967
    },
-   "85319511": {
-      "name": "Trochilidae",
-      "quality": "needs_id",
-      "taxon_id": 5562
+   "103169372": {
+      "name": "Phoenicopterus",
+      "quality": "casual",
+      "taxon_id": 4256
    },
-   "80856962": {
-      "name": "Mimus saturninus",
+   "103169293": {
+      "name": "Anser anser",
       "quality": "research",
-      "taxon_id": 14878
+      "taxon_id": 7018
    },
-   "80226280": {
-      "name": "Leptophobia aripa",
-      "quality": "needs_id",
-      "taxon_id": 62500
-   },
-   "80225403": {
-      "name": "Leucanella",
-      "quality": "needs_id",
-      "taxon_id": 83651
-   },
-   "79134543": {
-      "name": "Kalanchoe delagoensis",
+   "103167222": {
+      "name": "Sciurus carolinensis",
       "quality": "research",
-      "taxon_id": 164328
-   },
-   "79035237": {
-      "name": "Aechmea bromeliifolia",
-      "quality": "research",
-      "taxon_id": 276440
-   },
-   "74770595": {
-      "name": "Ramphastos toco",
-      "quality": "research",
-      "taxon_id": 18793
-   },
-   "73017552": {
-      "name": "Phobetron hipparchia",
-      "quality": "needs_id",
-      "taxon_id": 479975
+      "taxon_id": 46017
    }
 }
