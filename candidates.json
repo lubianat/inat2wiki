@@ -1,4 +1,9 @@
 {
+   "104225989": {
+      "name": "Conocephalus",
+      "quality": "needs_id",
+      "taxon_id": 118890
+   },
    "104132650": {
       "name": "Turdus rufiventris",
       "quality": "research",
@@ -115,9 +120,9 @@
       "taxon_id": 4765
    },
    "104131828": {
-      "name": "Basidiomycota",
+      "name": "Marasmius",
       "quality": "needs_id",
-      "taxon_id": 47169
+      "taxon_id": 54067
    },
    "104131498": {
       "name": "Fungi",
@@ -135,9 +140,9 @@
       "taxon_id": 47115
    },
    "104131340": {
-      "name": "Veneridae",
+      "name": "Anomalocardia flexuosa",
       "quality": "needs_id",
-      "taxon_id": 50588
+      "taxon_id": 504499
    },
    "104131262": {
       "name": "Cerithium atratum",
@@ -616,7 +621,7 @@
    },
    "103494545": {
       "name": "Schizophyllum commune",
-      "quality": "needs_id",
+      "quality": "research",
       "taxon_id": 54573
    },
    "103494514": {
@@ -983,10 +988,5 @@
       "name": "Anser anser",
       "quality": "research",
       "taxon_id": 7018
-   },
-   "103167222": {
-      "name": "Sciurus carolinensis",
-      "quality": "research",
-      "taxon_id": 46017
    }
 }

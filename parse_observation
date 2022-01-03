@@ -10,24 +10,24 @@ def main():
     except:
         inaturalist_id = input("Enter the iNaturalist observation id:")
 
-    print(inaturalist_id)
     base_url = "https://api.inaturalist.org/v1/"
     observation_url = base_url + f"observations/{inaturalist_id}"
 
     result = requests.get(observation_url)
 
     data = result.json()
-    print(data)
     observation_data = data["results"][0]
     photo_data_list = observation_data["photos"]
 
     for i, photo_data in enumerate(photo_data_list):
-        print(f"URL for observation {str(i+1)} ")
-        print_commons_url(observation_data, photo_data, inaturalist_id)
+
+        print(f"====== Link for uploading observation {str(i+1)} ======")
+        upload_url = get_commons_url(observation_data, photo_data, inaturalist_id)
+        print(upload_url)
         print("=============== // =============")
 
 
-def print_commons_url(observation_data, photo_data, inaturalist_id):
+def get_commons_url(observation_data, photo_data, inaturalist_id):
     upload_params = {}
 
     photo_url = photo_data["url"].replace("square", "original")
@@ -42,14 +42,8 @@ def print_commons_url(observation_data, photo_data, inaturalist_id):
 
     switcher = {"cc-by": "cc-by-4.0", "cc-by-sa": "cc-by-sa-4.0", "cc0": "Cc-zero"}
 
-    print("https://commons.wikimedia.org/wiki/Special:Upload")
-
-    print("====== Photo URL =====")
-    print(photo_url)
-
     title = upload_params["taxon"] + " " + str(upload_params["photo_id"]) + ".jpeg"
 
-    print("====== Summary ======")
     license = switcher[upload_params["photo_license"]]
 
     summary = (
@@ -83,7 +77,8 @@ def print_commons_url(observation_data, photo_data, inaturalist_id):
         upload_page
         + f"?wpUploadDescription={summary_for_url}&wpLicense={license}&wpDestFile={title_for_url}&wpSourceType=url&wpUploadFileURL={photo_url}"
     )
-    print(upload_url)
+    return(upload_url)
+
 
 
 if __name__ == "__main__":
