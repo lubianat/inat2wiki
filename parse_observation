@@ -19,12 +19,14 @@ def main():
     observation_data = data["results"][0]
     photo_data_list = observation_data["photos"]
 
+    print(f"====== Links for observation {inaturalist_id} ======")
+
     for i, photo_data in enumerate(photo_data_list):
 
-        print(f"====== Link for uploading observation {str(i+1)} ======")
+        print(f"====== Link for uploading photo {str(i+1)} ======")
         upload_url = get_commons_url(observation_data, photo_data, inaturalist_id)
         print(upload_url)
-        print("=============== // =============")
+        print("====== // ======")
 
 
 def get_commons_url(observation_data, photo_data, inaturalist_id):

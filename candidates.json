@@ -1,4 +1,14 @@
 {
+   "104404131": {
+      "name": "Columba livia",
+      "quality": "research",
+      "taxon_id": 3017
+   },
+   "104311064": {
+      "name": "Ambonus distinctus",
+      "quality": "research",
+      "taxon_id": 747513
+   },
    "104225989": {
       "name": "Conocephalus",
       "quality": "needs_id",
@@ -30,9 +40,9 @@
       "taxon_id": 123003
    },
    "104132503": {
-      "name": "Hypselonotus interruptus",
+      "name": "Dysdercus",
       "quality": "needs_id",
-      "taxon_id": 512434
+      "taxon_id": 180035
    },
    "104132491": {
       "name": "Sida",
@@ -81,7 +91,7 @@
    },
    "104132136": {
       "name": "Manihot esculenta",
-      "quality": "needs_id",
+      "quality": "research",
       "taxon_id": 165138
    },
    "104132113": {
@@ -141,7 +151,7 @@
    },
    "104131340": {
       "name": "Anomalocardia flexuosa",
-      "quality": "needs_id",
+      "quality": "research",
       "taxon_id": 504499
    },
    "104131262": {
@@ -150,9 +160,9 @@
       "taxon_id": 208871
    },
    "104131118": {
-      "name": "Stramonita haemastoma",
-      "quality": "needs_id",
-      "taxon_id": 292602
+      "name": "Stramonita brasiliensis",
+      "quality": "research",
+      "taxon_id": 875627
    },
    "104129058": {
       "name": "Lecanoromycetes",
@@ -180,9 +190,9 @@
       "taxon_id": 47126
    },
    "104125524": {
-      "name": "Plantae",
+      "name": "Polypodiopsida",
       "quality": "needs_id",
-      "taxon_id": 47126
+      "taxon_id": 121943
    },
    "104124032": {
       "name": "Trametes sanguinea",
@@ -935,9 +945,9 @@
       "taxon_id": 43372
    },
    "103246028": {
-      "name": "Uloboridae",
-      "quality": "needs_id",
-      "taxon_id": 121468
+      "name": "Zosis geniculata",
+      "quality": "research",
+      "taxon_id": 172199
    },
    "103198528": {
       "name": "Icterus jamacaii",
@@ -978,15 +988,5 @@
       "name": "Panthera tigris",
       "quality": "casual",
       "taxon_id": 41967
-   },
-   "103169372": {
-      "name": "Phoenicopterus",
-      "quality": "casual",
-      "taxon_id": 4256
-   },
-   "103169293": {
-      "name": "Anser anser",
-      "quality": "research",
-      "taxon_id": 7018
    }
 }
