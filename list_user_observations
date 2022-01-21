@@ -17,21 +17,15 @@ def main():
     )
 
     observations = observations.json()
-    print(observations)
-
     core_information = {}
 
     inaturalist_taxon_ids = []
     for obs in observations["results"]:
-        print("-----------")
         quality_grade = obs["quality_grade"]
-
         tax_info = obs["taxon"]
-        print(tax_info)
 
         try:
             inaturalist_taxon_ids.append(str(tax_info["min_species_taxon_id"]))
-
             obs_id = obs["id"]
             core_information[obs_id] = {
                 "name": tax_info["name"],
@@ -41,9 +35,6 @@ def main():
         except:
             with open("log.txt", "a") as f:
                 f.write(str(obs) + "/n")
-
-    print("Possible taxa:")
-    print(inaturalist_taxon_ids)
 
     with open("candidates.json", "w") as outfile:
         json.dump(core_information, outfile, indent=3)
