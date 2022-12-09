@@ -2,7 +2,7 @@
 import requests
 import urllib.parse
 import sys
-
+import textwrap
 
 def main():
     try:
@@ -30,7 +30,7 @@ def main():
 
 def get_commons_url(observation_data, photo_data, inaturalist_id):
     upload_params = {}
-
+    print(photo_data)
     photo_url = photo_data["url"].replace("square", "original")
 
     user_data = observation_data["user"]
@@ -47,29 +47,20 @@ def get_commons_url(observation_data, photo_data, inaturalist_id):
 
     license = switcher[upload_params["photo_license"]]
 
-    summary = (
-        """{{Information"""
-        + f"""
-    |description={{{{en|Picture of {upload_params["taxon"]} from iNaturalist. }}}}
-    |date={upload_params["date"]}
-    |source=https://www.inaturalist.org/photos/{str(upload_params["photo_id"])}
-    |author=[https://www.inaturalist.org/users/{str(upload_params["user_id"])} {upload_params["user_name"]}]
-    |permission=
-    |other versions=
-    """
-        + """}}
-        
-    {{"""
-        + f"iNaturalist|{inaturalist_id}"
-        + """}}
-        
+    summary = textwrap.dedent(
+        f"""
+        {{{{Information
+        |description={{{{en|Picture of {upload_params["taxon"]} from iNaturalist. }}}}
+        |date={upload_params["date"]}
+        |source=https://www.inaturalist.org/photos/{str(upload_params["photo_id"])}
+        |author=[https://www.inaturalist.org/users/{str(upload_params["user_id"])} {upload_params["user_name"]}]
+        |permission=
+        |other versions=
+        }}}}
+        {{{{  iNaturalist|{inaturalist_id} }}}}
         {{INaturalistreview}}
-        """
-        + f"""
-
-    [[Category:{upload_params["taxon"]}]]"""
+        [[Category:{upload_params["taxon"]}]]"""
     )
-
     upload_page = "https://commons.wikimedia.org/wiki/Special:Upload"
 
     summary_for_url = urllib.parse.quote(summary)
