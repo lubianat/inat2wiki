@@ -4,6 +4,7 @@ import urllib.parse
 import sys
 import textwrap
 
+
 def main():
     try:
         inaturalist_id = sys.argv[1]
@@ -45,7 +46,8 @@ def get_commons_url(observation_data, photo_data, inaturalist_id):
 
     title = upload_params["taxon"] + " " + str(upload_params["photo_id"]) + ".jpeg"
 
-    license = switcher[upload_params["photo_license"]]
+    license_code = upload_params["photo_license"]
+    license = switcher[license_code]
 
     summary = textwrap.dedent(
         f"""
@@ -58,7 +60,9 @@ def get_commons_url(observation_data, photo_data, inaturalist_id):
         |other versions=
         }}}}
         {{{{  iNaturalist|{inaturalist_id} }}}}
-        {{INaturalistreview}}
+        {{{{INaturalistreview}}}}
+        {{{{{license_code}}}}}
+
         [[Category:{upload_params["taxon"]}]]"""
     )
     upload_page = "https://commons.wikimedia.org/wiki/Special:Upload"
