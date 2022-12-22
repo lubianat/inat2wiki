@@ -7,6 +7,7 @@ import urllib.parse
 from wdcuration import query_wikidata
 from collections import OrderedDict
 from operator import getitem
+import click
 
 
 def chunks(lst, n):
@@ -15,11 +16,9 @@ def chunks(lst, n):
         yield lst[i : i + n]
 
 
-def main():
-    try:
-        user_id = sys.argv[1]
-    except:
-        user_id = input("Enter the user id:")
+@click.command(name="all")
+@click.argument("user_id")
+def get_all_observations(user_id):
 
     core_information, inaturalist_taxon_ids = extract_core_information(user_id)
 
@@ -48,9 +47,8 @@ def main():
     """
     )
 
-    url_query_for_taxa_missing_images = (
-        "https://query.wikidata.org/#"
-        + urllib.parse.quote(query_for_taxa_missing_images)
+    url_query_for_taxa_missing_images = "https://query.wikidata.org/#" + urllib.parse.quote(
+        query_for_taxa_missing_images
     )
 
     taxa_missing_images = query_wikidata(query_for_taxa_missing_images)
@@ -60,9 +58,9 @@ def main():
         r = requests.get(f"https://api.inaturalist.org/v1/taxa/{','.join(chunk)}")
         for taxon_info in r.json()["results"]:
             try:
-                core_information[str(taxon_info["id"])][
-                    "number_of_observations"
-                ] = taxon_info["observations_count"]
+                core_information[str(taxon_info["id"])]["number_of_observations"] = taxon_info[
+                    "observations_count"
+                ]
             except KeyError:
                 print(f"Key not found: {taxon_info['id']}")
     for taxon_id in core_information:
@@ -155,4 +153,4 @@ def extract_core_information(id):
 
 
 if __name__ == "__main__":
-    main()
+    get_all_observations()

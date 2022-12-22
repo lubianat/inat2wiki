@@ -1,1444 +1,618 @@
 {
-   "1429445": {
-      "name": "Daiphron brevinotatum",
+   "1225747": {
+      "name": "Tityus kuryi",
       "quality": "research",
-      "taxon_id": 1429445,
+      "taxon_id": 1225747,
       "observations": [
-         142864552
+         71415897
       ],
       "number_of_observations": 1
    },
-   "1428225": {
-      "name": "Daiphron mediofasciatum",
+   "34877": {
+      "name": "Procellosaurinus erythrocercus",
       "quality": "research",
-      "taxon_id": 1428225,
+      "taxon_id": 34877,
       "observations": [
-         142396220
+         68956524
       ],
-      "number_of_observations": 2
+      "number_of_observations": 1
    },
-   "1428224": {
-      "name": "Chauliognathus saltator",
+   "717898": {
+      "name": "Leposternon octostegum",
       "quality": "research",
-      "taxon_id": 1428224,
+      "taxon_id": 717898,
       "observations": [
-         142396217,
-         142396215
+         70820250
       ],
-      "number_of_observations": 2
+      "number_of_observations": 2,
+      "wikidata_id": "http://www.wikidata.org/entity/Q5075375",
+      "missing_image": true
    },
-   "1007990": {
-      "name": "Alagoasa arcifera",
+   "23030": {
+      "name": "Rupirana cardosoi",
       "quality": "research",
-      "taxon_id": 1007990,
+      "taxon_id": 23030,
       "observations": [
-         140200219
+         71415898
       ],
-      "number_of_observations": 5
+      "number_of_observations": 4
    },
-   "716908": {
-      "name": "Amorbia rectangularis",
-      "quality": "needs_id",
-      "taxon_id": 716908,
+   "1110936": {
+      "name": "Tityus aba",
+      "quality": "research",
+      "taxon_id": 1110936,
       "observations": [
-         138780190
+         71010201,
+         71010187
+      ],
+      "number_of_observations": 5,
+      "wikidata_id": "http://www.wikidata.org/entity/Q3529700",
+      "missing_image": true
+   },
+   "99614": {
+      "name": "Dryadosaura nordestina",
+      "quality": "research",
+      "taxon_id": 99614,
+      "observations": [
+         67565180
+      ],
+      "number_of_observations": 5,
+      "wikidata_id": "http://www.wikidata.org/entity/Q2287169",
+      "missing_image": true
+   },
+   "38990": {
+      "name": "Tropidurus erythrocephalus",
+      "quality": "research",
+      "taxon_id": 38990,
+      "observations": [
+         142384682
       ],
       "number_of_observations": 6,
-      "wikidata_id": "http://www.wikidata.org/entity/Q13322235",
+      "wikidata_id": "http://www.wikidata.org/entity/Q3540741",
       "missing_image": true
    },
-   "1179545": {
-      "name": "Platyphora figurata",
-      "quality": "needs_id",
-      "taxon_id": 1179545,
-      "observations": [
-         142178326
-      ],
-      "number_of_observations": 7
-   },
-   "805172": {
-      "name": "Malacoscylus gonostigma",
+   "34749": {
+      "name": "Acratosaura mentalis",
       "quality": "research",
-      "taxon_id": 805172,
+      "taxon_id": 34749,
       "observations": [
-         142396410,
-         142178317
+         71010203,
+         71010197
       ],
-      "number_of_observations": 8,
-      "wikidata_id": "http://www.wikidata.org/entity/Q14827988",
+      "number_of_observations": 9,
+      "wikidata_id": "http://www.wikidata.org/entity/Q2823468",
       "missing_image": true
    },
-   "1089981": {
-      "name": "Psilorrhynchus abdominalis",
+   "43995": {
+      "name": "Chaetomys subspinosus",
       "quality": "research",
-      "taxon_id": 1089981,
+      "taxon_id": 43995,
       "observations": [
-         139809567
+         68956644
       ],
       "number_of_observations": 9
    },
-   "938919": {
-      "name": "Pachylis bipunctatus",
+   "66440": {
+      "name": "Phyllomedusa bahiana",
       "quality": "research",
-      "taxon_id": 938919,
+      "taxon_id": 66440,
       "observations": [
-         142178344
-      ],
-      "number_of_observations": 11
-   },
-   "960021": {
-      "name": "Arsenura angulatus",
-      "quality": "research",
-      "taxon_id": 960021,
-      "observations": [
-         140203075,
-         140203073
-      ],
-      "number_of_observations": 12,
-      "wikidata_id": "http://www.wikidata.org/entity/Q13396931",
-      "missing_image": true
-   },
-   "823470": {
-      "name": "Phaegoptera histrionica",
-      "quality": "needs_id",
-      "taxon_id": 823470,
-      "observations": [
-         138780197
-      ],
-      "number_of_observations": 12
-   },
-   "515392": {
-      "name": "Leptoglossus ingens",
-      "quality": "research",
-      "taxon_id": 515392,
-      "observations": [
-         140200251
-      ],
-      "number_of_observations": 13
-   },
-   "1178152": {
-      "name": "Silis laeta",
-      "quality": "research",
-      "taxon_id": 1178152,
-      "observations": [
-         142864567,
-         142864566,
-         142864563
-      ],
-      "number_of_observations": 14
-   },
-   "1089759": {
-      "name": "Chauliognathus ignaciosus",
-      "quality": "research",
-      "taxon_id": 1089759,
-      "observations": [
-         142396444
-      ],
-      "number_of_observations": 14
-   },
-   "1258381": {
-      "name": "Neolema marginella",
-      "quality": "research",
-      "taxon_id": 1258381,
-      "observations": [
-         140200247,
-         139179167,
-         139179155
-      ],
-      "number_of_observations": 15
-   },
-   "1026268": {
-      "name": "Mesochila",
-      "quality": "needs_id",
-      "taxon_id": 1026268,
-      "observations": [
-         142178328,
-         142178327
-      ],
-      "number_of_observations": 16
-   },
-   "1038852": {
-      "name": "Buckibrotica cinctipennis",
-      "quality": "research",
-      "taxon_id": 1038852,
-      "observations": [
-         142395391
-      ],
-      "number_of_observations": 17,
-      "wikidata_id": "http://www.wikidata.org/entity/Q2337180",
-      "missing_image": true
-   },
-   "578415": {
-      "name": "Paryphthimoides grimon",
-      "quality": "needs_id",
-      "taxon_id": 578415,
-      "observations": [
-         140200248
+         71010194
       ],
       "number_of_observations": 17
    },
-   "805272": {
-      "name": "Microctenochira brasiliensis",
+   "33500": {
+      "name": "Hemidactylus brasilianus",
       "quality": "research",
-      "taxon_id": 805272,
+      "taxon_id": 33500,
       "observations": [
-         139179153
+         71010188
       ],
-      "number_of_observations": 18,
-      "wikidata_id": "http://www.wikidata.org/entity/Q2056929",
+      "number_of_observations": 22,
+      "wikidata_id": "http://www.wikidata.org/entity/Q4740143",
       "missing_image": true
    },
-   "1159596": {
-      "name": "Ortilia orticas",
+   "33402": {
+      "name": "Coleodactylus meridionalis",
       "quality": "research",
-      "taxon_id": 1159596,
+      "taxon_id": 33402,
       "observations": [
-         142864557
+         70820246
       ],
-      "number_of_observations": 19,
-      "wikidata_id": "http://www.wikidata.org/entity/Q13577328",
+      "number_of_observations": 24
+   },
+   "963197": {
+      "name": "Tityus mattogrossensis",
+      "quality": "research",
+      "taxon_id": 963197,
+      "observations": [
+         71010199
+      ],
+      "number_of_observations": 25,
+      "wikidata_id": "http://www.wikidata.org/entity/Q3529834",
       "missing_image": true
    },
-   "848247": {
-      "name": "Pseudomethoca spixi",
+   "113280": {
+      "name": "Strobilurus torquatus",
       "quality": "research",
-      "taxon_id": 848247,
+      "taxon_id": 113280,
       "observations": [
-         139179179
-      ],
-      "number_of_observations": 20
-   },
-   "870691": {
-      "name": "Aspisoma physonotum",
-      "quality": "research",
-      "taxon_id": 870691,
-      "observations": [
-         142178338
-      ],
-      "number_of_observations": 21
-   },
-   "1280779": {
-      "name": "Ellipticus testaceus",
-      "quality": "research",
-      "taxon_id": 1280779,
-      "observations": [
-         140200234
-      ],
-      "number_of_observations": 22
-   },
-   "751421": {
-      "name": "Xylophanes crenulata",
-      "quality": "research",
-      "taxon_id": 751421,
-      "observations": [
-         142178351
-      ],
-      "number_of_observations": 25
-   },
-   "781405": {
-      "name": "Rhinastus sternicornis",
-      "quality": "research",
-      "taxon_id": 781405,
-      "observations": [
-         138954483
-      ],
-      "number_of_observations": 26
-   },
-   "804480": {
-      "name": "Pyrogaster",
-      "quality": "needs_id",
-      "taxon_id": 804480,
-      "observations": [
-         142178347
+         142387269
       ],
       "number_of_observations": 27
    },
-   "958198": {
-      "name": "Parahiranetis salgadoi",
+   "24252": {
+      "name": "Corythomantis greeningi",
       "quality": "research",
-      "taxon_id": 958198,
+      "taxon_id": 24252,
       "observations": [
-         140203084
+         68956774
+      ],
+      "number_of_observations": 27
+   },
+   "539413": {
+      "name": "Bothrops erythromelas",
+      "quality": "research",
+      "taxon_id": 539413,
+      "observations": [
+         68958428
       ],
       "number_of_observations": 28
    },
-   "703627": {
-      "name": "Menenotus lunatus",
-      "quality": "needs_id",
-      "taxon_id": 703627,
-      "observations": [
-         139379614
-      ],
-      "number_of_observations": 30
-   },
-   "1393927": {
-      "name": "Epicauta fumosa",
+   "22866": {
+      "name": "Proceratophrys cristiceps",
       "quality": "research",
-      "taxon_id": 1393927,
+      "taxon_id": 22866,
       "observations": [
-         142178340
+         70821459
       ],
-      "number_of_observations": 32
-   },
-   "861455": {
-      "name": "Archaeoprepona chalciope",
-      "quality": "research",
-      "taxon_id": 861455,
-      "observations": [
-         142178315
-      ],
-      "number_of_observations": 32,
-      "wikidata_id": "http://www.wikidata.org/entity/Q2859980",
+      "number_of_observations": 38,
+      "wikidata_id": "http://www.wikidata.org/entity/Q2239382",
       "missing_image": true
    },
-   "956857": {
-      "name": "Dirphiopsis epiolina",
+   "24303": {
+      "name": "Scinax eurydice",
       "quality": "research",
-      "taxon_id": 956857,
+      "taxon_id": 24303,
       "observations": [
-         140203077
-      ],
-      "number_of_observations": 34,
-      "wikidata_id": "http://www.wikidata.org/entity/Q2558524",
-      "missing_image": true
-   },
-   "502416": {
-      "name": "Amydetes",
-      "quality": "needs_id",
-      "taxon_id": 502416,
-      "observations": [
-         139379568
+         70820257
       ],
       "number_of_observations": 38
    },
-   "1431701": {
-      "name": "Photinopygus",
-      "quality": "needs_id",
-      "taxon_id": 1431701,
+   "65338": {
+      "name": "Dendropsophus branneri",
+      "quality": "research",
+      "taxon_id": 65338,
       "observations": [
-         142396234
+         67565538
+      ],
+      "number_of_observations": 42
+   },
+   "34276": {
+      "name": "Lygodactylus klugei",
+      "quality": "research",
+      "taxon_id": 34276,
+      "observations": [
+         71010193
       ],
       "number_of_observations": 43
    },
-   "251190": {
-      "name": "Osorius",
-      "quality": "needs_id",
-      "taxon_id": 251190,
+   "97537": {
+      "name": "Chironius flavolineatus",
+      "quality": "research",
+      "taxon_id": 97537,
       "observations": [
-         139179165
+         73026388
+      ],
+      "number_of_observations": 44
+   },
+   "66511": {
+      "name": "Pleurodema diplolister",
+      "quality": "research",
+      "taxon_id": 66511,
+      "observations": [
+         68958193
       ],
       "number_of_observations": 47
    },
-   "857462": {
-      "name": "Charidotella rubicunda",
+   "36922": {
+      "name": "Enyalius catenatus",
       "quality": "research",
-      "taxon_id": 857462,
+      "taxon_id": 36922,
       "observations": [
-         139179152
+         71010195,
+         68957759,
+         68957758
       ],
-      "number_of_observations": 47,
-      "wikidata_id": "http://www.wikidata.org/entity/Q1873062",
-      "missing_image": true
+      "number_of_observations": 52
    },
-   "741525": {
-      "name": "Rhescyntis pseudomartii",
+   "28530": {
+      "name": "Taeniophallus occipitalis",
       "quality": "research",
-      "taxon_id": 741525,
+      "taxon_id": 28530,
       "observations": [
-         140203085,
-         139809793
+         70811026
       ],
-      "number_of_observations": 51
+      "number_of_observations": 54
    },
-   "856536": {
-      "name": "Cyclosoma",
-      "quality": "needs_id",
-      "taxon_id": 856536,
+   "877196": {
+      "name": "Jaguajir rochae",
+      "quality": "casual",
+      "taxon_id": 877196,
       "observations": [
-         140200225,
-         139809925
+         144726969
       ],
-      "number_of_observations": 51
+      "number_of_observations": 58
    },
-   "1166740": {
-      "name": "Neolema fasciata",
+   "33938": {
+      "name": "Phyllopezus pollicaris",
       "quality": "research",
-      "taxon_id": 1166740,
+      "taxon_id": 33938,
       "observations": [
-         142178324
+         70821458
       ],
-      "number_of_observations": 53
+      "number_of_observations": 69
    },
-   "531637": {
-      "name": "Phoraspis",
-      "quality": "needs_id",
-      "taxon_id": 531637,
-      "observations": [
-         142178316
-      ],
-      "number_of_observations": 55
-   },
-   "804292": {
-      "name": "Mesosemia odice",
+   "22955": {
+      "name": "Leptodactylus troglodytes",
       "quality": "research",
-      "taxon_id": 804292,
+      "taxon_id": 22955,
       "observations": [
-         140203080
+         70821456
       ],
-      "number_of_observations": 77,
-      "wikidata_id": "http://www.wikidata.org/entity/Q2235921",
-      "missing_image": true
+      "number_of_observations": 73
    },
-   "334052": {
-      "name": "Mimoniades versicolor",
+   "105868": {
+      "name": "Micrurus ibiboboca",
       "quality": "research",
-      "taxon_id": 334052,
+      "taxon_id": 105868,
       "observations": [
-         138780203
+         70811266
       ],
       "number_of_observations": 77
    },
-   "882787": {
-      "name": "Vaginulus taunaisii",
-      "quality": "needs_id",
-      "taxon_id": 882787,
-      "observations": [
-         138780183
-      ],
-      "number_of_observations": 77
-   },
-   "257279": {
-      "name": "Cocytius lucifer",
+   "28942": {
+      "name": "Pseudoboa nigra",
       "quality": "research",
-      "taxon_id": 257279,
+      "taxon_id": 28942,
       "observations": [
-         139179171
+         81313516
       ],
-      "number_of_observations": 78
+      "number_of_observations": 87
    },
-   "870506": {
-      "name": "Discodon cinctum",
+   "65966": {
+      "name": "Leptodactylus vastus",
       "quality": "research",
-      "taxon_id": 870506,
+      "taxon_id": 65966,
       "observations": [
-         142178332,
-         140200233,
-         139179151
+         70821455
       ],
-      "number_of_observations": 79
+      "number_of_observations": 95
    },
-   "251230": {
-      "name": "Nordus",
-      "quality": "needs_id",
-      "taxon_id": 251230,
+   "741094": {
+      "name": "Polybia chrysothorax",
+      "quality": "research",
+      "taxon_id": 741094,
       "observations": [
-         142396229,
-         139809612
+         72603423
       ],
-      "number_of_observations": 80,
-      "wikidata_id": "http://www.wikidata.org/entity/Q21215124",
+      "number_of_observations": 99,
+      "wikidata_id": "http://www.wikidata.org/entity/Q14425289",
       "missing_image": true
    },
-   "233852": {
-      "name": "Xylophanes porcus",
+   "25214": {
+      "name": "Dermatonotus muelleri",
       "quality": "research",
-      "taxon_id": 233852,
+      "taxon_id": 25214,
       "observations": [
-         142178349
-      ],
-      "number_of_observations": 82
-   },
-   "528087": {
-      "name": "Copaxa decrescens",
-      "quality": "research",
-      "taxon_id": 528087,
-      "observations": [
-         142396498
-      ],
-      "number_of_observations": 86
-   },
-   "1089758": {
-      "name": "Chauliognathus missionum",
-      "quality": "research",
-      "taxon_id": 1089758,
-      "observations": [
-         142396218
-      ],
-      "number_of_observations": 93
-   },
-   "525430": {
-      "name": "Antachara",
-      "quality": "needs_id",
-      "taxon_id": 525430,
-      "observations": [
-         138780189
-      ],
-      "number_of_observations": 100,
-      "wikidata_id": "http://www.wikidata.org/entity/Q3294336",
-      "missing_image": true
-   },
-   "257741": {
-      "name": "Nascus phocus",
-      "quality": "needs_id",
-      "taxon_id": 257741,
-      "observations": [
-         139379433,
-         138781541
-      ],
-      "number_of_observations": 107
-   },
-   "133735": {
-      "name": "Adelpha cocala caninia",
-      "quality": "research",
-      "taxon_id": 133735,
-      "observations": [
-         139379166
+         70821451
       ],
       "number_of_observations": 111
    },
-   "423975": {
-      "name": "Mimoides lysithous",
+   "29157": {
+      "name": "Oxyrhopus trigeminus",
       "quality": "research",
-      "taxon_id": 423975,
+      "taxon_id": 29157,
       "observations": [
-         142178342,
-         142178341,
-         139809735
+         71010196,
+         70820254
       ],
-      "number_of_observations": 115
+      "number_of_observations": 133
    },
-   "624590": {
-      "name": "Cycloneda pulchella",
+   "540223": {
+      "name": "Spilotes sulphureus",
       "quality": "research",
-      "taxon_id": 624590,
+      "taxon_id": 540223,
       "observations": [
-         142178329
+         71010202
       ],
-      "number_of_observations": 119,
-      "wikidata_id": "http://www.wikidata.org/entity/Q111590428",
-      "missing_image": true
+      "number_of_observations": 138
    },
-   "568996": {
-      "name": "Ploeogaster",
-      "quality": "needs_id",
-      "taxon_id": 568996,
+   "22984": {
+      "name": "Leptodactylus mystaceus",
+      "quality": "research",
+      "taxon_id": 22984,
       "observations": [
-         142178345
-      ],
-      "number_of_observations": 143
-   },
-   "518731": {
-      "name": "Dinidor",
-      "quality": "needs_id",
-      "taxon_id": 518731,
-      "observations": [
-         140200255
+         70820253,
+         70820251
       ],
       "number_of_observations": 149
    },
-   "17090": {
-      "name": "Myiornis auricularis",
-      "quality": "research",
-      "taxon_id": 17090,
-      "observations": [
-         140203081
-      ],
-      "number_of_observations": 157
-   },
-   "493246": {
-      "name": "Daiphron",
+   "43107": {
+      "name": "Sylvilagus brasiliensis",
       "quality": "needs_id",
-      "taxon_id": 493246,
+      "taxon_id": 43107,
       "observations": [
-         142178331
+         68958429
       ],
-      "number_of_observations": 167
+      "number_of_observations": 158
    },
-   "827517": {
-      "name": "Rothschildia speculifer",
+   "83515": {
+      "name": "Oxybelis aeneus",
       "quality": "research",
-      "taxon_id": 827517,
+      "taxon_id": 83515,
       "observations": [
-         140203088,
-         140203086
-      ],
-      "number_of_observations": 167,
-      "wikidata_id": "http://www.wikidata.org/entity/Q15653610",
-      "missing_image": true
-   },
-   "373761": {
-      "name": "Osoriini",
-      "quality": "needs_id",
-      "taxon_id": 373761,
-      "observations": [
-         142178343
+         71010200
       ],
       "number_of_observations": 172
    },
-   "703701": {
-      "name": "Acroleucus coxalis",
+   "38975": {
+      "name": "Tropidurus semitaeniatus",
+      "quality": "needs_id",
+      "taxon_id": 38975,
+      "observations": [
+         70821454
+      ],
+      "number_of_observations": 210
+   },
+   "67114": {
+      "name": "Rhinella granulosa",
       "quality": "research",
-      "taxon_id": 703701,
+      "taxon_id": 67114,
       "observations": [
-         138780211
+         70821457,
+         68958192
       ],
-      "number_of_observations": 184
+      "number_of_observations": 212
    },
-   "251084": {
-      "name": "Passalus",
-      "quality": "needs_id",
-      "taxon_id": 251084,
+   "36755": {
+      "name": "Polychrus acutirostris",
+      "quality": "research",
+      "taxon_id": 36755,
       "observations": [
-         139379312
+         73375330,
+         70820256,
+         70820247
       ],
-      "number_of_observations": 185
+      "number_of_observations": 235
    },
-   "488358": {
-      "name": "Phthia",
-      "quality": "needs_id",
-      "taxon_id": 488358,
+   "67105": {
+      "name": "Rhinella crucifer",
+      "quality": "research",
+      "taxon_id": 67105,
       "observations": [
-         138780206
+         71010205,
+         70820252
       ],
-      "number_of_observations": 188,
-      "wikidata_id": "http://www.wikidata.org/entity/Q18104286",
+      "number_of_observations": 241
+   },
+   "750963": {
+      "name": "Polybia ruficeps xanthops",
+      "quality": "research",
+      "taxon_id": 750963,
+      "observations": [
+         72603424
+      ],
+      "number_of_observations": 247,
+      "wikidata_id": "http://www.wikidata.org/entity/Q14425247",
       "missing_image": true
    },
-   "11114": {
-      "name": "Lochmias nematura",
+   "65350": {
+      "name": "Dendropsophus elegans",
       "quality": "research",
-      "taxon_id": 11114,
+      "taxon_id": 65350,
       "observations": [
-         138780179
+         77366724
       ],
-      "number_of_observations": 198
+      "number_of_observations": 254
    },
-   "1304958": {
-      "name": "Feigeria mycerina",
-      "quality": "needs_id",
-      "taxon_id": 1304958,
-      "observations": [
-         138780194
-      ],
-      "number_of_observations": 206
-   },
-   "127675": {
-      "name": "Arilus carinatus",
+   "146043": {
+      "name": "Copeoglossum nigropunctatum",
       "quality": "research",
-      "taxon_id": 127675,
+      "taxon_id": 146043,
       "observations": [
-         138780208
-      ],
-      "number_of_observations": 242,
-      "wikidata_id": "http://www.wikidata.org/entity/Q10417897",
-      "missing_image": true
-   },
-   "9591": {
-      "name": "Tangara desmaresti",
-      "quality": "research",
-      "taxon_id": 9591,
-      "observations": [
-         138780217
-      ],
-      "number_of_observations": 271
-   },
-   "538950": {
-      "name": "Argyrosticta",
-      "quality": "needs_id",
-      "taxon_id": 538950,
-      "observations": [
-         139179184
-      ],
-      "number_of_observations": 276
-   },
-   "705764": {
-      "name": "Vehilius clavicula",
-      "quality": "research",
-      "taxon_id": 705764,
-      "observations": [
-         142178337
-      ],
-      "number_of_observations": 284,
-      "wikidata_id": "http://www.wikidata.org/entity/Q14513154",
-      "missing_image": true
-   },
-   "706469": {
-      "name": "Miltomiges cinnamomea",
-      "quality": "research",
-      "taxon_id": 706469,
-      "observations": [
-         138780202
-      ],
-      "number_of_observations": 288,
-      "wikidata_id": "http://www.wikidata.org/entity/Q13856503",
-      "missing_image": true
-   },
-   "258437": {
-      "name": "Parides anchises",
-      "quality": "needs_id",
-      "taxon_id": 258437,
-      "observations": [
-         138780205
+         67565089
       ],
       "number_of_observations": 307
    },
-   "570533": {
-      "name": "Chauliognathus flavipes",
-      "quality": "research",
-      "taxon_id": 570533,
-      "observations": [
-         142864550,
-         142864549,
-         142864548,
-         142864547,
-         142396469,
-         142396216,
-         142396214
-      ],
-      "number_of_observations": 320
-   },
-   "258430": {
-      "name": "Memphis moruus stheno",
-      "quality": "research",
-      "taxon_id": 258430,
-      "observations": [
-         139379093
-      ],
-      "number_of_observations": 339
-   },
-   "148834": {
-      "name": "Strymon cestri",
-      "quality": "research",
-      "taxon_id": 148834,
-      "observations": [
-         142178350
-      ],
-      "number_of_observations": 364,
-      "wikidata_id": "http://www.wikidata.org/entity/Q25359147",
-      "missing_image": true
-   },
-   "257334": {
-      "name": "Xylophanes ceratomioides",
-      "quality": "research",
-      "taxon_id": 257334,
-      "observations": [
-         139179180
-      ],
-      "number_of_observations": 377
-   },
-   "425390": {
-      "name": "Ithomia agnosia zikani",
-      "quality": "research",
-      "taxon_id": 425390,
-      "observations": [
-         138780178
-      ],
-      "number_of_observations": 385,
-      "wikidata_id": "http://www.wikidata.org/entity/Q13372385",
-      "missing_image": true
-   },
-   "955600": {
-      "name": "Podalia orsilochus",
-      "quality": "research",
-      "taxon_id": 955600,
-      "observations": [
-         142395393,
-         142395392
-      ],
-      "number_of_observations": 412
-   },
-   "258084": {
-      "name": "Hypna clytemnestra huebneri",
-      "quality": "research",
-      "taxon_id": 258084,
-      "observations": [
-         139379060
-      ],
-      "number_of_observations": 442
-   },
-   "202551": {
-      "name": "Myscelia orsis",
-      "quality": "research",
-      "taxon_id": 202551,
-      "observations": [
-         138780204
-      ],
-      "number_of_observations": 479
-   },
-   "294022": {
-      "name": "Tithorea harmonia",
+   "109964": {
+      "name": "Polychrus marmoratus",
       "quality": "needs_id",
-      "taxon_id": 294022,
+      "taxon_id": 109964,
       "observations": [
-         138780224
+         142387546
       ],
-      "number_of_observations": 487
+      "number_of_observations": 310
    },
-   "517485": {
-      "name": "Coelomera",
-      "quality": "needs_id",
-      "taxon_id": 517485,
+   "555074": {
+      "name": "Boana albomarginata",
+      "quality": "research",
+      "taxon_id": 555074,
       "observations": [
-         138780181
+         74182726,
+         70820248
       ],
-      "number_of_observations": 568
+      "number_of_observations": 359
    },
-   "173294": {
-      "name": "Brachys",
+   "68751": {
+      "name": "Lasiodora",
       "quality": "needs_id",
-      "taxon_id": 173294,
+      "taxon_id": 68751,
       "observations": [
-         139179175
+         71010190
+      ],
+      "number_of_observations": 469
+   },
+   "65377": {
+      "name": "Dendropsophus minutus",
+      "quality": "research",
+      "taxon_id": 65377,
+      "observations": [
+         70820255
+      ],
+      "number_of_observations": 518
+   },
+   "1250061": {
+      "name": "Philodryas patagoniensis",
+      "quality": "research",
+      "taxon_id": 1250061,
+      "observations": [
+         77328525
       ],
       "number_of_observations": 569
    },
-   "258210": {
-      "name": "Pyrrhogyra neaerea",
+   "539050": {
+      "name": "Bothrops jararaca",
       "quality": "research",
-      "taxon_id": 258210,
+      "taxon_id": 539050,
       "observations": [
-         138780212
+         71010189
       ],
-      "number_of_observations": 569
+      "number_of_observations": 648
    },
-   "424365": {
-      "name": "Zoniopoda tarsata",
+   "30693": {
+      "name": "Crotalus durissus",
       "quality": "research",
-      "taxon_id": 424365,
+      "taxon_id": 30693,
       "observations": [
-         138780226
+         68957760
       ],
-      "number_of_observations": 648,
-      "wikidata_id": "http://www.wikidata.org/entity/Q10724756",
-      "missing_image": true
+      "number_of_observations": 681
    },
-   "132331": {
-      "name": "Phoebis neocypris",
+   "367559": {
+      "name": "Eupsittula aurea",
       "quality": "research",
-      "taxon_id": 132331,
+      "taxon_id": 367559,
       "observations": [
-         139379265
+         71013363
       ],
-      "number_of_observations": 734
+      "number_of_observations": 746
    },
-   "143809": {
-      "name": "Manduca florestan",
+   "32093": {
+      "name": "Boa constrictor",
       "quality": "research",
-      "taxon_id": 143809,
+      "taxon_id": 32093,
       "observations": [
-         140203079
+         77329891
       ],
-      "number_of_observations": 792
+      "number_of_observations": 1879
    },
-   "148699": {
-      "name": "Anthoptus",
-      "quality": "needs_id",
-      "taxon_id": 148699,
-      "observations": [
-         142178314
-      ],
-      "number_of_observations": 836,
-      "wikidata_id": "http://www.wikidata.org/entity/Q1764160",
-      "missing_image": true
-   },
-   "119097": {
-      "name": "Pachycoris torridus",
+   "300657": {
+      "name": "Polybia occidentalis",
       "quality": "research",
-      "taxon_id": 119097,
+      "taxon_id": 300657,
       "observations": [
-         140200252
+         73233072
       ],
-      "number_of_observations": 879
+      "number_of_observations": 2412
    },
-   "622699": {
-      "name": "Parastagmatoptera",
+   "250875": {
+      "name": "Synoeca",
       "quality": "needs_id",
-      "taxon_id": 622699,
+      "taxon_id": 250875,
       "observations": [
-         139379503
+         72603425
       ],
-      "number_of_observations": 918
+      "number_of_observations": 2439
    },
-   "251865": {
-      "name": "Metamasius",
+   "53388": {
+      "name": "Phoneutria",
       "quality": "needs_id",
-      "taxon_id": 251865,
+      "taxon_id": 53388,
       "observations": [
-         142396219
+         71010204
       ],
-      "number_of_observations": 1057
+      "number_of_observations": 3469
    },
-   "258114": {
-      "name": "Mechanitis lysimnia",
+   "10293": {
+      "name": "Thraupis sayaca",
       "quality": "research",
-      "taxon_id": 258114,
+      "taxon_id": 10293,
       "observations": [
-         140200246
+         71013364
       ],
-      "number_of_observations": 1130
+      "number_of_observations": 4023
    },
-   "510308": {
-      "name": "Proctolabinae",
-      "quality": "needs_id",
-      "taxon_id": 510308,
-      "observations": [
-         142178336
-      ],
-      "number_of_observations": 1176
-   },
-   "84442": {
-      "name": "Taeniotes",
-      "quality": "needs_id",
-      "taxon_id": 84442,
-      "observations": [
-         142864571,
-         142178318
-      ],
-      "number_of_observations": 1186
-   },
-   "85106": {
-      "name": "Lonomia",
-      "quality": "needs_id",
-      "taxon_id": 85106,
-      "observations": [
-         140203078
-      ],
-      "number_of_observations": 1215
-   },
-   "330292": {
-      "name": "Polistes versicolor",
+   "74442": {
+      "name": "Hydrochoerus hydrochaeris",
       "quality": "research",
-      "taxon_id": 330292,
+      "taxon_id": 74442,
       "observations": [
-         140200258
+         71013366
       ],
-      "number_of_observations": 1280
+      "number_of_observations": 4890
    },
-   "253129": {
-      "name": "Stolas",
+   "30767": {
+      "name": "Bothrops",
       "quality": "needs_id",
-      "taxon_id": 253129,
+      "taxon_id": 30767,
       "observations": [
-         142864569,
-         139179166
+         71294322
       ],
-      "number_of_observations": 1441
+      "number_of_observations": 6577
    },
-   "148675": {
-      "name": "Mechanitis polymnia",
+   "16679": {
+      "name": "Elaenia",
+      "quality": "needs_id",
+      "taxon_id": 16679,
+      "observations": [
+         71013367
+      ],
+      "number_of_observations": 7238
+   },
+   "19975": {
+      "name": "Athene cunicularia",
       "quality": "research",
-      "taxon_id": 148675,
+      "taxon_id": 19975,
       "observations": [
-         142178339
+         68958191
       ],
-      "number_of_observations": 1780
+      "number_of_observations": 16717
    },
-   "320746": {
-      "name": "Chromacris speciosa",
+   "47070": {
+      "name": "Dasypus",
+      "quality": "needs_id",
+      "taxon_id": 47070,
+      "observations": [
+         77243421
+      ],
+      "number_of_observations": 19938
+   },
+   "787702": {
+      "name": "Mabuyinae",
+      "quality": "needs_id",
+      "taxon_id": 787702,
+      "observations": [
+         68956446
+      ],
+      "number_of_observations": 21935
+   },
+   "16956": {
+      "name": "Pitangus sulphuratus",
       "quality": "research",
-      "taxon_id": 320746,
+      "taxon_id": 16956,
       "observations": [
-         140200231,
-         139179170
+         71013365
       ],
-      "number_of_observations": 2135
+      "number_of_observations": 33507
    },
-   "10506": {
-      "name": "Dacnis cayana",
+   "4665": {
+      "name": "Falco sparverius",
       "quality": "research",
-      "taxon_id": 10506,
+      "taxon_id": 4665,
       "observations": [
-         138780216
+         71010191
       ],
-      "number_of_observations": 2283
-   },
-   "17278": {
-      "name": "Fluvicola nengeta",
-      "quality": "research",
-      "taxon_id": 17278,
-      "observations": [
-         138780182
-      ],
-      "number_of_observations": 2321
-   },
-   "62502": {
-      "name": "Vanessa braziliensis",
-      "quality": "research",
-      "taxon_id": 62502,
-      "observations": [
-         140200257
-      ],
-      "number_of_observations": 2701
-   },
-   "83176": {
-      "name": "Phiale",
-      "quality": "needs_id",
-      "taxon_id": 83176,
-      "observations": [
-         142864559,
-         142864558,
-         142396230
-      ],
-      "number_of_observations": 2725
-   },
-   "51775": {
-      "name": "Spartocera",
-      "quality": "needs_id",
-      "taxon_id": 51775,
-      "observations": [
-         140200250,
-         138780210
-      ],
-      "number_of_observations": 2799
-   },
-   "253038": {
-      "name": "Alagoasa",
-      "quality": "needs_id",
-      "taxon_id": 253038,
-      "observations": [
-         139179159,
-         139179154
-      ],
-      "number_of_observations": 2921
-   },
-   "324883": {
-      "name": "Eucereon",
-      "quality": "needs_id",
-      "taxon_id": 324883,
-      "observations": [
-         138780199
-      ],
-      "number_of_observations": 3134
-   },
-   "132147": {
-      "name": "Taygetis",
-      "quality": "needs_id",
-      "taxon_id": 132147,
-      "observations": [
-         138780221
-      ],
-      "number_of_observations": 3140
-   },
-   "2679": {
-      "name": "Chloroceryle amazona",
-      "quality": "research",
-      "taxon_id": 2679,
-      "observations": [
-         138780200
-      ],
-      "number_of_observations": 3407
-   },
-   "126385": {
-      "name": "Tegosa",
-      "quality": "needs_id",
-      "taxon_id": 126385,
-      "observations": [
-         138780222
-      ],
-      "number_of_observations": 4354
-   },
-   "85026": {
-      "name": "Papilio thoas brasiliensis",
-      "quality": "research",
-      "taxon_id": 85026,
-      "observations": [
-         138781572
-      ],
-      "number_of_observations": 4579
-   },
-   "154444": {
-      "name": "Naupactus",
-      "quality": "needs_id",
-      "taxon_id": 154444,
-      "observations": [
-         142178330
-      ],
-      "number_of_observations": 5075
-   },
-   "492593": {
-      "name": "Hylobiina",
-      "quality": "needs_id",
-      "taxon_id": 492593,
-      "observations": [
-         140200222
-      ],
-      "number_of_observations": 6092,
-      "wikidata_id": "http://www.wikidata.org/entity/Q21291113",
-      "missing_image": true
-   },
-   "201415": {
-      "name": "Pergidae",
-      "quality": "needs_id",
-      "taxon_id": 201415,
-      "observations": [
-         140203089
-      ],
-      "number_of_observations": 6163
-   },
-   "520064": {
-      "name": "Macrodactylini",
-      "quality": "needs_id",
-      "taxon_id": 520064,
-      "observations": [
-         140200228
-      ],
-      "number_of_observations": 6720
-   },
-   "503937": {
-      "name": "Mesomphaliini",
-      "quality": "needs_id",
-      "taxon_id": 503937,
-      "observations": [
-         139179163
-      ],
-      "number_of_observations": 6875
-   },
-   "364062": {
-      "name": "Chalepini",
-      "quality": "needs_id",
-      "taxon_id": 364062,
-      "observations": [
-         142178321,
-         142178320,
-         140203076,
-         139179157
-      ],
-      "number_of_observations": 7473
-   },
-   "48850": {
-      "name": "Pelidnota",
-      "quality": "needs_id",
-      "taxon_id": 48850,
-      "observations": [
-         142178348
-      ],
-      "number_of_observations": 12655
-   },
-   "1100886": {
-      "name": "Sphenophorina",
-      "quality": "needs_id",
-      "taxon_id": 1100886,
-      "observations": [
-         139179160
-      ],
-      "number_of_observations": 13844,
-      "wikidata_id": "http://www.wikidata.org/entity/Q106558936",
-      "missing_image": true
-   },
-   "523310": {
-      "name": "Orphulellini",
-      "quality": "needs_id",
-      "taxon_id": 523310,
-      "observations": [
-         142178313
-      ],
-      "number_of_observations": 14400
-   },
-   "541007": {
-      "name": "Lemini",
-      "quality": "needs_id",
-      "taxon_id": 541007,
-      "observations": [
-         139179168
-      ],
-      "number_of_observations": 15077
-   },
-   "428812": {
-      "name": "Nematopodini",
-      "quality": "needs_id",
-      "taxon_id": 428812,
-      "observations": [
-         140200254
-      ],
-      "number_of_observations": 15231
-   },
-   "373425": {
-      "name": "Erotylinae",
-      "quality": "needs_id",
-      "taxon_id": 373425,
-      "observations": [
-         142178333
-      ],
-      "number_of_observations": 16745
-   },
-   "81590": {
-      "name": "Eacles imperialis",
-      "quality": "needs_id",
-      "taxon_id": 81590,
-      "observations": [
-         138781597
-      ],
-      "number_of_observations": 16896
-   },
-   "59506": {
-      "name": "Epicauta",
-      "quality": "needs_id",
-      "taxon_id": 59506,
-      "observations": [
-         142864553
-      ],
-      "number_of_observations": 17908
-   },
-   "83810": {
-      "name": "Helicoverpa",
-      "quality": "needs_id",
-      "taxon_id": 83810,
-      "observations": [
-         139179188
-      ],
-      "number_of_observations": 19056
-   },
-   "84443": {
-      "name": "Passalidae",
-      "quality": "needs_id",
-      "taxon_id": 84443,
-      "observations": [
-         140200249
-      ],
-      "number_of_observations": 21833
-   },
-   "49360": {
-      "name": "Lycidae",
-      "quality": "needs_id",
-      "taxon_id": 49360,
-      "observations": [
-         142864555,
-         142396235,
-         142396232,
-         142396231,
-         142396226,
-         140200242,
-         139179162
-      ],
-      "number_of_observations": 32181
-   },
-   "202104": {
-      "name": "Harpalinae",
-      "quality": "needs_id",
-      "taxon_id": 202104,
-      "observations": [
-         142395390
-      ],
-      "number_of_observations": 40377
-   },
-   "81560": {
-      "name": "Epargyreus",
-      "quality": "needs_id",
-      "taxon_id": 81560,
-      "observations": [
-         140200236
-      ],
-      "number_of_observations": 42811
-   },
-   "335544": {
-      "name": "Doryphorina",
-      "quality": "needs_id",
-      "taxon_id": 335544,
-      "observations": [
-         142178322
-      ],
-      "number_of_observations": 45017,
-      "wikidata_id": "http://www.wikidata.org/entity/Q105636259",
-      "missing_image": true
-   },
-   "63187": {
-      "name": "Braconidae",
-      "quality": "needs_id",
-      "taxon_id": 63187,
-      "observations": [
-         140200229
-      ],
-      "number_of_observations": 47344
-   },
-   "122480": {
-      "name": "Acentropinae",
-      "quality": "needs_id",
-      "taxon_id": 122480,
-      "observations": [
-         138780196
-      ],
-      "number_of_observations": 50064
-   },
-   "4765": {
-      "name": "Coragyps atratus",
-      "quality": "research",
-      "taxon_id": 4765,
-      "observations": [
-         138780225
-      ],
-      "number_of_observations": 55880
-   },
-   "155185": {
-      "name": "Alticini",
-      "quality": "needs_id",
-      "taxon_id": 155185,
-      "observations": [
-         140200226,
-         139179150
-      ],
-      "number_of_observations": 73258
-   },
-   "47731": {
-      "name": "Lampyridae",
-      "quality": "needs_id",
-      "taxon_id": 47731,
-      "observations": [
-         142864554,
-         142396225,
-         142396224,
-         142396223,
-         140200240
-      ],
-      "number_of_observations": 88123
-   },
-   "62164": {
-      "name": "Trichoptera",
-      "quality": "needs_id",
-      "taxon_id": 62164,
-      "observations": [
-         138780198
-      ],
-      "number_of_observations": 106697
-   },
-   "482431": {
-      "name": "Harpactorini",
-      "quality": "needs_id",
-      "taxon_id": 482431,
-      "observations": [
-         139179189
-      ],
-      "number_of_observations": 122367
-   },
-   "82092": {
-      "name": "Lithosiini",
-      "quality": "needs_id",
-      "taxon_id": 82092,
-      "observations": [
-         138780193
-      ],
-      "number_of_observations": 122703
-   },
-   "53248": {
-      "name": "Elateridae",
-      "quality": "needs_id",
-      "taxon_id": 53248,
-      "observations": [
-         139379373
-      ],
-      "number_of_observations": 129614
-   },
-   "50265": {
-      "name": "Lamiinae",
-      "quality": "needs_id",
-      "taxon_id": 50265,
-      "observations": [
-         142178319
-      ],
-      "number_of_observations": 140204
-   },
-   "48128": {
-      "name": "Phaneropterinae",
-      "quality": "needs_id",
-      "taxon_id": 48128,
-      "observations": [
-         139179177
-      ],
-      "number_of_observations": 155759
-   },
-   "47199": {
-      "name": "Ichneumonidae",
-      "quality": "needs_id",
-      "taxon_id": 47199,
-      "observations": [
-         140200239,
-         138780176
-      ],
-      "number_of_observations": 169832
-   },
-   "51146": {
-      "name": "Chrysomelidae",
-      "quality": "needs_id",
-      "taxon_id": 51146,
-      "observations": [
-         140200220
-      ],
-      "number_of_observations": 537106
-   },
-   "48201": {
-      "name": "Scarabaeidae",
-      "quality": "needs_id",
-      "taxon_id": 48201,
-      "observations": [
-         138780220
-      ],
-      "number_of_observations": 544962
-   },
-   "49995": {
-      "name": "Syrphidae",
-      "quality": "needs_id",
-      "taxon_id": 49995,
-      "observations": [
-         142396228
-      ],
-      "number_of_observations": 567507
-   },
-   "82089": {
-      "name": "Arctiini",
-      "quality": "needs_id",
-      "taxon_id": 82089,
-      "observations": [
-         142395395
-      ],
-      "number_of_observations": 589106
-   },
-   "47928": {
-      "name": "Zygoptera",
-      "quality": "needs_id",
-      "taxon_id": 47928,
-      "observations": [
-         139179174
-      ],
-      "number_of_observations": 759825
-   },
-   "49682": {
-      "name": "Pyraloidea",
-      "quality": "needs_id",
-      "taxon_id": 49682,
-      "observations": [
-         139179186
-      ],
-      "number_of_observations": 968235
-   },
-   "49530": {
-      "name": "Geometridae",
-      "quality": "needs_id",
-      "taxon_id": 49530,
-      "observations": [
-         138780192
-      ],
-      "number_of_observations": 1488884
-   },
-   "121850": {
-      "name": "Erebidae",
-      "quality": "needs_id",
-      "taxon_id": 121850,
-      "observations": [
-         139179181
-      ],
-      "number_of_observations": 1637125
-   },
-   "47157": {
-      "name": "Lepidoptera",
-      "quality": "needs_id",
-      "taxon_id": 47157,
-      "observations": [
-         140200245,
-         140200244,
-         138780186,
-         138780185,
-         138780184,
-         138780180
-      ],
-      "number_of_observations": 13783176
+      "number_of_observations": 56277
    }
 }

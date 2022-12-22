@@ -3,28 +3,26 @@ import requests
 import urllib.parse
 import sys
 import textwrap
+import click
 
 
-def main():
-    try:
-        inaturalist_id = sys.argv[1]
-    except:
-        inaturalist_id = input("Enter the iNaturalist observation id:")
-
+@click.command(name="parse")
+@click.argument("observation_id")
+def parse_observation(observation_id):
     base_url = "https://api.inaturalist.org/v1/"
-    observation_url = base_url + f"observations/{inaturalist_id}"
+    observation_url = base_url + f"observations/{observation_id}"
 
     result = requests.get(observation_url)
     data = result.json()
     observation_data = data["results"][0]
     photo_data_list = observation_data["photos"]
 
-    print(f"====== Links for observation {inaturalist_id} ======")
+    print(f"====== Links for observation {observation_id} ======")
 
     for i, photo_data in enumerate(photo_data_list):
 
         print(f"====== Link for uploading photo {str(i+1)} ======")
-        upload_url = get_commons_url(observation_data, photo_data, inaturalist_id)
+        upload_url = get_commons_url(observation_data, photo_data, observation_id)
         print(upload_url)
         print("====== // ======")
 
@@ -77,4 +75,4 @@ def get_commons_url(observation_data, photo_data, inaturalist_id):
 
 
 if __name__ == "__main__":
-    main()
+    parse_observation()

@@ -1,0 +1,2 @@
+[console_scripts]
+pynat = pynaturalist2commons.cli:cli
