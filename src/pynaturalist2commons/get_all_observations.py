@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 
-import sys
-import requests
 import json
+import sys
 import urllib.parse
-from wdcuration import query_wikidata
 from collections import OrderedDict
 from operator import getitem
+
 import click
+import requests
+from wdcuration import query_wikidata
 
 
 def chunks(lst, n):
@@ -27,21 +28,15 @@ def get_all_observations(user_id):
     print("------------- Query for taxa missing images ---------- ")
     query_for_taxa_missing_images = (
         """
-    
     SELECT DISTINCT * WHERE{
-
         VALUES ?id """
         + formatted_values
         + """
-
         ?item wdt:P3151 ?id .
-
         MINUS {?item wdt:P18 ?image} . 
-  
         ?item rdfs:label ?itemLabel . 
         FILTER ( LANG(?itemLabel) = "en" )
-
-                BIND(IRI(CONCAT(CONCAT("https://www.inaturalist.org/taxa/", ?id), "/browse_photos?photo_license=cc0")) AS ?cc0_url)
+        BIND(IRI(CONCAT(CONCAT("https://www.inaturalist.org/taxa/", ?id), "/browse_photos?photo_license=cc0")) AS ?cc0_url)
         BIND(IRI(CONCAT(CONCAT("https://www.inaturalist.org/taxa/", ?id), "/browse_photos?photo_license=cc-by")) AS ?ccby_url)
     }
     """
@@ -52,7 +47,6 @@ def get_all_observations(user_id):
     )
 
     taxa_missing_images = query_wikidata(query_for_taxa_missing_images)
-
     inaturalist_chunks = chunks(inaturalist_taxon_ids, 30)
     for chunk in inaturalist_chunks:
         r = requests.get(f"https://api.inaturalist.org/v1/taxa/{','.join(chunk)}")
@@ -64,7 +58,6 @@ def get_all_observations(user_id):
             except KeyError:
                 print(f"Key not found: {taxon_info['id']}")
     for taxon_id in core_information:
-
         for taxon_missing_image in taxa_missing_images:
             if taxon_missing_image["id"] == taxon_id:
                 core_information[taxon_id]["wikidata_id"] = taxon_missing_image["item"]

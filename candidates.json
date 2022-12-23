@@ -24,9 +24,7 @@
       "observations": [
          70820250
       ],
-      "number_of_observations": 2,
-      "wikidata_id": "http://www.wikidata.org/entity/Q5075375",
-      "missing_image": true
+      "number_of_observations": 2
    },
    "23030": {
       "name": "Rupirana cardosoi",
@@ -108,9 +106,7 @@
       "observations": [
          71010188
       ],
-      "number_of_observations": 22,
-      "wikidata_id": "http://www.wikidata.org/entity/Q4740143",
-      "missing_image": true
+      "number_of_observations": 22
    },
    "33402": {
       "name": "Coleodactylus meridionalis",
@@ -128,9 +124,7 @@
       "observations": [
          71010199
       ],
-      "number_of_observations": 25,
-      "wikidata_id": "http://www.wikidata.org/entity/Q3529834",
-      "missing_image": true
+      "number_of_observations": 25
    },
    "113280": {
       "name": "Strobilurus torquatus",
@@ -166,9 +160,7 @@
       "observations": [
          70821459
       ],
-      "number_of_observations": 38,
-      "wikidata_id": "http://www.wikidata.org/entity/Q2239382",
-      "missing_image": true
+      "number_of_observations": 38
    },
    "24303": {
       "name": "Scinax eurydice",
@@ -204,7 +196,7 @@
       "observations": [
          73026388
       ],
-      "number_of_observations": 44
+      "number_of_observations": 45
    },
    "66511": {
       "name": "Pleurodema diplolister",
@@ -224,7 +216,7 @@
          68957759,
          68957758
       ],
-      "number_of_observations": 52
+      "number_of_observations": 53
    },
    "28530": {
       "name": "Taeniophallus occipitalis",
@@ -251,7 +243,7 @@
       "observations": [
          70821458
       ],
-      "number_of_observations": 69
+      "number_of_observations": 70
    },
    "22955": {
       "name": "Leptodactylus troglodytes",
@@ -373,7 +365,7 @@
          70821457,
          68958192
       ],
-      "number_of_observations": 212
+      "number_of_observations": 213
    },
    "36755": {
       "name": "Polychrus acutirostris",
@@ -403,9 +395,7 @@
       "observations": [
          72603424
       ],
-      "number_of_observations": 247,
-      "wikidata_id": "http://www.wikidata.org/entity/Q14425247",
-      "missing_image": true
+      "number_of_observations": 247
    },
    "65350": {
       "name": "Dendropsophus elegans",
@@ -414,7 +404,7 @@
       "observations": [
          77366724
       ],
-      "number_of_observations": 254
+      "number_of_observations": 257
    },
    "146043": {
       "name": "Copeoglossum nigropunctatum",
@@ -469,7 +459,7 @@
       "observations": [
          77328525
       ],
-      "number_of_observations": 569
+      "number_of_observations": 570
    },
    "539050": {
       "name": "Bothrops jararaca",
@@ -505,7 +495,7 @@
       "observations": [
          77329891
       ],
-      "number_of_observations": 1879
+      "number_of_observations": 1882
    },
    "300657": {
       "name": "Polybia occidentalis",
@@ -523,7 +513,7 @@
       "observations": [
          72603425
       ],
-      "number_of_observations": 2439
+      "number_of_observations": 2443
    },
    "53388": {
       "name": "Phoneutria",
@@ -532,7 +522,7 @@
       "observations": [
          71010204
       ],
-      "number_of_observations": 3469
+      "number_of_observations": 3468
    },
    "10293": {
       "name": "Thraupis sayaca",
@@ -541,7 +531,7 @@
       "observations": [
          71013364
       ],
-      "number_of_observations": 4023
+      "number_of_observations": 4026
    },
    "74442": {
       "name": "Hydrochoerus hydrochaeris",
@@ -550,7 +540,7 @@
       "observations": [
          71013366
       ],
-      "number_of_observations": 4890
+      "number_of_observations": 4895
    },
    "30767": {
       "name": "Bothrops",
@@ -559,7 +549,7 @@
       "observations": [
          71294322
       ],
-      "number_of_observations": 6577
+      "number_of_observations": 6586
    },
    "16679": {
       "name": "Elaenia",
@@ -568,7 +558,7 @@
       "observations": [
          71013367
       ],
-      "number_of_observations": 7238
+      "number_of_observations": 7243
    },
    "19975": {
       "name": "Athene cunicularia",
@@ -577,7 +567,7 @@
       "observations": [
          68958191
       ],
-      "number_of_observations": 16717
+      "number_of_observations": 16728
    },
    "47070": {
       "name": "Dasypus",
@@ -586,7 +576,7 @@
       "observations": [
          77243421
       ],
-      "number_of_observations": 19938
+      "number_of_observations": 19945
    },
    "787702": {
       "name": "Mabuyinae",
@@ -595,7 +585,7 @@
       "observations": [
          68956446
       ],
-      "number_of_observations": 21935
+      "number_of_observations": 21951
    },
    "16956": {
       "name": "Pitangus sulphuratus",
@@ -604,7 +594,7 @@
       "observations": [
          71013365
       ],
-      "number_of_observations": 33507
+      "number_of_observations": 33530
    },
    "4665": {
       "name": "Falco sparverius",
@@ -613,6 +603,6 @@
       "observations": [
          71010191
       ],
-      "number_of_observations": 56277
+      "number_of_observations": 56321
    }
 }

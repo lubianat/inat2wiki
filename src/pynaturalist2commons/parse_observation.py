@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-import requests
-import urllib.parse
 import sys
 import textwrap
+import urllib.parse
+
 import click
+import requests
 
 
 @click.command(name="parse")
