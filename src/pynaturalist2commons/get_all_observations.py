@@ -9,6 +9,10 @@ from operator import getitem
 import click
 import requests
 from wdcuration import query_wikidata
+from pathlib import Path
+
+HERE = Path(__file__).parent.resolve()
+RESULTS = HERE.parent.joinpath("results").resolve()
 
 
 def chunks(lst, n):
@@ -22,25 +26,7 @@ def chunks(lst, n):
 def get_all_observations(user_id):
 
     core_information, inaturalist_taxon_ids = extract_core_information(user_id)
-
-    formatted_values = '{ "' + '""'.join(inaturalist_taxon_ids) + '" }'
-
-    print("------------- Query for taxa missing images ---------- ")
-    query_for_taxa_missing_images = (
-        """
-    SELECT DISTINCT * WHERE{
-        VALUES ?id """
-        + formatted_values
-        + """
-        ?item wdt:P3151 ?id .
-        MINUS {?item wdt:P18 ?image} . 
-        ?item rdfs:label ?itemLabel . 
-        FILTER ( LANG(?itemLabel) = "en" )
-        BIND(IRI(CONCAT(CONCAT("https://www.inaturalist.org/taxa/", ?id), "/browse_photos?photo_license=cc0")) AS ?cc0_url)
-        BIND(IRI(CONCAT(CONCAT("https://www.inaturalist.org/taxa/", ?id), "/browse_photos?photo_license=cc-by")) AS ?ccby_url)
-    }
-    """
-    )
+    query_for_taxa_missing_images = get_query_for_tax_missing_images(inaturalist_taxon_ids)
 
     url_query_for_taxa_missing_images = "https://query.wikidata.org/#" + urllib.parse.quote(
         query_for_taxa_missing_images
@@ -70,46 +56,69 @@ def get_all_observations(user_id):
         )
     )
 
-    with open("candidates.json", "w") as outfile:
-        json.dump(core_information, outfile, indent=3)
-
+    RESULTS.joinpath(f"candidates_{user_id}.json").write_text(
+        json.dumps(core_information, indent=3)
+    )
     print(url_query_for_taxa_missing_images)
 
     print("--------------- Query for observations missing wiki pages -----------")
     langcode = input("Enter your lang code of interest:")
+
+    query_for_missing_pt_wiki = get_query_for_taxa_missing_wikipages(
+        inaturalist_taxon_ids, langcode
+    )
+
+    url_query_for_missing_pt_wiki = "https://query.wikidata.org/#" + urllib.parse.quote(
+        query_for_missing_pt_wiki
+    )
+    print(url_query_for_missing_pt_wiki)
+
+
+def get_query_for_taxa_missing_wikipages(inaturalist_taxon_ids, langcode):
+    formatted_values = '{ "' + '""'.join(inaturalist_taxon_ids) + '" }'
+
     query_for_missing_pt_wiki = (
         """
-
-        
     SELECT DISTINCT * WHERE{
-
         VALUES ?id """
         + formatted_values
         + """
-
-    
             ?item wdt:P3151 ?id .
-
         ?item rdfs:label ?itemLabel . 
         FILTER ( LANG(?itemLabel) = "en" )
-
         MINUS{
         {?sitelink schema:about ?item .
         ?sitelink schema:isPartOf ?site.
         ?sitelink schema:isPartOf/wikibase:wikiGroup "wikipedia" .
-
         FILTER(CONTAINS(STR(?sitelink), """
         + f'"{langcode}.wiki"'
         + """))}
                  }
         }    """
     )
+    return query_for_missing_pt_wiki
 
-    url_query_for_missing_pt_wiki = "https://query.wikidata.org/#" + urllib.parse.quote(
-        query_for_missing_pt_wiki
+
+def get_query_for_tax_missing_images(inaturalist_taxon_ids):
+    formatted_values = '{ "' + '""'.join(inaturalist_taxon_ids) + '" }'
+
+    print("------------- Query for taxa missing images ---------- ")
+    query_for_taxa_missing_images = (
+        """
+    SELECT DISTINCT * WHERE{
+        VALUES ?id """
+        + formatted_values
+        + """
+        ?item wdt:P3151 ?id .
+        MINUS {?item wdt:P18 ?image} . 
+        ?item rdfs:label ?itemLabel . 
+        FILTER ( LANG(?itemLabel) = "en" )
+        BIND(IRI(CONCAT(CONCAT("https://www.inaturalist.org/taxa/", ?id), "/browse_photos?photo_license=cc0")) AS ?cc0_url)
+        BIND(IRI(CONCAT(CONCAT("https://www.inaturalist.org/taxa/", ?id), "/browse_photos?photo_license=cc-by")) AS ?ccby_url)
+    }
+    """
     )
-
-    print(url_query_for_missing_pt_wiki)
+    return query_for_taxa_missing_images
 
 
 def extract_core_information(id):
