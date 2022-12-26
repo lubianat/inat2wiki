@@ -1,0 +1,6404 @@
+{
+   "1093667": {
+      "name": "Octuroplata octopustulata",
+      "quality": "research",
+      "taxon_id": 1093667,
+      "observations": [
+         144388237
+      ],
+      "number_of_observations": 1,
+      "wikidata_id": "http://www.wikidata.org/entity/Q2694663",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "1394257": {
+      "name": "Mycotretus brasilianus",
+      "quality": "research",
+      "taxon_id": 1394257,
+      "observations": [
+         119064621
+      ],
+      "number_of_observations": 1,
+      "wikipages_missing": []
+   },
+   "1349135": {
+      "name": "Mycotretus nigropunctatus",
+      "quality": "research",
+      "taxon_id": 1349135,
+      "observations": [
+         104384918
+      ],
+      "number_of_observations": 1,
+      "wikipages_missing": []
+   },
+   "1376554": {
+      "name": "Cibyra ferruginosa",
+      "quality": "needs_id",
+      "taxon_id": 1376554,
+      "observations": [
+         104383710
+      ],
+      "number_of_observations": 1,
+      "wikipages_missing": []
+   },
+   "1355527": {
+      "name": "Zeraikia zeraikae",
+      "quality": "research",
+      "taxon_id": 1355527,
+      "observations": [
+         104381636
+      ],
+      "number_of_observations": 1,
+      "wikipages_missing": []
+   },
+   "1280463": {
+      "name": "Paraselenis axillaris",
+      "quality": "research",
+      "taxon_id": 1280463,
+      "observations": [
+         103552475
+      ],
+      "number_of_observations": 1,
+      "wikipages_missing": []
+   },
+   "1281880": {
+      "name": "Plaxiscelis semilineata",
+      "quality": "research",
+      "taxon_id": 1281880,
+      "observations": [
+         102475744
+      ],
+      "number_of_observations": 2,
+      "wikipages_missing": []
+   },
+   "1166671": {
+      "name": "Cymatothes vestitus",
+      "quality": "needs_id",
+      "taxon_id": 1166671,
+      "observations": [
+         71941289
+      ],
+      "number_of_observations": 2,
+      "wikipages_missing": []
+   },
+   "937157": {
+      "name": "Cryptobatis chontalensis",
+      "quality": "research",
+      "taxon_id": 937157,
+      "observations": [
+         68815256
+      ],
+      "number_of_observations": 2,
+      "wikidata_id": "http://www.wikidata.org/entity/Q13502406",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "1172228": {
+      "name": "Batesparna platyptera",
+      "quality": "research",
+      "taxon_id": 1172228,
+      "observations": [
+         72737926
+      ],
+      "number_of_observations": 3,
+      "wikidata_id": "http://www.wikidata.org/entity/Q60729371",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "959207": {
+      "name": "Philodendron applanatum",
+      "quality": "research",
+      "taxon_id": 959207,
+      "observations": [
+         121443596
+      ],
+      "number_of_observations": 3,
+      "wikidata_id": "http://www.wikidata.org/entity/Q15312684",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "1233442": {
+      "name": "Walterianella exclamationis",
+      "quality": "research",
+      "taxon_id": 1233442,
+      "observations": [
+         73782051
+      ],
+      "number_of_observations": 3,
+      "wikipages_missing": []
+   },
+   "1225882": {
+      "name": "Acentroptera norrisii",
+      "quality": "research",
+      "taxon_id": 1225882,
+      "observations": [
+         72737928
+      ],
+      "number_of_observations": 4,
+      "wikidata_id": "http://www.wikidata.org/entity/Q2627996",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "172127": {
+      "name": "Angustipes",
+      "quality": "needs_id",
+      "taxon_id": 172127,
+      "observations": [
+         69204180
+      ],
+      "number_of_observations": 4,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "251714": {
+      "name": "Copturomimus",
+      "quality": "needs_id",
+      "taxon_id": 251714,
+      "observations": [
+         141797200
+      ],
+      "number_of_observations": 5,
+      "wikidata_id": "http://www.wikidata.org/entity/Q14926406",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "1276409": {
+      "name": "Unaiuba bruchi",
+      "quality": "research",
+      "taxon_id": 1276409,
+      "observations": [
+         138986823
+      ],
+      "number_of_observations": 5,
+      "wikipages_missing": []
+   },
+   "1395061": {
+      "name": "Coelopterapion",
+      "quality": "needs_id",
+      "taxon_id": 1395061,
+      "observations": [
+         74300555
+      ],
+      "number_of_observations": 5,
+      "wikipages_missing": []
+   },
+   "906914": {
+      "name": "Enchenopa quadrimaculata",
+      "quality": "research",
+      "taxon_id": 906914,
+      "observations": [
+         108923381
+      ],
+      "number_of_observations": 5,
+      "wikipages_missing": []
+   },
+   "872406": {
+      "name": "Euparius tigris",
+      "quality": "needs_id",
+      "taxon_id": 872406,
+      "observations": [
+         103600558
+      ],
+      "number_of_observations": 5,
+      "wikipages_missing": []
+   },
+   "1272132": {
+      "name": "Notocyrtus foveatus",
+      "quality": "research",
+      "taxon_id": 1272132,
+      "observations": [
+         75427131
+      ],
+      "number_of_observations": 5,
+      "wikipages_missing": []
+   },
+   "955857": {
+      "name": "Megacyllene falsa",
+      "quality": "research",
+      "taxon_id": 955857,
+      "observations": [
+         71518159
+      ],
+      "number_of_observations": 5,
+      "wikidata_id": "http://www.wikidata.org/entity/Q14827545",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "1153027": {
+      "name": "Sympolymnia lauretta",
+      "quality": "research",
+      "taxon_id": 1153027,
+      "observations": [
+         70767433
+      ],
+      "number_of_observations": 5,
+      "wikipages_missing": []
+   },
+   "919004": {
+      "name": "Colobothea cassandra",
+      "quality": "research",
+      "taxon_id": 919004,
+      "observations": [
+         103784869
+      ],
+      "number_of_observations": 6,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "1270189": {
+      "name": "Maxillaria marginata",
+      "quality": "needs_id",
+      "taxon_id": 1270189,
+      "observations": [
+         68598095
+      ],
+      "number_of_observations": 6,
+      "wikipages_missing": []
+   },
+   "1010181": {
+      "name": "Thecacerus",
+      "quality": "needs_id",
+      "taxon_id": 1010181,
+      "observations": [
+         102475205
+      ],
+      "number_of_observations": 7,
+      "wikipages_missing": []
+   },
+   "1045537": {
+      "name": "Sceloenopla bidens",
+      "quality": "needs_id",
+      "taxon_id": 1045537,
+      "observations": [
+         68579368
+      ],
+      "number_of_observations": 7,
+      "wikidata_id": "http://www.wikidata.org/entity/Q943098",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "954212": {
+      "name": "Leucothyreus suturalis",
+      "quality": "needs_id",
+      "taxon_id": 954212,
+      "observations": [
+         68598867
+      ],
+      "number_of_observations": 7,
+      "wikidata_id": "http://www.wikidata.org/entity/Q14903218",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "710407": {
+      "name": "Eurysthea obliqua",
+      "quality": "research",
+      "taxon_id": 710407,
+      "observations": [
+         137137309
+      ],
+      "number_of_observations": 9,
+      "wikidata_id": "http://www.wikidata.org/entity/Q3251478",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "1089777": {
+      "name": "Macromalthinus brasiliensis",
+      "quality": "research",
+      "taxon_id": 1089777,
+      "observations": [
+         108920691
+      ],
+      "number_of_observations": 9,
+      "wikipages_missing": []
+   },
+   "834583": {
+      "name": "Aphantochilus inermipes",
+      "quality": "research",
+      "taxon_id": 834583,
+      "observations": [
+         92697328,
+         73673116
+      ],
+      "number_of_observations": 9,
+      "wikidata_id": "http://www.wikidata.org/entity/Q2076308",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "1042988": {
+      "name": "Ceretes marcelserres",
+      "quality": "research",
+      "taxon_id": 1042988,
+      "observations": [
+         100163568
+      ],
+      "number_of_observations": 9,
+      "wikidata_id": "http://www.wikidata.org/entity/Q2476698",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "420681": {
+      "name": "Zuniga",
+      "quality": "needs_id",
+      "taxon_id": 420681,
+      "observations": [
+         71518155,
+         68700631
+      ],
+      "number_of_observations": 9,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "294649": {
+      "name": "Merosargus cingulatus",
+      "quality": "research",
+      "taxon_id": 294649,
+      "observations": [
+         69793425
+      ],
+      "number_of_observations": 9,
+      "wikidata_id": "http://www.wikidata.org/entity/Q14672804",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "1138387": {
+      "name": "Stilodes flavosignata",
+      "quality": "research",
+      "taxon_id": 1138387,
+      "observations": [
+         68700617
+      ],
+      "number_of_observations": 9,
+      "wikipages_missing": []
+   },
+   "251441": {
+      "name": "Iresia",
+      "quality": "needs_id",
+      "taxon_id": 251441,
+      "observations": [
+         68585298
+      ],
+      "number_of_observations": 9,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "1092568": {
+      "name": "Crimissa opaca",
+      "quality": "needs_id",
+      "taxon_id": 1092568,
+      "observations": [
+         100805573,
+         100411387
+      ],
+      "number_of_observations": 10,
+      "wikipages_missing": []
+   },
+   "780474": {
+      "name": "Iaratrox maculata",
+      "quality": "research",
+      "taxon_id": 780474,
+      "observations": [
+         69334558
+      ],
+      "number_of_observations": 11,
+      "wikipages_missing": []
+   },
+   "1182958": {
+      "name": "Dubioniscus",
+      "quality": "needs_id",
+      "taxon_id": 1182958,
+      "observations": [
+         68603569
+      ],
+      "number_of_observations": 11,
+      "wikipages_missing": []
+   },
+   "1203753": {
+      "name": "Lordops schoenherri",
+      "quality": "research",
+      "taxon_id": 1203753,
+      "observations": [
+         68599704
+      ],
+      "number_of_observations": 11,
+      "wikipages_missing": []
+   },
+   "792364": {
+      "name": "Aglaoschema ventrale",
+      "quality": "needs_id",
+      "taxon_id": 792364,
+      "observations": [
+         68585048
+      ],
+      "number_of_observations": 11,
+      "wikidata_id": "http://www.wikidata.org/entity/Q14846773",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "918663": {
+      "name": "Iphiclus ephippium",
+      "quality": "research",
+      "taxon_id": 918663,
+      "observations": [
+         70767435
+      ],
+      "number_of_observations": 12,
+      "wikipages_missing": []
+   },
+   "420616": {
+      "name": "Tacuna",
+      "quality": "needs_id",
+      "taxon_id": 420616,
+      "observations": [
+         72457314
+      ],
+      "number_of_observations": 13,
+      "wikidata_id": "http://www.wikidata.org/entity/Q506435",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "629092": {
+      "name": "Lophomutilla prionophora",
+      "quality": "research",
+      "taxon_id": 629092,
+      "observations": [
+         68700625
+      ],
+      "number_of_observations": 13,
+      "wikipages_missing": []
+   },
+   "789831": {
+      "name": "Druzia flavostriata",
+      "quality": "research",
+      "taxon_id": 789831,
+      "observations": [
+         103784710
+      ],
+      "number_of_observations": 14,
+      "wikidata_id": "http://www.wikidata.org/entity/Q27504604",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "1036816": {
+      "name": "Callia xanthomera",
+      "quality": "needs_id",
+      "taxon_id": 1036816,
+      "observations": [
+         68623549
+      ],
+      "number_of_observations": 15,
+      "wikidata_id": "http://www.wikidata.org/entity/Q14840299",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "536029": {
+      "name": "Heteromitobates",
+      "quality": "needs_id",
+      "taxon_id": 536029,
+      "observations": [
+         103440340
+      ],
+      "number_of_observations": 16,
+      "wikidata_id": "http://www.wikidata.org/entity/Q108166902",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "420280": {
+      "name": "Bellota",
+      "quality": "needs_id",
+      "taxon_id": 420280,
+      "observations": [
+         69204188
+      ],
+      "number_of_observations": 17,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "371384": {
+      "name": "Pelidnota sordida",
+      "quality": "research",
+      "taxon_id": 371384,
+      "observations": [
+         68598025
+      ],
+      "number_of_observations": 18,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "1111819": {
+      "name": "Hexachaeta",
+      "quality": "needs_id",
+      "taxon_id": 1111819,
+      "observations": [
+         68580088
+      ],
+      "number_of_observations": 18,
+      "wikipages_missing": []
+   },
+   "827635": {
+      "name": "Phiale bulbosa",
+      "quality": "needs_id",
+      "taxon_id": 827635,
+      "observations": [
+         68580033
+      ],
+      "number_of_observations": 18,
+      "wikidata_id": "http://www.wikidata.org/entity/Q2050011",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "348476": {
+      "name": "Philodendron ornatum",
+      "quality": "needs_id",
+      "taxon_id": 348476,
+      "observations": [
+         121443597
+      ],
+      "number_of_observations": 22,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "797971": {
+      "name": "Metaphidippus albopilosus",
+      "quality": "needs_id",
+      "taxon_id": 797971,
+      "observations": [
+         70767432
+      ],
+      "number_of_observations": 22,
+      "wikidata_id": "http://www.wikidata.org/entity/Q4131994",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "513709": {
+      "name": "Verrucosa zebra",
+      "quality": "research",
+      "taxon_id": 513709,
+      "observations": [
+         69204185
+      ],
+      "number_of_observations": 22,
+      "wikidata_id": "http://www.wikidata.org/entity/Q2130861",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "1390731": {
+      "name": "Platyomus piscatorius",
+      "quality": "research",
+      "taxon_id": 1390731,
+      "observations": [
+         68598212
+      ],
+      "number_of_observations": 23,
+      "wikipages_missing": []
+   },
+   "860712": {
+      "name": "Hemilophus",
+      "quality": "needs_id",
+      "taxon_id": 860712,
+      "observations": [
+         68603576
+      ],
+      "number_of_observations": 24,
+      "wikipages_missing": []
+   },
+   "947151": {
+      "name": "Erythrogonia phoenicea",
+      "quality": "needs_id",
+      "taxon_id": 947151,
+      "observations": [
+         70427376
+      ],
+      "number_of_observations": 25,
+      "wikidata_id": "http://www.wikidata.org/entity/Q10488885",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "752200": {
+      "name": "Anchylorhynchus variabilis",
+      "quality": "research",
+      "taxon_id": 752200,
+      "observations": [
+         71587118
+      ],
+      "number_of_observations": 26,
+      "wikipages_missing": []
+   },
+   "747465": {
+      "name": "Noctuana diurna",
+      "quality": "research",
+      "taxon_id": 747465,
+      "observations": [
+         74300553
+      ],
+      "number_of_observations": 26,
+      "wikipages_missing": []
+   },
+   "810491": {
+      "name": "Psecas pulcher",
+      "quality": "research",
+      "taxon_id": 810491,
+      "observations": [
+         134112574
+      ],
+      "number_of_observations": 27,
+      "wikidata_id": "http://www.wikidata.org/entity/Q2390091",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "947732": {
+      "name": "Metallactus quindecimguttatus",
+      "quality": "research",
+      "taxon_id": 947732,
+      "observations": [
+         104317702
+      ],
+      "number_of_observations": 27,
+      "wikipages_missing": []
+   },
+   "768772": {
+      "name": "Piasus cribricollis",
+      "quality": "research",
+      "taxon_id": 768772,
+      "observations": [
+         71839400
+      ],
+      "number_of_observations": 28,
+      "wikipages_missing": []
+   },
+   "929468": {
+      "name": "Leiopleura",
+      "quality": "needs_id",
+      "taxon_id": 929468,
+      "observations": [
+         71300383
+      ],
+      "number_of_observations": 29,
+      "wikipages_missing": []
+   },
+   "516994": {
+      "name": "Nidularium billbergioides",
+      "quality": "research",
+      "taxon_id": 516994,
+      "observations": [
+         68700618
+      ],
+      "number_of_observations": 29,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "1192882": {
+      "name": "Strongylium luteicorne",
+      "quality": "needs_id",
+      "taxon_id": 1192882,
+      "observations": [
+         104317699
+      ],
+      "number_of_observations": 30,
+      "wikipages_missing": []
+   },
+   "1179844": {
+      "name": "Asphaera communis",
+      "quality": "needs_id",
+      "taxon_id": 1179844,
+      "observations": [
+         68597679
+      ],
+      "number_of_observations": 30,
+      "wikipages_missing": []
+   },
+   "901022": {
+      "name": "Eutrypanus dorsalis",
+      "quality": "research",
+      "taxon_id": 901022,
+      "observations": [
+         72052948,
+         72052945
+      ],
+      "number_of_observations": 31,
+      "wikidata_id": "http://www.wikidata.org/entity/Q5414599",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "1046971": {
+      "name": "Philodendron mayoi",
+      "quality": "research",
+      "taxon_id": 1046971,
+      "observations": [
+         121443594
+      ],
+      "number_of_observations": 32,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "532604": {
+      "name": "Dichelops",
+      "quality": "needs_id",
+      "taxon_id": 532604,
+      "observations": [
+         108078771
+      ],
+      "number_of_observations": 36,
+      "wikidata_id": "http://www.wikidata.org/entity/Q21219990",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "817566": {
+      "name": "Vinnius uncatus",
+      "quality": "research",
+      "taxon_id": 817566,
+      "observations": [
+         103976944,
+         103976923
+      ],
+      "number_of_observations": 37,
+      "wikidata_id": "http://www.wikidata.org/entity/Q2745031",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "872178": {
+      "name": "Anchylorhynchus aegrotus",
+      "quality": "research",
+      "taxon_id": 872178,
+      "observations": [
+         69204182
+      ],
+      "number_of_observations": 37,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "18937": {
+      "name": "Anodorhynchus leari",
+      "quality": "research",
+      "taxon_id": 18937,
+      "observations": [
+         68578436
+      ],
+      "number_of_observations": 38,
+      "wikipages_missing": []
+   },
+   "505465": {
+      "name": "Chalcolepidius zonatus",
+      "quality": "needs_id",
+      "taxon_id": 505465,
+      "observations": [
+         86492314
+      ],
+      "number_of_observations": 39,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "1151151": {
+      "name": "Alceis curtus",
+      "quality": "research",
+      "taxon_id": 1151151,
+      "observations": [
+         102475747
+      ],
+      "number_of_observations": 40,
+      "wikipages_missing": []
+   },
+   "181160": {
+      "name": "Recchia",
+      "quality": "needs_id",
+      "taxon_id": 181160,
+      "observations": [
+         144451934
+      ],
+      "number_of_observations": 41,
+      "wikidata_id": "http://www.wikidata.org/entity/Q7302305",
+      "missing_image": true,
+      "wikipages_missing": []
+   },
+   "815448": {
+      "name": "Notogonioides",
+      "quality": "needs_id",
+      "taxon_id": 815448,
+      "observations": [
+         136972518
+      ],
+      "number_of_observations": 41,
+      "wikipages_missing": []
+   },
+   "795087": {
+      "name": "Argyroeides braco",
+      "quality": "research",
+      "taxon_id": 795087,
+      "observations": [
+         72457330
+      ],
+      "number_of_observations": 41,
+      "wikidata_id": "http://www.wikidata.org/entity/Q13393887",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "817489": {
+      "name": "Synemosyna aurantiaca",
+      "quality": "needs_id",
+      "taxon_id": 817489,
+      "observations": [
+         71756184
+      ],
+      "number_of_observations": 41,
+      "wikidata_id": "http://www.wikidata.org/entity/Q686998",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "251618": {
+      "name": "Neoerethistes",
+      "quality": "needs_id",
+      "taxon_id": 251618,
+      "observations": [
+         71756191
+      ],
+      "number_of_observations": 42,
+      "wikidata_id": "http://www.wikidata.org/entity/Q55222888",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "817296": {
+      "name": "Micrathena sanctispiritus",
+      "quality": "research",
+      "taxon_id": 817296,
+      "observations": [
+         103601195
+      ],
+      "number_of_observations": 44,
+      "wikidata_id": "http://www.wikidata.org/entity/Q27501747",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "701388": {
+      "name": "Ceiba glaziovii",
+      "quality": "casual",
+      "taxon_id": 701388,
+      "observations": [
+         92697313
+      ],
+      "number_of_observations": 44,
+      "wikipages_missing": []
+   },
+   "576890": {
+      "name": "Capanemia",
+      "quality": "needs_id",
+      "taxon_id": 576890,
+      "observations": [
+         68579474
+      ],
+      "number_of_observations": 44,
+      "wikipages_missing": []
+   },
+   "784426": {
+      "name": "Pyrearinus",
+      "quality": "needs_id",
+      "taxon_id": 784426,
+      "observations": [
+         104381434
+      ],
+      "number_of_observations": 46,
+      "wikipages_missing": []
+   },
+   "633346": {
+      "name": "Raphiocera armata",
+      "quality": "needs_id",
+      "taxon_id": 633346,
+      "observations": [
+         69538824
+      ],
+      "number_of_observations": 47,
+      "wikidata_id": "http://www.wikidata.org/entity/Q14667381",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "306645": {
+      "name": "Tessarecphora arachnoides",
+      "quality": "research",
+      "taxon_id": 306645,
+      "observations": [
+         104315080
+      ],
+      "number_of_observations": 48,
+      "wikidata_id": "http://www.wikidata.org/entity/Q2389387",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "794988": {
+      "name": "Pachymerus nucleorum",
+      "quality": "needs_id",
+      "taxon_id": 794988,
+      "observations": [
+         68815262
+      ],
+      "number_of_observations": 48,
+      "wikipages_missing": []
+   },
+   "560825": {
+      "name": "Rhinastus latisternus",
+      "quality": "research",
+      "taxon_id": 560825,
+      "observations": [
+         69204186
+      ],
+      "number_of_observations": 49,
+      "wikipages_missing": []
+   },
+   "823527": {
+      "name": "Mallosoma zonatum",
+      "quality": "research",
+      "taxon_id": 823527,
+      "observations": [
+         101976216
+      ],
+      "number_of_observations": 50,
+      "wikidata_id": "http://www.wikidata.org/entity/Q14827827",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "141192": {
+      "name": "Vriesea bituminosa",
+      "quality": "research",
+      "taxon_id": 141192,
+      "observations": [
+         68598868
+      ],
+      "number_of_observations": 51,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "901020": {
+      "name": "Chelonarium signatum",
+      "quality": "research",
+      "taxon_id": 901020,
+      "observations": [
+         144253252
+      ],
+      "number_of_observations": 52,
+      "wikipages_missing": []
+   },
+   "428098": {
+      "name": "Calycophyllum spruceanum",
+      "quality": "needs_id",
+      "taxon_id": 428098,
+      "observations": [
+         131398700
+      ],
+      "number_of_observations": 52,
+      "wikipages_missing": []
+   },
+   "1164835": {
+      "name": "Systena tenuis",
+      "quality": "research",
+      "taxon_id": 1164835,
+      "observations": [
+         71450367
+      ],
+      "number_of_observations": 52,
+      "wikipages_missing": []
+   },
+   "70299": {
+      "name": "Myrmecotypus",
+      "quality": "needs_id",
+      "taxon_id": 70299,
+      "observations": [
+         73673119
+      ],
+      "number_of_observations": 53,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "1146699": {
+      "name": "Naupactus bellus",
+      "quality": "research",
+      "taxon_id": 1146699,
+      "observations": [
+         68597779
+      ],
+      "number_of_observations": 53,
+      "wikipages_missing": []
+   },
+   "372300": {
+      "name": "Neoclytus ypsilon",
+      "quality": "research",
+      "taxon_id": 372300,
+      "observations": [
+         137185020
+      ],
+      "number_of_observations": 54,
+      "wikidata_id": "http://www.wikidata.org/entity/Q14708279",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "1265327": {
+      "name": "Heza binotata",
+      "quality": "research",
+      "taxon_id": 1265327,
+      "observations": [
+         92697310
+      ],
+      "number_of_observations": 54,
+      "wikipages_missing": []
+   },
+   "841604": {
+      "name": "Monecphora cingulata",
+      "quality": "research",
+      "taxon_id": 841604,
+      "observations": [
+         71756201
+      ],
+      "number_of_observations": 54,
+      "wikidata_id": "http://www.wikidata.org/entity/Q13533984",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "805878": {
+      "name": "Chira lucina",
+      "quality": "needs_id",
+      "taxon_id": 805878,
+      "observations": [
+         69538833
+      ],
+      "number_of_observations": 55,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "251797": {
+      "name": "Lordops",
+      "quality": "needs_id",
+      "taxon_id": 251797,
+      "observations": [
+         72457315
+      ],
+      "number_of_observations": 55,
+      "wikidata_id": "http://www.wikidata.org/entity/Q14925115",
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
+   },
+   "784927": {
+      "name": "Hyperchiria incisa",
+      "quality": "needs_id",
+      "taxon_id": 784927,
+      "observations": [
+         71941290
+      ],
+      "number_of_observations": 55,
+      "wikipages_missing": []
+   },
+   "787847": {
+      "name": "Iphiclus trifasciatus",
+      "quality": "research",
+      "taxon_id": 787847,
+      "observations": [
+         68598869
+      ],
+      "number_of_observations": 56,
+      "wikipages_missing": []
+   },
+   "856643": {
+      "name": "Dictyopsocus pennicornis",
+      "quality": "research",
+      "taxon_id": 856643,
+      "observations": [
+         70642676
+      ],
+      "number_of_observations": 62,
+      "wikipages_missing": []
+   },
+   "810481": {
+      "name": "Phiale gratiosa",
+      "quality": "needs_id",
+      "taxon_id": 810481,
+      "observations": [
+         68585214
+      ],
+      "number_of_observations": 64,
+      "wikipages_missing": []
+   },
+   "84592": {
+      "name": "Philodendron pedatum",
+      "quality": "research",
+      "taxon_id": 84592,
+      "observations": [
+         121443595
+      ],
+      "number_of_observations": 67,
+      "wikipages_missing": []
+   },
+   "860786": {
+      "name": "Cteisella confusa",
+      "quality": "research",
+      "taxon_id": 860786,
+      "observations": [
+         104384635
+      ],
+      "number_of_observations": 67,
+      "wikipages_missing": []
+   },
+   "252509": {
+      "name": "Debilia",
+      "quality": "needs_id",
+      "taxon_id": 252509,
+      "observations": [
+         137185021
+      ],
+      "number_of_observations": 68,
+      "wikipages_missing": []
+   },
+   "899368": {
+      "name": "Acratini",
+      "quality": "needs_id",
+      "taxon_id": 899368,
+      "observations": [
+         104384234
+      ],
+      "number_of_observations": 69,
+      "wikipages_missing": []
+   },
+   "300804": {
+      "name": "Agelaia angulata",
+      "quality": "research",
+      "taxon_id": 300804,
+      "observations": [
+         80004743
+      ],
+      "number_of_observations": 69,
+      "wikipages_missing": []
+   },
+   "526029": {
+      "name": "Tomaspis furcata",
+      "quality": "research",
+      "taxon_id": 526029,
+      "observations": [
+         103785169
+      ],
+      "number_of_observations": 71,
+      "wikipages_missing": []
+   },
+   "1146416": {
+      "name": "Eichoichemus",
+      "quality": "needs_id",
+      "taxon_id": 1146416,
+      "observations": [
+         103785017
+      ],
+      "number_of_observations": 73,
+      "wikipages_missing": []
+   },
+   "873852": {
+      "name": "Tapajosa",
+      "quality": "needs_id",
+      "taxon_id": 873852,
+      "observations": [
+         101976215
+      ],
+      "number_of_observations": 74,
+      "wikipages_missing": []
+   },
+   "746565": {
+      "name": "Parastagmatoptera unipunctata",
+      "quality": "needs_id",
+      "taxon_id": 746565,
+      "observations": [
+         68578856
+      ],
+      "number_of_observations": 74,
+      "wikipages_missing": []
+   },
+   "870506": {
+      "name": "Discodon cinctum",
+      "quality": "research",
+      "taxon_id": 870506,
+      "observations": [
+         72457316
+      ],
+      "number_of_observations": 79,
+      "wikipages_missing": []
+   },
+   "602409": {
+      "name": "Cobalus virbius",
+      "quality": "research",
+      "taxon_id": 602409,
+      "observations": [
+         72839227
+      ],
+      "number_of_observations": 82,
+      "wikipages_missing": []
+   },
+   "273808": {
+      "name": "Anthurium pentaphyllum",
+      "quality": "needs_id",
+      "taxon_id": 273808,
+      "observations": [
+         121443632
+      ],
+      "number_of_observations": 86,
+      "wikipages_missing": []
+   },
+   "790349": {
+      "name": "Homalinotus deplanatus",
+      "quality": "research",
+      "taxon_id": 790349,
+      "observations": [
+         68983336
+      ],
+      "number_of_observations": 86,
+      "wikipages_missing": []
+   },
+   "805880": {
+      "name": "Chira simoni",
+      "quality": "research",
+      "taxon_id": 805880,
+      "observations": [
+         101234750
+      ],
+      "number_of_observations": 87,
+      "wikipages_missing": []
+   },
+   "503797": {
+      "name": "Azya luteipes",
+      "quality": "research",
+      "taxon_id": 503797,
+      "observations": [
+         71008391
+      ],
+      "number_of_observations": 87,
+      "wikipages_missing": []
+   },
+   "824381": {
+      "name": "Aulacizes conspersa",
+      "quality": "research",
+      "taxon_id": 824381,
+      "observations": [
+         104384855
+      ],
+      "number_of_observations": 91,
+      "wikipages_missing": []
+   },
+   "251260": {
+      "name": "Glenus",
+      "quality": "needs_id",
+      "taxon_id": 251260,
+      "observations": [
+         69538825
+      ],
+      "number_of_observations": 93,
+      "wikipages_missing": []
+   },
+   "602960": {
+      "name": "Ameris ynca",
+      "quality": "needs_id",
+      "taxon_id": 602960,
+      "observations": [
+         103553762
+      ],
+      "number_of_observations": 94,
+      "wikipages_missing": []
+   },
+   "791117": {
+      "name": "Euphoria lurida",
+      "quality": "research",
+      "taxon_id": 791117,
+      "observations": [
+         70475542
+      ],
+      "number_of_observations": 95,
+      "wikipages_missing": []
+   },
+   "553401": {
+      "name": "Notocera",
+      "quality": "needs_id",
+      "taxon_id": 553401,
+      "observations": [
+         101234748
+      ],
+      "number_of_observations": 97,
+      "wikipages_missing": []
+   },
+   "1089758": {
+      "name": "Chauliognathus missionum",
+      "quality": "research",
+      "taxon_id": 1089758,
+      "observations": [
+         69838199
+      ],
+      "number_of_observations": 98,
+      "wikipages_missing": []
+   },
+   "796101": {
+      "name": "Blapida okeni",
+      "quality": "needs_id",
+      "taxon_id": 796101,
+      "observations": [
+         69538826
+      ],
+      "number_of_observations": 98,
+      "wikipages_missing": []
+   },
+   "251011": {
+      "name": "Inca",
+      "quality": "needs_id",
+      "taxon_id": 251011,
+      "observations": [
+         68597599
+      ],
+      "number_of_observations": 98,
+      "wikipages_missing": []
+   },
+   "420874": {
+      "name": "Runcinioides",
+      "quality": "needs_id",
+      "taxon_id": 420874,
+      "observations": [
+         68603084
+      ],
+      "number_of_observations": 99,
+      "wikipages_missing": []
+   },
+   "967260": {
+      "name": "Cotyclytus curvatus",
+      "quality": "research",
+      "taxon_id": 967260,
+      "observations": [
+         92697302
+      ],
+      "number_of_observations": 100,
+      "wikipages_missing": []
+   },
+   "251840": {
+      "name": "Cleogonus",
+      "quality": "needs_id",
+      "taxon_id": 251840,
+      "observations": [
+         70427367
+      ],
+      "number_of_observations": 101,
+      "wikipages_missing": []
+   },
+   "120509": {
+      "name": "Lonomia obliqua",
+      "quality": "research",
+      "taxon_id": 120509,
+      "observations": [
+         68623160
+      ],
+      "number_of_observations": 101,
+      "wikipages_missing": []
+   },
+   "849230": {
+      "name": "Deois schach",
+      "quality": "research",
+      "taxon_id": 849230,
+      "observations": [
+         71395366
+      ],
+      "number_of_observations": 104,
+      "wikipages_missing": []
+   },
+   "947160": {
+      "name": "Versigonalia vermiculata",
+      "quality": "needs_id",
+      "taxon_id": 947160,
+      "observations": [
+         72130944
+      ],
+      "number_of_observations": 106,
+      "wikipages_missing": []
+   },
+   "603746": {
+      "name": "Megalopyge basalis",
+      "quality": "research",
+      "taxon_id": 603746,
+      "observations": [
+         71008388
+      ],
+      "number_of_observations": 106,
+      "wikipages_missing": []
+   },
+   "629302": {
+      "name": "Hoplocrates cephalotes",
+      "quality": "research",
+      "taxon_id": 629302,
+      "observations": [
+         68597884
+      ],
+      "number_of_observations": 107,
+      "wikipages_missing": []
+   },
+   "785523": {
+      "name": "Cipriscola fasciata",
+      "quality": "research",
+      "taxon_id": 785523,
+      "observations": [
+         102871608
+      ],
+      "number_of_observations": 111,
+      "wikipages_missing": []
+   },
+   "508602": {
+      "name": "Cholus annulatus",
+      "quality": "research",
+      "taxon_id": 508602,
+      "observations": [
+         71756177
+      ],
+      "number_of_observations": 113,
+      "wikipages_missing": []
+   },
+   "154464": {
+      "name": "Bocydium",
+      "quality": "needs_id",
+      "taxon_id": 154464,
+      "observations": [
+         119517998
+      ],
+      "number_of_observations": 115,
+      "wikipages_missing": []
+   },
+   "773745": {
+      "name": "Alpaida alticeps",
+      "quality": "research",
+      "taxon_id": 773745,
+      "observations": [
+         68603568
+      ],
+      "number_of_observations": 121,
+      "wikipages_missing": []
+   },
+   "796103": {
+      "name": "Camaria",
+      "quality": "needs_id",
+      "taxon_id": 796103,
+      "observations": [
+         137182608
+      ],
+      "number_of_observations": 123,
+      "wikipages_missing": []
+   },
+   "773748": {
+      "name": "Micrathena nigrichelis",
+      "quality": "research",
+      "taxon_id": 773748,
+      "observations": [
+         76318897
+      ],
+      "number_of_observations": 124,
+      "wikipages_missing": []
+   },
+   "490131": {
+      "name": "Chlorida costata",
+      "quality": "research",
+      "taxon_id": 490131,
+      "observations": [
+         68700638
+      ],
+      "number_of_observations": 125,
+      "wikipages_missing": []
+   },
+   "737852": {
+      "name": "Obama burmeisteri",
+      "quality": "research",
+      "taxon_id": 737852,
+      "observations": [
+         86492319
+      ],
+      "number_of_observations": 128,
+      "wikipages_missing": []
+   },
+   "251849": {
+      "name": "Sternechus",
+      "quality": "needs_id",
+      "taxon_id": 251849,
+      "observations": [
+         71756202
+      ],
+      "number_of_observations": 132,
+      "wikipages_missing": []
+   },
+   "556939": {
+      "name": "Taeniotes amazonum",
+      "quality": "research",
+      "taxon_id": 556939,
+      "observations": [
+         68579014
+      ],
+      "number_of_observations": 132,
+      "wikipages_missing": []
+   },
+   "860785": {
+      "name": "Cteisella",
+      "quality": "needs_id",
+      "taxon_id": 860785,
+      "observations": [
+         102475743
+      ],
+      "number_of_observations": 134,
+      "wikipages_missing": []
+   },
+   "466017": {
+      "name": "Chiromyza",
+      "quality": "needs_id",
+      "taxon_id": 466017,
+      "observations": [
+         72457313
+      ],
+      "number_of_observations": 134,
+      "wikipages_missing": []
+   },
+   "752201": {
+      "name": "Anchylorhynchus",
+      "quality": "needs_id",
+      "taxon_id": 752201,
+      "observations": [
+         144557245
+      ],
+      "number_of_observations": 136,
+      "wikipages_missing": []
+   },
+   "929726": {
+      "name": "Drymaeus interpunctus",
+      "quality": "needs_id",
+      "taxon_id": 929726,
+      "observations": [
+         69838202
+      ],
+      "number_of_observations": 136,
+      "wikipages_missing": []
+   },
+   "249984": {
+      "name": "Hypognatha",
+      "quality": "needs_id",
+      "taxon_id": 249984,
+      "observations": [
+         69589990
+      ],
+      "number_of_observations": 140,
+      "wikipages_missing": []
+   },
+   "865332": {
+      "name": "Coraliomela aeneoplagiata",
+      "quality": "needs_id",
+      "taxon_id": 865332,
+      "observations": [
+         68700630
+      ],
+      "number_of_observations": 142,
+      "wikipages_missing": []
+   },
+   "367325": {
+      "name": "Merrifieldia",
+      "quality": "needs_id",
+      "taxon_id": 367325,
+      "observations": [
+         75427128
+      ],
+      "number_of_observations": 143,
+      "wikipages_missing": []
+   },
+   "373756": {
+      "name": "Onycholipini",
+      "quality": "needs_id",
+      "taxon_id": 373756,
+      "observations": [
+         137186163
+      ],
+      "number_of_observations": 144,
+      "wikipages_missing": []
+   },
+   "464491": {
+      "name": "Kinnaridae",
+      "quality": "needs_id",
+      "taxon_id": 464491,
+      "observations": [
+         137186161
+      ],
+      "number_of_observations": 147,
+      "wikipages_missing": []
+   },
+   "417743": {
+      "name": "Michaelophorus",
+      "quality": "needs_id",
+      "taxon_id": 417743,
+      "observations": [
+         144183480
+      ],
+      "number_of_observations": 148,
+      "wikipages_missing": []
+   },
+   "372301": {
+      "name": "Megacyllene acuta",
+      "quality": "research",
+      "taxon_id": 372301,
+      "observations": [
+         72457337
+      ],
+      "number_of_observations": 149,
+      "wikipages_missing": []
+   },
+   "606334": {
+      "name": "Ambatini",
+      "quality": "needs_id",
+      "taxon_id": 606334,
+      "observations": [
+         104384904
+      ],
+      "number_of_observations": 150,
+      "wikipages_missing": []
+   },
+   "626746": {
+      "name": "Anasa varicornis",
+      "quality": "research",
+      "taxon_id": 626746,
+      "observations": [
+         108697258
+      ],
+      "number_of_observations": 154,
+      "wikipages_missing": []
+   },
+   "420491": {
+      "name": "Noegus",
+      "quality": "needs_id",
+      "taxon_id": 420491,
+      "observations": [
+         144593054
+      ],
+      "number_of_observations": 159,
+      "wikipages_missing": []
+   },
+   "846024": {
+      "name": "Conoderus fuscofasciatus",
+      "quality": "research",
+      "taxon_id": 846024,
+      "observations": [
+         69899988
+      ],
+      "number_of_observations": 159,
+      "wikipages_missing": []
+   },
+   "248150": {
+      "name": "Raphiocera",
+      "quality": "needs_id",
+      "taxon_id": 248150,
+      "observations": [
+         71756175
+      ],
+      "number_of_observations": 168,
+      "wikipages_missing": []
+   },
+   "423952": {
+      "name": "Omophoita personata",
+      "quality": "research",
+      "taxon_id": 423952,
+      "observations": [
+         138986820
+      ],
+      "number_of_observations": 170,
+      "wikipages_missing": []
+   },
+   "462040": {
+      "name": "Cephalotes clypeatus",
+      "quality": "research",
+      "taxon_id": 462040,
+      "observations": [
+         101234741
+      ],
+      "number_of_observations": 175,
+      "wikipages_missing": []
+   },
+   "874798": {
+      "name": "Meghimatium pictum",
+      "quality": "research",
+      "taxon_id": 874798,
+      "observations": [
+         71877887
+      ],
+      "number_of_observations": 177,
+      "wikipages_missing": []
+   },
+   "797104": {
+      "name": "Phiale tristis",
+      "quality": "research",
+      "taxon_id": 797104,
+      "observations": [
+         68579957
+      ],
+      "number_of_observations": 178,
+      "wikipages_missing": []
+   },
+   "251121": {
+      "name": "Mycotretus",
+      "quality": "needs_id",
+      "taxon_id": 251121,
+      "observations": [
+         144451075,
+         144253287
+      ],
+      "number_of_observations": 185,
+      "wikipages_missing": []
+   },
+   "252598": {
+      "name": "Harpactor",
+      "quality": "needs_id",
+      "taxon_id": 252598,
+      "observations": [
+         108697259
+      ],
+      "number_of_observations": 187,
+      "wikipages_missing": []
+   },
+   "420477": {
+      "name": "Mopiopia",
+      "quality": "needs_id",
+      "taxon_id": 420477,
+      "observations": [
+         70642682
+      ],
+      "number_of_observations": 193,
+      "wikipages_missing": []
+   },
+   "339460": {
+      "name": "Rhinotragini",
+      "quality": "needs_id",
+      "taxon_id": 339460,
+      "observations": [
+         144557680
+      ],
+      "number_of_observations": 194,
+      "wikipages_missing": []
+   },
+   "782895": {
+      "name": "Cycloneda conjugata",
+      "quality": "research",
+      "taxon_id": 782895,
+      "observations": [
+         103225509
+      ],
+      "number_of_observations": 195,
+      "wikipages_missing": []
+   },
+   "1530": {
+      "name": "Malacoptila striata",
+      "quality": "research",
+      "taxon_id": 1530,
+      "observations": [
+         71300385
+      ],
+      "number_of_observations": 203,
+      "wikipages_missing": []
+   },
+   "1081086": {
+      "name": "Iphiclus",
+      "quality": "needs_id",
+      "taxon_id": 1081086,
+      "observations": [
+         104384546
+      ],
+      "number_of_observations": 212,
+      "wikipages_missing": []
+   },
+   "419883": {
+      "name": "Latonigena",
+      "quality": "needs_id",
+      "taxon_id": 419883,
+      "observations": [
+         74300552
+      ],
+      "number_of_observations": 213,
+      "wikipages_missing": []
+   },
+   "533391": {
+      "name": "Philodendron gloriosum",
+      "quality": "research",
+      "taxon_id": 533391,
+      "observations": [
+         121446544
+      ],
+      "number_of_observations": 221,
+      "wikipages_missing": []
+   },
+   "488713": {
+      "name": "Nilio",
+      "quality": "needs_id",
+      "taxon_id": 488713,
+      "observations": [
+         68815264
+      ],
+      "number_of_observations": 228,
+      "wikipages_missing": []
+   },
+   "542666": {
+      "name": "Pachylis pharaonis",
+      "quality": "research",
+      "taxon_id": 542666,
+      "observations": [
+         68580593
+      ],
+      "number_of_observations": 228,
+      "wikipages_missing": []
+   },
+   "247785": {
+      "name": "Dynastor",
+      "quality": "needs_id",
+      "taxon_id": 247785,
+      "observations": [
+         119523514
+      ],
+      "number_of_observations": 229,
+      "wikipages_missing": []
+   },
+   "252723": {
+      "name": "Notocyrtus",
+      "quality": "needs_id",
+      "taxon_id": 252723,
+      "observations": [
+         143096982
+      ],
+      "number_of_observations": 231,
+      "wikipages_missing": []
+   },
+   "253184": {
+      "name": "Sceloenopla",
+      "quality": "needs_id",
+      "taxon_id": 253184,
+      "observations": [
+         144593078
+      ],
+      "number_of_observations": 234,
+      "wikipages_missing": []
+   },
+   "194811": {
+      "name": "Jadera coturnix",
+      "quality": "needs_id",
+      "taxon_id": 194811,
+      "observations": [
+         144190095
+      ],
+      "number_of_observations": 240,
+      "wikipages_missing": []
+   },
+   "253076": {
+      "name": "Paranaita",
+      "quality": "needs_id",
+      "taxon_id": 253076,
+      "observations": [
+         108923380,
+         104052282
+      ],
+      "number_of_observations": 243,
+      "wikipages_missing": []
+   },
+   "566394": {
+      "name": "Gymnetis pantherina",
+      "quality": "research",
+      "taxon_id": 566394,
+      "observations": [
+         70067019
+      ],
+      "number_of_observations": 245,
+      "wikipages_missing": []
+   },
+   "787066": {
+      "name": "Ocyptamus dimidiatus",
+      "quality": "research",
+      "taxon_id": 787066,
+      "observations": [
+         71300384
+      ],
+      "number_of_observations": 248,
+      "wikipages_missing": []
+   },
+   "633304": {
+      "name": "Raphiocerinae",
+      "quality": "needs_id",
+      "taxon_id": 633304,
+      "observations": [
+         104382581
+      ],
+      "number_of_observations": 254,
+      "wikipages_missing": []
+   },
+   "247615": {
+      "name": "Tiquadra",
+      "quality": "needs_id",
+      "taxon_id": 247615,
+      "observations": [
+         72457306
+      ],
+      "number_of_observations": 254,
+      "wikipages_missing": []
+   },
+   "483173": {
+      "name": "Guayaquila",
+      "quality": "needs_id",
+      "taxon_id": 483173,
+      "observations": [
+         144189990
+      ],
+      "number_of_observations": 264,
+      "wikipages_missing": []
+   },
+   "183865": {
+      "name": "Decatropis bicolor",
+      "quality": "needs_id",
+      "taxon_id": 183865,
+      "observations": [
+         131399630
+      ],
+      "number_of_observations": 271,
+      "wikipages_missing": []
+   },
+   "216017": {
+      "name": "Canthon viridis",
+      "quality": "needs_id",
+      "taxon_id": 216017,
+      "observations": [
+         104787446
+      ],
+      "number_of_observations": 273,
+      "wikipages_missing": []
+   },
+   "554682": {
+      "name": "Zetoborinae",
+      "quality": "needs_id",
+      "taxon_id": 554682,
+      "observations": [
+         70642681
+      ],
+      "number_of_observations": 279,
+      "wikipages_missing": []
+   },
+   "171890": {
+      "name": "Ovachlamys fulgens",
+      "quality": "research",
+      "taxon_id": 171890,
+      "observations": [
+         69204176
+      ],
+      "number_of_observations": 280,
+      "wikipages_missing": []
+   },
+   "512865": {
+      "name": "Synoeca cyanea",
+      "quality": "research",
+      "taxon_id": 512865,
+      "observations": [
+         68700632
+      ],
+      "number_of_observations": 283,
+      "wikipages_missing": []
+   },
+   "787698": {
+      "name": "Chira spinosa",
+      "quality": "research",
+      "taxon_id": 787698,
+      "observations": [
+         70427375
+      ],
+      "number_of_observations": 286,
+      "wikipages_missing": []
+   },
+   "424258": {
+      "name": "Pawiloma",
+      "quality": "needs_id",
+      "taxon_id": 424258,
+      "observations": [
+         144315577
+      ],
+      "number_of_observations": 291,
+      "wikipages_missing": []
+   },
+   "795965": {
+      "name": "Asaphobelis physonychus",
+      "quality": "research",
+      "taxon_id": 795965,
+      "observations": [
+         104052394
+      ],
+      "number_of_observations": 295,
+      "wikipages_missing": []
+   },
+   "148835": {
+      "name": "Strymon yojoa",
+      "quality": "needs_id",
+      "taxon_id": 148835,
+      "observations": [
+         71756176
+      ],
+      "number_of_observations": 297,
+      "wikipages_missing": []
+   },
+   "9356": {
+      "name": "Icterus jamacaii",
+      "quality": "research",
+      "taxon_id": 9356,
+      "observations": [
+         68578285
+      ],
+      "number_of_observations": 301,
+      "wikipages_missing": []
+   },
+   "119060": {
+      "name": "Gelanor",
+      "quality": "needs_id",
+      "taxon_id": 119060,
+      "observations": [
+         85852724
+      ],
+      "number_of_observations": 302,
+      "wikipages_missing": []
+   },
+   "420322": {
+      "name": "Coryphasia",
+      "quality": "needs_id",
+      "taxon_id": 420322,
+      "observations": [
+         70175274
+      ],
+      "number_of_observations": 304,
+      "wikipages_missing": []
+   },
+   "482084": {
+      "name": "Bolbonota",
+      "quality": "needs_id",
+      "taxon_id": 482084,
+      "observations": [
+         104052540
+      ],
+      "number_of_observations": 306,
+      "wikipages_missing": []
+   },
+   "810447": {
+      "name": "Leucauge volupis",
+      "quality": "research",
+      "taxon_id": 810447,
+      "observations": [
+         68623546
+      ],
+      "number_of_observations": 308,
+      "wikipages_missing": []
+   },
+   "250290": {
+      "name": "Cryptanura",
+      "quality": "needs_id",
+      "taxon_id": 250290,
+      "observations": [
+         68815251
+      ],
+      "number_of_observations": 311,
+      "wikipages_missing": []
+   },
+   "481691": {
+      "name": "Paromoeocerus barbicornis",
+      "quality": "needs_id",
+      "taxon_id": 481691,
+      "observations": [
+         144253538
+      ],
+      "number_of_observations": 316,
+      "wikipages_missing": []
+   },
+   "803207": {
+      "name": "Edessa leucogramma",
+      "quality": "research",
+      "taxon_id": 803207,
+      "observations": [
+         103440194
+      ],
+      "number_of_observations": 318,
+      "wikipages_missing": []
+   },
+   "518210": {
+      "name": "Diabrotica limitata",
+      "quality": "research",
+      "taxon_id": 518210,
+      "observations": [
+         69589991
+      ],
+      "number_of_observations": 320,
+      "wikipages_missing": []
+   },
+   "253151": {
+      "name": "Metaxyonycha",
+      "quality": "needs_id",
+      "taxon_id": 253151,
+      "observations": [
+         143096978
+      ],
+      "number_of_observations": 325,
+      "wikipages_missing": []
+   },
+   "252369": {
+      "name": "Veturius",
+      "quality": "needs_id",
+      "taxon_id": 252369,
+      "observations": [
+         68597848
+      ],
+      "number_of_observations": 326,
+      "wikipages_missing": []
+   },
+   "570533": {
+      "name": "Chauliognathus flavipes",
+      "quality": "research",
+      "taxon_id": 570533,
+      "observations": [
+         68597707
+      ],
+      "number_of_observations": 328,
+      "wikipages_missing": []
+   },
+   "520689": {
+      "name": "Omophoita octoguttata",
+      "quality": "research",
+      "taxon_id": 520689,
+      "observations": [
+         75427132
+      ],
+      "number_of_observations": 333,
+      "wikipages_missing": []
+   },
+   "607625": {
+      "name": "Sphictyrtus chrysis",
+      "quality": "needs_id",
+      "taxon_id": 607625,
+      "observations": [
+         70475541,
+         70427373
+      ],
+      "number_of_observations": 334,
+      "wikipages_missing": []
+   },
+   "250066": {
+      "name": "Cotinusa",
+      "quality": "needs_id",
+      "taxon_id": 250066,
+      "observations": [
+         104314353
+      ],
+      "number_of_observations": 338,
+      "wikipages_missing": []
+   },
+   "573476": {
+      "name": "Megalopodinae",
+      "quality": "needs_id",
+      "taxon_id": 573476,
+      "observations": [
+         103600805
+      ],
+      "number_of_observations": 346,
+      "wikipages_missing": []
+   },
+   "269366": {
+      "name": "Metamasius hemipterus",
+      "quality": "research",
+      "taxon_id": 269366,
+      "observations": [
+         103439908
+      ],
+      "number_of_observations": 349,
+      "wikipages_missing": []
+   },
+   "1243481": {
+      "name": "Telegonus alector",
+      "quality": "needs_id",
+      "taxon_id": 1243481,
+      "observations": [
+         72130942
+      ],
+      "number_of_observations": 350,
+      "wikipages_missing": []
+   },
+   "140853": {
+      "name": "Campylocentrum",
+      "quality": "needs_id",
+      "taxon_id": 140853,
+      "observations": [
+         68598337
+      ],
+      "number_of_observations": 377,
+      "wikipages_missing": []
+   },
+   "142273": {
+      "name": "Myrmex",
+      "quality": "needs_id",
+      "taxon_id": 142273,
+      "observations": [
+         137186159
+      ],
+      "number_of_observations": 380,
+      "wikipages_missing": []
+   },
+   "250076": {
+      "name": "Pachomius",
+      "quality": "needs_id",
+      "taxon_id": 250076,
+      "observations": [
+         68700634
+      ],
+      "number_of_observations": 386,
+      "wikipages_missing": []
+   },
+   "373552": {
+      "name": "Telenominae",
+      "quality": "needs_id",
+      "taxon_id": 373552,
+      "observations": [
+         144296876
+      ],
+      "number_of_observations": 392,
+      "wikipages_missing": []
+   },
+   "330878": {
+      "name": "Balmaceda",
+      "quality": "needs_id",
+      "taxon_id": 330878,
+      "observations": [
+         72737922
+      ],
+      "number_of_observations": 401,
+      "wikipages_missing": []
+   },
+   "916728": {
+      "name": "Cenostigma pluviosum",
+      "quality": "research",
+      "taxon_id": 916728,
+      "observations": [
+         71846651
+      ],
+      "number_of_observations": 405,
+      "wikipages_missing": []
+   },
+   "265788": {
+      "name": "Sceliphron fistularium",
+      "quality": "research",
+      "taxon_id": 265788,
+      "observations": [
+         103547097
+      ],
+      "number_of_observations": 412,
+      "wikipages_missing": []
+   },
+   "208995": {
+      "name": "Sarinda",
+      "quality": "needs_id",
+      "taxon_id": 208995,
+      "observations": [
+         71756181
+      ],
+      "number_of_observations": 424,
+      "wikipages_missing": []
+   },
+   "605510": {
+      "name": "Lordopini",
+      "quality": "needs_id",
+      "taxon_id": 605510,
+      "observations": [
+         104381471
+      ],
+      "number_of_observations": 430,
+      "wikipages_missing": []
+   },
+   "120886": {
+      "name": "Ceresa",
+      "quality": "needs_id",
+      "taxon_id": 120886,
+      "observations": [
+         144237828
+      ],
+      "number_of_observations": 432,
+      "wikipages_missing": []
+   },
+   "338903": {
+      "name": "Prionolopha serrata",
+      "quality": "research",
+      "taxon_id": 338903,
+      "observations": [
+         108695204,
+         103225601
+      ],
+      "number_of_observations": 433,
+      "wikipages_missing": []
+   },
+   "122764": {
+      "name": "Compsocerus",
+      "quality": "needs_id",
+      "taxon_id": 122764,
+      "observations": [
+         68585258
+      ],
+      "number_of_observations": 437,
+      "wikipages_missing": []
+   },
+   "245948": {
+      "name": "Papilio hectorides",
+      "quality": "research",
+      "taxon_id": 245948,
+      "observations": [
+         103551638
+      ],
+      "number_of_observations": 450,
+      "wikipages_missing": []
+   },
+   "874491": {
+      "name": "Paubrasilia echinata",
+      "quality": "casual",
+      "taxon_id": 874491,
+      "observations": [
+         101541081
+      ],
+      "number_of_observations": 453,
+      "wikipages_missing": []
+   },
+   "269860": {
+      "name": "Achryson surinamum",
+      "quality": "research",
+      "taxon_id": 269860,
+      "observations": [
+         97766357
+      ],
+      "number_of_observations": 453,
+      "wikipages_missing": []
+   },
+   "780129": {
+      "name": "Frigga quintensis",
+      "quality": "research",
+      "taxon_id": 780129,
+      "observations": [
+         136971531
+      ],
+      "number_of_observations": 461,
+      "wikipages_missing": []
+   },
+   "418527": {
+      "name": "Tetragona",
+      "quality": "needs_id",
+      "taxon_id": 418527,
+      "observations": [
+         86492326
+      ],
+      "number_of_observations": 461,
+      "wikipages_missing": []
+   },
+   "560820": {
+      "name": "Homalinotus coriaceus",
+      "quality": "research",
+      "taxon_id": 560820,
+      "observations": [
+         144487253
+      ],
+      "number_of_observations": 475,
+      "wikipages_missing": []
+   },
+   "211390": {
+      "name": "Stenotarsus",
+      "quality": "needs_id",
+      "taxon_id": 211390,
+      "observations": [
+         144488065
+      ],
+      "number_of_observations": 481,
+      "wikipages_missing": []
+   },
+   "779195": {
+      "name": "Membracis foliatafasciata",
+      "quality": "research",
+      "taxon_id": 779195,
+      "observations": [
+         91913245
+      ],
+      "number_of_observations": 488,
+      "wikipages_missing": []
+   },
+   "569849": {
+      "name": "Carineta diardi",
+      "quality": "research",
+      "taxon_id": 569849,
+      "observations": [
+         68583919
+      ],
+      "number_of_observations": 488,
+      "wikipages_missing": []
+   },
+   "251623": {
+      "name": "Heilipodus",
+      "quality": "needs_id",
+      "taxon_id": 251623,
+      "observations": [
+         69204175
+      ],
+      "number_of_observations": 492,
+      "wikipages_missing": []
+   },
+   "446939": {
+      "name": "Dysdercus albofasciatus",
+      "quality": "needs_id",
+      "taxon_id": 446939,
+      "observations": [
+         104381839
+      ],
+      "number_of_observations": 494,
+      "wikipages_missing": []
+   },
+   "462014": {
+      "name": "Epityches eupompe",
+      "quality": "needs_id",
+      "taxon_id": 462014,
+      "observations": [
+         117784037
+      ],
+      "number_of_observations": 495,
+      "wikipages_missing": []
+   },
+   "251624": {
+      "name": "Heilipus",
+      "quality": "needs_id",
+      "taxon_id": 251624,
+      "observations": [
+         68599900
+      ],
+      "number_of_observations": 501,
+      "wikipages_missing": []
+   },
+   "606229": {
+      "name": "Acrogonia",
+      "quality": "needs_id",
+      "taxon_id": 606229,
+      "observations": [
+         144183223,
+         143096986
+      ],
+      "number_of_observations": 510,
+      "wikipages_missing": []
+   },
+   "256855": {
+      "name": "Carales astur",
+      "quality": "needs_id",
+      "taxon_id": 256855,
+      "observations": [
+         72052949
+      ],
+      "number_of_observations": 515,
+      "wikipages_missing": []
+   },
+   "252771": {
+      "name": "Paratrigona",
+      "quality": "needs_id",
+      "taxon_id": 252771,
+      "observations": [
+         68604077
+      ],
+      "number_of_observations": 522,
+      "wikipages_missing": []
+   },
+   "518287": {
+      "name": "Cyphonia clavata",
+      "quality": "research",
+      "taxon_id": 518287,
+      "observations": [
+         71008392
+      ],
+      "number_of_observations": 525,
+      "wikipages_missing": []
+   },
+   "474510": {
+      "name": "Herdoniini",
+      "quality": "needs_id",
+      "taxon_id": 474510,
+      "observations": [
+         71395367
+      ],
+      "number_of_observations": 527,
+      "wikipages_missing": []
+   },
+   "327366": {
+      "name": "Philodendron erubescens",
+      "quality": "needs_id",
+      "taxon_id": 327366,
+      "observations": [
+         121446553,
+         121446539,
+         121446534
+      ],
+      "number_of_observations": 528,
+      "wikipages_missing": []
+   },
+   "1357053": {
+      "name": "Copestylum vagum",
+      "quality": "needs_id",
+      "taxon_id": 1357053,
+      "observations": [
+         68623545
+      ],
+      "number_of_observations": 528,
+      "wikipages_missing": []
+   },
+   "328081": {
+      "name": "Breda",
+      "quality": "needs_id",
+      "taxon_id": 328081,
+      "observations": [
+         68815260
+      ],
+      "number_of_observations": 531,
+      "wikipages_missing": []
+   },
+   "153579": {
+      "name": "Ocrepeira",
+      "quality": "needs_id",
+      "taxon_id": 153579,
+      "observations": [
+         104384103,
+         104383150
+      ],
+      "number_of_observations": 533,
+      "wikipages_missing": []
+   },
+   "84461": {
+      "name": "Trachelopachys",
+      "quality": "needs_id",
+      "taxon_id": 84461,
+      "observations": [
+         131399238
+      ],
+      "number_of_observations": 536,
+      "wikipages_missing": []
+   },
+   "253136": {
+      "name": "Griburius",
+      "quality": "needs_id",
+      "taxon_id": 253136,
+      "observations": [
+         101234744
+      ],
+      "number_of_observations": 536,
+      "wikipages_missing": []
+   },
+   "874762": {
+      "name": "Antiteuchus mixtus",
+      "quality": "research",
+      "taxon_id": 874762,
+      "observations": [
+         101976214
+      ],
+      "number_of_observations": 544,
+      "wikipages_missing": []
+   },
+   "815023": {
+      "name": "Marma nigritarsis",
+      "quality": "research",
+      "taxon_id": 815023,
+      "observations": [
+         108696348
+      ],
+      "number_of_observations": 557,
+      "wikipages_missing": []
+   },
+   "480776": {
+      "name": "Agaricus sylvaticus",
+      "quality": "needs_id",
+      "taxon_id": 480776,
+      "observations": [
+         131398460
+      ],
+      "number_of_observations": 559,
+      "wikipages_missing": []
+   },
+   "143824": {
+      "name": "Erinnyis alope",
+      "quality": "research",
+      "taxon_id": 143824,
+      "observations": [
+         104383668
+      ],
+      "number_of_observations": 571,
+      "wikipages_missing": []
+   },
+   "825569": {
+      "name": "Astylus variegatus",
+      "quality": "research",
+      "taxon_id": 825569,
+      "observations": [
+         71008386
+      ],
+      "number_of_observations": 579,
+      "wikipages_missing": []
+   },
+   "248288": {
+      "name": "Hybos",
+      "quality": "needs_id",
+      "taxon_id": 248288,
+      "observations": [
+         141797192
+      ],
+      "number_of_observations": 582,
+      "wikipages_missing": []
+   },
+   "326309": {
+      "name": "Aetalion reticulatum",
+      "quality": "needs_id",
+      "taxon_id": 326309,
+      "observations": [
+         70475545
+      ],
+      "number_of_observations": 584,
+      "wikipages_missing": []
+   },
+   "330937": {
+      "name": "Teleonemia",
+      "quality": "needs_id",
+      "taxon_id": 330937,
+      "observations": [
+         119064619
+      ],
+      "number_of_observations": 597,
+      "wikipages_missing": []
+   },
+   "431236": {
+      "name": "Polybia sericea",
+      "quality": "research",
+      "taxon_id": 431236,
+      "observations": [
+         72839225
+      ],
+      "number_of_observations": 601,
+      "wikipages_missing": []
+   },
+   "252173": {
+      "name": "Steirastoma",
+      "quality": "needs_id",
+      "taxon_id": 252173,
+      "observations": [
+         117184045
+      ],
+      "number_of_observations": 608,
+      "wikipages_missing": []
+   },
+   "67756": {
+      "name": "Dendrobium nobile",
+      "quality": "casual",
+      "taxon_id": 67756,
+      "observations": [
+         92697319
+      ],
+      "number_of_observations": 627,
+      "wikipages_missing": []
+   },
+   "247583": {
+      "name": "Pseudodirphia",
+      "quality": "needs_id",
+      "taxon_id": 247583,
+      "observations": [
+         104382709
+      ],
+      "number_of_observations": 628,
+      "wikipages_missing": []
+   },
+   "247391": {
+      "name": "Philophyllia",
+      "quality": "needs_id",
+      "taxon_id": 247391,
+      "observations": [
+         137183037
+      ],
+      "number_of_observations": 635,
+      "wikipages_missing": []
+   },
+   "338516": {
+      "name": "Rutela lineola",
+      "quality": "research",
+      "taxon_id": 338516,
+      "observations": [
+         68585405
+      ],
+      "number_of_observations": 645,
+      "wikipages_missing": []
+   },
+   "420555": {
+      "name": "Psecas",
+      "quality": "needs_id",
+      "taxon_id": 420555,
+      "observations": [
+         102872056
+      ],
+      "number_of_observations": 646,
+      "wikipages_missing": []
+   },
+   "525575": {
+      "name": "Tillandsia stricta",
+      "quality": "research",
+      "taxon_id": 525575,
+      "observations": [
+         68700629
+      ],
+      "number_of_observations": 653,
+      "wikipages_missing": []
+   },
+   "362486": {
+      "name": "Zelia",
+      "quality": "needs_id",
+      "taxon_id": 362486,
+      "observations": [
+         108921489
+      ],
+      "number_of_observations": 655,
+      "wikipages_missing": []
+   },
+   "523508": {
+      "name": "Vilernina",
+      "quality": "needs_id",
+      "taxon_id": 523508,
+      "observations": [
+         103146764
+      ],
+      "number_of_observations": 662,
+      "wikipages_missing": []
+   },
+   "367930": {
+      "name": "Perreyia",
+      "quality": "needs_id",
+      "taxon_id": 367930,
+      "observations": [
+         104383739
+      ],
+      "number_of_observations": 670,
+      "wikipages_missing": []
+   },
+   "415130": {
+      "name": "Dysschema sacrifica",
+      "quality": "research",
+      "taxon_id": 415130,
+      "observations": [
+         104381233
+      ],
+      "number_of_observations": 686,
+      "wikipages_missing": []
+   },
+   "253043": {
+      "name": "Cacoscelis",
+      "quality": "needs_id",
+      "taxon_id": 253043,
+      "observations": [
+         104317705
+      ],
+      "number_of_observations": 702,
+      "wikipages_missing": []
+   },
+   "1108910": {
+      "name": "Pycnothelidae",
+      "quality": "needs_id",
+      "taxon_id": 1108910,
+      "observations": [
+         92697307
+      ],
+      "number_of_observations": 703,
+      "wikipages_missing": []
+   },
+   "266167": {
+      "name": "Zeta argillaceum",
+      "quality": "research",
+      "taxon_id": 266167,
+      "observations": [
+         141797203
+      ],
+      "number_of_observations": 704,
+      "wikipages_missing": []
+   },
+   "253033": {
+      "name": "Azya",
+      "quality": "needs_id",
+      "taxon_id": 253033,
+      "observations": [
+         104380756
+      ],
+      "number_of_observations": 717,
+      "wikipages_missing": []
+   },
+   "146641": {
+      "name": "Steirodon",
+      "quality": "needs_id",
+      "taxon_id": 146641,
+      "observations": [
+         91913255
+      ],
+      "number_of_observations": 719,
+      "wikipages_missing": []
+   },
+   "326173": {
+      "name": "Musa ornata",
+      "quality": "research",
+      "taxon_id": 326173,
+      "observations": [
+         68603578
+      ],
+      "number_of_observations": 725,
+      "wikipages_missing": []
+   },
+   "250048": {
+      "name": "Arachosia",
+      "quality": "needs_id",
+      "taxon_id": 250048,
+      "observations": [
+         137185023
+      ],
+      "number_of_observations": 730,
+      "wikipages_missing": []
+   },
+   "257054": {
+      "name": "Apistosia judas",
+      "quality": "research",
+      "taxon_id": 257054,
+      "observations": [
+         71587122
+      ],
+      "number_of_observations": 741,
+      "wikipages_missing": []
+   },
+   "218301": {
+      "name": "Diacme elealis",
+      "quality": "needs_id",
+      "taxon_id": 218301,
+      "observations": [
+         69899980
+      ],
+      "number_of_observations": 754,
+      "wikipages_missing": []
+   },
+   "52443": {
+      "name": "Schizolobium parahyba",
+      "quality": "needs_id",
+      "taxon_id": 52443,
+      "observations": [
+         131399582
+      ],
+      "number_of_observations": 758,
+      "wikipages_missing": []
+   },
+   "252608": {
+      "name": "Heza",
+      "quality": "needs_id",
+      "taxon_id": 252608,
+      "observations": [
+         91913252
+      ],
+      "number_of_observations": 789,
+      "wikipages_missing": []
+   },
+   "257416": {
+      "name": "Oiketicus kirbyi",
+      "quality": "needs_id",
+      "taxon_id": 257416,
+      "observations": [
+         68583706
+      ],
+      "number_of_observations": 794,
+      "wikipages_missing": []
+   },
+   "418623": {
+      "name": "Megalostomina",
+      "quality": "needs_id",
+      "taxon_id": 418623,
+      "observations": [
+         138986824
+      ],
+      "number_of_observations": 795,
+      "wikipages_missing": []
+   },
+   "24285": {
+      "name": "Scinax fuscovarius",
+      "quality": "research",
+      "taxon_id": 24285,
+      "observations": [
+         144300520
+      ],
+      "number_of_observations": 809,
+      "wikipages_missing": []
+   },
+   "162418": {
+      "name": "Eranthemum pulchellum",
+      "quality": "needs_id",
+      "taxon_id": 162418,
+      "observations": [
+         69838198
+      ],
+      "number_of_observations": 826,
+      "wikipages_missing": []
+   },
+   "446778": {
+      "name": "Fidicina",
+      "quality": "needs_id",
+      "taxon_id": 446778,
+      "observations": [
+         141797199
+      ],
+      "number_of_observations": 847,
+      "wikipages_missing": []
+   },
+   "298638": {
+      "name": "Physocyclus globosus",
+      "quality": "research",
+      "taxon_id": 298638,
+      "observations": [
+         107370598
+      ],
+      "number_of_observations": 852,
+      "wikipages_missing": []
+   },
+   "119097": {
+      "name": "Pachycoris torridus",
+      "quality": "research",
+      "taxon_id": 119097,
+      "observations": [
+         71756174
+      ],
+      "number_of_observations": 883,
+      "wikipages_missing": []
+   },
+   "67135": {
+      "name": "Rhinella ornata",
+      "quality": "needs_id",
+      "taxon_id": 67135,
+      "observations": [
+         104317709
+      ],
+      "number_of_observations": 891,
+      "wikipages_missing": []
+   },
+   "525049": {
+      "name": "Leucocoprinus cretaceus",
+      "quality": "research",
+      "taxon_id": 525049,
+      "observations": [
+         68598297
+      ],
+      "number_of_observations": 891,
+      "wikipages_missing": []
+   },
+   "489712": {
+      "name": "Coraliomela",
+      "quality": "needs_id",
+      "taxon_id": 489712,
+      "observations": [
+         136972525
+      ],
+      "number_of_observations": 896,
+      "wikipages_missing": []
+   },
+   "542988": {
+      "name": "Sibovia sagata",
+      "quality": "research",
+      "taxon_id": 542988,
+      "observations": [
+         72130943
+      ],
+      "number_of_observations": 929,
+      "wikipages_missing": []
+   },
+   "622699": {
+      "name": "Parastagmatoptera",
+      "quality": "needs_id",
+      "taxon_id": 622699,
+      "observations": [
+         73673123,
+         72457319
+      ],
+      "number_of_observations": 935,
+      "wikipages_missing": []
+   },
+   "372011": {
+      "name": "Aricoris",
+      "quality": "needs_id",
+      "taxon_id": 372011,
+      "observations": [
+         89020933
+      ],
+      "number_of_observations": 969,
+      "wikipages_missing": []
+   },
+   "256804": {
+      "name": "Xyleus discoideus",
+      "quality": "needs_id",
+      "taxon_id": 256804,
+      "observations": [
+         70067018
+      ],
+      "number_of_observations": 977,
+      "wikipages_missing": []
+   },
+   "517916": {
+      "name": "Hemisphaeriini",
+      "quality": "needs_id",
+      "taxon_id": 517916,
+      "observations": [
+         103440557
+      ],
+      "number_of_observations": 982,
+      "wikipages_missing": []
+   },
+   "194772": {
+      "name": "Deinopis",
+      "quality": "needs_id",
+      "taxon_id": 194772,
+      "observations": [
+         104316916
+      ],
+      "number_of_observations": 992,
+      "wikipages_missing": []
+   },
+   "630963": {
+      "name": "Catagramma",
+      "quality": "needs_id",
+      "taxon_id": 630963,
+      "observations": [
+         141797191
+      ],
+      "number_of_observations": 1004,
+      "wikipages_missing": []
+   },
+   "84454": {
+      "name": "Mahanarva",
+      "quality": "needs_id",
+      "taxon_id": 84454,
+      "observations": [
+         144183988
+      ],
+      "number_of_observations": 1020,
+      "wikipages_missing": []
+   },
+   "326308": {
+      "name": "Aetalion",
+      "quality": "needs_id",
+      "taxon_id": 326308,
+      "observations": [
+         103600998
+      ],
+      "number_of_observations": 1021,
+      "wikipages_missing": []
+   },
+   "147035": {
+      "name": "Synemosyna",
+      "quality": "needs_id",
+      "taxon_id": 147035,
+      "observations": [
+         71395373,
+         71395365,
+         70475544,
+         68983337
+      ],
+      "number_of_observations": 1028,
+      "wikipages_missing": []
+   },
+   "158642": {
+      "name": "Metaphidippus",
+      "quality": "needs_id",
+      "taxon_id": 158642,
+      "observations": [
+         91913246
+      ],
+      "number_of_observations": 1051,
+      "wikipages_missing": []
+   },
+   "762571": {
+      "name": "Ronderosia bergii",
+      "quality": "research",
+      "taxon_id": 762571,
+      "observations": [
+         107957479
+      ],
+      "number_of_observations": 1058,
+      "wikipages_missing": []
+   },
+   "67117": {
+      "name": "Rhinella icterica",
+      "quality": "research",
+      "taxon_id": 67117,
+      "observations": [
+         68700637
+      ],
+      "number_of_observations": 1084,
+      "wikipages_missing": []
+   },
+   "337037": {
+      "name": "Erythrogonia",
+      "quality": "needs_id",
+      "taxon_id": 337037,
+      "observations": [
+         104384527
+      ],
+      "number_of_observations": 1086,
+      "wikipages_missing": []
+   },
+   "248152": {
+      "name": "Cyphomyia",
+      "quality": "needs_id",
+      "taxon_id": 248152,
+      "observations": [
+         101234747
+      ],
+      "number_of_observations": 1090,
+      "wikipages_missing": []
+   },
+   "446948": {
+      "name": "Cyphonia",
+      "quality": "needs_id",
+      "taxon_id": 446948,
+      "observations": [
+         104384600
+      ],
+      "number_of_observations": 1120,
+      "wikipages_missing": []
+   },
+   "145416": {
+      "name": "Euaresta",
+      "quality": "needs_id",
+      "taxon_id": 145416,
+      "observations": [
+         70642684,
+         69838204
+      ],
+      "number_of_observations": 1129,
+      "wikipages_missing": []
+   },
+   "258114": {
+      "name": "Mechanitis lysimnia",
+      "quality": "needs_id",
+      "taxon_id": 258114,
+      "observations": [
+         131813923
+      ],
+      "number_of_observations": 1135,
+      "wikipages_missing": []
+   },
+   "420305": {
+      "name": "Chira",
+      "quality": "needs_id",
+      "taxon_id": 420305,
+      "observations": [
+         89020936,
+         86975974
+      ],
+      "number_of_observations": 1150,
+      "wikipages_missing": []
+   },
+   "481875": {
+      "name": "Macugonalia",
+      "quality": "needs_id",
+      "taxon_id": 481875,
+      "observations": [
+         73986492
+      ],
+      "number_of_observations": 1161,
+      "wikipages_missing": []
+   },
+   "206267": {
+      "name": "Monstera adansonii klotzschiana",
+      "quality": "research",
+      "taxon_id": 206267,
+      "observations": [
+         121446551
+      ],
+      "number_of_observations": 1198,
+      "wikipages_missing": []
+   },
+   "794229": {
+      "name": "Allocosinae",
+      "quality": "needs_id",
+      "taxon_id": 794229,
+      "observations": [
+         103785421
+      ],
+      "number_of_observations": 1257,
+      "wikipages_missing": []
+   },
+   "361847": {
+      "name": "Ibidionini",
+      "quality": "needs_id",
+      "taxon_id": 361847,
+      "observations": [
+         100865007
+      ],
+      "number_of_observations": 1258,
+      "wikipages_missing": []
+   },
+   "51772": {
+      "name": "Spartocera fusca",
+      "quality": "research",
+      "taxon_id": 51772,
+      "observations": [
+         70642671,
+         69334554
+      ],
+      "number_of_observations": 1260,
+      "wikipages_missing": []
+   },
+   "249292": {
+      "name": "Hamataliwa",
+      "quality": "needs_id",
+      "taxon_id": 249292,
+      "observations": [
+         104314062
+      ],
+      "number_of_observations": 1267,
+      "wikipages_missing": []
+   },
+   "19016": {
+      "name": "Ara chloropterus",
+      "quality": "research",
+      "taxon_id": 19016,
+      "observations": [
+         68578389
+      ],
+      "number_of_observations": 1287,
+      "wikipages_missing": []
+   },
+   "538598": {
+      "name": "Aconophorini",
+      "quality": "needs_id",
+      "taxon_id": 538598,
+      "observations": [
+         72457333
+      ],
+      "number_of_observations": 1348,
+      "wikipages_missing": []
+   },
+   "119084": {
+      "name": "Methona themisto",
+      "quality": "research",
+      "taxon_id": 119084,
+      "observations": [
+         119064616
+      ],
+      "number_of_observations": 1349,
+      "wikipages_missing": []
+   },
+   "505179": {
+      "name": "Lagria villosa",
+      "quality": "research",
+      "taxon_id": 505179,
+      "observations": [
+         119519765
+      ],
+      "number_of_observations": 1371,
+      "wikipages_missing": []
+   },
+   "209117": {
+      "name": "Anastrepha",
+      "quality": "needs_id",
+      "taxon_id": 209117,
+      "observations": [
+         144238798
+      ],
+      "number_of_observations": 1408,
+      "wikipages_missing": []
+   },
+   "147180": {
+      "name": "Amauroderma",
+      "quality": "needs_id",
+      "taxon_id": 147180,
+      "observations": [
+         68623544
+      ],
+      "number_of_observations": 1408,
+      "wikipages_missing": []
+   },
+   "252668": {
+      "name": "Melipona",
+      "quality": "needs_id",
+      "taxon_id": 252668,
+      "observations": [
+         68585457
+      ],
+      "number_of_observations": 1416,
+      "wikipages_missing": []
+   },
+   "178323": {
+      "name": "Parornix",
+      "quality": "needs_id",
+      "taxon_id": 178323,
+      "observations": [
+         144183300
+      ],
+      "number_of_observations": 1423,
+      "wikipages_missing": []
+   },
+   "199350": {
+      "name": "Platydemus",
+      "quality": "needs_id",
+      "taxon_id": 199350,
+      "observations": [
+         71877886
+      ],
+      "number_of_observations": 1450,
+      "wikipages_missing": []
+   },
+   "120922": {
+      "name": "Cochliomyia",
+      "quality": "needs_id",
+      "taxon_id": 120922,
+      "observations": [
+         104381627
+      ],
+      "number_of_observations": 1492,
+      "wikipages_missing": []
+   },
+   "363215": {
+      "name": "Chariesterus",
+      "quality": "needs_id",
+      "taxon_id": 363215,
+      "observations": [
+         141569995
+      ],
+      "number_of_observations": 1526,
+      "wikipages_missing": []
+   },
+   "43373": {
+      "name": "Callithrix jacchus",
+      "quality": "research",
+      "taxon_id": 43373,
+      "observations": [
+         68578637
+      ],
+      "number_of_observations": 1539,
+      "wikipages_missing": []
+   },
+   "250160": {
+      "name": "Conura",
+      "quality": "needs_id",
+      "taxon_id": 250160,
+      "observations": [
+         85852723
+      ],
+      "number_of_observations": 1546,
+      "wikipages_missing": []
+   },
+   "175845": {
+      "name": "Dirinaria",
+      "quality": "needs_id",
+      "taxon_id": 175845,
+      "observations": [
+         104383988
+      ],
+      "number_of_observations": 1565,
+      "wikipages_missing": []
+   },
+   "250106": {
+      "name": "Thaumasia",
+      "quality": "needs_id",
+      "taxon_id": 250106,
+      "observations": [
+         69793422
+      ],
+      "number_of_observations": 1569,
+      "wikipages_missing": []
+   },
+   "82516": {
+      "name": "Heliodinidae",
+      "quality": "needs_id",
+      "taxon_id": 82516,
+      "observations": [
+         101541077
+      ],
+      "number_of_observations": 1584,
+      "wikipages_missing": []
+   },
+   "43374": {
+      "name": "Callithrix penicillata",
+      "quality": "research",
+      "taxon_id": 43374,
+      "observations": [
+         144311906
+      ],
+      "number_of_observations": 1602,
+      "wikipages_missing": []
+   },
+   "977762": {
+      "name": "Trimezia gracilis",
+      "quality": "research",
+      "taxon_id": 977762,
+      "observations": [
+         92697305
+      ],
+      "number_of_observations": 1605,
+      "wikipages_missing": []
+   },
+   "487396": {
+      "name": "Calomela",
+      "quality": "needs_id",
+      "taxon_id": 487396,
+      "observations": [
+         107958632
+      ],
+      "number_of_observations": 1610,
+      "wikipages_missing": []
+   },
+   "252854": {
+      "name": "Scaptotrigona",
+      "quality": "needs_id",
+      "taxon_id": 252854,
+      "observations": [
+         86492315
+      ],
+      "number_of_observations": 1627,
+      "wikipages_missing": []
+   },
+   "416202": {
+      "name": "Aechmea fasciata",
+      "quality": "casual",
+      "taxon_id": 416202,
+      "observations": [
+         68603083
+      ],
+      "number_of_observations": 1635,
+      "wikipages_missing": []
+   },
+   "126603": {
+      "name": "Adhemarius",
+      "quality": "needs_id",
+      "taxon_id": 126603,
+      "observations": [
+         131398317
+      ],
+      "number_of_observations": 1664,
+      "wikipages_missing": []
+   },
+   "129360": {
+      "name": "Oncideres",
+      "quality": "needs_id",
+      "taxon_id": 129360,
+      "observations": [
+         68700636
+      ],
+      "number_of_observations": 1711,
+      "wikipages_missing": []
+   },
+   "337896": {
+      "name": "Anisoscelis",
+      "quality": "needs_id",
+      "taxon_id": 337896,
+      "observations": [
+         143096992
+      ],
+      "number_of_observations": 1769,
+      "wikipages_missing": []
+   },
+   "512434": {
+      "name": "Hypselonotus interruptus",
+      "quality": "research",
+      "taxon_id": 512434,
+      "observations": [
+         69334553
+      ],
+      "number_of_observations": 1814,
+      "wikipages_missing": []
+   },
+   "248950": {
+      "name": "Chlorocoris",
+      "quality": "needs_id",
+      "taxon_id": 248950,
+      "observations": [
+         108078896
+      ],
+      "number_of_observations": 1897,
+      "wikipages_missing": []
+   },
+   "250262": {
+      "name": "Brachymeria",
+      "quality": "needs_id",
+      "taxon_id": 250262,
+      "observations": [
+         131816434
+      ],
+      "number_of_observations": 1942,
+      "wikipages_missing": []
+   },
+   "83111": {
+      "name": "Lycosa erythrognatha",
+      "quality": "needs_id",
+      "taxon_id": 83111,
+      "observations": [
+         68599485
+      ],
+      "number_of_observations": 1948,
+      "wikipages_missing": []
+   },
+   "202465": {
+      "name": "Cymatoderma",
+      "quality": "needs_id",
+      "taxon_id": 202465,
+      "observations": [
+         70767430
+      ],
+      "number_of_observations": 1976,
+      "wikipages_missing": []
+   },
+   "425206": {
+      "name": "Nephilingis cruentata",
+      "quality": "research",
+      "taxon_id": 425206,
+      "observations": [
+         92697306,
+         89020931
+      ],
+      "number_of_observations": 2008,
+      "wikipages_missing": []
+   },
+   "122668": {
+      "name": "Maruca vitrata",
+      "quality": "research",
+      "taxon_id": 122668,
+      "observations": [
+         144255214
+      ],
+      "number_of_observations": 2124,
+      "wikipages_missing": []
+   },
+   "244820": {
+      "name": "Stagmatoptera",
+      "quality": "needs_id",
+      "taxon_id": 244820,
+      "observations": [
+         111156346
+      ],
+      "number_of_observations": 2129,
+      "wikipages_missing": []
+   },
+   "320746": {
+      "name": "Chromacris speciosa",
+      "quality": "needs_id",
+      "taxon_id": 320746,
+      "observations": [
+         71756190,
+         71587120,
+         68815250
+      ],
+      "number_of_observations": 2150,
+      "wikipages_missing": []
+   },
+   "523086": {
+      "name": "Pleminiini",
+      "quality": "needs_id",
+      "taxon_id": 523086,
+      "observations": [
+         103783722
+      ],
+      "number_of_observations": 2174,
+      "wikipages_missing": []
+   },
+   "374790": {
+      "name": "Heimiomyces",
+      "quality": "needs_id",
+      "taxon_id": 374790,
+      "observations": [
+         107109845
+      ],
+      "number_of_observations": 2176,
+      "wikipages_missing": []
+   },
+   "1319102": {
+      "name": "Neoponera foetida",
+      "quality": "needs_id",
+      "taxon_id": 1319102,
+      "observations": [
+         117784032
+      ],
+      "number_of_observations": 2193,
+      "wikipages_missing": []
+   },
+   "335530": {
+      "name": "Pseudovates",
+      "quality": "needs_id",
+      "taxon_id": 335530,
+      "observations": [
+         117181009
+      ],
+      "number_of_observations": 2233,
+      "wikipages_missing": []
+   },
+   "176752": {
+      "name": "Neolema",
+      "quality": "needs_id",
+      "taxon_id": 176752,
+      "observations": [
+         75427134
+      ],
+      "number_of_observations": 2243,
+      "wikipages_missing": []
+   },
+   "126384": {
+      "name": "Tegosa claudina",
+      "quality": "needs_id",
+      "taxon_id": 126384,
+      "observations": [
+         72737927
+      ],
+      "number_of_observations": 2292,
+      "wikipages_missing": []
+   },
+   "10506": {
+      "name": "Dacnis cayana",
+      "quality": "research",
+      "taxon_id": 10506,
+      "observations": [
+         69538830
+      ],
+      "number_of_observations": 2294,
+      "wikipages_missing": []
+   },
+   "635787": {
+      "name": "Arrhenodini",
+      "quality": "needs_id",
+      "taxon_id": 635787,
+      "observations": [
+         103389725
+      ],
+      "number_of_observations": 2356,
+      "wikipages_missing": []
+   },
+   "49880": {
+      "name": "Misumenops",
+      "quality": "needs_id",
+      "taxon_id": 49880,
+      "observations": [
+         144188706
+      ],
+      "number_of_observations": 2416,
+      "wikipages_missing": []
+   },
+   "244024": {
+      "name": "Quesada gigas",
+      "quality": "research",
+      "taxon_id": 244024,
+      "observations": [
+         144183953
+      ],
+      "number_of_observations": 2450,
+      "wikipages_missing": []
+   },
+   "178093": {
+      "name": "Glyphipterix",
+      "quality": "needs_id",
+      "taxon_id": 178093,
+      "observations": [
+         104381281
+      ],
+      "number_of_observations": 2525,
+      "wikipages_missing": []
+   },
+   "418185": {
+      "name": "Eriopis connexa",
+      "quality": "research",
+      "taxon_id": 418185,
+      "observations": [
+         107958630
+      ],
+      "number_of_observations": 2527,
+      "wikipages_missing": []
+   },
+   "1038541": {
+      "name": "Brachiacanthini",
+      "quality": "needs_id",
+      "taxon_id": 1038541,
+      "observations": [
+         73406990
+      ],
+      "number_of_observations": 2593,
+      "wikipages_missing": []
+   },
+   "50763": {
+      "name": "Nassarius",
+      "quality": "casual",
+      "taxon_id": 50763,
+      "observations": [
+         107957476
+      ],
+      "number_of_observations": 2627,
+      "wikipages_missing": []
+   },
+   "248942": {
+      "name": "Antiteuchus",
+      "quality": "needs_id",
+      "taxon_id": 248942,
+      "observations": [
+         100166019
+      ],
+      "number_of_observations": 2657,
+      "wikipages_missing": []
+   },
+   "155464": {
+      "name": "Toxorhynchites",
+      "quality": "needs_id",
+      "taxon_id": 155464,
+      "observations": [
+         69899989
+      ],
+      "number_of_observations": 2661,
+      "wikipages_missing": []
+   },
+   "424109": {
+      "name": "Harpagophoridae",
+      "quality": "needs_id",
+      "taxon_id": 424109,
+      "observations": [
+         103785078
+      ],
+      "number_of_observations": 2708,
+      "wikipages_missing": []
+   },
+   "83176": {
+      "name": "Phiale",
+      "quality": "needs_id",
+      "taxon_id": 83176,
+      "observations": [
+         69538822,
+         69204187
+      ],
+      "number_of_observations": 2742,
+      "wikipages_missing": []
+   },
+   "202380": {
+      "name": "Leucocoprinus fragilissimus",
+      "quality": "needs_id",
+      "taxon_id": 202380,
+      "observations": [
+         68740523
+      ],
+      "number_of_observations": 2761,
+      "wikipages_missing": []
+   },
+   "519242": {
+      "name": "Alleculina",
+      "quality": "needs_id",
+      "taxon_id": 519242,
+      "observations": [
+         103551883
+      ],
+      "number_of_observations": 2768,
+      "wikipages_missing": []
+   },
+   "172776": {
+      "name": "Aegomorphus",
+      "quality": "needs_id",
+      "taxon_id": 172776,
+      "observations": [
+         71300382
+      ],
+      "number_of_observations": 2779,
+      "wikipages_missing": []
+   },
+   "51775": {
+      "name": "Spartocera",
+      "quality": "needs_id",
+      "taxon_id": 51775,
+      "observations": [
+         70175272
+      ],
+      "number_of_observations": 2810,
+      "wikipages_missing": []
+   },
+   "132229": {
+      "name": "Enoclerus",
+      "quality": "needs_id",
+      "taxon_id": 132229,
+      "observations": [
+         69334555
+      ],
+      "number_of_observations": 2879,
+      "wikipages_missing": []
+   },
+   "253038": {
+      "name": "Alagoasa",
+      "quality": "needs_id",
+      "taxon_id": 253038,
+      "observations": [
+         104381132,
+         104380832,
+         104317706
+      ],
+      "number_of_observations": 2927,
+      "wikipages_missing": []
+   },
+   "48164": {
+      "name": "Couroupita",
+      "quality": "needs_id",
+      "taxon_id": 48164,
+      "observations": [
+         100164177
+      ],
+      "number_of_observations": 3046,
+      "wikipages_missing": []
+   },
+   "173922": {
+      "name": "Diacme",
+      "quality": "needs_id",
+      "taxon_id": 173922,
+      "observations": [
+         70175273
+      ],
+      "number_of_observations": 3071,
+      "wikipages_missing": []
+   },
+   "324883": {
+      "name": "Eucereon",
+      "quality": "needs_id",
+      "taxon_id": 324883,
+      "observations": [
+         68983338
+      ],
+      "number_of_observations": 3146,
+      "wikipages_missing": []
+   },
+   "465915": {
+      "name": "Pangoniinae",
+      "quality": "needs_id",
+      "taxon_id": 465915,
+      "observations": [
+         71450370
+      ],
+      "number_of_observations": 3155,
+      "wikipages_missing": []
+   },
+   "52666": {
+      "name": "Dionaea muscipula",
+      "quality": "casual",
+      "taxon_id": 52666,
+      "observations": [
+         85852727
+      ],
+      "number_of_observations": 3169,
+      "wikipages_missing": []
+   },
+   "61698": {
+      "name": "Holcocephala",
+      "quality": "needs_id",
+      "taxon_id": 61698,
+      "observations": [
+         119523512
+      ],
+      "number_of_observations": 3261,
+      "wikipages_missing": []
+   },
+   "201299": {
+      "name": "Cephalotes",
+      "quality": "needs_id",
+      "taxon_id": 201299,
+      "observations": [
+         68815263
+      ],
+      "number_of_observations": 3308,
+      "wikipages_missing": []
+   },
+   "349812": {
+      "name": "Rainieria",
+      "quality": "needs_id",
+      "taxon_id": 349812,
+      "observations": [
+         101976217
+      ],
+      "number_of_observations": 3326,
+      "wikipages_missing": []
+   },
+   "133439": {
+      "name": "Charidotella sexpunctata",
+      "quality": "research",
+      "taxon_id": 133439,
+      "observations": [
+         72839229
+      ],
+      "number_of_observations": 3339,
+      "wikipages_missing": []
+   },
+   "49714": {
+      "name": "Euglossa",
+      "quality": "needs_id",
+      "taxon_id": 49714,
+      "observations": [
+         71756203
+      ],
+      "number_of_observations": 3362,
+      "wikipages_missing": []
+   },
+   "202952": {
+      "name": "Corythalia",
+      "quality": "needs_id",
+      "taxon_id": 202952,
+      "observations": [
+         70175275,
+         68815259
+      ],
+      "number_of_observations": 3403,
+      "wikipages_missing": []
+   },
+   "133086": {
+      "name": "Ripiphoridae",
+      "quality": "needs_id",
+      "taxon_id": 133086,
+      "observations": [
+         101541076,
+         86975973
+      ],
+      "number_of_observations": 3557,
+      "wikipages_missing": []
+   },
+   "126577": {
+      "name": "Etlingera elatior",
+      "quality": "research",
+      "taxon_id": 126577,
+      "observations": [
+         131398031
+      ],
+      "number_of_observations": 3561,
+      "wikipages_missing": []
+   },
+   "174322": {
+      "name": "Colaspis",
+      "quality": "needs_id",
+      "taxon_id": 174322,
+      "observations": [
+         108695203
+      ],
+      "number_of_observations": 3586,
+      "wikipages_missing": []
+   },
+   "202421": {
+      "name": "Lentinus crinitus",
+      "quality": "research",
+      "taxon_id": 202421,
+      "observations": [
+         144312148
+      ],
+      "number_of_observations": 3623,
+      "wikipages_missing": []
+   },
+   "55468": {
+      "name": "Sabulodes",
+      "quality": "needs_id",
+      "taxon_id": 55468,
+      "observations": [
+         72052951
+      ],
+      "number_of_observations": 3638,
+      "wikipages_missing": []
+   },
+   "124467": {
+      "name": "Pseudosphinx tetrio",
+      "quality": "research",
+      "taxon_id": 124467,
+      "observations": [
+         144184154
+      ],
+      "number_of_observations": 3650,
+      "wikipages_missing": []
+   },
+   "53657": {
+      "name": "Tmarus",
+      "quality": "needs_id",
+      "taxon_id": 53657,
+      "observations": [
+         144300101
+      ],
+      "number_of_observations": 3665,
+      "wikipages_missing": []
+   },
+   "48520": {
+      "name": "Proscopiidae",
+      "quality": "needs_id",
+      "taxon_id": 48520,
+      "observations": [
+         144300155
+      ],
+      "number_of_observations": 3667,
+      "wikipages_missing": []
+   },
+   "47432": {
+      "name": "Argyrodes",
+      "quality": "needs_id",
+      "taxon_id": 47432,
+      "observations": [
+         89020935
+      ],
+      "number_of_observations": 3667,
+      "wikipages_missing": []
+   },
+   "339437": {
+      "name": "Compsocerini",
+      "quality": "needs_id",
+      "taxon_id": 339437,
+      "observations": [
+         144312546
+      ],
+      "number_of_observations": 3708,
+      "wikipages_missing": []
+   },
+   "350773": {
+      "name": "Favolus brasiliensis",
+      "quality": "needs_id",
+      "taxon_id": 350773,
+      "observations": [
+         103554158
+      ],
+      "number_of_observations": 3798,
+      "wikipages_missing": []
+   },
+   "1154098": {
+      "name": "Spicauda procne",
+      "quality": "needs_id",
+      "taxon_id": 1154098,
+      "observations": [
+         69204178
+      ],
+      "number_of_observations": 3809,
+      "wikipages_missing": []
+   },
+   "48286": {
+      "name": "Rhinophoridae",
+      "quality": "needs_id",
+      "taxon_id": 48286,
+      "observations": [
+         86975980
+      ],
+      "number_of_observations": 3831,
+      "wikipages_missing": []
+   },
+   "67440": {
+      "name": "Utetheisa ornatrix",
+      "quality": "needs_id",
+      "taxon_id": 67440,
+      "observations": [
+         73986491
+      ],
+      "number_of_observations": 3837,
+      "wikipages_missing": []
+   },
+   "127915": {
+      "name": "Loxa",
+      "quality": "needs_id",
+      "taxon_id": 127915,
+      "observations": [
+         92697314,
+         90096362
+      ],
+      "number_of_observations": 3845,
+      "wikipages_missing": []
+   },
+   "506521": {
+      "name": "Anthonomini",
+      "quality": "needs_id",
+      "taxon_id": 506521,
+      "observations": [
+         104384811
+      ],
+      "number_of_observations": 3886,
+      "wikipages_missing": []
+   },
+   "248956": {
+      "name": "Edessa",
+      "quality": "needs_id",
+      "taxon_id": 248956,
+      "observations": [
+         70427366
+      ],
+      "number_of_observations": 3931,
+      "wikipages_missing": []
+   },
+   "148632": {
+      "name": "Opsiphanes",
+      "quality": "needs_id",
+      "taxon_id": 148632,
+      "observations": [
+         129670714
+      ],
+      "number_of_observations": 3955,
+      "wikipages_missing": []
+   },
+   "61602": {
+      "name": "Ommatius",
+      "quality": "needs_id",
+      "taxon_id": 61602,
+      "observations": [
+         71756208
+      ],
+      "number_of_observations": 3974,
+      "wikipages_missing": []
+   },
+   "247396": {
+      "name": "Stilpnochlora",
+      "quality": "needs_id",
+      "taxon_id": 247396,
+      "observations": [
+         72954653
+      ],
+      "number_of_observations": 4056,
+      "wikipages_missing": []
+   },
+   "249988": {
+      "name": "Parawixia",
+      "quality": "needs_id",
+      "taxon_id": 249988,
+      "observations": [
+         70475543
+      ],
+      "number_of_observations": 4187,
+      "wikipages_missing": []
+   },
+   "252109": {
+      "name": "Mallodon",
+      "quality": "needs_id",
+      "taxon_id": 252109,
+      "observations": [
+         102871889
+      ],
+      "number_of_observations": 4250,
+      "wikipages_missing": []
+   },
+   "344448": {
+      "name": "Tetragonisca",
+      "quality": "needs_id",
+      "taxon_id": 344448,
+      "observations": [
+         68599899
+      ],
+      "number_of_observations": 4262,
+      "wikipages_missing": []
+   },
+   "83217": {
+      "name": "Membracis",
+      "quality": "needs_id",
+      "taxon_id": 83217,
+      "observations": [
+         92697309,
+         91913251
+      ],
+      "number_of_observations": 4265,
+      "wikipages_missing": []
+   },
+   "179319": {
+      "name": "Strongylium",
+      "quality": "needs_id",
+      "taxon_id": 179319,
+      "observations": [
+         103783240
+      ],
+      "number_of_observations": 4307,
+      "wikipages_missing": []
+   },
+   "173022": {
+      "name": "Arta",
+      "quality": "needs_id",
+      "taxon_id": 173022,
+      "observations": [
+         144238144
+      ],
+      "number_of_observations": 4400,
+      "wikipages_missing": []
+   },
+   "51605": {
+      "name": "Anadenobolus",
+      "quality": "needs_id",
+      "taxon_id": 51605,
+      "observations": [
+         71877891
+      ],
+      "number_of_observations": 4435,
+      "wikipages_missing": []
+   },
+   "164011": {
+      "name": "Hypoestes phyllostachya",
+      "quality": "research",
+      "taxon_id": 164011,
+      "observations": [
+         68700641
+      ],
+      "number_of_observations": 4541,
+      "wikipages_missing": []
+   },
+   "68275": {
+      "name": "Battus polydamas",
+      "quality": "needs_id",
+      "taxon_id": 68275,
+      "observations": [
+         68597609
+      ],
+      "number_of_observations": 4585,
+      "wikipages_missing": []
+   },
+   "85026": {
+      "name": "Papilio thoas brasiliensis",
+      "quality": "needs_id",
+      "taxon_id": 85026,
+      "observations": [
+         68603579
+      ],
+      "number_of_observations": 4587,
+      "wikipages_missing": []
+   },
+   "83840": {
+      "name": "Plagiodera",
+      "quality": "needs_id",
+      "taxon_id": 83840,
+      "observations": [
+         144451802
+      ],
+      "number_of_observations": 4718,
+      "wikipages_missing": []
+   },
+   "250069": {
+      "name": "Frigga",
+      "quality": "needs_id",
+      "taxon_id": 250069,
+      "observations": [
+         70642672
+      ],
+      "number_of_observations": 4744,
+      "wikipages_missing": []
+   },
+   "519308": {
+      "name": "Stenochiini",
+      "quality": "needs_id",
+      "taxon_id": 519308,
+      "observations": [
+         68623548
+      ],
+      "number_of_observations": 4904,
+      "wikipages_missing": []
+   },
+   "154290": {
+      "name": "Ceiba speciosa",
+      "quality": "research",
+      "taxon_id": 154290,
+      "observations": [
+         71395369
+      ],
+      "number_of_observations": 5010,
+      "wikipages_missing": []
+   },
+   "603512": {
+      "name": "Brentinae",
+      "quality": "needs_id",
+      "taxon_id": 603512,
+      "observations": [
+         68599488
+      ],
+      "number_of_observations": 5066,
+      "wikipages_missing": []
+   },
+   "490990": {
+      "name": "Lipsanini",
+      "quality": "casual",
+      "taxon_id": 490990,
+      "observations": [
+         131813768
+      ],
+      "number_of_observations": 5195,
+      "wikipages_missing": []
+   },
+   "129410": {
+      "name": "Orthocladiinae",
+      "quality": "needs_id",
+      "taxon_id": 129410,
+      "observations": [
+         72457339
+      ],
+      "number_of_observations": 5195,
+      "wikipages_missing": []
+   },
+   "61254": {
+      "name": "Aradidae",
+      "quality": "needs_id",
+      "taxon_id": 61254,
+      "observations": [
+         104317707
+      ],
+      "number_of_observations": 5252,
+      "wikipages_missing": []
+   },
+   "143384": {
+      "name": "Tremella fuciformis",
+      "quality": "research",
+      "taxon_id": 143384,
+      "observations": [
+         131399310
+      ],
+      "number_of_observations": 5265,
+      "wikipages_missing": []
+   },
+   "373680": {
+      "name": "Cryptorhynchini",
+      "quality": "needs_id",
+      "taxon_id": 373680,
+      "observations": [
+         70175271
+      ],
+      "number_of_observations": 5526,
+      "wikipages_missing": []
+   },
+   "132517": {
+      "name": "Clastoptera",
+      "quality": "needs_id",
+      "taxon_id": 132517,
+      "observations": [
+         104384033
+      ],
+      "number_of_observations": 5536,
+      "wikipages_missing": []
+   },
+   "326918": {
+      "name": "Enchenopa",
+      "quality": "needs_id",
+      "taxon_id": 326918,
+      "observations": [
+         71395370
+      ],
+      "number_of_observations": 5560,
+      "wikipages_missing": []
+   },
+   "135256": {
+      "name": "Eustala",
+      "quality": "needs_id",
+      "taxon_id": 135256,
+      "observations": [
+         70067021,
+         69899983
+      ],
+      "number_of_observations": 5901,
+      "wikipages_missing": []
+   },
+   "132516": {
+      "name": "Clastopteridae",
+      "quality": "needs_id",
+      "taxon_id": 132516,
+      "observations": [
+         86492331
+      ],
+      "number_of_observations": 5914,
+      "wikipages_missing": []
+   },
+   "148742": {
+      "name": "Hamadryas februa",
+      "quality": "research",
+      "taxon_id": 148742,
+      "observations": [
+         72052946
+      ],
+      "number_of_observations": 6119,
+      "wikipages_missing": []
+   },
+   "82528": {
+      "name": "Augochloropsis",
+      "quality": "needs_id",
+      "taxon_id": 82528,
+      "observations": [
+         69899987
+      ],
+      "number_of_observations": 6655,
+      "wikipages_missing": []
+   },
+   "47486": {
+      "name": "Selenops",
+      "quality": "needs_id",
+      "taxon_id": 47486,
+      "observations": [
+         68598689
+      ],
+      "number_of_observations": 6689,
+      "wikipages_missing": []
+   },
+   "199145": {
+      "name": "Coelioxys",
+      "quality": "needs_id",
+      "taxon_id": 199145,
+      "observations": [
+         110055588
+      ],
+      "number_of_observations": 6777,
+      "wikipages_missing": []
+   },
+   "464189": {
+      "name": "Herpothallon rubrocinctum",
+      "quality": "research",
+      "taxon_id": 464189,
+      "observations": [
+         71877883
+      ],
+      "number_of_observations": 6951,
+      "wikipages_missing": []
+   },
+   "1426765": {
+      "name": "Dacrymyces spathularia",
+      "quality": "research",
+      "taxon_id": 1426765,
+      "observations": [
+         69204190
+      ],
+      "number_of_observations": 7225,
+      "wikipages_missing": []
+   },
+   "143208": {
+      "name": "Syngonium podophyllum",
+      "quality": "research",
+      "taxon_id": 143208,
+      "observations": [
+         121443628
+      ],
+      "number_of_observations": 7344,
+      "wikipages_missing": []
+   },
+   "181039": {
+      "name": "Acharia",
+      "quality": "needs_id",
+      "taxon_id": 181039,
+      "observations": [
+         70642674
+      ],
+      "number_of_observations": 7440,
+      "wikipages_missing": []
+   },
+   "463096": {
+      "name": "Herpothallon",
+      "quality": "needs_id",
+      "taxon_id": 463096,
+      "observations": [
+         68815254
+      ],
+      "number_of_observations": 7488,
+      "wikipages_missing": []
+   },
+   "68864": {
+      "name": "Mischocyttarus",
+      "quality": "needs_id",
+      "taxon_id": 68864,
+      "observations": [
+         70642673
+      ],
+      "number_of_observations": 7602,
+      "wikipages_missing": []
+   },
+   "51446": {
+      "name": "Passiflora edulis flavicarpa",
+      "quality": "research",
+      "taxon_id": 51446,
+      "observations": [
+         73673120
+      ],
+      "number_of_observations": 7670,
+      "wikipages_missing": []
+   },
+   "273537": {
+      "name": "Handroanthus",
+      "quality": "casual",
+      "taxon_id": 273537,
+      "observations": [
+         71518154,
+         71395361
+      ],
+      "number_of_observations": 7774,
+      "wikipages_missing": []
+   },
+   "523507": {
+      "name": "Abracrini",
+      "quality": "needs_id",
+      "taxon_id": 523507,
+      "observations": [
+         68815255
+      ],
+      "number_of_observations": 7901,
+      "wikipages_missing": []
+   },
+   "182631": {
+      "name": "Phlyctis argena",
+      "quality": "needs_id",
+      "taxon_id": 182631,
+      "observations": [
+         70067022
+      ],
+      "number_of_observations": 7944,
+      "wikipages_missing": []
+   },
+   "355080": {
+      "name": "Stenomatinae",
+      "quality": "needs_id",
+      "taxon_id": 355080,
+      "observations": [
+         86492323
+      ],
+      "number_of_observations": 8135,
+      "wikipages_missing": []
+   },
+   "127636": {
+      "name": "Plecia",
+      "quality": "needs_id",
+      "taxon_id": 127636,
+      "observations": [
+         102389880
+      ],
+      "number_of_observations": 8137,
+      "wikipages_missing": []
+   },
+   "373406": {
+      "name": "Cryptorhynchinae",
+      "quality": "needs_id",
+      "taxon_id": 373406,
+      "observations": [
+         73406989
+      ],
+      "number_of_observations": 8169,
+      "wikipages_missing": []
+   },
+   "78895": {
+      "name": "Rubus ulmifolius",
+      "quality": "needs_id",
+      "taxon_id": 78895,
+      "observations": [
+         70200362
+      ],
+      "number_of_observations": 8293,
+      "wikipages_missing": []
+   },
+   "117219": {
+      "name": "Verrucosa",
+      "quality": "needs_id",
+      "taxon_id": 117219,
+      "observations": [
+         104316254
+      ],
+      "number_of_observations": 8416,
+      "wikipages_missing": []
+   },
+   "122521": {
+      "name": "Monstera deliciosa",
+      "quality": "research",
+      "taxon_id": 122521,
+      "observations": [
+         121443605
+      ],
+      "number_of_observations": 8430,
+      "wikipages_missing": []
+   },
+   "47784": {
+      "name": "Hersiliidae",
+      "quality": "needs_id",
+      "taxon_id": 47784,
+      "observations": [
+         68599901
+      ],
+      "number_of_observations": 8570,
+      "wikipages_missing": []
+   },
+   "320800": {
+      "name": "Baridinae",
+      "quality": "needs_id",
+      "taxon_id": 320800,
+      "observations": [
+         68599490
+      ],
+      "number_of_observations": 8607,
+      "wikipages_missing": []
+   },
+   "48651": {
+      "name": "Cosmos sulphureus",
+      "quality": "research",
+      "taxon_id": 48651,
+      "observations": [
+         70200363
+      ],
+      "number_of_observations": 8912,
+      "wikipages_missing": []
+   },
+   "974664": {
+      "name": "Trametes sanguinea",
+      "quality": "research",
+      "taxon_id": 974664,
+      "observations": [
+         104310672
+      ],
+      "number_of_observations": 9068,
+      "wikipages_missing": []
+   },
+   "494196": {
+      "name": "Edessinae",
+      "quality": "needs_id",
+      "taxon_id": 494196,
+      "observations": [
+         71008384
+      ],
+      "number_of_observations": 9219,
+      "wikipages_missing": []
+   },
+   "985690": {
+      "name": "Thaumatophyllum",
+      "quality": "needs_id",
+      "taxon_id": 985690,
+      "observations": [
+         121443589
+      ],
+      "number_of_observations": 9269,
+      "wikipages_missing": []
+   },
+   "51536": {
+      "name": "Ascia monuste",
+      "quality": "research",
+      "taxon_id": 51536,
+      "observations": [
+         69334556
+      ],
+      "number_of_observations": 9301,
+      "wikipages_missing": []
+   },
+   "120991": {
+      "name": "Psocidae",
+      "quality": "needs_id",
+      "taxon_id": 120991,
+      "observations": [
+         92697330
+      ],
+      "number_of_observations": 9490,
+      "wikipages_missing": []
+   },
+   "68316": {
+      "name": "Lyssomanes",
+      "quality": "needs_id",
+      "taxon_id": 68316,
+      "observations": [
+         92697323
+      ],
+      "number_of_observations": 9595,
+      "wikipages_missing": []
+   },
+   "132071": {
+      "name": "Coenosia",
+      "quality": "needs_id",
+      "taxon_id": 132071,
+      "observations": [
+         85852725
+      ],
+      "number_of_observations": 9665,
+      "wikipages_missing": []
+   },
+   "141760": {
+      "name": "Heliophanus",
+      "quality": "needs_id",
+      "taxon_id": 141760,
+      "observations": [
+         144190105
+      ],
+      "number_of_observations": 9858,
+      "wikipages_missing": []
+   },
+   "518997": {
+      "name": "Pimplini",
+      "quality": "needs_id",
+      "taxon_id": 518997,
+      "observations": [
+         119522418
+      ],
+      "number_of_observations": 9864,
+      "wikipages_missing": []
+   },
+   "130927": {
+      "name": "Irpex",
+      "quality": "needs_id",
+      "taxon_id": 130927,
+      "observations": [
+         112331391
+      ],
+      "number_of_observations": 10379,
+      "wikipages_missing": []
+   },
+   "201283": {
+      "name": "Chrysomya",
+      "quality": "needs_id",
+      "taxon_id": 201283,
+      "observations": [
+         101541078
+      ],
+      "number_of_observations": 10475,
+      "wikipages_missing": []
+   },
+   "70058": {
+      "name": "Agrilus",
+      "quality": "needs_id",
+      "taxon_id": 70058,
+      "observations": [
+         143311669
+      ],
+      "number_of_observations": 10700,
+      "wikipages_missing": []
+   },
+   "125179": {
+      "name": "Lomographa",
+      "quality": "needs_id",
+      "taxon_id": 125179,
+      "observations": [
+         70642680
+      ],
+      "number_of_observations": 11397,
+      "wikipages_missing": []
+   },
+   "69807": {
+      "name": "Philodendron",
+      "quality": "needs_id",
+      "taxon_id": 69807,
+      "observations": [
+         121443602,
+         121443601
+      ],
+      "number_of_observations": 11510,
+      "wikipages_missing": []
+   },
+   "84614": {
+      "name": "Calopteron",
+      "quality": "needs_id",
+      "taxon_id": 84614,
+      "observations": [
+         104384846
+      ],
+      "number_of_observations": 11587,
+      "wikipages_missing": []
+   },
+   "354096": {
+      "name": "Scymninae",
+      "quality": "needs_id",
+      "taxon_id": 354096,
+      "observations": [
+         138991421
+      ],
+      "number_of_observations": 11601,
+      "wikipages_missing": []
+   },
+   "62839": {
+      "name": "Delonix regia",
+      "quality": "research",
+      "taxon_id": 62839,
+      "observations": [
+         71395363
+      ],
+      "number_of_observations": 11674,
+      "wikipages_missing": []
+   },
+   "373747": {
+      "name": "Naupactini",
+      "quality": "needs_id",
+      "taxon_id": 373747,
+      "observations": [
+         68585154
+      ],
+      "number_of_observations": 11719,
+      "wikipages_missing": []
+   },
+   "337420": {
+      "name": "Stratiomyini",
+      "quality": "needs_id",
+      "taxon_id": 337420,
+      "observations": [
+         103329412
+      ],
+      "number_of_observations": 11772,
+      "wikipages_missing": []
+   },
+   "962637": {
+      "name": "Pontederia crassipes",
+      "quality": "research",
+      "taxon_id": 962637,
+      "observations": [
+         68700627
+      ],
+      "number_of_observations": 11874,
+      "wikipages_missing": []
+   },
+   "143209": {
+      "name": "Syngonium",
+      "quality": "needs_id",
+      "taxon_id": 143209,
+      "observations": [
+         121443629,
+         121443604
+      ],
+      "number_of_observations": 12111,
+      "wikipages_missing": []
+   },
+   "48850": {
+      "name": "Pelidnota",
+      "quality": "needs_id",
+      "taxon_id": 48850,
+      "observations": [
+         101234739
+      ],
+      "number_of_observations": 12669,
+      "wikipages_missing": []
+   },
+   "529312": {
+      "name": "Calopterini",
+      "quality": "needs_id",
+      "taxon_id": 529312,
+      "observations": [
+         144388894
+      ],
+      "number_of_observations": 12734,
+      "wikipages_missing": []
+   },
+   "55554": {
+      "name": "Teloschistes",
+      "quality": "needs_id",
+      "taxon_id": 55554,
+      "observations": [
+         69899982
+      ],
+      "number_of_observations": 13028,
+      "wikipages_missing": []
+   },
+   "846617": {
+      "name": "Procridini",
+      "quality": "needs_id",
+      "taxon_id": 846617,
+      "observations": [
+         69899979
+      ],
+      "number_of_observations": 13469,
+      "wikipages_missing": []
+   },
+   "47383": {
+      "name": "Latrodectus geometricus",
+      "quality": "research",
+      "taxon_id": 47383,
+      "observations": [
+         141284382
+      ],
+      "number_of_observations": 13479,
+      "wikipages_missing": []
+   },
+   "1233348": {
+      "name": "Oedionychina",
+      "quality": "needs_id",
+      "taxon_id": 1233348,
+      "observations": [
+         144488245
+      ],
+      "number_of_observations": 13673,
+      "wikipages_missing": []
+   },
+   "67757": {
+      "name": "Dendrobium",
+      "quality": "casual",
+      "taxon_id": 67757,
+      "observations": [
+         70200201
+      ],
+      "number_of_observations": 13711,
+      "wikipages_missing": []
+   },
+   "82524": {
+      "name": "Augochlora",
+      "quality": "needs_id",
+      "taxon_id": 82524,
+      "observations": [
+         69204184
+      ],
+      "number_of_observations": 13862,
+      "wikipages_missing": []
+   },
+   "124431": {
+      "name": "Cycloneda sanguinea",
+      "quality": "needs_id",
+      "taxon_id": 124431,
+      "observations": [
+         103225221
+      ],
+      "number_of_observations": 13868,
+      "wikipages_missing": []
+   },
+   "502785": {
+      "name": "Cyclocephalini",
+      "quality": "needs_id",
+      "taxon_id": 502785,
+      "observations": [
+         71756183
+      ],
+      "number_of_observations": 14415,
+      "wikipages_missing": []
+   },
+   "523310": {
+      "name": "Orphulellini",
+      "quality": "needs_id",
+      "taxon_id": 523310,
+      "observations": [
+         71839402
+      ],
+      "number_of_observations": 14430,
+      "wikipages_missing": []
+   },
+   "122522": {
+      "name": "Monstera",
+      "quality": "needs_id",
+      "taxon_id": 122522,
+      "observations": [
+         71756192
+      ],
+      "number_of_observations": 14434,
+      "wikipages_missing": []
+   },
+   "85104": {
+      "name": "Veronicellidae",
+      "quality": "needs_id",
+      "taxon_id": 85104,
+      "observations": [
+         68815247
+      ],
+      "number_of_observations": 14467,
+      "wikipages_missing": []
+   },
+   "61493": {
+      "name": "Chrysopilus",
+      "quality": "needs_id",
+      "taxon_id": 61493,
+      "observations": [
+         71976393
+      ],
+      "number_of_observations": 14587,
+      "wikipages_missing": []
+   },
+   "62900": {
+      "name": "Brugmansia",
+      "quality": "needs_id",
+      "taxon_id": 62900,
+      "observations": [
+         71877892
+      ],
+      "number_of_observations": 14916,
+      "wikipages_missing": []
+   },
+   "53389": {
+      "name": "Ctenidae",
+      "quality": "needs_id",
+      "taxon_id": 53389,
+      "observations": [
+         144593233
+      ],
+      "number_of_observations": 14922,
+      "wikipages_missing": []
+   },
+   "428812": {
+      "name": "Nematopodini",
+      "quality": "needs_id",
+      "taxon_id": 428812,
+      "observations": [
+         143096993
+      ],
+      "number_of_observations": 15265,
+      "wikipages_missing": []
+   },
+   "48887": {
+      "name": "Miconia",
+      "quality": "needs_id",
+      "taxon_id": 48887,
+      "observations": [
+         131399475
+      ],
+      "number_of_observations": 16426,
+      "wikipages_missing": []
+   },
+   "61284": {
+      "name": "Atta",
+      "quality": "needs_id",
+      "taxon_id": 61284,
+      "observations": [
+         101234749
+      ],
+      "number_of_observations": 16534,
+      "wikipages_missing": []
+   },
+   "56314": {
+      "name": "Coprinellus disseminatus",
+      "quality": "research",
+      "taxon_id": 56314,
+      "observations": [
+         68603573
+      ],
+      "number_of_observations": 16637,
+      "wikipages_missing": []
+   },
+   "68062": {
+      "name": "Menemerus bivittatus",
+      "quality": "research",
+      "taxon_id": 68062,
+      "observations": [
+         91913249
+      ],
+      "number_of_observations": 17152,
+      "wikipages_missing": []
+   },
+   "603530": {
+      "name": "Gyponini",
+      "quality": "needs_id",
+      "taxon_id": 603530,
+      "observations": [
+         104317701
+      ],
+      "number_of_observations": 17429,
+      "wikipages_missing": []
+   },
+   "196842": {
+      "name": "Stereum complicatum",
+      "quality": "needs_id",
+      "taxon_id": 196842,
+      "observations": [
+         108921488
+      ],
+      "number_of_observations": 17499,
+      "wikipages_missing": []
+   },
+   "529311": {
+      "name": "Lycinae",
+      "quality": "needs_id",
+      "taxon_id": 529311,
+      "observations": [
+         76318898
+      ],
+      "number_of_observations": 17871,
+      "wikipages_missing": []
+   },
+   "523093": {
+      "name": "Phaneropterini",
+      "quality": "needs_id",
+      "taxon_id": 523093,
+      "observations": [
+         71450369
+      ],
+      "number_of_observations": 19340,
+      "wikipages_missing": []
+   },
+   "83722": {
+      "name": "Anyphaenidae",
+      "quality": "needs_id",
+      "taxon_id": 83722,
+      "observations": [
+         104315565,
+         104315269
+      ],
+      "number_of_observations": 19358,
+      "wikipages_missing": []
+   },
+   "57843": {
+      "name": "Cydnidae",
+      "quality": "needs_id",
+      "taxon_id": 57843,
+      "observations": [
+         72457310
+      ],
+      "number_of_observations": 20429,
+      "wikipages_missing": []
+   },
+   "82103": {
+      "name": "Erotylidae",
+      "quality": "needs_id",
+      "taxon_id": 82103,
+      "observations": [
+         71756178
+      ],
+      "number_of_observations": 20891,
+      "wikipages_missing": []
+   },
+   "67706": {
+      "name": "Argiope argentata",
+      "quality": "research",
+      "taxon_id": 67706,
+      "observations": [
+         69838200,
+         68815257
+      ],
+      "number_of_observations": 20948,
+      "wikipages_missing": []
+   },
+   "423895": {
+      "name": "Oncidiinae",
+      "quality": "casual",
+      "taxon_id": 423895,
+      "observations": [
+         68603085,
+         68599484,
+         68597805
+      ],
+      "number_of_observations": 21247,
+      "wikipages_missing": []
+   },
+   "1356024": {
+      "name": "Philodendreae",
+      "quality": "needs_id",
+      "taxon_id": 1356024,
+      "observations": [
+         121443610
+      ],
+      "number_of_observations": 21251,
+      "wikipages_missing": []
+   },
+   "504741": {
+      "name": "Anthidiini",
+      "quality": "needs_id",
+      "taxon_id": 504741,
+      "observations": [
+         68579269
+      ],
+      "number_of_observations": 22920,
+      "wikipages_missing": []
+   },
+   "129409": {
+      "name": "Chironomus",
+      "quality": "needs_id",
+      "taxon_id": 129409,
+      "observations": [
+         70427365
+      ],
+      "number_of_observations": 23125,
+      "wikipages_missing": []
+   },
+   "54593": {
+      "name": "Phallus",
+      "quality": "needs_id",
+      "taxon_id": 54593,
+      "observations": [
+         141285231
+      ],
+      "number_of_observations": 23576,
+      "wikipages_missing": []
+   },
+   "322143": {
+      "name": "Chrysidinae",
+      "quality": "needs_id",
+      "taxon_id": 322143,
+      "observations": [
+         70667150
+      ],
+      "number_of_observations": 23874,
+      "wikipages_missing": []
+   },
+   "373574": {
+      "name": "Molytinae",
+      "quality": "needs_id",
+      "taxon_id": 373574,
+      "observations": [
+         107958627
+      ],
+      "number_of_observations": 23938,
+      "wikipages_missing": []
+   },
+   "82286": {
+      "name": "Automeris",
+      "quality": "needs_id",
+      "taxon_id": 82286,
+      "observations": [
+         144557431
+      ],
+      "number_of_observations": 24090,
+      "wikipages_missing": []
+   },
+   "492220": {
+      "name": "Proconiini",
+      "quality": "needs_id",
+      "taxon_id": 492220,
+      "observations": [
+         103439382
+      ],
+      "number_of_observations": 24450,
+      "wikipages_missing": []
+   },
+   "424298": {
+      "name": "Oryctini",
+      "quality": "needs_id",
+      "taxon_id": 424298,
+      "observations": [
+         68598690
+      ],
+      "number_of_observations": 25663,
+      "wikipages_missing": []
+   },
+   "4715": {
+      "name": "Caracara plancus",
+      "quality": "research",
+      "taxon_id": 4715,
+      "observations": [
+         131398765
+      ],
+      "number_of_observations": 26315,
+      "wikipages_missing": []
+   },
+   "118991": {
+      "name": "Lauxaniidae",
+      "quality": "needs_id",
+      "taxon_id": 118991,
+      "observations": [
+         71877882
+      ],
+      "number_of_observations": 26661,
+      "wikipages_missing": []
+   },
+   "55215": {
+      "name": "Aphis",
+      "quality": "needs_id",
+      "taxon_id": 55215,
+      "observations": [
+         131814169
+      ],
+      "number_of_observations": 27205,
+      "wikipages_missing": []
+   },
+   "904336": {
+      "name": "Trichonephila clavipes",
+      "quality": "research",
+      "taxon_id": 904336,
+      "observations": [
+         71450368
+      ],
+      "number_of_observations": 27941,
+      "wikipages_missing": []
+   },
+   "155108": {
+      "name": "Ceratina",
+      "quality": "needs_id",
+      "taxon_id": 155108,
+      "observations": [
+         69538823
+      ],
+      "number_of_observations": 29834,
+      "wikipages_missing": []
+   },
+   "63030": {
+      "name": "Hypercompe",
+      "quality": "needs_id",
+      "taxon_id": 63030,
+      "observations": [
+         72839223
+      ],
+      "number_of_observations": 29977,
+      "wikipages_missing": []
+   },
+   "118929": {
+      "name": "Acrolophus",
+      "quality": "needs_id",
+      "taxon_id": 118929,
+      "observations": [
+         141321407
+      ],
+      "number_of_observations": 30832,
+      "wikipages_missing": []
+   },
+   "62059": {
+      "name": "Alydidae",
+      "quality": "needs_id",
+      "taxon_id": 62059,
+      "observations": [
+         110055592
+      ],
+      "number_of_observations": 31203,
+      "wikipages_missing": []
+   },
+   "49360": {
+      "name": "Lycidae",
+      "quality": "needs_id",
+      "taxon_id": 49360,
+      "observations": [
+         137183533
+      ],
+      "number_of_observations": 32316,
+      "wikipages_missing": []
+   },
+   "358525": {
+      "name": "Sarcophaginae",
+      "quality": "needs_id",
+      "taxon_id": 358525,
+      "observations": [
+         69204189
+      ],
+      "number_of_observations": 32504,
+      "wikipages_missing": []
+   },
+   "54996": {
+      "name": "Sida",
+      "quality": "needs_id",
+      "taxon_id": 54996,
+      "observations": [
+         69838205
+      ],
+      "number_of_observations": 32825,
+      "wikipages_missing": []
+   },
+   "340683": {
+      "name": "Smiliinae",
+      "quality": "needs_id",
+      "taxon_id": 340683,
+      "observations": [
+         76318867
+      ],
+      "number_of_observations": 34992,
+      "wikipages_missing": []
+   },
+   "122222": {
+      "name": "Condylostylus",
+      "quality": "needs_id",
+      "taxon_id": 122222,
+      "observations": [
+         141797196
+      ],
+      "number_of_observations": 35782,
+      "wikipages_missing": []
+   },
+   "67692": {
+      "name": "Lophocampa",
+      "quality": "needs_id",
+      "taxon_id": 67692,
+      "observations": [
+         104053089
+      ],
+      "number_of_observations": 38736,
+      "wikipages_missing": []
+   },
+   "357454": {
+      "name": "Eumolpinae",
+      "quality": "needs_id",
+      "taxon_id": 357454,
+      "observations": [
+         108076703,
+         103601525
+      ],
+      "number_of_observations": 39635,
+      "wikipages_missing": []
+   },
+   "1038402": {
+      "name": "Burnsius",
+      "quality": "needs_id",
+      "taxon_id": 1038402,
+      "observations": [
+         85852722
+      ],
+      "number_of_observations": 39933,
+      "wikipages_missing": []
+   },
+   "50817": {
+      "name": "Auricularia",
+      "quality": "needs_id",
+      "taxon_id": 50817,
+      "observations": [
+         70475546
+      ],
+      "number_of_observations": 41034,
+      "wikipages_missing": []
+   },
+   "203037": {
+      "name": "Augochlorini",
+      "quality": "needs_id",
+      "taxon_id": 203037,
+      "observations": [
+         69838206
+      ],
+      "number_of_observations": 41175,
+      "wikipages_missing": []
+   },
+   "58504": {
+      "name": "Polites",
+      "quality": "needs_id",
+      "taxon_id": 58504,
+      "observations": [
+         71518160
+      ],
+      "number_of_observations": 43339,
+      "wikipages_missing": []
+   },
+   "123835": {
+      "name": "Lithosiina",
+      "quality": "needs_id",
+      "taxon_id": 123835,
+      "observations": [
+         118721368
+      ],
+      "number_of_observations": 43347,
+      "wikipages_missing": []
+   },
+   "47550": {
+      "name": "Tetragnatha",
+      "quality": "needs_id",
+      "taxon_id": 47550,
+      "observations": [
+         100411386
+      ],
+      "number_of_observations": 43607,
+      "wikipages_missing": []
+   },
+   "82826": {
+      "name": "Hemerocallis",
+      "quality": "casual",
+      "taxon_id": 82826,
+      "observations": [
+         68623159
+      ],
+      "number_of_observations": 44881,
+      "wikipages_missing": []
+   },
+   "54895": {
+      "name": "Laccaria",
+      "quality": "needs_id",
+      "taxon_id": 54895,
+      "observations": [
+         68603574
+      ],
+      "number_of_observations": 45119,
+      "wikipages_missing": []
+   },
+   "129424": {
+      "name": "Zelus",
+      "quality": "needs_id",
+      "taxon_id": 129424,
+      "observations": [
+         69334557
+      ],
+      "number_of_observations": 45496,
+      "wikipages_missing": []
+   },
+   "904332": {
+      "name": "Trichonephila",
+      "quality": "needs_id",
+      "taxon_id": 904332,
+      "observations": [
+         68983339
+      ],
+      "number_of_observations": 45840,
+      "wikipages_missing": []
+   },
+   "126405": {
+      "name": "Begonia",
+      "quality": "needs_id",
+      "taxon_id": 126405,
+      "observations": [
+         68700623,
+         68700620
+      ],
+      "number_of_observations": 46057,
+      "wikipages_missing": []
+   },
+   "735171": {
+      "name": "Murinae",
+      "quality": "casual",
+      "taxon_id": 735171,
+      "observations": [
+         104309353
+      ],
+      "number_of_observations": 46893,
+      "wikipages_missing": []
+   },
+   "321397": {
+      "name": "Sciapodinae",
+      "quality": "needs_id",
+      "taxon_id": 321397,
+      "observations": [
+         71518157
+      ],
+      "number_of_observations": 46904,
+      "wikipages_missing": []
+   },
+   "51967": {
+      "name": "Scoliidae",
+      "quality": "needs_id",
+      "taxon_id": 51967,
+      "observations": [
+         88690357
+      ],
+      "number_of_observations": 47876,
+      "wikipages_missing": []
+   },
+   "61446": {
+      "name": "Acanthocephala",
+      "quality": "needs_id",
+      "taxon_id": 61446,
+      "observations": [
+         100163490
+      ],
+      "number_of_observations": 48076,
+      "wikipages_missing": []
+   },
+   "47868": {
+      "name": "Philodromidae",
+      "quality": "needs_id",
+      "taxon_id": 47868,
+      "observations": [
+         102389677
+      ],
+      "number_of_observations": 50649,
+      "wikipages_missing": []
+   },
+   "461451": {
+      "name": "Ectobiidae",
+      "quality": "needs_id",
+      "taxon_id": 461451,
+      "observations": [
+         119067252
+      ],
+      "number_of_observations": 53738,
+      "wikipages_missing": []
+   },
+   "53466": {
+      "name": "Leucauge",
+      "quality": "needs_id",
+      "taxon_id": 53466,
+      "observations": [
+         75427136
+      ],
+      "number_of_observations": 55869,
+      "wikipages_missing": []
+   },
+   "61858": {
+      "name": "Lucilia",
+      "quality": "needs_id",
+      "taxon_id": 61858,
+      "observations": [
+         70067020
+      ],
+      "number_of_observations": 59058,
+      "wikipages_missing": []
+   },
+   "58753": {
+      "name": "Toxomerus",
+      "quality": "needs_id",
+      "taxon_id": 58753,
+      "observations": [
+         68604078
+      ],
+      "number_of_observations": 61906,
+      "wikipages_missing": []
+   },
+   "373841": {
+      "name": "Luperini",
+      "quality": "needs_id",
+      "taxon_id": 373841,
+      "observations": [
+         69538829
+      ],
+      "number_of_observations": 63395,
+      "wikipages_missing": []
+   },
+   "49024": {
+      "name": "Membracidae",
+      "quality": "needs_id",
+      "taxon_id": 49024,
+      "observations": [
+         143096969
+      ],
+      "number_of_observations": 65127,
+      "wikipages_missing": []
+   },
+   "34434": {
+      "name": "Hemidactylus",
+      "quality": "needs_id",
+      "taxon_id": 34434,
+      "observations": [
+         72457325
+      ],
+      "number_of_observations": 67960,
+      "wikipages_missing": []
+   },
+   "60628": {
+      "name": "Tenthredinidae",
+      "quality": "needs_id",
+      "taxon_id": 60628,
+      "observations": [
+         72954645
+      ],
+      "number_of_observations": 73319,
+      "wikipages_missing": []
+   },
+   "155185": {
+      "name": "Alticini",
+      "quality": "needs_id",
+      "taxon_id": 155185,
+      "observations": [
+         71395371
+      ],
+      "number_of_observations": 73489,
+      "wikipages_missing": []
+   },
+   "54134": {
+      "name": "Trametes versicolor",
+      "quality": "needs_id",
+      "taxon_id": 54134,
+      "observations": [
+         104383615
+      ],
+      "number_of_observations": 75661,
+      "wikipages_missing": []
+   },
+   "920772": {
+      "name": "Melastomatoideae",
+      "quality": "needs_id",
+      "taxon_id": 920772,
+      "observations": [
+         68700621
+      ],
+      "number_of_observations": 78499,
+      "wikipages_missing": []
+   },
+   "538902": {
+      "name": "Thoracobombus",
+      "quality": "needs_id",
+      "taxon_id": 538902,
+      "observations": [
+         69589992
+      ],
+      "number_of_observations": 79152,
+      "wikipages_missing": []
+   },
+   "624231": {
+      "name": "Ruschieae",
+      "quality": "needs_id",
+      "taxon_id": 624231,
+      "observations": [
+         92697311
+      ],
+      "number_of_observations": 84633,
+      "wikipages_missing": []
+   },
+   "712842": {
+      "name": "Nezarini",
+      "quality": "needs_id",
+      "taxon_id": 712842,
+      "observations": [
+         90096365
+      ],
+      "number_of_observations": 88047,
+      "wikipages_missing": []
+   },
+   "47731": {
+      "name": "Lampyridae",
+      "quality": "needs_id",
+      "taxon_id": 47731,
+      "observations": [
+         71008382,
+         69793423
+      ],
+      "number_of_observations": 88285,
+      "wikipages_missing": []
+   },
+   "51452": {
+      "name": "Passiflora",
+      "quality": "casual",
+      "taxon_id": 51452,
+      "observations": [
+         143096990
+      ],
+      "number_of_observations": 92885,
+      "wikipages_missing": []
+   },
+   "509764": {
+      "name": "Chironomoidea",
+      "quality": "needs_id",
+      "taxon_id": 509764,
+      "observations": [
+         74300549
+      ],
+      "number_of_observations": 93133,
+      "wikipages_missing": []
+   },
+   "48475": {
+      "name": "Ganoderma",
+      "quality": "needs_id",
+      "taxon_id": 48475,
+      "observations": [
+         107957474,
+         107109844
+      ],
+      "number_of_observations": 107042,
+      "wikipages_missing": []
+   },
+   "52629": {
+      "name": "Araneus",
+      "quality": "needs_id",
+      "taxon_id": 52629,
+      "observations": [
+         69538828
+      ],
+      "number_of_observations": 117214,
+      "wikipages_missing": []
+   },
+   "372724": {
+      "name": "Juliformia",
+      "quality": "needs_id",
+      "taxon_id": 372724,
+      "observations": [
+         69204179
+      ],
+      "number_of_observations": 118441,
+      "wikipages_missing": []
+   },
+   "51953": {
+      "name": "Tachinidae",
+      "quality": "needs_id",
+      "taxon_id": 51953,
+      "observations": [
+         68598688
+      ],
+      "number_of_observations": 118820,
+      "wikipages_missing": []
+   },
+   "33177": {
+      "name": "Gekkonidae",
+      "quality": "needs_id",
+      "taxon_id": 33177,
+      "observations": [
+         86975978
+      ],
+      "number_of_observations": 121281,
+      "wikipages_missing": []
+   },
+   "203294": {
+      "name": "Entiminae",
+      "quality": "needs_id",
+      "taxon_id": 203294,
+      "observations": [
+         103783320
+      ],
+      "number_of_observations": 123662,
+      "wikipages_missing": []
+   },
+   "321500": {
+      "name": "Cerambycinae",
+      "quality": "needs_id",
+      "taxon_id": 321500,
+      "observations": [
+         68815249
+      ],
+      "number_of_observations": 124813,
+      "wikipages_missing": []
+   },
+   "209685": {
+      "name": "Cicadinae",
+      "quality": "needs_id",
+      "taxon_id": 209685,
+      "observations": [
+         71518161
+      ],
+      "number_of_observations": 125273,
+      "wikipages_missing": []
+   },
+   "53248": {
+      "name": "Elateridae",
+      "quality": "needs_id",
+      "taxon_id": 53248,
+      "observations": [
+         141284051,
+         137183697
+      ],
+      "number_of_observations": 129979,
+      "wikipages_missing": []
+   },
+   "62781": {
+      "name": "Camponotus",
+      "quality": "needs_id",
+      "taxon_id": 62781,
+      "observations": [
+         69838203
+      ],
+      "number_of_observations": 130126,
+      "wikipages_missing": []
+   },
+   "82113": {
+      "name": "Phaegopterina",
+      "quality": "needs_id",
+      "taxon_id": 82113,
+      "observations": [
+         68599898
+      ],
+      "number_of_observations": 132913,
+      "wikipages_missing": []
+   },
+   "122946": {
+      "name": "Crambini",
+      "quality": "needs_id",
+      "taxon_id": 122946,
+      "observations": [
+         137138252
+      ],
+      "number_of_observations": 134981,
+      "wikipages_missing": []
+   },
+   "56584": {
+      "name": "Lasiocampidae",
+      "quality": "needs_id",
+      "taxon_id": 56584,
+      "observations": [
+         68598378
+      ],
+      "number_of_observations": 138836,
+      "wikipages_missing": []
+   },
+   "50265": {
+      "name": "Lamiinae",
+      "quality": "needs_id",
+      "taxon_id": 50265,
+      "observations": [
+         144557966
+      ],
+      "number_of_observations": 140535,
+      "wikipages_missing": []
+   },
+   "1109044": {
+      "name": "Dendryphantina",
+      "quality": "needs_id",
+      "taxon_id": 1109044,
+      "observations": [
+         67141243
+      ],
+      "number_of_observations": 149226,
+      "wikipages_missing": []
+   },
+   "48128": {
+      "name": "Phaneropterinae",
+      "quality": "needs_id",
+      "taxon_id": 48128,
+      "observations": [
+         73782052,
+         72954649
+      ],
+      "number_of_observations": 156189,
+      "wikipages_missing": []
+   },
+   "53816": {
+      "name": "Tenebrionidae",
+      "quality": "needs_id",
+      "taxon_id": 53816,
+      "observations": [
+         69204181
+      ],
+      "number_of_observations": 177650,
+      "wikipages_missing": []
+   },
+   "51226": {
+      "name": "Tipuloidea",
+      "quality": "needs_id",
+      "taxon_id": 51226,
+      "observations": [
+         144557936
+      ],
+      "number_of_observations": 181120,
+      "wikipages_missing": []
+   },
+   "47866": {
+      "name": "Thomisidae",
+      "quality": "needs_id",
+      "taxon_id": 47866,
+      "observations": [
+         71396732
+      ],
+      "number_of_observations": 185419,
+      "wikipages_missing": []
+   },
+   "245843": {
+      "name": "Galerucinae",
+      "quality": "needs_id",
+      "taxon_id": 245843,
+      "observations": [
+         71450373
+      ],
+      "number_of_observations": 190307,
+      "wikipages_missing": []
+   },
+   "466233": {
+      "name": "Lygaeoidea",
+      "quality": "needs_id",
+      "taxon_id": 466233,
+      "observations": [
+         86492332
+      ],
+      "number_of_observations": 190508,
+      "wikipages_missing": []
+   },
+   "48763": {
+      "name": "Neuroptera",
+      "quality": "needs_id",
+      "taxon_id": 48763,
+      "observations": [
+         71839401
+      ],
+      "number_of_observations": 191008,
+      "wikipages_missing": []
+   },
+   "52073": {
+      "name": "Fulgoroidea",
+      "quality": "needs_id",
+      "taxon_id": 52073,
+      "observations": [
+         74300550
+      ],
+      "number_of_observations": 193490,
+      "wikipages_missing": []
+   },
+   "124062": {
+      "name": "Boarmiini",
+      "quality": "needs_id",
+      "taxon_id": 124062,
+      "observations": [
+         144183525
+      ],
+      "number_of_observations": 195315,
+      "wikipages_missing": []
+   },
+   "50186": {
+      "name": "Cicadidae",
+      "quality": "needs_id",
+      "taxon_id": 50186,
+      "observations": [
+         137183534
+      ],
+      "number_of_observations": 197293,
+      "wikipages_missing": []
+   },
+   "712034": {
+      "name": "Dendryphantini",
+      "quality": "needs_id",
+      "taxon_id": 712034,
+      "observations": [
+         74300545
+      ],
+      "number_of_observations": 197345,
+      "wikipages_missing": []
+   },
+   "47371": {
+      "name": "Theridiidae",
+      "quality": "needs_id",
+      "taxon_id": 47371,
+      "observations": [
+         69701033
+      ],
+      "number_of_observations": 201643,
+      "wikipages_missing": []
+   },
+   "47416": {
+      "name": "Lycosidae",
+      "quality": "needs_id",
+      "taxon_id": 47416,
+      "observations": [
+         70427369
+      ],
+      "number_of_observations": 227807,
+      "wikipages_missing": []
+   },
+   "467650": {
+      "name": "Aroideae",
+      "quality": "needs_id",
+      "taxon_id": 467650,
+      "observations": [
+         121446532
+      ],
+      "number_of_observations": 264032,
+      "wikipages_missing": []
+   },
+   "186841": {
+      "name": "Syrphinae",
+      "quality": "needs_id",
+      "taxon_id": 186841,
+      "observations": [
+         69589996
+      ],
+      "number_of_observations": 273112,
+      "wikipages_missing": []
+   },
+   "68625": {
+      "name": "Helicoidea",
+      "quality": "needs_id",
+      "taxon_id": 68625,
+      "observations": [
+         108920270
+      ],
+      "number_of_observations": 291381,
+      "wikipages_missing": []
+   },
+   "48736": {
+      "name": "Curculionidae",
+      "quality": "needs_id",
+      "taxon_id": 48736,
+      "observations": [
+         68597734
+      ],
+      "number_of_observations": 295798,
+      "wikipages_missing": []
+   },
+   "53237": {
+      "name": "Cicadellidae",
+      "quality": "needs_id",
+      "taxon_id": 53237,
+      "observations": [
+         144183352,
+         141797194
+      ],
+      "number_of_observations": 299951,
+      "wikipages_missing": []
+   },
+   "50641": {
+      "name": "Solanum",
+      "quality": "needs_id",
+      "taxon_id": 50641,
+      "observations": [
+         131399671
+      ],
+      "number_of_observations": 313579,
+      "wikipages_missing": []
+   },
+   "1094690": {
+      "name": "Parmelioideae",
+      "quality": "needs_id",
+      "taxon_id": 1094690,
+      "observations": [
+         70067023
+      ],
+      "number_of_observations": 320808,
+      "wikipages_missing": []
+   },
+   "417879": {
+      "name": "Araneinae",
+      "quality": "needs_id",
+      "taxon_id": 417879,
+      "observations": [
+         71518163,
+         68700643
+      ],
+      "number_of_observations": 369444,
+      "wikipages_missing": []
+   },
+   "47225": {
+      "name": "Papilio",
+      "quality": "needs_id",
+      "taxon_id": 47225,
+      "observations": [
+         144188250
+      ],
+      "number_of_observations": 369808,
+      "wikipages_missing": []
+   },
+   "48427": {
+      "name": "Boletales",
+      "quality": "needs_id",
+      "taxon_id": 48427,
+      "observations": [
+         104316091
+      ],
+      "number_of_observations": 446583,
+      "wikipages_missing": []
+   },
+   "47742": {
+      "name": "Pentatomidae",
+      "quality": "needs_id",
+      "taxon_id": 47742,
+      "observations": [
+         141321410
+      ],
+      "number_of_observations": 449919,
+      "wikipages_missing": []
+   },
+   "606933": {
+      "name": "Salticinae",
+      "quality": "needs_id",
+      "taxon_id": 606933,
+      "observations": [
+         69899984
+      ],
+      "number_of_observations": 506078,
+      "wikipages_missing": []
+   },
+   "47379": {
+      "name": "Polyporaceae",
+      "quality": "needs_id",
+      "taxon_id": 47379,
+      "observations": [
+         68599703
+      ],
+      "number_of_observations": 513484,
+      "wikipages_missing": []
+   },
+   "48201": {
+      "name": "Scarabaeidae",
+      "quality": "needs_id",
+      "taxon_id": 48201,
+      "observations": [
+         104052913
+      ],
+      "number_of_observations": 548173,
+      "wikipages_missing": []
+   },
+   "47743": {
+      "name": "Pentatomoidea",
+      "quality": "needs_id",
+      "taxon_id": 47743,
+      "observations": [
+         68599486
+      ],
+      "number_of_observations": 564033,
+      "wikipages_missing": []
+   },
+   "48486": {
+      "name": "Coccinellidae",
+      "quality": "needs_id",
+      "taxon_id": 48486,
+      "observations": [
+         101533416
+      ],
+      "number_of_observations": 623202,
+      "wikipages_missing": []
+   },
+   "471714": {
+      "name": "Coccinelloidea",
+      "quality": "needs_id",
+      "taxon_id": 471714,
+      "observations": [
+         68700644
+      ],
+      "number_of_observations": 634531,
+      "wikipages_missing": []
+   },
+   "47650": {
+      "name": "Acridoidea",
+      "quality": "needs_id",
+      "taxon_id": 47650,
+      "observations": [
+         144255061
+      ],
+      "number_of_observations": 664810,
+      "wikipages_missing": []
+   },
+   "372849": {
+      "name": "Cicadomorpha",
+      "quality": "needs_id",
+      "taxon_id": 372849,
+      "observations": [
+         143096977
+      ],
+      "number_of_observations": 676707,
+      "wikipages_missing": []
+   },
+   "123033": {
+      "name": "Ennominae",
+      "quality": "needs_id",
+      "taxon_id": 123033,
+      "observations": [
+         141321409
+      ],
+      "number_of_observations": 716823,
+      "wikipages_missing": []
+   },
+   "47535": {
+      "name": "Araneidae",
+      "quality": "needs_id",
+      "taxon_id": 47535,
+      "observations": [
+         68700628
+      ],
+      "number_of_observations": 748821,
+      "wikipages_missing": []
+   },
+   "952186": {
+      "name": "Lecanoromycetidae",
+      "quality": "needs_id",
+      "taxon_id": 952186,
+      "observations": [
+         68815252
+      ],
+      "number_of_observations": 915750,
+      "wikipages_missing": []
+   },
+   "54743": {
+      "name": "Lecanoromycetes",
+      "quality": "needs_id",
+      "taxon_id": 54743,
+      "observations": [
+         70427368
+      ],
+      "number_of_observations": 1131551,
+      "wikipages_missing": []
+   },
+   "319384": {
+      "name": "Araneoidea",
+      "quality": "needs_id",
+      "taxon_id": 319384,
+      "observations": [
+         103552719
+      ],
+      "number_of_observations": 1141905,
+      "wikipages_missing": []
+   },
+   "48670": {
+      "name": "Noctuidae",
+      "quality": "needs_id",
+      "taxon_id": 48670,
+      "observations": [
+         117784029
+      ],
+      "number_of_observations": 1366727,
+      "wikipages_missing": []
+   },
+   "121850": {
+      "name": "Erebidae",
+      "quality": "needs_id",
+      "taxon_id": 121850,
+      "observations": [
+         76318878
+      ],
+      "number_of_observations": 1640784,
+      "wikipages_missing": []
+   },
+   "61267": {
+      "name": "Heteroptera",
+      "quality": "needs_id",
+      "taxon_id": 61267,
+      "observations": [
+         70427372
+      ],
+      "number_of_observations": 1805132,
+      "wikipages_missing": []
+   },
+   "47744": {
+      "name": "Hemiptera",
+      "quality": "needs_id",
+      "taxon_id": 47744,
+      "observations": [
+         143096974
+      ],
+      "number_of_observations": 2975218,
+      "wikipages_missing": []
+   },
+   "71130": {
+      "name": "Polyphaga",
+      "quality": "needs_id",
+      "taxon_id": 71130,
+      "observations": [
+         144557195
+      ],
+      "number_of_observations": 3871167,
+      "wikipages_missing": []
+   },
+   "47170": {
+      "name": "Fungi",
+      "quality": "needs_id",
+      "taxon_id": 47170,
+      "observations": [
+         68598866
+      ],
+      "number_of_observations": 7834674,
+      "wikipages_missing": []
+   },
+   "47163": {
+      "name": "Liliopsida",
+      "quality": "needs_id",
+      "taxon_id": 47163,
+      "observations": [
+         121443634
+      ],
+      "number_of_observations": 8122579,
+      "wikipages_missing": []
+   },
+   "47157": {
+      "name": "Lepidoptera",
+      "quality": "needs_id",
+      "taxon_id": 47157,
+      "observations": [
+         68604082
+      ],
+      "number_of_observations": 13815529,
+      "wikipages_missing": []
+   },
+   "184884": {
+      "name": "Pterygota",
+      "quality": "needs_id",
+      "taxon_id": 184884,
+      "observations": [
+         68598870
+      ],
+      "number_of_observations": 32886579,
+      "wikipages_missing": []
+   },
+   "47125": {
+      "name": "Angiospermae",
+      "quality": "needs_id",
+      "taxon_id": 47125,
+      "observations": [
+         131399395,
+         121446523,
+         121446520
+      ],
+      "number_of_observations": 53152743,
+      "wikipages_missing": []
+   }
+}

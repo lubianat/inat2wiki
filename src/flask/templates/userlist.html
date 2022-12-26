@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block title %}
+User observations
+{% endblock %}
+
+{% block main %}
+
+{% if not user_info %}
+<a href="/userlist/ramarese">See an example</a>
+{% endif %}
+{% if user_info %}
+<div class="row">
+  <div class="col-md container">
+    <ul>
+    </ul>
+    <h3>Observations by {{username}}</h3>
+    <table id="user_observations" class="table table-striped">
+      <thead>
+        <tr>
+          <th>Taxon Name</th>
+          <th>Taxon ID</th>
+          <th>Number of observations on iNat</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for taxon_id, taxon_info in user_info.items()%}
+        <tr>
+          <td>{{taxon_info.name}} </td>
+          <td>{{taxon_id}} </td>
+          <td>{{taxon_info.number_of_observations}} </td>
+
+        </tr>
+        {% endfor %}
+        </ul>
+        <!-- content from Wikidata -->
+  </div>
+</div>
+{% endif %}
+
+<script>
+  $(document).ready(function () {
+
+    var myStringArray = ["#user_observations"];
+    var arrayLength = myStringArray.length;
+    for (var i = 0; i < arrayLength; i++) {
+      $(myStringArray[i]).DataTable({
+        pageLength: 50,
+        aaSorting: []
+      });
+    }
+  });
+</script>
+
+{% endblock %}

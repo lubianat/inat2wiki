@@ -23,16 +23,14 @@ def chunks(lst, n):
 
 @click.command(name="all")
 @click.argument("user_id")
-def get_all_observations(user_id):
+def click_get_all_observations(user_id, langcode=None):
+    get_all_observations(user_id, langcode=langcode)
 
+
+def get_all_observations(user_id, langcode=None):
+    print(user_id)
     core_information, inaturalist_taxon_ids = extract_core_information(user_id)
-    query_for_taxa_missing_images = get_query_for_tax_missing_images(inaturalist_taxon_ids)
 
-    url_query_for_taxa_missing_images = "https://query.wikidata.org/#" + urllib.parse.quote(
-        query_for_taxa_missing_images
-    )
-
-    taxa_missing_images = query_wikidata(query_for_taxa_missing_images)
     inaturalist_chunks = chunks(inaturalist_taxon_ids, 30)
     for chunk in inaturalist_chunks:
         r = requests.get(f"https://api.inaturalist.org/v1/taxa/{','.join(chunk)}")
@@ -43,11 +41,6 @@ def get_all_observations(user_id):
                 ]
             except KeyError:
                 print(f"Key not found: {taxon_info['id']}")
-    for taxon_id in core_information:
-        for taxon_missing_image in taxa_missing_images:
-            if taxon_missing_image["id"] == taxon_id:
-                core_information[taxon_id]["wikidata_id"] = taxon_missing_image["item"]
-                core_information[taxon_id]["missing_image"] = True
 
     core_information = OrderedDict(
         sorted(
@@ -56,22 +49,47 @@ def get_all_observations(user_id):
         )
     )
 
-    RESULTS.joinpath(f"candidates_{user_id}.json").write_text(
-        json.dumps(core_information, indent=3)
+    taxa_ids_for_query = list(core_information.keys())[0:100]
+
+    query_for_taxa_missing_images = get_query_for_tax_missing_images(taxa_ids_for_query)
+
+    url_query_for_taxa_missing_images = "https://query.wikidata.org/#" + urllib.parse.quote(
+        query_for_taxa_missing_images
     )
+
+    taxa_missing_images = query_wikidata(query_for_taxa_missing_images)
+
+    for taxon_id in core_information:
+        for taxon_missing_image in taxa_missing_images:
+            if taxon_missing_image["id"] == taxon_id:
+                core_information[taxon_id]["wikidata_id"] = taxon_missing_image["item"]
+                core_information[taxon_id]["missing_image"] = True
+
     print(url_query_for_taxa_missing_images)
 
     print("--------------- Query for observations missing wiki pages -----------")
-    langcode = input("Enter your lang code of interest:")
+    if langcode is None:
+        langcode = input("Enter your lang code of interest:")
 
-    query_for_missing_pt_wiki = get_query_for_taxa_missing_wikipages(
-        inaturalist_taxon_ids, langcode
-    )
+    query_for_missing_pt_wiki = get_query_for_taxa_missing_wikipages(taxa_ids_for_query, langcode)
 
     url_query_for_missing_pt_wiki = "https://query.wikidata.org/#" + urllib.parse.quote(
         query_for_missing_pt_wiki
     )
+    taxa_missing_images = query_wikidata(query_for_missing_pt_wiki)
+
+    for taxon_id in core_information:
+        core_information[taxon_id]["wikipages_missing"] = []
+        for taxon_missing_image in taxa_missing_images:
+
+            if taxon_missing_image["id"] == taxon_id:
+                core_information[taxon_id]["wikipages_missing"].append(langcode)
+
     print(url_query_for_missing_pt_wiki)
+    RESULTS.joinpath(f"candidates_{user_id}.json").write_text(
+        json.dumps(core_information, indent=3)
+    )
+    return core_information
 
 
 def get_query_for_taxa_missing_wikipages(inaturalist_taxon_ids, langcode):
@@ -121,15 +139,17 @@ def get_query_for_tax_missing_images(inaturalist_taxon_ids):
     return query_for_taxa_missing_images
 
 
-def extract_core_information(id):
+def extract_core_information(id, page=1):
+    print(page)
     observations = requests.get(
-        f"https://api.inaturalist.org/v1/observations?user_id={id}&only_id=false&per_page=1000"
+        f"https://api.inaturalist.org/v1/observations?user_id={id}&only_id=false&per_page=200&page={str(page)}"
     )
 
     observations = observations.json()
     core_information = {}
 
     inaturalist_taxon_ids = []
+
     for obs in observations["results"]:
         quality_grade = obs["quality_grade"]
         tax_info = obs["taxon"]
@@ -151,8 +171,15 @@ def extract_core_information(id):
         except:
             with open("log.txt", "a") as f:
                 f.write(str(obs) + "/n")
+    if len(observations["results"]) > 0:
+        next_page = page + 1
+        next_core_information, next_inaturalist_taxon_ids = extract_core_information(
+            id, page=next_page
+        )
+        core_information.update(next_core_information)
+        inaturalist_taxon_ids.extend(next_inaturalist_taxon_ids)
     return core_information, inaturalist_taxon_ids
 
 
 if __name__ == "__main__":
-    get_all_observations()
+    click_get_all_observations()

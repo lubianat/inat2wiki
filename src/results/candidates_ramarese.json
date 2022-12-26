@@ -6,7 +6,10 @@
       "observations": [
          71415897
       ],
-      "number_of_observations": 1
+      "number_of_observations": 1,
+      "wikipages_missing": [
+         "pt"
+      ]
    },
    "34877": {
       "name": "Procellosaurinus erythrocercus",
@@ -15,7 +18,10 @@
       "observations": [
          68956524
       ],
-      "number_of_observations": 1
+      "number_of_observations": 1,
+      "wikipages_missing": [
+         "pt"
+      ]
    },
    "717898": {
       "name": "Leposternon octostegum",
@@ -24,7 +30,8 @@
       "observations": [
          70820250
       ],
-      "number_of_observations": 2
+      "number_of_observations": 2,
+      "wikipages_missing": []
    },
    "23030": {
       "name": "Rupirana cardosoi",
@@ -33,7 +40,8 @@
       "observations": [
          71415898
       ],
-      "number_of_observations": 4
+      "number_of_observations": 4,
+      "wikipages_missing": []
    },
    "1110936": {
       "name": "Tityus aba",
@@ -45,7 +53,10 @@
       ],
       "number_of_observations": 5,
       "wikidata_id": "http://www.wikidata.org/entity/Q3529700",
-      "missing_image": true
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
    },
    "99614": {
       "name": "Dryadosaura nordestina",
@@ -56,7 +67,10 @@
       ],
       "number_of_observations": 5,
       "wikidata_id": "http://www.wikidata.org/entity/Q2287169",
-      "missing_image": true
+      "missing_image": true,
+      "wikipages_missing": [
+         "pt"
+      ]
    },
    "38990": {
       "name": "Tropidurus erythrocephalus",
@@ -65,7 +79,8 @@
       "observations": [
          142384682
       ],
-      "number_of_observations": 6
+      "number_of_observations": 6,
+      "wikipages_missing": []
    },
    "34749": {
       "name": "Acratosaura mentalis",
@@ -75,7 +90,8 @@
          71010203,
          71010197
       ],
-      "number_of_observations": 9
+      "number_of_observations": 9,
+      "wikipages_missing": []
    },
    "43995": {
       "name": "Chaetomys subspinosus",
@@ -84,7 +100,8 @@
       "observations": [
          68956644
       ],
-      "number_of_observations": 9
+      "number_of_observations": 9,
+      "wikipages_missing": []
    },
    "66440": {
       "name": "Phyllomedusa bahiana",
@@ -93,7 +110,8 @@
       "observations": [
          71010194
       ],
-      "number_of_observations": 17
+      "number_of_observations": 17,
+      "wikipages_missing": []
    },
    "33500": {
       "name": "Hemidactylus brasilianus",
@@ -102,7 +120,8 @@
       "observations": [
          71010188
       ],
-      "number_of_observations": 22
+      "number_of_observations": 22,
+      "wikipages_missing": []
    },
    "33402": {
       "name": "Coleodactylus meridionalis",
@@ -111,7 +130,8 @@
       "observations": [
          70820246
       ],
-      "number_of_observations": 24
+      "number_of_observations": 24,
+      "wikipages_missing": []
    },
    "963197": {
       "name": "Tityus mattogrossensis",
@@ -120,7 +140,8 @@
       "observations": [
          71010199
       ],
-      "number_of_observations": 25
+      "number_of_observations": 25,
+      "wikipages_missing": []
    },
    "113280": {
       "name": "Strobilurus torquatus",
@@ -129,7 +150,8 @@
       "observations": [
          142387269
       ],
-      "number_of_observations": 27
+      "number_of_observations": 27,
+      "wikipages_missing": []
    },
    "24252": {
       "name": "Corythomantis greeningi",
@@ -138,7 +160,8 @@
       "observations": [
          68956774
       ],
-      "number_of_observations": 27
+      "number_of_observations": 27,
+      "wikipages_missing": []
    },
    "539413": {
       "name": "Bothrops erythromelas",
@@ -147,7 +170,8 @@
       "observations": [
          68958428
       ],
-      "number_of_observations": 28
+      "number_of_observations": 28,
+      "wikipages_missing": []
    },
    "22866": {
       "name": "Proceratophrys cristiceps",
@@ -156,7 +180,8 @@
       "observations": [
          70821459
       ],
-      "number_of_observations": 38
+      "number_of_observations": 38,
+      "wikipages_missing": []
    },
    "24303": {
       "name": "Scinax eurydice",
@@ -165,7 +190,8 @@
       "observations": [
          70820257
       ],
-      "number_of_observations": 38
+      "number_of_observations": 38,
+      "wikipages_missing": []
    },
    "65338": {
       "name": "Dendropsophus branneri",
@@ -174,7 +200,8 @@
       "observations": [
          67565538
       ],
-      "number_of_observations": 42
+      "number_of_observations": 42,
+      "wikipages_missing": []
    },
    "34276": {
       "name": "Lygodactylus klugei",
@@ -183,7 +210,8 @@
       "observations": [
          71010193
       ],
-      "number_of_observations": 43
+      "number_of_observations": 43,
+      "wikipages_missing": []
    },
    "97537": {
       "name": "Chironius flavolineatus",
@@ -192,7 +220,10 @@
       "observations": [
          73026388
       ],
-      "number_of_observations": 45
+      "number_of_observations": 45,
+      "wikipages_missing": [
+         "pt"
+      ]
    },
    "66511": {
       "name": "Pleurodema diplolister",
@@ -201,7 +232,8 @@
       "observations": [
          68958193
       ],
-      "number_of_observations": 47
+      "number_of_observations": 48,
+      "wikipages_missing": []
    },
    "36922": {
       "name": "Enyalius catenatus",
@@ -212,7 +244,8 @@
          68957759,
          68957758
       ],
-      "number_of_observations": 53
+      "number_of_observations": 53,
+      "wikipages_missing": []
    },
    "28530": {
       "name": "Taeniophallus occipitalis",
@@ -221,16 +254,18 @@
       "observations": [
          70811026
       ],
-      "number_of_observations": 54
+      "number_of_observations": 55,
+      "wikipages_missing": []
    },
    "877196": {
       "name": "Jaguajir rochae",
-      "quality": "casual",
+      "quality": "needs_id",
       "taxon_id": 877196,
       "observations": [
          144726969
       ],
-      "number_of_observations": 58
+      "number_of_observations": 58,
+      "wikipages_missing": []
    },
    "33938": {
       "name": "Phyllopezus pollicaris",
@@ -239,7 +274,8 @@
       "observations": [
          70821458
       ],
-      "number_of_observations": 70
+      "number_of_observations": 72,
+      "wikipages_missing": []
    },
    "22955": {
       "name": "Leptodactylus troglodytes",
@@ -248,7 +284,8 @@
       "observations": [
          70821456
       ],
-      "number_of_observations": 73
+      "number_of_observations": 75,
+      "wikipages_missing": []
    },
    "105868": {
       "name": "Micrurus ibiboboca",
@@ -257,7 +294,8 @@
       "observations": [
          70811266
       ],
-      "number_of_observations": 77
+      "number_of_observations": 77,
+      "wikipages_missing": []
    },
    "28942": {
       "name": "Pseudoboa nigra",
@@ -266,7 +304,8 @@
       "observations": [
          81313516
       ],
-      "number_of_observations": 87
+      "number_of_observations": 87,
+      "wikipages_missing": []
    },
    "65966": {
       "name": "Leptodactylus vastus",
@@ -275,7 +314,8 @@
       "observations": [
          70821455
       ],
-      "number_of_observations": 95
+      "number_of_observations": 95,
+      "wikipages_missing": []
    },
    "741094": {
       "name": "Polybia chrysothorax",
@@ -284,9 +324,10 @@
       "observations": [
          72603423
       ],
-      "number_of_observations": 99,
-      "wikidata_id": "http://www.wikidata.org/entity/Q14425289",
-      "missing_image": true
+      "number_of_observations": 100,
+      "wikipages_missing": [
+         "pt"
+      ]
    },
    "25214": {
       "name": "Dermatonotus muelleri",
@@ -295,7 +336,8 @@
       "observations": [
          70821451
       ],
-      "number_of_observations": 111
+      "number_of_observations": 111,
+      "wikipages_missing": []
    },
    "29157": {
       "name": "Oxyrhopus trigeminus",
@@ -305,7 +347,8 @@
          71010196,
          70820254
       ],
-      "number_of_observations": 133
+      "number_of_observations": 133,
+      "wikipages_missing": []
    },
    "540223": {
       "name": "Spilotes sulphureus",
@@ -314,7 +357,10 @@
       "observations": [
          71010202
       ],
-      "number_of_observations": 138
+      "number_of_observations": 138,
+      "wikipages_missing": [
+         "pt"
+      ]
    },
    "22984": {
       "name": "Leptodactylus mystaceus",
@@ -324,7 +370,8 @@
          70820253,
          70820251
       ],
-      "number_of_observations": 149
+      "number_of_observations": 149,
+      "wikipages_missing": []
    },
    "43107": {
       "name": "Sylvilagus brasiliensis",
@@ -333,7 +380,8 @@
       "observations": [
          68958429
       ],
-      "number_of_observations": 158
+      "number_of_observations": 158,
+      "wikipages_missing": []
    },
    "83515": {
       "name": "Oxybelis aeneus",
@@ -342,7 +390,8 @@
       "observations": [
          71010200
       ],
-      "number_of_observations": 172
+      "number_of_observations": 173,
+      "wikipages_missing": []
    },
    "38975": {
       "name": "Tropidurus semitaeniatus",
@@ -351,7 +400,8 @@
       "observations": [
          70821454
       ],
-      "number_of_observations": 210
+      "number_of_observations": 210,
+      "wikipages_missing": []
    },
    "67114": {
       "name": "Rhinella granulosa",
@@ -361,7 +411,8 @@
          70821457,
          68958192
       ],
-      "number_of_observations": 214
+      "number_of_observations": 217,
+      "wikipages_missing": []
    },
    "36755": {
       "name": "Polychrus acutirostris",
@@ -372,7 +423,8 @@
          70820256,
          70820247
       ],
-      "number_of_observations": 235
+      "number_of_observations": 235,
+      "wikipages_missing": []
    },
    "67105": {
       "name": "Rhinella crucifer",
@@ -382,7 +434,8 @@
          71010205,
          70820252
       ],
-      "number_of_observations": 241
+      "number_of_observations": 241,
+      "wikipages_missing": []
    },
    "750963": {
       "name": "Polybia ruficeps xanthops",
@@ -391,7 +444,10 @@
       "observations": [
          72603424
       ],
-      "number_of_observations": 247
+      "number_of_observations": 247,
+      "wikipages_missing": [
+         "pt"
+      ]
    },
    "65350": {
       "name": "Dendropsophus elegans",
@@ -400,7 +456,8 @@
       "observations": [
          77366724
       ],
-      "number_of_observations": 257
+      "number_of_observations": 257,
+      "wikipages_missing": []
    },
    "146043": {
       "name": "Copeoglossum nigropunctatum",
@@ -409,7 +466,8 @@
       "observations": [
          67565089
       ],
-      "number_of_observations": 307
+      "number_of_observations": 307,
+      "wikipages_missing": []
    },
    "109964": {
       "name": "Polychrus marmoratus",
@@ -418,7 +476,8 @@
       "observations": [
          142387546
       ],
-      "number_of_observations": 310
+      "number_of_observations": 310,
+      "wikipages_missing": []
    },
    "555074": {
       "name": "Boana albomarginata",
@@ -428,7 +487,8 @@
          74182726,
          70820248
       ],
-      "number_of_observations": 360
+      "number_of_observations": 361,
+      "wikipages_missing": []
    },
    "68751": {
       "name": "Lasiodora",
@@ -437,7 +497,10 @@
       "observations": [
          71010190
       ],
-      "number_of_observations": 469
+      "number_of_observations": 470,
+      "wikipages_missing": [
+         "pt"
+      ]
    },
    "65377": {
       "name": "Dendropsophus minutus",
@@ -446,7 +509,8 @@
       "observations": [
          70820255
       ],
-      "number_of_observations": 518
+      "number_of_observations": 518,
+      "wikipages_missing": []
    },
    "1250061": {
       "name": "Philodryas patagoniensis",
@@ -455,7 +519,8 @@
       "observations": [
          77328525
       ],
-      "number_of_observations": 572
+      "number_of_observations": 576,
+      "wikipages_missing": []
    },
    "539050": {
       "name": "Bothrops jararaca",
@@ -464,7 +529,8 @@
       "observations": [
          71010189
       ],
-      "number_of_observations": 648
+      "number_of_observations": 649,
+      "wikipages_missing": []
    },
    "30693": {
       "name": "Crotalus durissus",
@@ -473,7 +539,8 @@
       "observations": [
          68957760
       ],
-      "number_of_observations": 681
+      "number_of_observations": 681,
+      "wikipages_missing": []
    },
    "367559": {
       "name": "Eupsittula aurea",
@@ -482,7 +549,8 @@
       "observations": [
          71013363
       ],
-      "number_of_observations": 746
+      "number_of_observations": 747,
+      "wikipages_missing": []
    },
    "32093": {
       "name": "Boa constrictor",
@@ -491,7 +559,8 @@
       "observations": [
          77329891
       ],
-      "number_of_observations": 1882
+      "number_of_observations": 1884,
+      "wikipages_missing": []
    },
    "300657": {
       "name": "Polybia occidentalis",
@@ -500,7 +569,10 @@
       "observations": [
          73233072
       ],
-      "number_of_observations": 2412
+      "number_of_observations": 2413,
+      "wikipages_missing": [
+         "pt"
+      ]
    },
    "250875": {
       "name": "Synoeca",
@@ -509,7 +581,10 @@
       "observations": [
          72603425
       ],
-      "number_of_observations": 2445
+      "number_of_observations": 2449,
+      "wikipages_missing": [
+         "pt"
+      ]
    },
    "53388": {
       "name": "Phoneutria",
@@ -518,7 +593,8 @@
       "observations": [
          71010204
       ],
-      "number_of_observations": 3471
+      "number_of_observations": 3476,
+      "wikipages_missing": []
    },
    "10293": {
       "name": "Thraupis sayaca",
@@ -527,7 +603,8 @@
       "observations": [
          71013364
       ],
-      "number_of_observations": 4038
+      "number_of_observations": 4043,
+      "wikipages_missing": []
    },
    "74442": {
       "name": "Hydrochoerus hydrochaeris",
@@ -536,7 +613,8 @@
       "observations": [
          71013366
       ],
-      "number_of_observations": 4901
+      "number_of_observations": 4910,
+      "wikipages_missing": []
    },
    "30767": {
       "name": "Bothrops",
@@ -545,7 +623,8 @@
       "observations": [
          71294322
       ],
-      "number_of_observations": 6589
+      "number_of_observations": 6599,
+      "wikipages_missing": []
    },
    "16679": {
       "name": "Elaenia",
@@ -554,7 +633,10 @@
       "observations": [
          71013367
       ],
-      "number_of_observations": 7255
+      "number_of_observations": 7270,
+      "wikipages_missing": [
+         "pt"
+      ]
    },
    "19975": {
       "name": "Athene cunicularia",
@@ -563,7 +645,8 @@
       "observations": [
          68958191
       ],
-      "number_of_observations": 16741
+      "number_of_observations": 16756,
+      "wikipages_missing": []
    },
    "47070": {
       "name": "Dasypus",
@@ -572,7 +655,8 @@
       "observations": [
          77243421
       ],
-      "number_of_observations": 19954
+      "number_of_observations": 19974,
+      "wikipages_missing": []
    },
    "787702": {
       "name": "Mabuyinae",
@@ -581,7 +665,8 @@
       "observations": [
          68956446
       ],
-      "number_of_observations": 21975
+      "number_of_observations": 22017,
+      "wikipages_missing": []
    },
    "16956": {
       "name": "Pitangus sulphuratus",
@@ -590,7 +675,8 @@
       "observations": [
          71013365
       ],
-      "number_of_observations": 33558
+      "number_of_observations": 33588,
+      "wikipages_missing": []
    },
    "4665": {
       "name": "Falco sparverius",
@@ -599,6 +685,7 @@
       "observations": [
          71010191
       ],
-      "number_of_observations": 56359
+      "number_of_observations": 56471,
+      "wikipages_missing": []
    }
 }
