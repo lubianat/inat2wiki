@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block title %}
+User observations
+{% endblock %}
+
+{% block main %}
+
+{% if not observation_data %}
+<a href="/parse/144917694">See an example</a>
+{% endif %}
+{% if observation_data %}
+<div class="col-md container">
+  <ul>
+  </ul>
+  <h3>Observation {{observation_data.id}} ({{observation_data.species_guess}})</h3>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>License</th>
+        <th>Link to Commons</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for photo_data in observation_data.photos %}
+      <tr>
+        <td><img src="{{photo_data.url}}" width="300"> </img> </td>
+        <td> License: {{photo_data.license_code}}</td>
+        <td><a href="{{photo_data.commons_url}}" target="blank" class=" btn btn-outline-primary" role="button">Upload
+            to
+            Commons</a></td>
+
+      </tr>
+      {% endfor %}
+      </ul>
+    </tbody>
+  </table>
+  <!-- content from Wikidata -->
+</div>
+{% endif %}
+
+<script>
+  $(document).ready(function () {
+
+    var myStringArray = ["#user_observations"];
+    var arrayLength = myStringArray.length;
+    for (var i = 0; i < arrayLength; i++) {
+      $(myStringArray[i]).DataTable({
+        pageLength: 50,
+        aaSorting: []
+      });
+    }
+  });
+</script>
+
+{% endblock %}

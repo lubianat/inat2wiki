@@ -9,13 +9,8 @@ import requests
 
 @click.command(name="parse")
 @click.argument("observation_id")
-def parse_observation(observation_id):
-    base_url = "https://api.inaturalist.org/v1/"
-    observation_url = base_url + f"observations/{observation_id}"
-
-    result = requests.get(observation_url)
-    data = result.json()
-    observation_data = data["results"][0]
+def parse_observation_in_cli(observation_id):
+    observation_data = request_observation_data(observation_id)
     photo_data_list = observation_data["photos"]
 
     print(f"====== Links for observation {observation_id} ======")
@@ -26,6 +21,16 @@ def parse_observation(observation_id):
         upload_url = get_commons_url(observation_data, photo_data, observation_id)
         print(upload_url)
         print("====== // ======")
+
+
+def request_observation_data(observation_id):
+    base_url = "https://api.inaturalist.org/v1/"
+    observation_url = base_url + f"observations/{observation_id}"
+
+    result = requests.get(observation_url)
+    data = result.json()
+    observation_data = data["results"][0]
+    return observation_data
 
 
 def get_commons_url(observation_data, photo_data, inaturalist_id):
@@ -40,9 +45,7 @@ def get_commons_url(observation_data, photo_data, inaturalist_id):
     upload_params["user_name"] = observation_data["user"]["name"]
     upload_params["date"] = observation_data["observed_on"]
     upload_params["taxon"] = observation_data["taxon"]["name"]
-
     switcher = {"cc-by": "cc-by-4.0", "cc-by-sa": "cc-by-sa-4.0", "cc0": "Cc-zero"}
-
     title = upload_params["taxon"] + " " + str(upload_params["photo_id"]) + ".jpeg"
 
     license_code = upload_params["photo_license"]
@@ -76,4 +79,4 @@ def get_commons_url(observation_data, photo_data, inaturalist_id):
 
 
 if __name__ == "__main__":
-    parse_observation()
+    parse_observation_in_cli()

@@ -8,7 +8,8 @@ import flask
 import os
 from wbib import wbib
 import yaml
-from pynaturalist2commons.get_all_observations import get_all_observations
+from inat2wiki.get_all_observations import get_all_observations
+from inat2wiki.parse_observation import get_commons_url, request_observation_data
 
 # Configure application
 
@@ -35,6 +36,29 @@ def index():
 @app.route("/about")
 def about():
     return flask.render_template("about.html")
+
+
+@app.route("/parse/", methods=["GET", "POST"])
+@app.route("/parse", methods=["GET", "POST"])
+def parse_obs_base():
+    return render_template("parse.html")
+
+
+@app.route("/parse/<observation_id>", methods=["GET", "POST"])
+def parse_obs(observation_id):
+
+    observation_data = request_observation_data(observation_id)
+    photo_data_list = observation_data["photos"]
+
+    for i, photo_data in enumerate(photo_data_list):
+        upload_url = get_commons_url(observation_data, photo_data, observation_id)
+        observation_data["photos"][i]["url"] = observation_data["photos"][i]["url"].replace(
+            "square", "original"
+        )
+
+        observation_data["photos"][i]["upload_url"] = upload_url
+
+    return render_template("parse.html", observation_data=observation_data)
 
 
 @app.route("/userlist/", methods=["GET", "POST"])

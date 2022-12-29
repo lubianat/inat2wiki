@@ -11,8 +11,8 @@ Code for commons import adapted from: https://github.com/kaldari/iNaturalist2Com
 To add an observation via its iNaturalist id:
 
 ```bash
-chmod +x parse_observation
-./parse_observation observationidhere
+chmod +x parse_observation_in_cli
+./parse_observation_in_cli observationidhere
 ```
 
 Then, just click the link to upload the image to commons.

@@ -1,15 +1,15 @@
 import click
 
-from pynaturalist2commons import get_all_observations, parse_observation
+from inat2wiki import get_all_observations, parse_observation_in_cli
 
 
 @click.group()
 def cli():
-    """PyNaturalist2Commons."""
+    """inat2wiki."""
 
 
 cli.add_command(get_all_observations.click_get_all_observations)
-cli.add_command(parse_observation.parse_observation)
+cli.add_command(parse_observation_in_cli.parse_observation_in_cli)
 
 if __name__ == "__main__":
     cli()
