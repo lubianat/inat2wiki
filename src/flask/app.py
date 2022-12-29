@@ -1,13 +1,5 @@
-import os
-from flask import Flask, flash, redirect, render_template, request, session, url_for
-from flask_session import Session
-from datetime import datetime
-import requests
-import urllib.parse
+from flask import Flask, redirect, render_template, request
 import flask
-import os
-from wbib import wbib
-import yaml
 from inat2wiki.get_all_observations import get_all_observations
 from inat2wiki.parse_observation import get_commons_url, request_observation_data
 

@@ -24,7 +24,10 @@ def chunks(lst, n):
 @click.command(name="all")
 @click.argument("user_id")
 def click_get_all_observations(user_id, langcode=None):
-    get_all_observations(user_id, langcode=langcode)
+    core_information = get_all_observations(user_id, langcode=langcode)
+    RESULTS.joinpath(f"candidates_{user_id}.json").write_text(
+        json.dumps(core_information, indent=3)
+    )
 
 
 def get_all_observations(user_id, langcode=None):
@@ -86,9 +89,7 @@ def get_all_observations(user_id, langcode=None):
                 core_information[taxon_id]["wikipages_missing"].append(langcode)
 
     print(url_query_for_missing_pt_wiki)
-    RESULTS.joinpath(f"candidates_{user_id}.json").write_text(
-        json.dumps(core_information, indent=3)
-    )
+
     return core_information
 
 
