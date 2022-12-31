@@ -5,15 +5,17 @@ User observations
 {% endblock %}
 
 {% block main %}
-
 {% if not ptwikistub %}
 <a href="/ptwikistub/Q50713950">See an example</a>
 {% endif %}
 {% if ptwikistub %}
-<div class="col-md container" style="white-space: pre-wrap; ">
-  <ul>
-  </ul>
+<div class="col-md container">
   <h3>Stub for the Portuguese Wikipedia</h3>
+  <ul>
+    <li> Wikidata page: <a href="https://www.wikidata.org/entity/{{qid}}" target="_blank">{{qid}}</a></li>
+    <li> Portuguese Wikipedia page: <a href="https://pt.wikipedia.org/wiki/{{taxon_name}}"
+        target="_blank">https://pt.wikipedia.org/wiki/{{taxon_name}}</a>
+  </ul>
   <pre>
   {{ptwikistub}}
 </pre>

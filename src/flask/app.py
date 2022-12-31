@@ -3,6 +3,7 @@ import flask
 from inat2wiki.get_all_observations import get_all_observations
 from inat2wiki.parse_observation import get_commons_url, request_observation_data
 from taxon2wikipedia.render_page import get_pt_wikipage_from_qid
+from wdcuration import get_statement_values
 
 # Configure application
 
@@ -92,4 +93,8 @@ def ptwikistub_base():
 def ptwikistub(taxon_qid):
     print(taxon_qid)
     ptwikistub = get_pt_wikipage_from_qid(taxon_qid)
-    return render_template("ptwikistub.html", ptwikistub=ptwikistub)
+
+    taxon_name = get_statement_values(taxon_qid, "P225")[0]
+    return render_template(
+        "ptwikistub.html", qid=taxon_qid, ptwikistub=ptwikistub, taxon_name=taxon_name
+    )
