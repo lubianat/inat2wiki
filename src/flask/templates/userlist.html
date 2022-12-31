@@ -7,6 +7,11 @@ User observations
 {% block main %}
 
 {% if not user_info %}
+<h4>Enter the username below:</h4>
+<form method="POST">
+  <input name="username">
+  <input type="submit">
+</form>
 <a href="/userlist/ramarese">See an example</a>
 {% endif %}
 {% if user_info %}

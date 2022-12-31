@@ -35,6 +35,10 @@ def about():
 @app.route("/parse/", methods=["GET", "POST"])
 @app.route("/parse", methods=["GET", "POST"])
 def parse_obs_base():
+    if request.method == "POST":
+        obs_id = request.form.get("obs_id")
+        return redirect(f"/parse/{obs_id}")
+
     return render_template("parse.html")
 
 
@@ -60,8 +64,8 @@ def parse_obs(observation_id):
 def userlist_base():
 
     if request.method == "POST":
-        userlist = request.form.get("userlist")
-        return redirect(f"/userlist/{userlist}")
+        username = request.form.get("username")
+        return redirect(f"/userlist/{username}")
 
     return render_template("userlist.html")
 
@@ -73,7 +77,7 @@ def userlist(user_id):
         print(request.args["limit"])
         limit = int(request.args["limit"])
     else:
-        limit = 100000000000
+        limit = 200
     user_info = get_all_observations(user_id, "pt", limit)
     return render_template("userlist.html", user_info=user_info, username=user_id)
 
@@ -83,7 +87,7 @@ def userlist(user_id):
 def ptwikistub_base():
 
     if request.method == "POST":
-        qid = request.form.get("ptwikistub")
+        qid = request.form.get("taxon_qid")
         return redirect(f"/ptwikistub/{qid}")
 
     return render_template("ptwikistub.html")

@@ -7,6 +7,11 @@ User observations
 {% block main %}
 
 {% if not observation_data %}
+<h4>Enter the observation id:</h4>
+<form method="POST">
+  <input name="obs_id">
+  <input type="submit">
+</form>
 <a href="/parse/144917694">See an example</a>
 {% endif %}
 {% if observation_data %}
