@@ -82,8 +82,8 @@ def userlist(user_id):
 def ptwikistub_base():
 
     if request.method == "POST":
-        ptwikistub = request.form.get("ptwikistub")
-        return redirect(f"/ptwikistub/{ptwikistub}")
+        qid = request.form.get("ptwikistub")
+        return redirect(f"/ptwikistub/{qid}")
 
     return render_template("ptwikistub.html")
 

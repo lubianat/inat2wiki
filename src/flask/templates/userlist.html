@@ -45,7 +45,13 @@ User observations
           </td>
           <td>
             {% for wiki_page in taxon_info.wikipages_missing %}
-            {{wiki_page}},
+            {% if 'pt' == wiki_page %}
+            {{wiki_page}} (<a href="/ptwikistub/{{taxon_info.wikidata_id}}" target="_blank">create stub</a>),
+            {% else %}
+            {{wiki_page}}
+            {% endif %}
+            {{ ", " if not loop.last else "" }}
+
             {% endfor%}
           </td>
 
