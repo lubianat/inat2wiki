@@ -67,5 +67,10 @@ def userlist_base():
 @app.route("/userlist/<user_id>", methods=["GET", "POST"])
 def userlist(user_id):
     print(user_id)
-    user_info = get_all_observations(user_id, "pt")
+    if "limit" in request.args:
+        print(request.args["limit"])
+        limit = int(request.args["limit"])
+    else:
+        limit = 100000000000
+    user_info = get_all_observations(user_id, "pt", limit)
     return render_template("userlist.html", user_info=user_info, username=user_id)
