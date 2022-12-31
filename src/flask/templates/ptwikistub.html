@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+User observations
+{% endblock %}
+
+{% block main %}
+
+{% if not ptwikistub %}
+<a href="/ptwikistub/Q50713950">See an example</a>
+{% endif %}
+{% if ptwikistub %}
+<div class="col-md container" style="white-space: pre-wrap; ">
+  <ul>
+  </ul>
+  <h3>Stub for the Portuguese Wikipedia</h3>
+  {{ptwikistub|safe}}
+  <!-- content from Wikidata -->
+</div>
+{% endif %}
+
+
+
+{% endblock %}

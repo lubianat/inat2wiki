@@ -2,6 +2,7 @@ from flask import Flask, redirect, render_template, request
 import flask
 from inat2wiki.get_all_observations import get_all_observations
 from inat2wiki.parse_observation import get_commons_url, request_observation_data
+from taxon2wikipedia.render_page import get_pt_wikipage_from_qid
 
 # Configure application
 
@@ -74,3 +75,21 @@ def userlist(user_id):
         limit = 100000000000
     user_info = get_all_observations(user_id, "pt", limit)
     return render_template("userlist.html", user_info=user_info, username=user_id)
+
+
+@app.route("/ptwikistub/", methods=["GET", "POST"])
+@app.route("/ptwikistub", methods=["GET", "POST"])
+def ptwikistub_base():
+
+    if request.method == "POST":
+        ptwikistub = request.form.get("ptwikistub")
+        return redirect(f"/ptwikistub/{ptwikistub}")
+
+    return render_template("ptwikistub.html")
+
+
+@app.route("/ptwikistub/<taxon_qid>", methods=["GET", "POST"])
+def ptwikistub(taxon_qid):
+    print(taxon_qid)
+    ptwikistub = get_pt_wikipage_from_qid(taxon_qid)
+    return render_template("ptwikistub.html", ptwikistub=ptwikistub)
