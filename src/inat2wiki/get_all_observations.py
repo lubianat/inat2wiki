@@ -24,15 +24,15 @@ def chunks(lst, n):
 @click.command(name="all")
 @click.argument("user_id")
 def click_get_all_observations(user_id, langcode=None):
-    core_information = get_all_observations(user_id, langcode=langcode)
+    core_information = get_all_observations(user_id, langcode=langcode, limit=200)
     RESULTS.joinpath(f"candidates_{user_id}.json").write_text(
         json.dumps(core_information, indent=3)
     )
 
 
-def get_all_observations(user_id, langcode=None):
+def get_all_observations(user_id, langcode=None, limit=200):
     print(user_id)
-    core_information, inaturalist_taxon_ids = extract_core_information(user_id)
+    core_information, inaturalist_taxon_ids = extract_core_information(user_id, limit)
 
     inaturalist_chunks = chunks(inaturalist_taxon_ids, 30)
     for chunk in inaturalist_chunks:
@@ -60,13 +60,17 @@ def get_all_observations(user_id, langcode=None):
         query_for_taxa_missing_images
     )
 
-    taxa_missing_images = query_wikidata(query_for_taxa_missing_images)
+    wikidata_taxa_and_images = query_wikidata(query_for_taxa_missing_images)
 
     for taxon_id in core_information:
-        for taxon_missing_image in taxa_missing_images:
-            if taxon_missing_image["id"] == taxon_id:
-                core_information[taxon_id]["wikidata_id"] = taxon_missing_image["item"]
-                core_information[taxon_id]["missing_image"] = True
+        for taxon in wikidata_taxa_and_images:
+            if taxon["id"] == taxon_id:
+                core_information[taxon_id]["wikidata_id"] = taxon["qid"]
+                if "image" not in taxon:
+                    if "wikipages_missing" not in core_information[taxon_id]:
+                        core_information[taxon_id]["wikipages_missing"] = []
+                    if "wikidata_image" not in core_information[taxon_id]["wikipages_missing"]:
+                        core_information[taxon_id]["wikipages_missing"].append("wikidata_image")
 
     print(url_query_for_taxa_missing_images)
 
@@ -74,6 +78,15 @@ def get_all_observations(user_id, langcode=None):
     if langcode is None:
         langcode = input("Enter your lang code of interest:")
 
+    else:
+        langcode_list = ["en", "pt"]
+        for langcode in langcode_list:
+            core_information = add_missing_wikipage(langcode, core_information, taxa_ids_for_query)
+
+    return core_information
+
+
+def add_missing_wikipage(langcode, core_information, taxa_ids_for_query):
     query_for_missing_pt_wiki = get_query_for_taxa_missing_wikipages(taxa_ids_for_query, langcode)
 
     url_query_for_missing_pt_wiki = "https://query.wikidata.org/#" + urllib.parse.quote(
@@ -82,14 +95,14 @@ def get_all_observations(user_id, langcode=None):
     taxa_missing_images = query_wikidata(query_for_missing_pt_wiki)
 
     for taxon_id in core_information:
-        core_information[taxon_id]["wikipages_missing"] = []
+        if "wikipages_missing" not in core_information[taxon_id]:
+            core_information[taxon_id]["wikipages_missing"] = []
         for taxon_missing_image in taxa_missing_images:
-
             if taxon_missing_image["id"] == taxon_id:
-                core_information[taxon_id]["wikipages_missing"].append(langcode)
+                if langcode not in core_information[taxon_id]["wikipages_missing"]:
+                    core_information[taxon_id]["wikipages_missing"].append(langcode)
 
     print(url_query_for_missing_pt_wiki)
-
     return core_information
 
 
@@ -124,12 +137,18 @@ def get_query_for_tax_missing_images(inaturalist_taxon_ids):
     print("------------- Query for taxa missing images ---------- ")
     query_for_taxa_missing_images = (
         """
-    SELECT DISTINCT * WHERE{
+    SELECT DISTINCT 
+    (REPLACE(STR(?item), ".*Q", "Q") AS ?qid) 
+    ?id
+    ?image
+    ?cc0_url
+    ?ccby_url
+    WHERE{
         VALUES ?id """
         + formatted_values
         + """
         ?item wdt:P3151 ?id .
-        MINUS {?item wdt:P18 ?image} . 
+        OPTIONAL {?item wdt:P18 ?image} . 
         ?item rdfs:label ?itemLabel . 
         FILTER ( LANG(?itemLabel) = "en" )
         BIND(IRI(CONCAT(CONCAT("https://www.inaturalist.org/taxa/", ?id), "/browse_photos?photo_license=cc0")) AS ?cc0_url)
@@ -140,7 +159,7 @@ def get_query_for_tax_missing_images(inaturalist_taxon_ids):
     return query_for_taxa_missing_images
 
 
-def extract_core_information(id, page=1):
+def extract_core_information(id, limit, page=1):
     print(page)
     observations = requests.get(
         f"https://api.inaturalist.org/v1/observations?user_id={id}&only_id=false&per_page=200&page={str(page)}"
@@ -150,35 +169,49 @@ def extract_core_information(id, page=1):
     core_information = {}
 
     inaturalist_taxon_ids = []
-
+    total_n = 0
     for obs in observations["results"]:
         quality_grade = obs["quality_grade"]
+        if "taxon" not in obs:
+            continue
         tax_info = obs["taxon"]
-
+        if tax_info is None:
+            continue
+        if "iconic_taxon_name" in tax_info:
+            iconic_taxon_name = tax_info["iconic_taxon_name"]
+        else:
+            iconic_taxon_name = "None"
+        license_code = obs["license_code"]
         try:
             species_id = str(tax_info["min_species_taxon_id"])
             inaturalist_taxon_ids.append(species_id)
-            obs_id = obs["id"]
+            obs_info = {"id": obs["id"], "quality_grade": quality_grade, "license": license_code}
             if species_id in core_information:
-                core_information[species_id]["observations"].append(obs_id)
+                core_information[species_id]["observations"].append(obs_info)
 
             else:
                 core_information[species_id] = {
+                    "iconic_name": iconic_taxon_name,
                     "name": tax_info["name"],
                     "quality": quality_grade,
                     "taxon_id": tax_info["min_species_taxon_id"],
-                    "observations": [obs_id],
+                    "observations": [obs_info],
                 }
         except:
             with open("log.txt", "a") as f:
                 f.write(str(obs) + "/n")
-    if len(observations["results"]) > 0:
+    total_n += len(observations["results"])
+    if len(observations["results"]) > 0 and total_n < limit:
         next_page = page + 1
         next_core_information, next_inaturalist_taxon_ids = extract_core_information(
-            id, page=next_page
+            id, limit, page=next_page
         )
         core_information.update(next_core_information)
         inaturalist_taxon_ids.extend(next_inaturalist_taxon_ids)
+
+    inaturalist_taxon_ids = inaturalist_taxon_ids[0:limit]
+
+    core_information = {k: v for k, v in core_information.items() if k in inaturalist_taxon_ids}
     return core_information, inaturalist_taxon_ids
 
 

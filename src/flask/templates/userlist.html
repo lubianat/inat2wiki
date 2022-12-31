@@ -18,27 +18,35 @@ User observations
     <table id="user_observations" class="table table-striped">
       <thead>
         <tr>
+          <th>Characteristic group</th>
           <th>Taxon Name</th>
           <th>Taxon ID</th>
           <th>Number of observations on iNat</th>
           <th>Observations by {{username}} </th>
           <th>Wikidata ID (if missing image)</th>
+          <th>Wikipages missing</th>
         </tr>
       </thead>
       <tbody>
         {% for taxon_id, taxon_info in user_info.items()%}
         <tr>
+          <td>{{taxon_info.iconic_name}}</td>
           <td>{{taxon_info.name}} </td>
           <td>{{taxon_id}} </td>
           <td>{{taxon_info.number_of_observations}} </td>
           <td>
             {% for obs in taxon_info.observations %}
-            <a href="/parse/{{obs}}" target="_blank">{{obs}}</a>,
+            <a href="/parse/{{obs.id}}" target="_blank">{{obs.id}}</a> ({{obs.quality_grade}}; {{obs.license}}),
             {% endfor%}
-            {{taxon_info}}
           </td>
           <td>
-            <a href="{{taxon_info.wikidata_id}}" target="_blank">{{taxon_info.wikidata_id}}</a>
+            <a href="http://www.wikidata.org/entity/{{taxon_info.wikidata_id}}"
+              target="_blank">{{taxon_info.wikidata_id}}</a>
+          </td>
+          <td>
+            {% for wiki_page in taxon_info.wikipages_missing %}
+            {{wiki_page}},
+            {% endfor%}
           </td>
 
         </tr>
