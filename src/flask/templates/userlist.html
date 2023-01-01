@@ -8,10 +8,20 @@ User observations
 
 {% if not user_info %}
 <h4>Enter the iNaturalist username below:</h4>
+
 <form method="POST">
-  <input name="username">
-  <input type="submit">
+  <div>
+    {{ form.csrf_token }}
+    {{ form.username.label }} {{ form.username(size=20) }}
+  </div>
+  <div>
+    {{ form.csrf_token }}
+    {{ form.limit.label }} {{ form.limit(size=20) }}
+  </div>
+  <input type="submit" value="Go">
 </form>
+
+
 <a href="/userlist/ramarese">See an example</a>
 {% endif %}
 {% if user_info %}

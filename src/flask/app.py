@@ -4,15 +4,23 @@ from inat2wiki.get_all_observations import get_all_observations
 from inat2wiki.parse_observation import get_commons_url, request_observation_data
 from taxon2wikipedia.render_page import get_pt_wikipage_from_qid
 from wdcuration import get_statement_values
+from flask_bootstrap import Bootstrap5
+from flask_wtf import FlaskForm
+from wtforms import StringField, TextAreaField, IntegerField, BooleanField, RadioField
+from wtforms.validators import InputRequired, Length, Optional
+
+app = Flask(__name__)
 
 # Configure application
 
 app = Flask(__name__)
 
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
+Bootstrap5(app)
 
 # Ensure templates are auto-reloaded
 app.config["TEMPLATES_AUTO_RELOAD"] = True
+
 
 # Ensure responses aren't cached
 @app.after_request
@@ -60,15 +68,26 @@ def parse_obs(observation_id):
     return render_template("parse.html", observation_data=observation_data)
 
 
+class iNaturalistUserForm(FlaskForm):
+    username = StringField("username", validators=[InputRequired()])
+    limit = IntegerField("limit of observations", validators=[Optional()])
+
+
 @app.route("/userlist/", methods=["GET", "POST"])
 @app.route("/userlist", methods=["GET", "POST"])
 def userlist_base():
 
-    if request.method == "POST":
-        username = request.form.get("username")
-        return redirect(f"/userlist/{username}")
+    form = iNaturalistUserForm()
+    if form.validate_on_submit():
+        username = form.username.data
+        print(form.limit.data)
+        if form.limit.data:
+            limit = form.limit.data
+        else:
+            limit = 200
+        return redirect(f"/userlist/{username}?limit={str(limit)}")
 
-    return render_template("userlist.html")
+    return render_template("userlist.html", form=form)
 
 
 @app.route("/userlist/<user_id>", methods=["GET", "POST"])
