@@ -10,5 +10,5 @@ src/inat2wiki.egg-info/requires.txt
 src/inat2wiki.egg-info/top_level.txt
 src/pynaturalist2commons/__init__.py
 src/pynaturalist2commons/cli.py
-src/pynaturalist2commons/get_all_observations.py
+src/pynaturalist2commons/get_user_observations.py
 src/pynaturalist2commons/parse_observation.py

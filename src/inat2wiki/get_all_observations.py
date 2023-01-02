@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
 
 import json
-import sys
 import urllib.parse
 from collections import OrderedDict
 from operator import getitem
+from pathlib import Path
 
 import click
 import requests
 from wdcuration import query_wikidata
-from pathlib import Path
 
 HERE = Path(__file__).parent.resolve()
 RESULTS = HERE.parent.joinpath("results").resolve()
@@ -23,15 +22,21 @@ def chunks(lst, n):
 
 @click.command(name="all")
 @click.argument("user_id")
-def click_get_all_observations(user_id, langcode=None):
-    core_information = get_all_observations(user_id, langcode=langcode, limit=200)
+def click_get_user_observations(user_id, langcode=None):
+    """Command line wraper to get_user_observations()"""
+    core_information = get_user_observations(user_id, langcode=langcode, limit=200)
     RESULTS.joinpath(f"candidates_{user_id}.json").write_text(
         json.dumps(core_information, indent=3)
     )
 
 
-def get_all_observations(user_id, langcode=None, limit=200):
-    print(user_id)
+def get_user_observations(user_id, limit=200):
+    """Gets observations for an iNaturalist user.
+    Args:
+      user_id (str): The user identifier.
+      limit (int): The maximum number of observations to retrieve.
+
+    """
     core_information, inaturalist_taxon_ids = extract_core_information(user_id, limit)
 
     inaturalist_chunks = chunks(inaturalist_taxon_ids, 30)
@@ -75,18 +80,15 @@ def get_all_observations(user_id, langcode=None, limit=200):
     print(url_query_for_taxa_missing_images)
 
     print("--------------- Query for observations missing wiki pages -----------")
-    if langcode is None:
-        langcode = input("Enter your lang code of interest:")
-
-    else:
-        langcode_list = ["en", "pt"]
-        for langcode in langcode_list:
-            core_information = add_missing_wikipage(langcode, core_information, taxa_ids_for_query)
+    langcode_list = ["en", "pt"]
+    for langcode in langcode_list:
+        core_information = add_missing_wikipages(langcode, core_information, taxa_ids_for_query)
 
     return core_information
 
 
-def add_missing_wikipage(langcode, core_information, taxa_ids_for_query):
+def add_missing_wikipages(langcode, core_information, taxa_ids_for_query) -> dict:
+    """Adds missing wikipages to the core_information object."""
     query_for_missing_pt_wiki = get_query_for_taxa_missing_wikipages(taxa_ids_for_query, langcode)
 
     url_query_for_missing_pt_wiki = "https://query.wikidata.org/#" + urllib.parse.quote(
@@ -216,4 +218,4 @@ def extract_core_information(id, limit, page=1):
 
 
 if __name__ == "__main__":
-    click_get_all_observations()
+    click_get_user_observations()

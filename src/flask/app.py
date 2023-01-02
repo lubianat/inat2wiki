@@ -1,13 +1,14 @@
-from flask import Flask, redirect, render_template, request
-import flask
-from inat2wiki.get_all_observations import get_all_observations
-from inat2wiki.parse_observation import get_commons_url, request_observation_data
-from taxon2wikipedia.render_page import get_pt_wikipage_from_qid
-from wdcuration import get_statement_values
 from flask_bootstrap import Bootstrap5
 from flask_wtf import FlaskForm
-from wtforms import StringField, TextAreaField, IntegerField, BooleanField, RadioField
+from taxon2wikipedia.render_page import get_pt_wikipage_from_qid
+from wdcuration import get_statement_values
+from wtforms import BooleanField, IntegerField, RadioField, StringField, TextAreaField
 from wtforms.validators import InputRequired, Length, Optional
+
+import flask
+from flask import Flask, redirect, render_template, request
+from inat2wiki.get_user_observations import get_user_observations
+from inat2wiki.parse_observation import get_commons_url, request_observation_data
 
 app = Flask(__name__)
 
@@ -98,7 +99,7 @@ def userlist(user_id):
         limit = int(request.args["limit"])
     else:
         limit = 200
-    user_info = get_all_observations(user_id, "pt", limit)
+    user_info = get_user_observations(user_id, "pt", limit)
     return render_template("userlist.html", user_info=user_info, username=user_id)
 
 
@@ -115,7 +116,6 @@ def ptwikistub_base():
 
 @app.route("/ptwikistub/<taxon_qid>", methods=["GET", "POST"])
 def ptwikistub(taxon_qid):
-    print(taxon_qid)
     ptwikistub = get_pt_wikipage_from_qid(taxon_qid)
 
     taxon_name = get_statement_values(taxon_qid, "P225")[0]
