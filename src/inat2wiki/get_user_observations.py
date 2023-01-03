@@ -22,22 +22,27 @@ def chunks(lst, n):
 
 @click.command(name="all")
 @click.argument("user_id")
-def click_get_user_observations(user_id, langcode=None):
-    """Command line wraper to get_user_observations()"""
-    core_information = get_user_observations(user_id, langcode=langcode, limit=200)
+def click_get_observations_with_wiki_info(user_id, langcode=None):
+    """Command line wraper to get_observations_with_wiki_info()"""
+    core_information = get_observations_with_wiki_info(user_id, langcode=langcode, limit=200)
     RESULTS.joinpath(f"candidates_{user_id}.json").write_text(
         json.dumps(core_information, indent=3)
     )
 
 
-def get_user_observations(user_id, limit=200):
+def get_observations_with_wiki_info(
+    inaturalist_id, limit=200, quality_grade="research", license="cc0,cc-by,cc-by-sa", type="user"
+):
     """Gets observations for an iNaturalist user.
     Args:
-      user_id (str): The user identifier.
+      inaturalist_id (str): Either the user or project identifier.
       limit (int): The maximum number of observations to retrieve.
-
+      type (int): Either 'project' or 'user'. Defaults to 'user'.
+      quality_grade (str): The quality grade to filter for. Only takes one of ["research","needs_id", "casual"]
     """
-    core_information, inaturalist_taxon_ids = extract_core_information(user_id, limit)
+    core_information, inaturalist_taxon_ids = extract_core_information(
+        id=inaturalist_id, license=license, limit=limit, quality_grade=quality_grade, type=type
+    )
 
     inaturalist_chunks = chunks(inaturalist_taxon_ids, 30)
     for chunk in inaturalist_chunks:
@@ -161,11 +166,21 @@ def get_query_for_tax_missing_images(inaturalist_taxon_ids):
     return query_for_taxa_missing_images
 
 
-def extract_core_information(id, limit, page=1):
-    print(page)
-    observations = requests.get(
-        f"https://api.inaturalist.org/v1/observations?user_id={id}&only_id=false&per_page=200&page={str(page)}"
-    )
+def extract_core_information(
+    id, limit, quality_grade, license="cc0,cc-by,cc-by-sa", type="user", page=1
+):
+    if type == "user":
+        url = f"https://api.inaturalist.org/v1/observations?user_id={id}&only_id=false&per_page=200&page={str(page)}"
+    elif type == "project":
+        url = f"https://api.inaturalist.org/v1/observations?project_id={id}&only_id=false&per_page=200&page={str(page)}"
+    else:
+        raise Exception("Parameter type must be either 'user' or 'project'.")
+
+    if quality_grade in ["research", "needs_id", "casual"]:
+        url += "&quality_grade=" + quality_grade
+    if license in ["cc0", "cc-by", "cc-by-sa", "cc0,cc-by,cc-by-sa"]:
+        url += "&photo_license=" + license
+    observations = requests.get(url)
 
     observations = observations.json()
     core_information = {}
@@ -206,7 +221,7 @@ def extract_core_information(id, limit, page=1):
     if len(observations["results"]) > 0 and total_n < limit:
         next_page = page + 1
         next_core_information, next_inaturalist_taxon_ids = extract_core_information(
-            id, limit, page=next_page
+            id, limit, quality_grade=quality_grade, license=license, type=type, page=next_page
         )
         core_information.update(next_core_information)
         inaturalist_taxon_ids.extend(next_inaturalist_taxon_ids)
@@ -218,4 +233,4 @@ def extract_core_information(id, limit, page=1):
 
 
 if __name__ == "__main__":
-    click_get_user_observations()
+    click_get_observations_with_wiki_info()

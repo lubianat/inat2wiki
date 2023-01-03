@@ -7,7 +7,7 @@ from wtforms.validators import InputRequired, Length, Optional
 
 import flask
 from flask import Flask, redirect, render_template, request
-from inat2wiki.get_user_observations import get_user_observations
+from inat2wiki.get_user_observations import get_observations_with_wiki_info
 from inat2wiki.parse_observation import get_commons_url, request_observation_data
 
 app = Flask(__name__)
@@ -69,9 +69,70 @@ def parse_obs(observation_id):
     return render_template("parse.html", observation_data=observation_data)
 
 
-class iNaturalistUserForm(FlaskForm):
-    username = StringField("username", validators=[InputRequired()])
+class iNaturalistForm(FlaskForm):
     limit = IntegerField("limit of observations", validators=[Optional()])
+    quality = BooleanField("Research grade only?", default="checked")
+    license = BooleanField("Open license only?", default="checked")
+
+
+class iNaturalistUserForm(iNaturalistForm):
+    username = StringField("username", validators=[InputRequired()])
+
+
+class iNaturalistProjectForm(iNaturalistForm):
+    project_name = StringField("Project name:", validators=[InputRequired()])
+
+
+@app.route("/projectlist/", methods=["GET", "POST"])
+@app.route("/projectlist", methods=["GET", "POST"])
+def projectlist_base():
+
+    form = iNaturalistProjectForm()
+    if form.validate_on_submit():
+        project_name = form.project_name.data
+        print(form.limit.data)
+        if form.limit.data:
+            limit = form.limit.data
+        else:
+            limit = 200
+        if form.quality.data:
+            quality_grade = "research"
+        else:
+            quality_grade = "any"
+
+        if form.quality.data:
+            license = "cc0,cc-by,cc-by-sa"
+        else:
+            license = "any"
+        return redirect(
+            f"/projectlist/{project_name}?limit={str(limit)}&quality_grade={str(quality_grade)}&license={license}"
+        )
+
+    return render_template("projectlist.html", form=form)
+
+
+@app.route("/projectlist/<project_id>", methods=["GET", "POST"])
+def projectlist(project_id):
+    form = iNaturalistUserForm()
+
+    print(project_id)
+    if "limit" in request.args:
+        print(request.args["limit"])
+        limit = int(request.args["limit"])
+    else:
+        limit = 200
+    if "quality_grade" in request.args:
+        quality_grade = request.args["quality_grade"]
+    else:
+        quality_grade = "any"
+    if "license" in request.args:
+        license = request.args["license"]
+    else:
+        license = "any"
+    project_info = get_project_observations(project_id, limit, quality_grade, license)
+    return render_template(
+        "projectlist.html", project_info=project_info, projectname=project_id, form=form
+    )
 
 
 @app.route("/userlist/", methods=["GET", "POST"])
@@ -86,21 +147,42 @@ def userlist_base():
             limit = form.limit.data
         else:
             limit = 200
-        return redirect(f"/userlist/{username}?limit={str(limit)}")
+        if form.quality.data:
+            quality_grade = "research"
+        else:
+            quality_grade = "any"
+
+        if form.quality.data:
+            license = "cc0,cc-by,cc-by-sa"
+        else:
+            license = "any"
+        return redirect(
+            f"/userlist/{username}?limit={str(limit)}&quality_grade={str(quality_grade)}&license={license}"
+        )
 
     return render_template("userlist.html", form=form)
 
 
 @app.route("/userlist/<user_id>", methods=["GET", "POST"])
 def userlist(user_id):
+    form = iNaturalistUserForm()
+
     print(user_id)
     if "limit" in request.args:
         print(request.args["limit"])
         limit = int(request.args["limit"])
     else:
         limit = 200
-    user_info = get_user_observations(user_id, "pt", limit)
-    return render_template("userlist.html", user_info=user_info, username=user_id)
+    if "quality_grade" in request.args:
+        quality_grade = request.args["quality_grade"]
+    else:
+        quality_grade = "any"
+    if "license" in request.args:
+        license = request.args["license"]
+    else:
+        license = "any"
+    user_info = get_observations_with_wiki_info(user_id, limit, quality_grade, license)
+    return render_template("userlist.html", user_info=user_info, username=user_id, form=form)
 
 
 @app.route("/ptwikistub/", methods=["GET", "POST"])

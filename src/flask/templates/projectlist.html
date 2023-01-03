@@ -1,18 +1,18 @@
 {% extends "layout.html" %}
 
 {% block title %}
-User observations
+Project observations
 {% endblock %}
 
 {% block main %}
 
 {% if not user_info %}
-<h4>Enter the iNaturalist username below:</h4>
+<h4>Enter the iNaturalist project_name below:</h4>
 
 <form method="POST">
   <div>
     {{ form.csrf_token }}
-    {{ form.username.label }} {{ form.username(size=20) }}
+    {{ form.project_name.label }} {{ form.project_name(size=20) }}
   </div>
   <div>
     {{ form.csrf_token }}
@@ -28,28 +28,28 @@ User observations
 </form>
 
 
-<a href="/userlist/ramarese">See an example</a>
+<a href="/projectlist/ramarese">See an example</a>
 {% endif %}
-{% if user_info %}
+{% if project_info %}
 <div class="row">
   <div class="col-md container">
     <ul>
     </ul>
-    <h3>Taxa seen by {{username}}</h3>
-    <table id="user_observations" class="table table-striped">
+    <h3>Taxa seen by {{project_name}}</h3>
+    <table id="project_observations" class="table table-striped">
       <thead>
         <tr>
           <th>Characteristic group</th>
           <th>Taxon Name</th>
           <th>Taxon ID</th>
           <th>Number of observations on iNat</th>
-          <th>Observations by {{username}} </th>
+          <th>Observations by {{project_name}} </th>
           <th>Wikidata ID</th>
           <th>Wikipages missing</th>
         </tr>
       </thead>
       <tbody>
-        {% for taxon_id, taxon_info in user_info.items()%}
+        {% for taxon_id, taxon_info in project_info.items()%}
         <tr>
           <td>{{taxon_info.iconic_name}}</td>
           <td>{{taxon_info.name}} </td>
@@ -90,7 +90,7 @@ User observations
 <script>
   $(document).ready(function () {
 
-    var myStringArray = ["#user_observations"];
+    var myStringArray = ["#project_observations"];
     var arrayLength = myStringArray.length;
     for (var i = 0; i < arrayLength; i++) {
       $(myStringArray[i]).DataTable({
