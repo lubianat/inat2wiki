@@ -70,7 +70,7 @@ def parse_obs(observation_id):
 
 
 class iNaturalistForm(FlaskForm):
-    limit = IntegerField("limit of observations", validators=[Optional()])
+    limit = IntegerField("limit of observations (defaults to 200)", validators=[Optional()])
     quality = BooleanField("Research grade only?", default="checked")
     license = BooleanField("Open license only?", default="checked")
 
@@ -113,7 +113,7 @@ def projectlist_base():
 
 @app.route("/projectlist/<project_id>", methods=["GET", "POST"])
 def projectlist(project_id):
-    form = iNaturalistUserForm()
+    form = iNaturalistProjectForm()
 
     print(project_id)
     if "limit" in request.args:
@@ -129,7 +129,13 @@ def projectlist(project_id):
         license = request.args["license"]
     else:
         license = "any"
-    project_info = get_project_observations(project_id, limit, quality_grade, license)
+    project_info = get_observations_with_wiki_info(
+        inaturalist_id=project_id,
+        limit=limit,
+        quality_grade=quality_grade,
+        license=license,
+        type="project",
+    )
     return render_template(
         "projectlist.html", project_info=project_info, projectname=project_id, form=form
     )

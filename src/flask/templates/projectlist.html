@@ -6,7 +6,7 @@ Project observations
 
 {% block main %}
 
-{% if not user_info %}
+{% if not project_info %}
 <h4>Enter the iNaturalist project_name below:</h4>
 
 <form method="POST">
@@ -28,7 +28,7 @@ Project observations
 </form>
 
 
-<a href="/projectlist/ramarese">See an example</a>
+<a href="/projectlist/wikiproject-biodiversity">See an example</a>
 {% endif %}
 {% if project_info %}
 <div class="row">
