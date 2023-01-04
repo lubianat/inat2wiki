@@ -137,7 +137,7 @@ def projectlist(project_id):
         type="project",
     )
     return render_template(
-        "projectlist.html", project_info=project_info, projectname=project_id, form=form
+        "projectlist.html", project_info=project_info, project_name=project_id, form=form
     )
 
 
