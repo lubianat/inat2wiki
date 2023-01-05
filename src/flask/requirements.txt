@@ -2,7 +2,7 @@ bootstrap-flask
 flask_wtf
 wtforms
 flask
-taxon2wikipedia
+taxon2wikipedia>=0.0.8
 inat2wiki
 wdcuration
 pywikibot

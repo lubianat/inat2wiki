@@ -38,7 +38,8 @@ def get_observations_with_wiki_info(
       inaturalist_id (str): Either the user or project identifier.
       limit (int): The maximum number of observations to retrieve.
       type (int): Either 'project' or 'user'. Defaults to 'user'.
-      quality_grade (str): The quality grade to filter for. Only takes one of ["research","needs_id", "casual"]
+      quality_grade (str): The quality grade to filter for.
+      Only takes one of ["research","needs_id", "casual"]
     """
     core_information, inaturalist_taxon_ids = extract_core_information(
         id=inaturalist_id, license=license, limit=limit, quality_grade=quality_grade, type=type
@@ -64,7 +65,7 @@ def get_observations_with_wiki_info(
 
     taxa_ids_for_query = list(core_information.keys())[0:100]
 
-    query_for_taxa_missing_images = get_query_for_tax_missing_images(taxa_ids_for_query)
+    query_for_taxa_missing_images = get_query_for_taxa_missing_images(taxa_ids_for_query)
 
     url_query_for_taxa_missing_images = "https://query.wikidata.org/#" + urllib.parse.quote(
         query_for_taxa_missing_images
@@ -114,6 +115,8 @@ def add_missing_wikipages(langcode, core_information, taxa_ids_for_query) -> dic
 
 
 def get_query_for_taxa_missing_wikipages(inaturalist_taxon_ids, langcode):
+    """Renders a Wikidata query for the taxon that don't have pages
+    for a particular language code"""
     formatted_values = '{ "' + '""'.join(inaturalist_taxon_ids) + '" }'
 
     query_for_missing_pt_wiki = (
@@ -138,7 +141,8 @@ def get_query_for_taxa_missing_wikipages(inaturalist_taxon_ids, langcode):
     return query_for_missing_pt_wiki
 
 
-def get_query_for_tax_missing_images(inaturalist_taxon_ids):
+def get_query_for_taxa_missing_images(inaturalist_taxon_ids):
+    """Renders a Wikidata query for taxa that don't have an Wikidata image."""
     formatted_values = '{ "' + '""'.join(inaturalist_taxon_ids) + '" }'
 
     print("------------- Query for taxa missing images ---------- ")
@@ -169,6 +173,7 @@ def get_query_for_tax_missing_images(inaturalist_taxon_ids):
 def extract_core_information(
     id, limit, quality_grade, license="cc0,cc-by,cc-by-sa", type="user", page=1
 ):
+    """Extracts core information for a user or project from the iNaturalist API."""
     if type == "user":
         url = f"https://api.inaturalist.org/v1/observations?user_id={id}&only_id=false&per_page=200&page={str(page)}"
     elif type == "project":
