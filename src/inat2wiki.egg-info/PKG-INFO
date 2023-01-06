@@ -1,10 +1,11 @@
 Metadata-Version: 2.1
 Name: inat2wiki
-Version: 0.0.1.dev0
+Version: 0.0.1
 Summary: Collection of functions to move stuff from iNaturalist to Wikidata.
 License: MIT
 Description-Content-Type: text/markdown
 Provides-Extra: tests
+License-File: LICENSE
 
 [Repository in construction - sorry for the mess!]
 

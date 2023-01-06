@@ -1,7 +1,7 @@
 from flask_bootstrap import Bootstrap5
 from flask_wtf import FlaskForm
 from taxon2wikipedia.render_page import get_pt_wikipage_from_qid
-from wdcuration import get_statement_values
+from wdcuration import get_statement_values, lookup_id
 from wtforms import BooleanField, IntegerField, RadioField, StringField, TextAreaField
 from wtforms.validators import InputRequired, Length, Optional
 
@@ -57,7 +57,7 @@ def parse_obs(observation_id):
 
     observation_data = request_observation_data(observation_id)
     photo_data_list = observation_data["photos"]
-
+    qid = lookup_id(observation_data["taxon"]["min_species_taxon_id"], "P3151", default="")
     for i, photo_data in enumerate(photo_data_list):
         upload_url = get_commons_url(observation_data, photo_data, observation_id)
         observation_data["photos"][i]["url"] = observation_data["photos"][i]["url"].replace(
@@ -66,7 +66,7 @@ def parse_obs(observation_id):
 
         observation_data["photos"][i]["upload_url"] = upload_url
 
-    return render_template("parse.html", observation_data=observation_data)
+    return render_template("parse.html", observation_data=observation_data, qid=qid)
 
 
 class iNaturalistForm(FlaskForm):

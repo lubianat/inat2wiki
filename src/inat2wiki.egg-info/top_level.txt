@@ -1,1 +1,1 @@
-pynaturalist2commons
+inat2wiki
