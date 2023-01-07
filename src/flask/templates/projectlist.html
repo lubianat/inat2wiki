@@ -59,7 +59,7 @@ Project observations
           <td>
             {% for obs in taxon_info.observations %}
             <a href="https://www.inaturalist.org/observations/{{obs.id}}" target="_blank">{{obs.id}}</a>
-            (<a href="/parse/{{obs.id}}" target="_blank">upload</a>; {{obs.quality_grade}}; {{obs.license}}),
+            [<a href="/parse/{{obs.id}}" target="_blank">upload</a>] ({{obs.quality_grade}}; {{obs.license}}),
             {% endfor%}
           </td>
           <td>

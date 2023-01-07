@@ -41,8 +41,7 @@ User observations
       <thead>
         <tr>
           <th>Characteristic group</th>
-          <th>Taxon Name</th>
-          <th>Taxon ID</th>
+          <th>Taxon</th>
           <th>Number of observations on iNat</th>
           <th>Observations by {{username}} </th>
           <th>Wikidata ID</th>
@@ -54,12 +53,11 @@ User observations
         <tr>
           <td>{{taxon_info.iconic_name}}</td>
           <td>{{taxon_info.name}} </td>
-          <td>{{taxon_id}} </td>
           <td>{{taxon_info.number_of_observations}} </td>
           <td>
             {% for obs in taxon_info.observations %}
-            <a href="https://www.inaturalist.org/observations/{{obs.id}}" target="_blank">{{obs.id}}</a>
-            (<a href="/parse/{{obs.id}}" target="_blank">upload</a>; {{obs.quality_grade}}; {{obs.license}}),
+            {{obs.id}} [<a href="https://www.inaturalist.org/observations/{{obs.id}}" target="_blank">iNat</a>, <a
+              href="/parse/{{obs.id}}" target="_blank">upload</a>] ({{obs.quality_grade}}; {{obs.license}}),
             {% endfor%}
           </td>
           <td>
