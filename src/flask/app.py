@@ -137,7 +137,11 @@ def projectlist(project_id):
         type="project",
     )
     return render_template(
-        "projectlist.html", project_info=project_info, project_name=project_id, form=form
+        "projectlist.html",
+        project_info=project_info,
+        project_name=project_id,
+        form=form,
+        limit=str(limit),
     )
 
 
@@ -188,7 +192,9 @@ def userlist(user_id):
     else:
         license = "any"
     user_info = get_observations_with_wiki_info(user_id, limit, quality_grade, license)
-    return render_template("userlist.html", user_info=user_info, username=user_id, form=form)
+    return render_template(
+        "userlist.html", user_info=user_info, username=user_id, form=form, limit=str(limit)
+    )
 
 
 @app.route("/ptwikistub/", methods=["GET", "POST"])

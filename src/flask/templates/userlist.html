@@ -36,6 +36,7 @@ User observations
     <ul>
     </ul>
     <h3>Taxa seen by {{username}}</h3>
+    <p>Parsing up to {{limit}} most recent uploads. </p>
     <table id="user_observations" class="table table-striped">
       <thead>
         <tr>
@@ -57,7 +58,8 @@ User observations
           <td>{{taxon_info.number_of_observations}} </td>
           <td>
             {% for obs in taxon_info.observations %}
-            <a href="/parse/{{obs.id}}" target="_blank">{{obs.id}}</a> ({{obs.quality_grade}}; {{obs.license}}),
+            <a href="https://www.inaturalist.org/observations/{{obs.id}}" target="_blank">{{obs.id}}</a>
+            (<a href="/parse/{{obs.id}}" target="_blank">upload</a>; {{obs.quality_grade}}; {{obs.license}}),
             {% endfor%}
           </td>
           <td>
