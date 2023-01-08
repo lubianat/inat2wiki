@@ -31,7 +31,12 @@ def click_get_observations_with_wiki_info(user_id, langcode=None):
 
 
 def get_observations_with_wiki_info(
-    inaturalist_id, limit=200, quality_grade="research", license="cc0,cc-by,cc-by-sa", type="user"
+    inaturalist_id,
+    limit=200,
+    quality_grade="research",
+    license="cc0,cc-by,cc-by-sa",
+    type="user",
+    starting_page=1,
 ):
     """Gets observations for an iNaturalist user.
     Args:
@@ -40,9 +45,15 @@ def get_observations_with_wiki_info(
       type (int): Either 'project' or 'user'. Defaults to 'user'.
       quality_grade (str): The quality grade to filter for.
       Only takes one of ["research","needs_id", "casual"]
+      starting_page (int): The starting page of the observation list.
     """
     core_information, inaturalist_taxon_ids = extract_core_information(
-        id=inaturalist_id, license=license, limit=limit, quality_grade=quality_grade, type=type
+        id=inaturalist_id,
+        license=license,
+        limit=limit,
+        quality_grade=quality_grade,
+        type=type,
+        page=starting_page,
     )
 
     inaturalist_chunks = chunks(inaturalist_taxon_ids, 30)

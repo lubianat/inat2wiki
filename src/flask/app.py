@@ -115,7 +115,10 @@ def projectlist_base():
 def projectlist(project_id):
     form = iNaturalistProjectForm()
 
-    print(project_id)
+    if "page" in request.args:
+        page = int(request.args["page"])
+    else:
+        page = 1
     if "limit" in request.args:
         print(request.args["limit"])
         limit = int(request.args["limit"])
@@ -135,13 +138,17 @@ def projectlist(project_id):
         quality_grade=quality_grade,
         license=license,
         type="project",
+        starting_page=page,
     )
     return render_template(
         "projectlist.html",
         project_info=project_info,
         project_name=project_id,
+        quality_grade=quality_grade,
+        license=license,
         form=form,
         limit=str(limit),
+        page=page,
     )
 
 
@@ -178,6 +185,11 @@ def userlist(user_id):
     form = iNaturalistUserForm()
 
     print(user_id)
+
+    if "page" in request.args:
+        page = int(request.args["page"])
+    else:
+        page = 1
     if "limit" in request.args:
         print(request.args["limit"])
         limit = int(request.args["limit"])
@@ -191,9 +203,18 @@ def userlist(user_id):
         license = request.args["license"]
     else:
         license = "any"
-    user_info = get_observations_with_wiki_info(user_id, limit, quality_grade, license)
+    user_info = get_observations_with_wiki_info(
+        user_id, limit, quality_grade, license, starting_page=page
+    )
     return render_template(
-        "userlist.html", user_info=user_info, username=user_id, form=form, limit=str(limit)
+        "userlist.html",
+        user_info=user_info,
+        username=user_id,
+        form=form,
+        limit=str(limit),
+        page=page,
+        quality_grade=quality_grade,
+        license=license,
     )
 
 

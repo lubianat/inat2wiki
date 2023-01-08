@@ -36,7 +36,13 @@ Project observations
     <ul>
     </ul>
     <h3> Taxa observed in the scope of the project "{{project_name}}"</h3>
-    <p>Parsing up to {{limit}} most recent uploads. </p>
+    {% set next_page = page + 1 %}
+    <button class="btn btn-outline-primary pager float-right">
+      <a
+        href="/projectlist/{{project_name}}?limit={{limit}}&page={{next_page}}&quality_grade={{quality_grade}}&license={{license}}">Next
+        {{limit}} </a>
+    </button>
+    <p>Parsing up to {{limit}} most recent uploads (page {{page}}). </p>
     <table id="project_observations" class="table table-striped">
       <thead>
         <tr>
@@ -58,8 +64,8 @@ Project observations
           <td>{{taxon_info.number_of_observations}} </td>
           <td>
             {% for obs in taxon_info.observations %}
-            <a href="https://www.inaturalist.org/observations/{{obs.id}}" target="_blank">{{obs.id}}</a>
-            [<a href="/parse/{{obs.id}}" target="_blank">upload</a>] ({{obs.quality_grade}}; {{obs.license}}),
+            {{obs.id}} [<a href="https://www.inaturalist.org/observations/{{obs.id}}" target="_blank">iNat</a>, <a
+              href="/parse/{{obs.id}}" target="_blank">upload</a>] ({{obs.quality_grade}}; {{obs.license}}),
             {% endfor%}
           </td>
           <td>

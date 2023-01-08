@@ -33,10 +33,16 @@ User observations
 {% if user_info %}
 <div class="row">
   <div class="col-md container">
-    <ul>
-    </ul>
     <h3>Taxa seen by {{username}}</h3>
-    <p>Parsing up to {{limit}} most recent uploads. </p>
+    {% set next_page = page + 1 %}
+    <button class="btn btn-outline-primary pager float-right">
+      <a
+        href="/userlist/{{username}}?limit={{limit}}&page={{next_page}}&quality_grade={{quality_grade}}&license={{license}}">Next
+        {{limit}} </a>
+    </button>
+    <p>Parsing up to {{limit}} most recent uploads (page {{page}}). </p>
+
+    </br>
     <table id="user_observations" class="table table-striped">
       <thead>
         <tr>
