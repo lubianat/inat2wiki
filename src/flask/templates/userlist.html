@@ -34,13 +34,13 @@ User observations
 <div class="row">
   <div class="col-md container">
     <h3>Taxa seen by {{username}}</h3>
-    {% set next_page = page + 1 %}
+    {% set next_page = search_config.page + 1 %}
     <button class="btn btn-outline-primary pager float-right">
       <a
-        href="/userlist/{{username}}?limit={{limit}}&page={{next_page}}&quality_grade={{quality_grade}}&license={{license}}">Next
+        href="/userlist/{{username}}?limit={{search_config.limit}}&page={{next_page}}&quality_grade={{search_config.quality_grade}}&license={{search_config.license}}">Next
         {{limit}} </a>
     </button>
-    <p>Parsing up to {{limit}} most recent uploads (page {{page}}). </p>
+    <p>Parsing up to {{search_config.limit}} most recent uploads (page {{search_config.page}}). </p>
 
     </br>
     <table id="user_observations" class="table table-striped">

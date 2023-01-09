@@ -36,13 +36,14 @@ Project observations
     <ul>
     </ul>
     <h3> Taxa observed in the scope of the project "{{project_name}}"</h3>
-    {% set next_page = page + 1 %}
+    {% set next_page = search_config.page + 1 %}
     <button class="btn btn-outline-primary pager float-right">
       <a
-        href="/projectlist/{{project_name}}?limit={{limit}}&page={{next_page}}&quality_grade={{quality_grade}}&license={{license}}">Next
+        href="/projectlist/{{project_name}}?limit={{search_config.limit}}&page={{next_page}}&quality_grade={{search_config.quality_grade}}&license={{search_config.license}}">Next
         {{limit}} </a>
     </button>
-    <p>Parsing up to {{limit}} most recent uploads (page {{page}}). </p>
+    <p>Parsing up to {{search_config.limit}} most recent uploads (page {{search_config.page}}). </p>
+
     <table id="project_observations" class="table table-striped">
       <thead>
         <tr>

@@ -1,3 +1,4 @@
+from dataclasses import dataclass
 from flask_bootstrap import Bootstrap5
 from flask_wtf import FlaskForm
 from taxon2wikipedia.render_page import get_pt_wikipage_from_qid
@@ -115,40 +116,21 @@ def projectlist_base():
 def projectlist(project_id):
     form = iNaturalistProjectForm()
 
-    if "page" in request.args:
-        page = int(request.args["page"])
-    else:
-        page = 1
-    if "limit" in request.args:
-        print(request.args["limit"])
-        limit = int(request.args["limit"])
-    else:
-        limit = 200
-    if "quality_grade" in request.args:
-        quality_grade = request.args["quality_grade"]
-    else:
-        quality_grade = "any"
-    if "license" in request.args:
-        license = request.args["license"]
-    else:
-        license = "any"
+    search_config = parse_requests_into_search_config(request)
     project_info = get_observations_with_wiki_info(
         inaturalist_id=project_id,
-        limit=limit,
-        quality_grade=quality_grade,
-        license=license,
+        limit=search_config.limit,
+        quality_grade=search_config.quality_grade,
+        license=search_config.license,
         type="project",
-        starting_page=page,
+        starting_page=search_config.page,
     )
     return render_template(
         "projectlist.html",
         project_info=project_info,
         project_name=project_id,
-        quality_grade=quality_grade,
-        license=license,
+        search_config=search_config,
         form=form,
-        limit=str(limit),
-        page=page,
     )
 
 
@@ -180,42 +162,45 @@ def userlist_base():
     return render_template("userlist.html", form=form)
 
 
+@dataclass
+class iNaturalistSearchConfiguration:
+    page: int = 1
+    limit: int = 200
+    quality_grade: str = "research"
+    license: str = "cc0,cc-by,cc-by-sa"
+
+
 @app.route("/userlist/<user_id>", methods=["GET", "POST"])
 def userlist(user_id):
     form = iNaturalistUserForm()
-
-    print(user_id)
-
-    if "page" in request.args:
-        page = int(request.args["page"])
-    else:
-        page = 1
-    if "limit" in request.args:
-        print(request.args["limit"])
-        limit = int(request.args["limit"])
-    else:
-        limit = 200
-    if "quality_grade" in request.args:
-        quality_grade = request.args["quality_grade"]
-    else:
-        quality_grade = "any"
-    if "license" in request.args:
-        license = request.args["license"]
-    else:
-        license = "any"
+    search_config = parse_requests_into_search_config(request)
     user_info = get_observations_with_wiki_info(
-        user_id, limit, quality_grade, license, starting_page=page
+        user_id,
+        search_config.limit,
+        search_config.quality_grade,
+        search_config.license,
+        starting_page=search_config.page,
     )
     return render_template(
         "userlist.html",
         user_info=user_info,
         username=user_id,
         form=form,
-        limit=str(limit),
-        page=page,
-        quality_grade=quality_grade,
-        license=license,
+        search_config=search_config,
     )
+
+
+def parse_requests_into_search_config(request):
+    search_config = iNaturalistSearchConfiguration()
+    if "page" in request.args:
+        search_config.page = int(request.args["page"])
+    if "limit" in request.args:
+        search_config.limit = int(request.args["limit"])
+    if "quality_grade" in request.args:
+        search_config.quality_grade = request.args["quality_grade"]
+    if "license" in request.args:
+        search_config.license = request.args["license"]
+    return search_config
 
 
 @app.route("/ptwikistub/", methods=["GET", "POST"])
