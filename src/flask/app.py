@@ -77,11 +77,11 @@ class iNaturalistForm(FlaskForm):
 
 
 class iNaturalistUserForm(iNaturalistForm):
-    username = StringField("username", validators=[InputRequired()])
+    name = StringField("username", validators=[InputRequired()])
 
 
 class iNaturalistProjectForm(iNaturalistForm):
-    project_name = StringField("Project name:", validators=[InputRequired()])
+    name = StringField("Project name:", validators=[InputRequired()])
 
 
 @app.route("/projectlist/", methods=["GET", "POST"])
@@ -90,24 +90,7 @@ def projectlist_base():
 
     form = iNaturalistProjectForm()
     if form.validate_on_submit():
-        project_name = form.project_name.data
-        print(form.limit.data)
-        if form.limit.data:
-            limit = form.limit.data
-        else:
-            limit = 200
-        if form.quality.data:
-            quality_grade = "research"
-        else:
-            quality_grade = "any"
-
-        if form.quality.data:
-            license = "cc0,cc-by,cc-by-sa"
-        else:
-            license = "any"
-        return redirect(
-            f"/projectlist/{project_name}?limit={str(limit)}&quality_grade={str(quality_grade)}&license={license}"
-        )
+        return create_redirect_from_form(form, base_route="/projectlist")
 
     return render_template("projectlist.html", form=form)
 
@@ -134,30 +117,35 @@ def projectlist(project_id):
     )
 
 
+def create_redirect_from_form(form, base_route):
+    name = form.name.data
+    if form.limit.data:
+        limit = form.limit.data
+    else:
+        limit = 200
+    if form.quality.data:
+        quality_grade = "research"
+    else:
+        quality_grade = "any"
+
+    if form.quality.data:
+        license = "cc0,cc-by,cc-by-sa"
+    else:
+        license = "any"
+    redirect_object = redirect(
+        f"{base_route}/{name}?limit={str(limit)}&quality_grade={str(quality_grade)}&license={license}"
+    )
+    return redirect_object
+
+
 @app.route("/userlist/", methods=["GET", "POST"])
 @app.route("/userlist", methods=["GET", "POST"])
 def userlist_base():
 
     form = iNaturalistUserForm()
     if form.validate_on_submit():
-        username = form.username.data
-        print(form.limit.data)
-        if form.limit.data:
-            limit = form.limit.data
-        else:
-            limit = 200
-        if form.quality.data:
-            quality_grade = "research"
-        else:
-            quality_grade = "any"
 
-        if form.quality.data:
-            license = "cc0,cc-by,cc-by-sa"
-        else:
-            license = "any"
-        return redirect(
-            f"/userlist/{username}?limit={str(limit)}&quality_grade={str(quality_grade)}&license={license}"
-        )
+        return create_redirect_from_form(form, base_route="/userlist")
 
     return render_template("userlist.html", form=form)
 
