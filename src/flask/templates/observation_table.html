@@ -46,6 +46,17 @@
 </table>
 {%- endmacro %}
 
+{% macro create_next_button(path, page_name, search_config) -%}
+{% set next_page = search_config.page + 1 %}
+<button class="btn btn-outline-primary pager float-right">
+  <a
+    href="/{{path}}/{{page_name}}?limit={{search_config.limit}}&page={{next_page}}&quality_grade={{search_config.quality_grade}}&license={{search_config.license}}">Next
+    {{search_config.limit}} </a>
+</button>
+<p>Parsing up to {{search_config.limit}} most recent uploads (page {{search_config.page}}). </p>
+
+{%- endmacro %}
+
 
 {% macro create_form(form) -%}
 <form method="POST">

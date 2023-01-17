@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-{% from 'observation_table.html' import create_observation_table, create_form %}
+{% from 'observation_table.html' import create_observation_table, create_form, create_next_button %}
 
 {% block title %}
 Project observations
@@ -18,14 +18,7 @@ Project observations
 <div class="row">
   <div class="col-md container">
     <h3> Taxa observed in the scope of the project "{{project_name}}"</h3>
-    {% set next_page = search_config.page + 1 %}
-    <button class="btn btn-outline-primary pager float-right">
-      <a
-        href="/projectlist/{{project_name}}?limit={{search_config.limit}}&page={{next_page}}&quality_grade={{search_config.quality_grade}}&license={{search_config.license}}">Next
-        {{limit}} </a>
-    </button>
-    <p>Parsing up to {{search_config.limit}} most recent uploads (page {{search_config.page}}). </p>
-
+    {{ create_next_button("projectlist", project_name, search_config)}}
     {{ create_observation_table(project_info, project_name) }}
 
   </div>
