@@ -208,6 +208,8 @@ def extract_core_information(
         if "taxon" not in obs:
             continue
         tax_info = obs["taxon"]
+
+        tax_info["sample_photo"] = obs["photos"][0]["url"]
         if tax_info is None:
             continue
         if "iconic_taxon_name" in tax_info:
@@ -225,6 +227,7 @@ def extract_core_information(
             else:
                 core_information[species_id] = {
                     "iconic_name": iconic_taxon_name,
+                    "sample_photo": tax_info["sample_photo"],
                     "name": tax_info["name"],
                     "quality": quality_grade,
                     "taxon_id": tax_info["min_species_taxon_id"],
@@ -249,4 +252,5 @@ def extract_core_information(
 
 
 if __name__ == "__main__":
-    click_get_observations_with_wiki_info()
+    a = get_observations_with_wiki_info("limarrudandre")
+    print(a)

@@ -2,9 +2,10 @@
 <table id="observations" class="table table-striped">
   <thead>
     <tr>
-      <th>Characteristic group</th>
+      <th>Image</th>
+      <th>Group</th>
       <th>Taxon Name</th>
-      <th>Number of observations on iNat</th>
+      <th>Number of observations </th>
       <th>Observations by {{name}} </th>
       <th>Wikidata ID</th>
       <th>Wikipages missing</th>
@@ -13,6 +14,7 @@
   <tbody>
     {% for taxon_id, taxon_info in info.items()%}
     <tr>
+      <td><img src="{{taxon_info.sample_photo}}"></td>
       <td>{{taxon_info.iconic_name}}</td>
       <td>{{taxon_info.name}} </td>
       <td>{{taxon_info.number_of_observations}} </td>
