@@ -1,9 +1,8 @@
-from dataclasses import dataclass
-from encodings import search_function
+""" A flask app to connect iNaturalist to Wikidata."""
 
+from dataclasses import dataclass
 from flask_bootstrap import Bootstrap5
 from flask_wtf import FlaskForm
-from jmespath import search
 from taxon2wikipedia.render_page import get_pt_wikipage_from_qid
 from wdcuration import get_statement_values, lookup_id
 from wtforms import BooleanField, IntegerField, StringField
@@ -92,11 +91,9 @@ def projectlist(project_id):
 @app.route("/userlist/", methods=["GET", "POST"])
 @app.route("/userlist", methods=["GET", "POST"])
 def userlist_base():
-
     form = iNaturalistUserForm()
     if form.validate_on_submit():
         return create_redirect_from_form(form, base_route="/userlist")
-
     return render_template("userlist.html", form=form)
 
 
@@ -117,7 +114,6 @@ def userlist(user_id):
 @app.route("/ptwikistub/", methods=["GET", "POST"])
 @app.route("/ptwikistub", methods=["GET", "POST"])
 def ptwikistub_base():
-
     if request.method == "POST":
         qid = request.form.get("taxon_qid")
         return redirect(f"/ptwikistub/{qid}")
@@ -128,7 +124,6 @@ def ptwikistub_base():
 @app.route("/ptwikistub/<taxon_qid>", methods=["GET", "POST"])
 def ptwikistub(taxon_qid):
     ptwikistub = get_pt_wikipage_from_qid(taxon_qid)
-
     taxon_name = get_statement_values(taxon_qid, "P225")[0]
     return render_template(
         "ptwikistub.html", qid=taxon_qid, ptwikistub=ptwikistub, taxon_name=taxon_name
@@ -139,6 +134,7 @@ def ptwikistub(taxon_qid):
 
 
 def parse_requests_into_search_config(request):
+    """Parse a POST request into a search configuration object."""
     search_config = iNaturalistSearchConfiguration()
     if "page" in request.args:
         search_config.page = int(request.args["page"])
@@ -152,6 +148,7 @@ def parse_requests_into_search_config(request):
 
 
 def create_redirect_from_form(form, base_route):
+    """Creates a flask redirect route using information on a WTForm."""
     name = form.name.data
     if form.limit.data:
         limit = form.limit.data
@@ -161,7 +158,6 @@ def create_redirect_from_form(form, base_route):
         quality_grade = "research"
     else:
         quality_grade = "any"
-
     if form.quality.data:
         license = "cc0,cc-by,cc-by-sa"
     else:
@@ -188,6 +184,10 @@ class iNaturalistProjectForm(iNaturalistForm):
 
 @dataclass
 class iNaturalistSearchConfiguration:
+    """
+    The configuration info for the iNaturalist API call to retrieve observations.
+    """
+
     page: int = 1
     limit: int = 200
     quality_grade: str = "research"

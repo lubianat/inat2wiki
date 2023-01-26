@@ -9,11 +9,10 @@ User observations
 
 {% if not user_info %}
 <h4>Enter the iNaturalist username below:</h4>
-
 {{create_form(form)}}
-
 <a href="/userlist/ramarese">See an example</a>
 {% endif %}
+
 {% if user_info %}
 <div class="row">
   <div class="col-md container">
@@ -21,15 +20,12 @@ User observations
     {{ create_next_button("userlist", username, search_config)}}
     {{ create_observation_table(user_info, username) }}
     </br>
-
-
   </div>
 </div>
 {% endif %}
 
 <script>
   $(document).ready(function () {
-
     var myStringArray = ["#observations"];
     var arrayLength = myStringArray.length;
     for (var i = 0; i < arrayLength; i++) {
