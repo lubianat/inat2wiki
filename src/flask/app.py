@@ -144,6 +144,8 @@ def parse_requests_into_search_config(request):
         search_config.quality_grade = request.args["quality_grade"]
     if "license" in request.args:
         search_config.license = request.args["license"]
+    if "langcodes" in request.args:
+        search_config.langcodes = request.args["langcodes"]
     return search_config
 
 
@@ -158,12 +160,16 @@ def create_redirect_from_form(form, base_route):
         quality_grade = "research"
     else:
         quality_grade = "any"
-    if form.quality.data:
+    if form.license.data:
         license = "cc0,cc-by,cc-by-sa"
     else:
         license = "any"
+    if form.langcodes.data:
+        langcodes = form.langcodes.data
+    else:
+        langcodes = "pt,en"
     redirect_object = redirect(
-        f"{base_route}/{name}?limit={str(limit)}&quality_grade={str(quality_grade)}&license={license}"
+        f"{base_route}/{name}?limit={str(limit)}&quality_grade={str(quality_grade)}&license={license}&langcodes={langcodes}"
     )
     return redirect_object
 
@@ -172,6 +178,7 @@ class iNaturalistForm(FlaskForm):
     limit = IntegerField("limit of observations (defaults to 200)", validators=[Optional()])
     quality = BooleanField("Research grade only?", default="checked")
     license = BooleanField("Open license only?", default="checked")
+    langcodes = StringField("Wikipedia langcodes (defaults to 'en,pt'):", validators=[Optional()])
 
 
 class iNaturalistUserForm(iNaturalistForm):
@@ -192,6 +199,7 @@ class iNaturalistSearchConfiguration:
     limit: int = 200
     quality_grade: str = "research"
     license: str = "cc0,cc-by,cc-by-sa"
+    langcodes: str = "en,pt"
 
     def get_wiki_info(self, inaturalist_id, type="user"):
         return get_observations_with_wiki_info(
@@ -201,4 +209,5 @@ class iNaturalistSearchConfiguration:
             license=self.license,
             type=type,
             starting_page=self.page,
+            langcode_list=self.langcodes.split(","),
         )

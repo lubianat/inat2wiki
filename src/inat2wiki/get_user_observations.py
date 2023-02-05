@@ -37,6 +37,7 @@ def get_observations_with_wiki_info(
     license="cc0,cc-by,cc-by-sa",
     type="user",
     starting_page=1,
+    langcode_list=["en", "pt"],
 ):
     """Gets observations for an iNaturalist user.
     Args:
@@ -97,7 +98,6 @@ def get_observations_with_wiki_info(
     print(url_query_for_taxa_missing_images)
 
     print("--------------- Query for observations missing wiki pages -----------")
-    langcode_list = ["en", "pt"]
     for langcode in langcode_list:
         core_information = add_missing_wikipages(langcode, core_information, taxa_ids_for_query)
 

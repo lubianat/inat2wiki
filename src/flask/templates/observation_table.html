@@ -71,6 +71,10 @@
     {{ form.limit.label }} {{ form.limit(size=20) }}
   </div>
   <div>
+    {{ form.csrf_token }}
+    {{ form.langcodes.label }} {{ form.langcodes(size=20) }}
+  </div>
+  <div>
     {{ form.quality.label }} {{ form.quality }}
   </div>
   <div>
