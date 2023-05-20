@@ -1,0 +1,85 @@
+{% macro create_observation_table(info, name) -%}
+<table id="observations" class="table table-striped">
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Group</th>
+      <th>Taxon Name</th>
+      <th>Number of observations </th>
+      <th>Observations by {{name}} </th>
+      <th>Wikidata ID</th>
+      <th>Wikipages missing</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for taxon_id, taxon_info in info.items()%}
+    <tr>
+      <td><img src="{{taxon_info.sample_photo}}"></td>
+      <td>{{taxon_info.iconic_name}}</td>
+      <td>{{taxon_info.name}} </td>
+      <td>{{taxon_info.number_of_observations}} </td>
+      <td>
+        {% for obs in taxon_info.observations %}
+        {{obs.id}} [<a href="https://www.inaturalist.org/observations/{{obs.id}}" target="_blank">iNat</a>, <a
+          href="/parse/{{obs.id}}" target="_blank">upload</a>] ({{obs.quality_grade}}; {{obs.license}}),
+        {% endfor%}
+      </td>
+      <td>
+        <a href="http://www.wikidata.org/entity/{{taxon_info.wikidata_id}}"
+          target="_blank">{{taxon_info.wikidata_id}}</a>
+      </td>
+      <td>
+        {% for wiki_page in taxon_info.wikipages_missing %}
+        {% if 'pt' == wiki_page %}
+        {{wiki_page}} (<a href="/ptwikistub/{{taxon_info.wikidata_id}}" target="_blank">create stub</a>),
+        {% else %}
+        {{wiki_page}}
+        {% endif %}
+        {{ ", " if not loop.last else "" }}
+
+        {% endfor%}
+      </td>
+
+    </tr>
+    {% endfor %}
+    </ul>
+    <!-- content from Wikidata -->
+  </tbody>
+</table>
+{%- endmacro %}
+
+{% macro create_next_button(path, page_name, search_config) -%}
+{% set next_page = search_config.page + 1 %}
+<button class="btn btn-outline-primary pager float-right">
+  <a
+    href="/{{path}}/{{page_name}}?limit={{search_config.limit}}&page={{next_page}}&quality_grade={{search_config.quality_grade}}&license={{search_config.license}}">Next
+    {{search_config.limit}} </a>
+</button>
+<p>Parsing up to {{search_config.limit}} most recent uploads (page {{search_config.page}}). </p>
+
+{%- endmacro %}
+
+
+{% macro create_form(form) -%}
+<form method="POST">
+  <div>
+    {{ form.csrf_token }}
+    {{ form.name.label }} {{ form.name(size=20) }}
+  </div>
+  <div>
+    {{ form.csrf_token }}
+    {{ form.limit.label }} {{ form.limit(size=20) }}
+  </div>
+  <div>
+    {{ form.csrf_token }}
+    {{ form.langcodes.label }} {{ form.langcodes(size=20) }}
+  </div>
+  <div>
+    {{ form.quality.label }} {{ form.quality }}
+  </div>
+  <div>
+    {{ form.license.label }} {{ form.license }}
+  </div>
+  <input type="submit" value="Go">
+</form>
+{%- endmacro %}
