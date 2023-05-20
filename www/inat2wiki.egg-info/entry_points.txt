@@ -1,0 +1,2 @@
+[console_scripts]
+pynat = inat2wiki.cli:cli
