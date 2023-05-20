@@ -1,0 +1,10 @@
+click
+requests
+json5
+wdcuration
+flask
+flask-bootstrap
+flask_wtf
+taxon2wikipedia
+wtforms
+gunicorn

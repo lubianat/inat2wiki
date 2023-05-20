@@ -47,6 +47,7 @@ def get_observations_with_wiki_info(
       quality_grade (str): The quality grade to filter for.
       Only takes one of ["research","needs_id", "casual"]
       starting_page (int): The starting page of the observation list.
+      langcode_list (list): A list of language codes.
     """
     core_information, inaturalist_taxon_ids = extract_core_information(
         id=inaturalist_id,

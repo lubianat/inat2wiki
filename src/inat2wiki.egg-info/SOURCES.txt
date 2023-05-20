@@ -6,6 +6,7 @@ setup.py
 src/inat2wiki/__init__.py
 src/inat2wiki/cli.py
 src/inat2wiki/get_user_observations.py
+src/inat2wiki/inat_taxon2wikidata.py
 src/inat2wiki/parse_observation.py
 src/inat2wiki.egg-info/PKG-INFO
 src/inat2wiki.egg-info/SOURCES.txt
