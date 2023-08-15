@@ -61,25 +61,34 @@
 
 
 {% macro create_form(form) -%}
-<form method="POST">
-  <div>
-    {{ form.csrf_token }}
-    {{ form.name.label }} {{ form.name(size=20) }}
+<form method="POST" class="needs-validation" novalidate>
+  {{ form.csrf_token }}
+
+  <div class="mb-3">
+    <label for="{{ form.name.id }}" class="form-label">{{ form.name.label }}</label>
+    {{ form.name(class="form-control", required=True) }}
   </div>
-  <div>
-    {{ form.csrf_token }}
-    {{ form.limit.label }} {{ form.limit(size=20) }}
+
+  <div class="mb-3">
+    <label for="{{ form.limit.id }}" class="form-label">{{ form.limit.label }}</label>
+    {{ form.limit(class="form-control", required=True) }}
   </div>
-  <div>
-    {{ form.csrf_token }}
-    {{ form.langcodes.label }} {{ form.langcodes(size=20) }}
+
+  <div class="mb-3">
+    <label for="{{ form.langcodes.id }}" class="form-label">{{ form.langcodes.label }}</label>
+    {{ form.langcodes(class="form-control", required=True) }}
   </div>
-  <div>
-    {{ form.quality.label }} {{ form.quality }}
+
+  <div class="mb-3">
+    <label for="{{ form.quality.id }}" class="form-label">{{ form.quality.label }}</label>
+    {{ form.quality(class="form-select") }}
   </div>
-  <div>
-    {{ form.license.label }} {{ form.license }}
+
+  <div class="mb-3">
+    <label for="{{ form.license.id }}" class="form-label">{{ form.license.label }}</label>
+    {{ form.license(class="form-select") }}
   </div>
-  <input type="submit" value="Go">
+
+  <button type="submit" class="btn btn-primary">Go</button>
 </form>
 {%- endmacro %}

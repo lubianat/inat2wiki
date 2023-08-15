@@ -175,14 +175,14 @@ def create_redirect_from_form(form, base_route):
 
 
 class iNaturalistForm(FlaskForm):
-    limit = IntegerField("limit of observations (defaults to 200)", validators=[Optional()])
+    limit = IntegerField("Limit of observations (defaults to 200):", validators=[Optional()])
     quality = BooleanField("Research grade only?", default="checked")
     license = BooleanField("Open license only?", default="checked")
     langcodes = StringField("Wikipedia langcodes (defaults to 'en,pt'):", validators=[Optional()])
 
 
 class iNaturalistUserForm(iNaturalistForm):
-    name = StringField("username", validators=[InputRequired()])
+    name = StringField("Username:", validators=[InputRequired()])
 
 
 class iNaturalistProjectForm(iNaturalistForm):
