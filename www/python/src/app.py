@@ -14,11 +14,9 @@ from inat2wiki.get_user_observations import get_observations_with_wiki_info
 from inat2wiki.parse_observation import get_commons_url, request_observation_data
 
 app = Flask(__name__)
-
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 Bootstrap5(app)
 
-# Ensure templates are auto-reloaded
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 
@@ -66,7 +64,7 @@ def parse_obs(observation_id):
 
 @app.route("/projectlist/", methods=["GET", "POST"])
 @app.route("/projectlist", methods=["GET", "POST"])
-def projectlist_base():
+def project_list_form():
     form = iNaturalistProjectForm()
     if form.validate_on_submit():
         return create_redirect_from_form(form, base_route="/projectlist")
@@ -74,7 +72,7 @@ def projectlist_base():
 
 
 @app.route("/projectlist/<project_id>", methods=["GET", "POST"])
-def projectlist(project_id):
+def project_list_results(project_id):
     form = iNaturalistProjectForm()
     search_config = parse_requests_into_search_config(request)
     project_info = search_config.get_wiki_info(project_id, type="project")
@@ -90,7 +88,7 @@ def projectlist(project_id):
 
 @app.route("/userlist/", methods=["GET", "POST"])
 @app.route("/userlist", methods=["GET", "POST"])
-def userlist_base():
+def user_list_form():
     form = iNaturalistUserForm()
     if form.validate_on_submit():
         return create_redirect_from_form(form, base_route="/userlist")
@@ -98,7 +96,7 @@ def userlist_base():
 
 
 @app.route("/userlist/<user_id>", methods=["GET", "POST"])
-def userlist(user_id):
+def user_list_results(user_id):
     form = iNaturalistUserForm()
     search_config = parse_requests_into_search_config(request)
     user_info = search_config.get_wiki_info(user_id)
@@ -212,10 +210,12 @@ class iNaturalistSearchConfiguration:
             langcode_list=self.langcodes.split(","),
         )
 
+
 @app.errorhandler(404)
 def not_found_error(error):
-  return render_template('404.html'), 404
+    return render_template("404.html"), 404
+
 
 @app.errorhandler(500)
 def internal_error(error):
-  return render_template('500.html'), 500
+    return render_template("500.html"), 500
