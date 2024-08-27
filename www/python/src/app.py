@@ -74,8 +74,16 @@ def project_list_form():
 @app.route("/projectlist/<project_id>", methods=["GET", "POST"])
 def project_list_results(project_id):
     form = iNaturalistProjectForm()
-    search_config = parse_requests_into_search_config(request)
-    project_info = search_config.get_wiki_info(project_id, type="project")
+    try:
+        search_config = parse_requests_into_search_config(request)
+        project_info = search_config.get_wiki_info(project_id, type="project")
+
+    except KeyError:
+        flask.flash(
+            f"Something wrong happened! Maybe the project with id '{project_id}' does not exist?",
+            "error",
+        )
+        return render_template("projectlist.html", form=form)
 
     return render_template(
         "projectlist.html",
@@ -98,8 +106,17 @@ def user_list_form():
 @app.route("/userlist/<user_id>", methods=["GET", "POST"])
 def user_list_results(user_id):
     form = iNaturalistUserForm()
-    search_config = parse_requests_into_search_config(request)
-    user_info = search_config.get_wiki_info(user_id)
+    try:
+        search_config = parse_requests_into_search_config(request)
+        user_info = search_config.get_wiki_info(user_id)
+
+    except KeyError:
+        flask.flash(
+            f"Something wrong happened! Maybe the user with id '{user_id}' does not exist?",
+            "error",
+        )
+        return render_template("projectlist.html", form=form)
+
     return render_template(
         "userlist.html",
         user_info=user_info,
