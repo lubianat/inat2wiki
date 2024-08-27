@@ -27,3 +27,4 @@ And then type in your username of interest and langcode for Wikipedia query.
 
 Cheers!
 
+There is also a Google Chrome add-on, with the source code available at: https://github.com/lubianat/addon_inat2wiki
