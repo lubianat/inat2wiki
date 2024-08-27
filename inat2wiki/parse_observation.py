@@ -42,7 +42,10 @@ def get_commons_url(observation_data, photo_data, inaturalist_id):
     upload_params["photo_id"] = photo_data["id"]
     upload_params["photo_license"] = photo_data["license_code"]
     upload_params["user_id"] = user_data["id"]
-    upload_params["user_name"] = observation_data["user"]["name"]
+    if observation_data["user"]["name"] is None:
+        upload_params["user_name"] = observation_data["user"]["login_exact"]
+    else:
+        upload_params["user_name"] = observation_data["user"]["name"]
     upload_params["date"] = observation_data["observed_on"]
     upload_params["taxon"] = observation_data["taxon"]["name"]
     switcher = {"cc-by": "cc-by-4.0", "cc-by-sa": "cc-by-sa-4.0", "cc0": "Cc-zero"}
@@ -63,8 +66,6 @@ def get_commons_url(observation_data, photo_data, inaturalist_id):
         }}}}
         {{{{  iNaturalist|{inaturalist_id} }}}}
         {{{{INaturalistreview}}}}
-        {{{{{license_code}}}}}
-
         [[Category:{upload_params["taxon"]}]]"""
     )
     upload_page = "https://commons.wikimedia.org/wiki/Special:Upload"
