@@ -36,9 +36,16 @@ User observations
       <tr>
         <td><img src="{{photo_data.url}}" width="300"> </img> </td>
         <td> License: {{photo_data.license_code}}</td>
-        <td><a href="{{photo_data.upload_url}}" target="blank" class=" btn btn-outline-primary" role="button">Upload
+        <td>
+          <!-- if license is not supported, don't render button-->
+          {% if photo_data.license_code in ['cc-by', 'cc-by-sa', 'cc0'] %}
+          <a href="{{photo_data.upload_url}}" target="blank" class=" btn btn-outline-primary" role="button">Upload
             to
             Commons</a></td>
+        {% else %}
+        <p>License not supported</p>
+        {% endif %}
+
 
       </tr>
       {% endfor %}

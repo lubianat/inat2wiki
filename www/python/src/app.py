@@ -59,6 +59,8 @@ def parse_obs(observation_id):
             "square", "original"
         )
         observation_data["photos"][i]["upload_url"] = upload_url
+        if upload_url == "License not supported":
+            observation_data["photos"][i]["upload_url"] = "License not supported"
     return render_template("parse.html", observation_data=observation_data, qid=qid)
 
 
