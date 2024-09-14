@@ -39,6 +39,8 @@ def get_commons_url(observation_data, photo_data, inaturalist_id):
     photo_url = photo_data["url"].replace("square", "original")
 
     user_data = observation_data["user"]
+
+    place_guess = observation_data["place_guess"]
     upload_params["photo_id"] = photo_data["id"]
     upload_params["photo_license"] = photo_data["license_code"]
     upload_params["user_id"] = user_data["id"]
@@ -51,7 +53,7 @@ def get_commons_url(observation_data, photo_data, inaturalist_id):
     switcher = {"cc-by": "cc-by-4.0", "cc-by-sa": "cc-by-sa-4.0", "cc0": "Cc-zero"}
     title = (
         upload_params["taxon"]
-        + " by "
+        + " - "
         + upload_params["user_name"]
         + " - "
         + str(upload_params["photo_id"])
@@ -73,7 +75,7 @@ def get_commons_url(observation_data, photo_data, inaturalist_id):
     summary = textwrap.dedent(
         f"""
         {{{{Information
-        |description={{{{en|{upload_params["taxon"]} on {upload_params["date"]} (from iNaturalist).}}}}
+        |description={{{upload_params["taxon"]}, {place_guess}, {upload_params["date"]} (iNaturalist).}}
         |date={upload_params["date"]}
         |source=https://www.inaturalist.org/photos/{str(upload_params["photo_id"])}
         |author=[https://www.inaturalist.org/users/{str(upload_params["user_id"])} {upload_params["user_name"]}]
