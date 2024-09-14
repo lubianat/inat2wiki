@@ -42,29 +42,49 @@ def get_commons_url(observation_data, photo_data, inaturalist_id):
     upload_params["photo_id"] = photo_data["id"]
     upload_params["photo_license"] = photo_data["license_code"]
     upload_params["user_id"] = user_data["id"]
-    if observation_data["user"]["name"] is None:
+    if observation_data["user"]["name"] is None or observation_data["user"]["name"] == "":
         upload_params["user_name"] = observation_data["user"]["login_exact"]
     else:
         upload_params["user_name"] = observation_data["user"]["name"]
     upload_params["date"] = observation_data["observed_on"]
     upload_params["taxon"] = observation_data["taxon"]["name"]
     switcher = {"cc-by": "cc-by-4.0", "cc-by-sa": "cc-by-sa-4.0", "cc0": "Cc-zero"}
-    title = upload_params["taxon"] + " " + str(upload_params["photo_id"]) + ".jpeg"
+    title = (
+        upload_params["taxon"]
+        + " by "
+        + upload_params["user_name"]
+        + " - "
+        + str(upload_params["photo_id"])
+        + ".jpeg"
+    )
 
     license_code = upload_params["photo_license"]
+    if license_code not in switcher:
+        return "License not supported"
     license = switcher[license_code]
+
+    if observation_data["geojson"].get("geoprivacy") == None:
+        lat = observation_data["geojson"]["coordinates"][1]
+        lon = observation_data["geojson"]["coordinates"][0]
+        location_template = f"\n        {{{{Location|{lat}|{lon}|source:iNaturalist}}}}"
+    else:
+        location_template = ""
 
     summary = textwrap.dedent(
         f"""
         {{{{Information
-        |description={{{{en|Picture of {upload_params["taxon"]} from iNaturalist. }}}}
+        |description={{{{en|{upload_params["taxon"]} on {upload_params["date"]} (from iNaturalist).}}}}
         |date={upload_params["date"]}
         |source=https://www.inaturalist.org/photos/{str(upload_params["photo_id"])}
         |author=[https://www.inaturalist.org/users/{str(upload_params["user_id"])} {upload_params["user_name"]}]
         |permission=
         |other versions=
-        }}}}
+        }}}}"""
+        + location_template
+        + f"""
+        
         {{{{  iNaturalist|{inaturalist_id} }}}}
+
         {{{{INaturalistreview}}}}
         [[Category:{upload_params["taxon"]}]]"""
     )
