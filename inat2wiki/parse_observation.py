@@ -75,7 +75,7 @@ def get_commons_url(observation_data, photo_data, inaturalist_id):
     summary = textwrap.dedent(
         f"""
         {{{{Information
-        |description={{{upload_params["taxon"]}, {place_guess}, {upload_params["date"]} (iNaturalist).}}
+        |description={upload_params["taxon"]}, {place_guess}, {upload_params["date"]} (iNaturalist).
         |date={upload_params["date"]}
         |source=https://www.inaturalist.org/photos/{str(upload_params["photo_id"])}
         |author=[https://www.inaturalist.org/users/{str(upload_params["user_id"])} {upload_params["user_name"]}]
