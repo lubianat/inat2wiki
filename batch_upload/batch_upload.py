@@ -138,9 +138,6 @@ def process_observation(observation, username, password, cache):
         print(f"Error downloading photo {photo_url}: {e}")
         return
 
-    switcher = {"cc-by": "cc-by-4.0", "cc-by-sa": "cc-by-sa-4.0", "cc0": "Cc-zero"}
-
-    license_code = upload_params["photo_license"]
     # Upload photo to Wikimedia Commons
     try:
         upload_file_to_commons(
@@ -168,6 +165,10 @@ def download_photo(url, filename):
 
 
 def build_description(observation, photo, upload_params):
+
+    switcher = {"cc-by": "cc-by-4.0", "cc-by-sa": "cc-by-sa-4.0", "cc0": "Cc-zero"}
+
+    license_code = switcher.get(upload_params["photo_license"])
     # Build location_template
     location_template = ""
     if observation.get("geojson") and observation.get("geoprivacy") is None:
@@ -191,7 +192,7 @@ def build_description(observation, photo, upload_params):
         + f"""
 
         {{{{iNaturalist|{observation['id']}}}}}
-
+        {{{{{license_code}}}}}
         {{{{INaturalistreview}}}}
         [[Category:{upload_params["taxon"]}]]"""
         + extra_category
@@ -242,7 +243,6 @@ def upload_file_to_commons(file_path, filename, description, username, password,
                 "format": "json",
                 "comment": "Uploading image from iNaturalist",
                 "text": description,
-                "license": f"{{{{{license_code}}}}}",
                 "ignorewarnings": 1,  # add this to ignore any warnings
             },
         )
