@@ -8,6 +8,11 @@ setup.py
 ./inat2wiki/get_user_observations.py
 ./inat2wiki/inat_taxon2wikidata.py
 ./inat2wiki/parse_observation.py
+inat2wiki/__init__.py
+inat2wiki/cli.py
+inat2wiki/get_user_observations.py
+inat2wiki/inat_taxon2wikidata.py
+inat2wiki/parse_observation.py
 inat2wiki.egg-info/PKG-INFO
 inat2wiki.egg-info/SOURCES.txt
 inat2wiki.egg-info/dependency_links.txt

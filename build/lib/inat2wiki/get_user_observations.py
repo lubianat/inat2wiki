@@ -5,6 +5,7 @@ import urllib.parse
 from collections import OrderedDict
 from operator import getitem
 from pathlib import Path
+
 import click
 import requests
 from wdcuration import query_wikidata
@@ -19,20 +20,14 @@ def chunks(lst, n):
         yield lst[i : i + n]
 
 
-import time
-from contextlib import contextmanager
-
-# Dictionary to store timings
-timings = {}
-
-
-@contextmanager
-def timer(section_name):
-    """Context manager to time code sections."""
-    start = time.time()
-    yield
-    end = time.time()
-    timings[section_name] = end - start  # Store elapsed time
+@click.command(name="all")
+@click.argument("user_id")
+def click_get_observations_with_wiki_info(user_id, langcode=None):
+    """Command line wraper to get_observations_with_wiki_info()"""
+    core_information = get_observations_with_wiki_info(user_id, langcode=langcode, limit=200)
+    RESULTS.joinpath(f"candidates_{user_id}.json").write_text(
+        json.dumps(core_information, indent=3)
+    )
 
 
 def get_observations_with_wiki_info(
@@ -44,53 +39,51 @@ def get_observations_with_wiki_info(
     starting_page=1,
     langcode_list=["en", "pt"],
 ):
-    """Gets observations for an iNaturalist user."""
+    """Gets observations for an iNaturalist user.
+    Args:
+      inaturalist_id (str): Either the user or project identifier.
+      limit (int): The maximum number of observations to retrieve.
+      type (int): Either 'project' or 'user'. Defaults to 'user'.
+      quality_grade (str): The quality grade to filter for.
+      Only takes one of ["research","needs_id", "casual"]
+      starting_page (int): The starting page of the observation list.
+      langcode_list (list): A list of language codes.
+    """
+    core_information, inaturalist_taxon_ids = extract_core_information(
+        id=inaturalist_id,
+        license=license,
+        limit=limit,
+        quality_grade=quality_grade,
+        type=type,
+        page=starting_page,
+    )
 
-    with timer("Extract core information"):
-        core_information, inaturalist_taxon_ids = extract_core_information(
-            id=inaturalist_id,
-            license=license,
-            limit=limit,
-            quality_grade=quality_grade,
-            type=type,
-            page=starting_page,
+    inaturalist_chunks = chunks(inaturalist_taxon_ids, 30)
+    for chunk in inaturalist_chunks:
+        r = requests.get(f"https://api.inaturalist.org/v1/taxa/{','.join(chunk)}")
+        for taxon_info in r.json()["results"]:
+            try:
+                core_information[str(taxon_info["id"])]["number_of_observations"] = taxon_info[
+                    "observations_count"
+                ]
+            except KeyError:
+                print(f"Key not found: {taxon_info['id']}")
+
+    core_information = OrderedDict(
+        sorted(
+            core_information.items(),
+            key=lambda x: getitem(x[1], "number_of_observations"),
         )
+    )
 
-    with timer("Chunk and add observations per taxon"):
-        inaturalist_chunks = chunks(inaturalist_taxon_ids, 30)
-        add_number_of_observations_per_taxon(core_information, inaturalist_chunks)
+    taxa_ids_for_query = list(core_information.keys())[0:100]
 
-    with timer("Sort core information by number of observations"):
-        core_information = OrderedDict(
-            sorted(
-                core_information.items(),
-                key=lambda x: getitem(x[1], "number_of_observations"),
-            )
-        )
-
-    with timer("Add missing image data"):
-        taxa_ids_for_query = list(core_information.keys())[0:100]
-        add_missing_image_data(core_information, taxa_ids_for_query)
-
-    with timer("Add missing wiki pages"):
-        for langcode in langcode_list:
-            core_information = add_missing_wikipages(langcode, core_information, taxa_ids_for_query)
-
-    return core_information
-
-
-def print_timing_report():
-    """Prints a summary of timings for each section."""
-    print("\n--- Timing Report ---")
-    for section, elapsed in timings.items():
-        print(f"{section}: {elapsed:.2f} seconds")
-
-
-def add_missing_image_data(core_information, taxa_ids_for_query):
     query_for_taxa_missing_images = get_query_for_taxa_missing_images(taxa_ids_for_query)
+
     url_query_for_taxa_missing_images = "https://query.wikidata.org/#" + urllib.parse.quote(
         query_for_taxa_missing_images
     )
+
     wikidata_taxa_and_images = query_wikidata(query_for_taxa_missing_images)
 
     for taxon_id in core_information:
@@ -105,29 +98,11 @@ def add_missing_image_data(core_information, taxa_ids_for_query):
 
     print(url_query_for_taxa_missing_images)
 
+    print("--------------- Query for observations missing wiki pages -----------")
+    for langcode in langcode_list:
+        core_information = add_missing_wikipages(langcode, core_information, taxa_ids_for_query)
 
-from concurrent.futures import ThreadPoolExecutor, as_completed
-
-
-def fetch_chunk(chunk):
-    """Fetch a single chunk of taxon data."""
-    r = requests.get(f"https://api.inaturalist.org/v1/taxa/{','.join(chunk)}")
-    return r.json()["results"]
-
-
-def add_number_of_observations_per_taxon(core_information, inaturalist_chunks):
-    """Updates core_information with observations using parallel requests."""
-    with ThreadPoolExecutor(max_workers=5) as executor:
-        futures = [executor.submit(fetch_chunk, chunk) for chunk in inaturalist_chunks]
-
-        for future in as_completed(futures):
-            try:
-                for taxon_info in future.result():
-                    core_information[str(taxon_info["id"])]["number_of_observations"] = taxon_info[
-                        "observations_count"
-                    ]
-            except KeyError:
-                print(f"Key not found: {taxon_info['id']}")
+    return core_information
 
 
 def add_missing_wikipages(langcode, core_information, taxa_ids_for_query) -> dict:
@@ -277,16 +252,6 @@ def extract_core_information(
     return core_information, inaturalist_taxon_ids
 
 
-@click.command(name="all")
-@click.argument("user_id")
-def click_get_observations_with_wiki_info(user_id, langcode=None):
-    """Command line wraper to get_observations_with_wiki_info()"""
-    core_information = get_observations_with_wiki_info(user_id, langcode=langcode, limit=200)
-    RESULTS.joinpath(f"candidates_{user_id}.json").write_text(
-        json.dumps(core_information, indent=3)
-    )
-
-
 if __name__ == "__main__":
     a = get_observations_with_wiki_info("limarrudandre")
-    print_timing_report()
+    print(a)

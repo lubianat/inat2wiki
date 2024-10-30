@@ -1,35 +1,29 @@
+"""
+Creates a QuickStatements command to add an iNaturalist taxon to Wikidata.
+
+Uses the iNaturalist and GBIF APIs to gather taxon details and IDs.
+"""
+
 import requests
 from wdcuration import lookup_id, render_qs_url
 
 
 def main():
+    """Generates QuickStatements for a given iNaturalist taxon ID."""
     taxon_id = "605531"
+    taxon_info = requests.get(f"https://api.inaturalist.org/v1/taxa/{taxon_id}").json()["results"][
+        0
+    ]
 
-    url = f"https://api.inaturalist.org/v1/taxa/{taxon_id}"
-
-    r = requests.get(url)
-
-    data = r.json()
-
-    taxon_info = data["results"][0]
-
-    parent_id = taxon_info["parent_id"]
-    parent_qid = lookup_id(parent_id, property="P3151")
-
+    parent_qid = lookup_id(taxon_info["parent_id"], property="P3151")
     taxon_name = taxon_info["name"]
+    rank_qid = {"species": "Q7432"}[taxon_info["rank"]]
 
-    rank_dict = {"species": "Q7432"}
+    gbif_data = requests.get(f"https://api.gbif.org/v1/species?name={taxon_name}").json()[
+        "results"
+    ][0]
+    gbif_id, authorship = gbif_data["key"], gbif_data["authorship"]
 
-    rank_qid = rank_dict[taxon_info["rank"]]
-
-    # As per https://forum.inaturalist.org/t/where-does-the-inat-gbif-taxonomy-cross-reference-live/35372/7:
-
-    gbif_search_url = f"https://api.gbif.org/v1/species?name={taxon_name}"
-
-    r_gbif = requests.get(gbif_search_url).json()
-    gbif_taxon_data = r_gbif["results"][0]
-    gbif_id = gbif_taxon_data["key"]
-    authorship = gbif_taxon_data["authorship"]
     qs = (
         "CREATE\n"
         f'LAST|Len|"{taxon_name}"\n'
