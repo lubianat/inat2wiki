@@ -7,11 +7,17 @@ User observations
 {% block main %}
 {% if not ptwikistub %}
 
-<h4>Enter the taxon QID below:</h4>
-<form method="POST">
-  <input name="taxon_qid">
+<h4>Enter the taxon QID or scientific name below:</h4>
+<form method="POST" action="/ptwikistub">
+  <input name="taxon_identifier" placeholder="Enter QID or scientific name">
   <input type="submit">
 </form>
+
+{% if error %}
+<div class="alert alert-danger">
+  {{ error }}
+</div>
+{% endif %}
 
 <a href="/ptwikistub/Q50713950">See an example</a>
 {% endif %}
