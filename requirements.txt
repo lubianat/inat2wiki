@@ -5,6 +5,6 @@ wdcuration
 flask
 flask-bootstrap
 flask_wtf
-taxon2wikipedia
+taxon2wikipedia>=0.0.14
 wtforms
 gunicorn
