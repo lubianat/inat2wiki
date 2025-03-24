@@ -85,9 +85,10 @@ def get_commons_url(observation_data, photo_data, inaturalist_id):
         + location_template
         + f"""
         
-        {{{{  iNaturalist|{inaturalist_id} }}}}
+        {{{{iNaturalist|{inaturalist_id}}}}}
 
         {{{{INaturalistreview}}}}
+        [[Category:Media uploaded with inat2wiki]]
         [[Category:{upload_params["taxon"]}]]"""
     )
     upload_page = "https://commons.wikimedia.org/wiki/Special:Upload"
