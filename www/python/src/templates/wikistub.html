@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block title %}
+User observations
+{% endblock %}
+
+{% block main %}
+{% if not ptwikistub %}
+
+<h4>Enter the taxon QID or scientific name below:</h4>
+<form method="POST" action="/wikistub/{{ lang }}">
+  <input name="taxon_identifier" placeholder="Enter QID or scientific name">
+  <input type="submit">
+</form>
+
+{% if error %}
+<div class="alert alert-danger">
+  {{ error }}
+</div>
+{% endif %}
+
+<a href="/wikistub/{{ lang }}/Q50713950">See an example</a>
+{% endif %}
+{% if ptwikistub %}
+<div class="col-md container">
+  {% if lang == 'pt' %}
+  <h3>Stub for the Portuguese Wikipedia</h3>
+  <ul>
+    <li> Wikidata page: <a href="https://www.wikidata.org/entity/{{qid}}" target="_blank">{{qid}}</a></li>
+    <li> Portuguese Wikipedia page: <a href="https://pt.wikipedia.org/w/index.php?title={{taxon_name}}&action=edit"
+        target="_blank">https://pt.wikipedia.org/wiki/{{taxon_name}}</a>
+  </ul>
+  {% elif lang == 'es' %}
+  <h3>Stub for the Spanish Wikipedia</h3>
+  <ul>
+    <li> Wikidata page: <a href="https://www.wikidata.org/entity/{{qid}}" target="_blank">{{qid}}</a></li>
+    <li> Spanish Wikipedia page: <a href="https://es.wikipedia.org/w/index.php?title={{taxon_name}}&action=edit"
+        target="_blank">https://es.wikipedia.org/wiki/{{taxon_name}}</a>
+  </ul>
+  {% elif lang == 'en' %}
+  <h3>Stub for the English Wikipedia</h3>
+  <ul>
+    <li> Wikidata page: <a href="https://www.wikidata.org/entity/{{qid}}" target="_blank">{{qid}}</a></li>
+    <li> English Wikipedia page: <a href="https://en.wikipedia.org/w/index.php?title={{taxon_name}}&action=edit"
+        target="_blank">https://en.wikipedia.org/wiki/{{taxon_name}}</a>
+  </ul>
+  {% elif lang == 'fr' %}
+  <h3>Stub for the French Wikipedia</h3>
+  <ul>
+    <li> Wikidata page: <a href="https://www.wikidata.org/entity/{{qid}}" target="_blank">{{qid}}</a></li>
+    <li> French Wikipedia page: <a href="https://fr.wikipedia.org/w/index.php?title={{taxon_name}}&action=edit"
+        target="_blank">https://fr.wikipedia.org/wiki/{{taxon_name}}</a>
+  </ul>
+  {% endif %}
+  <pre>
+  {{ptwikistub}}
+  </pre>
+</div>
+<!-- content from Wikidata -->
+</div>
+{% endif %}
+
+{% endblock %}

@@ -1,9 +1,9 @@
-""" A flask app to connect iNaturalist to Wikidata."""
+"""A flask app to connect iNaturalist to Wikidata."""
 
 from dataclasses import dataclass
 from flask_bootstrap import Bootstrap5
 from flask_wtf import FlaskForm
-from taxon2wikipedia.render_page import get_pt_wikipage_from_qid
+from taxon2wikipedia.render_page import run_pipeline_for_wikipage
 from wdcuration import get_statement_values, lookup_id
 from wtforms import BooleanField, IntegerField, StringField
 from wtforms.validators import InputRequired, Optional
@@ -130,7 +130,6 @@ def user_list_results(user_id):
     )
 
 
-
 def get_qid_from_name(scientific_name):
     # SPARQL query to find QID based on scientific name
     query = f"""
@@ -140,15 +139,15 @@ def get_qid_from_name(scientific_name):
     LIMIT 1
     """
     print(query)
-    
+
     # URL for Wikidata SPARQL endpoint
     url = "https://query.wikidata.org/sparql"
     headers = {"Accept": "application/json"}
     params = {"query": query}
-    
+
     # Execute the request
     response = requests.get(url, headers=headers, params=params)
-    
+
     # Check if the response is valid and parse the QID
     if response.status_code == 200:
         data = response.json()
@@ -156,25 +155,26 @@ def get_qid_from_name(scientific_name):
         if results:
             qid = results[0]["item"]["value"].split("/")[-1]  # Extract QID from URI
             return qid
-    
+
     # Return None if QID is not found
     return None
 
 
-@app.route("/ptwikistub/", methods=["GET", "POST"])
-@app.route("/ptwikistub", methods=["GET", "POST"])
-def ptwikistub_base():
+@app.route("/wikistub/<lang>/", methods=["GET", "POST"])
+@app.route("/wikistub/<lang>", methods=["GET", "POST"])
+def wikistub_base(lang):
     if request.method == "POST":
         identifier = request.form.get("taxon_identifier")
-        return redirect(f"/ptwikistub/{identifier}")
+        return redirect(f"/wikistub/{lang}/{identifier}")
 
-    return render_template("ptwikistub.html")
+    return render_template("wikistub.html", lang=lang)
 
 
 import re
 
-@app.route("/ptwikistub/<identifier>", methods=["GET", "POST"])
-def ptwikistub(identifier):
+
+@app.route("/wikistub/<lang>/<identifier>", methods=["GET", "POST"])
+def wikistub(lang, identifier):
     # Check if the identifier matches a valid QID pattern (e.g., "Q" followed by digits)
     if re.match(r"^Q\d+$", identifier):
         taxon_qid = identifier
@@ -183,16 +183,20 @@ def ptwikistub(identifier):
         taxon_qid = get_qid_from_name(identifier)
         if not taxon_qid:
             # Handle case where QID is not found for the scientific name
-            return render_template("ptwikistub.html", error="Scientific name not found.")
-        
+            return render_template("wikistub.html", error="Scientific name not found.", lang=lang)
+
         # Redirect to the correct URL with the resolved QID
-        return redirect(f"/ptwikistub/{taxon_qid}")
+        return redirect(f"/wikistub/{lang}/{taxon_qid}")
 
     # Proceed with the QID to retrieve information
-    ptwikistub_content = get_pt_wikipage_from_qid(taxon_qid)
+    ptwikistub_content = run_pipeline_for_wikipage(taxon_qid, lang)
     taxon_name = get_statement_values(taxon_qid, "P225")[0]
     return render_template(
-        "ptwikistub.html", qid=taxon_qid, ptwikistub=ptwikistub_content, taxon_name=taxon_name
+        "wikistub.html",
+        qid=taxon_qid,
+        ptwikistub=ptwikistub_content,
+        taxon_name=taxon_name,
+        lang=lang,
     )
 
 

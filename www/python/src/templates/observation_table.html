@@ -31,7 +31,7 @@
       <td>
         {% for wiki_page in taxon_info.wikipages_missing %}
         {% if 'pt' == wiki_page %}
-        {{wiki_page}} (<a href="/ptwikistub/{{taxon_info.wikidata_id}}" target="_blank">create stub</a>),
+        {{wiki_page}} (<a href="/wikistub/pt/{{taxon_info.wikidata_id}}" target="_blank">create stub</a>),
         {% else %}
         {{wiki_page}}
         {% endif %}
