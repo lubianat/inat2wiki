@@ -14,12 +14,14 @@ import requests
 
 from inat2wiki.get_user_observations import get_observations_with_wiki_info
 from inat2wiki.parse_observation import get_commons_url, request_observation_data
+from inat2wiki.wikidata import get_inat_taxon_id, get_inat_taxon_id_from_wikidata, add_inat_taxon_id_to_wikidata
 
 app = Flask(__name__)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 Bootstrap5(app)
 
 app.config["TEMPLATES_AUTO_RELOAD"] = True
+app.config["WIKIDATA_OAUTH_TOKEN"] = 'TODO: Add OAuth token'
 
 
 # Ensure responses aren't cached
@@ -64,6 +66,37 @@ def parse_obs(observation_id):
         if upload_url == "License not supported":
             observation_data["photos"][i]["upload_url"] = "License not supported"
     return render_template("parse.html", observation_data=observation_data, qid=qid)
+
+@app.route("/wikidata/", methods=["GET", "POST"])
+@app.route("/wikidata", methods=["GET", "POST"])
+def wikidata():
+    if request.method == "POST":
+        taxon_name = request.form.get("scientific_name")
+        return redirect(f"/wikidata/{taxon_name}")
+    return render_template("wikidata.html")
+
+
+@app.route("/wikidata/<taxon_name>", methods=["GET", "POST"])
+def wikidata_taxon(taxon_name):
+    qid = get_qid_from_name(taxon_name)
+    taxon_id = get_inat_taxon_id(taxon_name)
+    taxon_id_wikidata = get_inat_taxon_id_from_wikidata(qid)
+    return render_template("wikidata.html", qid=qid, taxon_name=taxon_name, taxon_id=taxon_id, taxon_id_wikidata=taxon_id_wikidata)
+
+@app.route("/add_taxon_id_to_wikidata", methods=["POST"])
+def add_taxon_id_to_wikidata():
+    taxon_id = request.form.get("taxon_id")
+    qid = request.form.get("qid")
+
+    response = add_inat_taxon_id_to_wikidata(qid, taxon_id, app.config["WIKIDATA_OAUTH_TOKEN"])
+
+    if response.status_code == 200:
+        flask.flash("Taxon ID successfully added to Wikidata!", "success")
+    else:
+        flask.flash("Failed to add Taxon ID to Wikidata. Please try again.", "error")
+
+    return redirect("/wikidata")
+
 
 
 @app.route("/projectlist/", methods=["GET", "POST"])
