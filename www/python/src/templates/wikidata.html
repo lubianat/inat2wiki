@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+User observations
+{% endblock %}
+
+{% block main %}
+
+{% if not qid %}
+
+<h4>Enter the scientific name:</h4>
+<form method="POST">
+  <input name="scientific_name">
+  <input type="submit">
+</form>
+
+{% endif %}
+
+{% if qid %}
+<div class="col-md container">
+  <h3>{{taxon_name}}</h3>
+  <ul>
+    <li> Wikidata page: <a href="https://www.wikidata.org/entity/{{qid}}" target="_blank">{{qid}}</a></li>
+    <li> Taxon ID: <a href="https://www.inaturalist.org/taxa/{{taxon_id}}" target="_blank">{{taxon_id}}</a></li>
+  </ul>
+
+  {% if taxon_id_wikidata == taxon_id %}
+  <p>This taxon ID is already present in Wikidata </p>
+  {% else %}
+  <p>This taxon ID is missing from its Wikidata entity, please confirm below to add this claim to Wikidata</p>
+  <form method="POST" action="/add_taxon_id_to_wikidata">
+    <input type="hidden" name="taxon_id" value="{{taxon_id}}">
+    <input type="hidden" name="qid" value="{{qid}}">
+    <input type="submit" value="Add taxon ID to Wikidata">
+  </form>
+  {% endif %}
+{% endif %}
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    <ul class="flashes">
+      {% for category, message in messages %}
+        <li class="{{ category }}">{{ message }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+
+{% endblock %}
