@@ -1,1 +1,65 @@
 inat_venv
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Flask instance folder (for config and local files)
+instance/
+*.db
+
+# Flask asset cache
+.webassets-cache/
+
+# Environment variables
+.env
+.env.*
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+base_venv/
+*.env
+inatvenv/
+
+# Logs
+*.log
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Mypy
+.mypy_cache/
+
+# Pyre type checker
+.pyre/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+*.whl
+
+# Setup files
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Editor & OS clutter
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini

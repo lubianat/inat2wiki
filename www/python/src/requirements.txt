@@ -3,7 +3,7 @@ flask_wtf
 wtforms
 flask
 taxon2wikipedia>=0.1.0
-inat2wiki>=0.0.2
+inat2wiki>=0.0.3
 wdcuration
 pywikibot
 mwparserfromhell>=0.5.0

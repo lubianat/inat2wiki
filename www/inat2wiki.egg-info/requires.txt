@@ -1,6 +1,0 @@
-flask
-Flask-Session
-requests
-
-[tests]
-pytest
