@@ -1,30 +1,54 @@
-[Repository in construction - sorry for the mess!]
+README_MD = """
+# iNat2Wiki
 
-https://api.inaturalist.org/v1/docs/
+**iNat2Wiki** is a tool that helps bridge biodiversity data from [iNaturalist](https://www.inaturalist.org/) to Wikimedia projects like Wikipedia and Wikimedia Commons.
 
-"The iNaturalist technology infrastructure and open source software is administered by the California Academy of Sciences as part of their mission to explore, explain, and sustain life on Earth."
+Code for Commons import adapted from: [iNaturalist2Commons by @kaldari](https://github.com/kaldari/iNaturalist2Commons/blob/main/inat2commons.js)
 
-Code for commons import adapted from: https://github.com/kaldari/iNaturalist2Commons/blob/main/inat2commons.js
+## 🔧 Development
 
-# Basic usage
+The tool is currently being **rebuilt** at:  
+🔗 [inat2wiki-dev.toolforge.org](https://inat2wiki-dev.toolforge.org/)  
+💻 Source code: [inat2wiki-dev GitHub repository](https://github.com/lubianat/inat2wiki-dev)
 
-To add an observation via its iNaturalist id:
+Please submit **feature requests and bug reports** to the [inat2wiki-dev issue tracker](https://github.com/lubianat/inat2wiki-dev/issues).
 
-```bash
+---
+
+## 🚀 Basic Usage
+
+### Add an Observation via iNaturalist ID
+
 chmod +x parse_observation_in_cli
 ./parse_observation_in_cli observationidhere
-```
 
-Then, just click the link to upload the image to commons.
+Then, just click the generated link to upload the image to Wikimedia Commons.
 
+---
 
-To get personalized curation queries
-```bash
-python3 list_user_observations.py
-```
+### Get Personalized Curation Queries
 
-And then type in your username of interest and langcode for Wikipedia query. 
+    python3 list_user_observations.py
 
-Cheers!
+You'll be prompted to enter:
 
-There is also a Google Chrome add-on, with the source code available at: https://github.com/lubianat/addon_inat2wiki
+- Your iNaturalist username
+- A language code for the Wikipedia query
+
+---
+
+## 🧠 Core Logic
+
+Core functionality is implemented in a shared Python module:  
+📦 [inat2wiki-module](https://github.com/lubianat/inat2wiki-module)
+
+---
+
+## 🌐 Browser Add-on
+
+There's also a [Google Chrome extension](https://github.com/lubianat/addon_inat2wiki) to simplify workflows.
+
+---
+
+Cheers! 🎉
+"""
