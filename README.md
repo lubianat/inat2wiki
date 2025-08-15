@@ -1,21 +1,20 @@
-README_MD = """
 # iNat2Wiki
 
 **iNat2Wiki** is a tool that helps bridge biodiversity data from [iNaturalist](https://www.inaturalist.org/) to Wikimedia projects like Wikipedia and Wikimedia Commons.
 
 Code for Commons import adapted from: [iNaturalist2Commons by @kaldari](https://github.com/kaldari/iNaturalist2Commons/blob/main/inat2commons.js)
 
-## 🔧 Development
+## Development
 
 The tool is currently being **rebuilt** at:  
-🔗 [inat2wiki-dev.toolforge.org](https://inat2wiki-dev.toolforge.org/)  
-💻 Source code: [inat2wiki-dev GitHub repository](https://github.com/lubianat/inat2wiki-dev)
+* [inat2wiki-dev.toolforge.org](https://inat2wiki-dev.toolforge.org/)  
+* Source code: [inat2wiki-dev GitHub repository](https://github.com/lubianat/inat2wiki-dev)
 
 Please submit **feature requests and bug reports** to the [inat2wiki-dev issue tracker](https://github.com/lubianat/inat2wiki-dev/issues).
 
 ---
 
-## 🚀 Basic Usage
+##  Basic Usage
 
 ### Add an Observation via iNaturalist ID
 
@@ -37,18 +36,13 @@ You'll be prompted to enter:
 
 ---
 
-## 🧠 Core Logic
+##  Core Logic
 
 Core functionality is implemented in a shared Python module:  
-📦 [inat2wiki-module](https://github.com/lubianat/inat2wiki-module)
+* [inat2wiki-module](https://github.com/lubianat/inat2wiki-module)
 
 ---
 
-## 🌐 Browser Add-on
+##  Browser Add-on
 
-There's also a [Google Chrome extension](https://github.com/lubianat/addon_inat2wiki) to simplify workflows.
-
----
-
-Cheers! 🎉
-"""
+There's also a [Google Chrome extension](https://github.com/lubianat/addon_inat2wiki) to simplify workflows and upload directly from iNaturalist.
