@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
 
-import sys
-import requests
-import tempfile
 import os
-import getpass
-import textwrap
 import json
+import tempfile
+import textwrap
 from pathlib import Path
+
+import requests
 from tqdm import tqdm
 from prompt_toolkit import prompt
 from prompt_toolkit import print_formatted_text as print
@@ -16,10 +15,24 @@ HERE = Path(__file__).parent.resolve()
 
 CACHE_FILE = HERE / "uploaded_photos_cache.json"
 
+INATURALIST_PROJECT = "wikiconcurso-fotografico-inaturalist-2026"
+
+COMMONS_CATEGORY = "Wikiconcurso iNaturalist 2026"
+TOTAL_OBS = 10
+
+# Wikimedia strongly requires a descriptive User-Agent identifying the tool
+# and a contact. Edit the contact URL/email to point at you or your project.
+USER_AGENT = (
+    "WikiconcursoINaturalistUploader/1.0 "
+    "(https://commons.wikimedia.org/wiki/Category:Wikiconcurso_iNaturalist_2026; "
+    "contact: tiago.lubiana@rbnaturalistas.org) python-requests"
+)
+
+COMMONS_API = "https://commons.wikimedia.org/w/api.php"
+
 
 def main():
-    # Parse command-line arguments
-    project_slug = "wikiconcurso-fotografico-inaturalist-2024"
+    project_slug = INATURALIST_PROJECT
 
     # Load cache (uploaded photos) from file
     cache = load_cache()
@@ -28,18 +41,44 @@ def main():
     username = prompt("Enter your Wikimedia Commons username: ")
     password = prompt("Enter your Wikimedia Commons password: ", is_password=True)
 
+    # Log in ONCE and reuse the authenticated session for every upload.
+    session = login_to_commons(username, password)
+
     # Get observations from the project
-    observations = get_all_observations_from_project(project_slug)
+    observations = get_all_observations_from_project(project_slug, TOTAL_OBS)
 
     # Process each observation with tqdm progress bar
     with tqdm(total=len(observations), desc="Uploading photos") as pbar:
         for observation in observations:
-            process_observation(observation, username, password, cache)
+            process_observation(observation, session, cache)
             pbar.update(1)
             save_cache(cache)
 
     # Save updated cache to file
     save_cache(cache)
+
+
+def make_session():
+    """Create a requests session with a proper Wikimedia User-Agent."""
+    s = requests.Session()
+    s.headers.update({"User-Agent": USER_AGENT})
+    return s
+
+
+def safe_json(response, context=""):
+    """Parse JSON, raising a readable error if the body isn't JSON.
+
+    This turns the cryptic 'Expecting value: line 1 column 1 (char 0)' into
+    something that tells you what actually came back (rate-limit page, HTML
+    error, empty body, etc.).
+    """
+    try:
+        return response.json()
+    except ValueError:
+        raise Exception(
+            f"Non-JSON response ({context}), status {response.status_code}: "
+            f"{response.text[:300]!r}"
+        )
 
 
 def load_cache():
@@ -56,25 +95,46 @@ def save_cache(cache):
         json.dump(cache, f)
 
 
-def get_all_observations_from_project(project_slug):
+def get_all_observations_from_project(project_slug, TOTAL_OBS=None):
+    total_obs = 0
     observations = []
     page = 1
     per_page = 200
+
+    # A session here too, so iNaturalist also sees a proper User-Agent.
+    inat = make_session()
+
+    if TOTAL_OBS is not None:
+        limit_obs = TOTAL_OBS
+    else:
+        limit_obs = float("inf")
+
     while True:
-        url = f"https://api.inaturalist.org/v1/observations?project_id={project_slug}&per_page={per_page}&page={page}"
-        response = requests.get(url)
-        data = response.json()
+        url = (
+            f"https://api.inaturalist.org/v1/observations"
+            f"?project_id={project_slug}&per_page={per_page}&page={page}"
+        )
+        response = inat.get(url)
+        data = safe_json(response, context="iNaturalist observations")
         if "results" not in data:
             print(f"Error fetching observations: {data}")
             break
         observations.extend(data["results"])
+        total_obs += len(data["results"])
+        if total_obs >= limit_obs:
+            break
         if len(data["results"]) < per_page:
             break
         page += 1
+
+    # Respect the fetch limit exactly, even though the API returns in pages.
+    if TOTAL_OBS is not None:
+        observations = observations[:TOTAL_OBS]
+
     return observations
 
 
-def process_observation(observation, username, password, cache):
+def process_observation(observation, session, cache):
     # Check if observation is valid (quality_grade == 'research')
     if observation.get("quality_grade") != "research":
         return
@@ -95,12 +155,13 @@ def process_observation(observation, username, password, cache):
     acceptable_licenses = ["cc-by", "cc-by-sa", "cc0"]
     license_code = photo.get("license_code")
     if license_code not in acceptable_licenses:
-        print(f"Skipping photo {photo.get('id')} due to unacceptable license: {license_code}")
+        print(
+            f"Skipping photo {photo.get('id')} due to unacceptable license: {license_code}"
+        )
         return
 
     # Build upload_params
     upload_params = {}
-
     upload_params["photo_id"] = photo.get("id")
     upload_params["photo_license"] = license_code
     upload_params["user_id"] = observation["user"]["id"]
@@ -133,7 +194,7 @@ def process_observation(observation, username, password, cache):
     temp_dir = tempfile.gettempdir()
     filename = os.path.join(temp_dir, title)
     try:
-        download_photo(photo_url, filename)
+        download_photo(photo_url, filename, session)
     except Exception as e:
         print(f"Error downloading photo {photo_url}: {e}")
         return
@@ -141,9 +202,8 @@ def process_observation(observation, username, password, cache):
     # Upload photo to Wikimedia Commons
     try:
         upload_file_to_commons(
-            filename, title, description, username, password, license_code=license_code
+            filename, title, description, session, license_code=license_code
         )
-
         print(f"Uploaded {title} successfully.")
         # Update cache with uploaded photo ID
         cache[str(photo.get("id"))] = True
@@ -151,33 +211,28 @@ def process_observation(observation, username, password, cache):
         print(f"Error uploading {title}: {e}")
 
     # Delete the temporary file
-    os.remove(filename)
+    if os.path.exists(filename):
+        os.remove(filename)
 
 
-def download_photo(url, filename):
-    response = requests.get(url, stream=True)
+def download_photo(url, filename, session):
+    response = session.get(url, stream=True)
     if response.status_code == 200:
         with open(filename, "wb") as f:
             for chunk in response.iter_content(1024):
                 f.write(chunk)
     else:
-        raise Exception(f"Failed to download image from {url}")
+        raise Exception(
+            f"Failed to download image from {url} (status {response.status_code})"
+        )
 
 
 def build_description(observation, photo, upload_params):
-
     switcher = {"cc-by": "cc-by-4.0", "cc-by-sa": "cc-by-sa-4.0", "cc0": "Cc-zero"}
-
     license_code = switcher.get(upload_params["photo_license"])
-    # Build location_template
-    location_template = ""
-    if observation.get("geojson") and observation.get("geoprivacy") is None:
-        lat = observation["geojson"]["coordinates"][1]
-        lon = observation["geojson"]["coordinates"][0]
-        location_template = f"\n{{{{Location|{lat}|{lon}|source:iNaturalist}}}}"
 
-    extra_category = """
-        [[Category:Wikiconcurso iNaturalist 2024]]"""
+    extra_category = f"""
+        [[Category:{COMMONS_CATEGORY}]]"""
     summary = textwrap.dedent(
         f"""
         {{{{Information
@@ -188,7 +243,6 @@ def build_description(observation, photo, upload_params):
         |permission=
         |other versions=
         }}}}"""
-        + location_template
         + f"""
 
         {{{{iNaturalist|{observation['id']}}}}}
@@ -200,18 +254,26 @@ def build_description(observation, photo, upload_params):
     return summary
 
 
-def upload_file_to_commons(file_path, filename, description, username, password, license_code):
-    S = requests.Session()
+def login_to_commons(username, password):
+    """Log in once and return an authenticated session.
+
+    Doing this a single time (instead of per-photo) is what prevents the
+    rate-limited empty responses that caused the JSON decode errors.
+    """
+    S = make_session()
 
     # Step 1: Retrieve a login token
-    login_token = S.get(
-        url="https://commons.wikimedia.org/w/api.php",
+    token_resp = S.get(
+        url=COMMONS_API,
         params={"action": "query", "meta": "tokens", "type": "login", "format": "json"},
-    ).json()["query"]["tokens"]["logintoken"]
+    )
+    login_token = safe_json(token_resp, context="login token")["query"]["tokens"][
+        "logintoken"
+    ]
 
-    # Step 2: Send a post request to log in
+    # Step 2: Send a POST request to log in
     login_response = S.post(
-        "https://commons.wikimedia.org/w/api.php",
+        COMMONS_API,
         data={
             "action": "login",
             "lgname": username,
@@ -220,21 +282,30 @@ def upload_file_to_commons(file_path, filename, description, username, password,
             "format": "json",
         },
     )
-    if login_response.json().get("login", {}).get("result") != "Success":
-        print(f"Login failed: {login_response.json()}")
-        exit(1)
-        return
+    result = safe_json(login_response, context="login").get("login", {})
+    if result.get("result") != "Success":
+        print(f"Login failed: {result}")
+        raise SystemExit(1)
 
-    # Step 3: Get the CSRF token
-    csrf_token = S.get(
-        url="https://commons.wikimedia.org/w/api.php",
+    return S
+
+
+def upload_file_to_commons(file_path, filename, description, session, license_code):
+    S = session
+
+    # Get the CSRF token (session is already authenticated)
+    csrf_resp = S.get(
+        url=COMMONS_API,
         params={"action": "query", "meta": "tokens", "format": "json"},
-    ).json()["query"]["tokens"]["csrftoken"]
+    )
+    csrf_token = safe_json(csrf_resp, context="csrf token")["query"]["tokens"][
+        "csrftoken"
+    ]
 
-    # Step 4: Upload the file
+    # Upload the file
     with open(file_path, "rb") as file:
         response = S.post(
-            "https://commons.wikimedia.org/w/api.php",
+            COMMONS_API,
             files={"file": (filename, file)},
             data={
                 "action": "upload",
@@ -243,16 +314,16 @@ def upload_file_to_commons(file_path, filename, description, username, password,
                 "format": "json",
                 "comment": "Uploading image from iNaturalist",
                 "text": description,
-                "ignorewarnings": 1,  # add this to ignore any warnings
+                "ignorewarnings": 1,  # ignore any warnings
             },
         )
 
-    # Check if upload was successful
-    if response.json().get("upload", {}).get("result") == "Success":
+    result = safe_json(response, context="upload").get("upload", {})
+    if result.get("result") == "Success":
         print(f"Successfully uploaded {filename}")
         return
     else:
-        print(f"Could not upload {filename}. Response: {response.json()}")
+        raise Exception(f"Could not upload {filename}. Response: {result}")
 
 
 if __name__ == "__main__":
